@@ -10,16 +10,16 @@ Decades ago I spent a lot of time working on how to present the
 English tenses to my language students. I came up with a set of
 colour-coded charts which were pretty popular with my students. Since them they have
 been languishing.  
+
 So now I have published them here as an open source project.  
+
 This is one of the charts:
 
-The charts themselves are available as a [powerpoint
-file](/static/tenses/tensesCharts.ppt) for downloading (in this
-version you can switch the explanations on and off).
+![[Pasted image 20251227162902.png]]
 
-There is also a corresponding list of tenses available as a
-[pdf](/static/tenses/tensesList.pdf) or
-[word](/static/tenses/tensesList.doc) file.
+- [Charts](/static/tenses/tensesCharts.pdf)
+- [Teachers' version](/static/tenses/Tenses-teachers.pdf)
+- [List of tenses](/static/tenses/tensesList.pdf) 
 
 
 This work is licensed under the Creative Commons
