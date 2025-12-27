@@ -51,7 +51,7 @@ As a freelancer, I often work for international development and disaster recover
 
 My special interest is causal mapping and theories of change in evaluation.
 
-A while ago I wrote a set of [slides](/static/slides.html) on Theories of Change.
+A while ago I wrote a set of <a href="/static/slides.html" data-router-ignore>slides</a> on Theories of Change.
 
 I also provide a free web app for constructing graphical Theories of Change called [Theorymaker](https://theorymaker.netlify.app). There have been many versions, [here](https://theorymaker.netlify.app) is the latest one.
 
