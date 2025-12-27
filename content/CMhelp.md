@@ -5,4 +5,4 @@ tags:
   - causal-mapping
 ---
 
-It seems like ancient history now, but I've just come across some [writings](/static/_causal_mapping/index.html) from last year about causal mapping and our new app. Enjoy.
+It seems like ancient history now, but I've just come across some <a href="/static/_causal_mapping/index.html" data-router-ignore>writings</a> from last year about causal mapping and our new app. Enjoy.
