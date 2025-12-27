@@ -1,0 +1,37 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" color="black" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" ];
+"  a"->"d"[label=<↘>;samehead="yes"] " b"->"d"[label=<↓>;samehead="yes"] "  a1"->"d1"[label=<↘>;samehead="yes"] " b1"->"d1"[label=<↓>;samehead="yes"] "  a2"->"d2"[label=<↘>;samehead="yes"] " b2"->"d2"[label=<↓>;samehead="yes"] "  a3"->"d3"[label=<↘>;samehead="yes"] " b3"->"d3"[label=<↓>;samehead="yes"]
+graph [ style="rounded,filled";color="/purples9/3";fillcolor="/purples9/1";fontname="arial";labeljust="l";labelloc="t" ];
+"d"[label=<d<BR/>>]
+"  a"[label=<a<BR/>>][fillcolor="white";fontcolor="white"]
+" b"[label=<b<BR/>>][fillcolor="white";fontcolor="white"]
+"d1"[label=<d1<BR/>>]
+"  a1"[label=<a1<BR/>>][fillcolor="white";fontcolor="white"]
+" b1"[label=<b1<BR/>>][fillcolor="black";fontcolor="black"]
+"d2"[label=<d2<BR/>>]
+"  a2"[label=<a2<BR/>>][fillcolor="black";fontcolor="black"]
+" b2"[label=<b2<BR/>>][fillcolor="white";fontcolor="white"]
+"d3"[label=<d3<BR/>>][fillcolor="black";fontcolor="black"]
+"  a3"[label=<a3<BR/>>][fillcolor="black";fontcolor="black"]
+" b3"[label=<b3<BR/>>][fillcolor="black";fontcolor="black"]
+
+
+
+ bgcolor="white";fontsize="28";fontname="arial" rankdir="TB"
+
+
+}

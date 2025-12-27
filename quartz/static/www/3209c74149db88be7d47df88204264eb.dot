@@ -1,0 +1,34 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";color="/greens9/1";fontname="helvetica";fontcolor="/greens9/8" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6";fontcolor="#CD5C5C60";penwidth="2";fontname="helvetica" ];
+"axsxdf"->"improved student exam results"[arrowhead="normal";penwidth="0";constraint="NA";arrowsize="1 )"] "students receive laptops"->"improved student exam results"[label=<(>;color="red)"] "improved student classwork"->"improved student exam results" "axsxdf"->"improved student classwork"[arrowhead="normal";penwidth="0";constraint="NA";arrowsize="1 )"] "student workshop 1 held"->"improved student classwork" "students receive laptops"->"improved student classwork" "improved student exam skills"->"improved student exam results" "axsxdf"->"improved student exam skills"[arrowhead="normal";penwidth="0";constraint="NA";arrowsize="1 )"] "student workshop 2 held"->"improved student exam skills"
+graph [ style="rounded,filled";color="#ffffff50";fontname="helvetica";labeljust="l";labelloc="t" ];
+"improved student exam results"[label=<improved<BR />student exam<BR />results<BR/>>]
+"axsxdf"[label=<axsxdf<BR/>>][fixedsize="true";height="0";style="invis"]
+"students receive laptops"[label=<students<BR />receive<BR />laptops<BR/>>]
+"improved student classwork"[label=<improved<BR />student<BR />classwork<BR/>>]
+"student workshop 1 held"[label=<student<BR />workshop 1<BR />held<BR/>>]
+"improved student exam skills"[label=<improved<BR />student exam<BR />skills<BR/>>]
+"student workshop 2 held"[label=<student<BR />workshop 2<BR />held<BR/>>]
+
+"axsxdf"[label=<axsxdf<BR/>>][fixedsize="true";height="0";style="invis"]
+"students receive laptops"[label=<students<BR />receive<BR />laptops<BR/>>]
+"axsxdf"[label=<axsxdf<BR/>>][fixedsize="true";height="0";style="invis"]
+
+ bgcolor="/greens9/3";fontsize="28";fontname="tahoma" label=<Try this instead>;fontcolor="/greens9/7";labelloc="b";labeljust="c";fontsize="11" wrap="12"
+
+
+}

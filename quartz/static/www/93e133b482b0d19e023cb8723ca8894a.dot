@@ -1,0 +1,27 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";color="/greens9/1";fontname="helvetica";fontcolor="/greens9/8" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6";fontcolor="#CD5C5C60";penwidth="2";fontname="helvetica" ];
+
+graph [ style="rounded,filled";color="#ffffff50";fontname="helvetica";labeljust="l";labelloc="t" ];
+"Percentage of legislators supporting the law (Levels: percentages)"[label=<Percentage of legislators supporting the law (Levels: percentages)<BR/>>]
+"Number of signatures on petition (Levels: counting numbers)"[label=<Number of signatures on petition (Levels: counting numbers)<BR/>>]
+
+
+
+ bgcolor="/greens9/3";fontsize="28";fontname="tahoma" label=<Try this instead>;fontcolor="/greens9/7";labelloc="b";labeljust="c";fontsize="11" wrap="99" label=<What kind of Variables are these?>
+
+
+}

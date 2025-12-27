@@ -1,0 +1,30 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";color="/greens9/1";fontname="helvetica";fontcolor="/greens9/8" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6";fontcolor="#CD5C5C60";penwidth="2";fontname="helvetica" ];
+"Teachers have skills in North Region"->"Teachers in whole country have skills"[style="dashed"] "Workshops delivered in North Region"->"Teachers have skills in North Region" "Teachers have skills in South Region"->"Teachers in whole country have skills"[style="dashed"] "Workshops delivered in South Region"->"Teachers have skills in South Region"
+graph [ style="rounded,filled";color="#ffffff50";fontname="helvetica";labeljust="l";labelloc="t" ];
+"Teachers in whole country have skills"[label=<Teachers in<BR />whole country<BR />have skills<BR/>>][style="dashed,filled";color="green";fillcolor="/greens9/1"]
+"Teachers have skills in North Region"[label=<Teachers have<BR />skills in North<BR />Region<BR/>>]
+"Workshops delivered in North Region"[label=<Workshops<BR />delivered in<BR />North Region<BR/>>]
+"Teachers have skills in South Region"[label=<Teachers have<BR />skills in South<BR />Region<BR/>>]
+"Workshops delivered in South Region"[label=<Workshops<BR />delivered in<BR />South Region<BR/>>]
+
+
+
+ bgcolor="/greens9/3";fontsize="28";fontname="tahoma" label=<Try this instead>;fontcolor="/greens9/7";labelloc="b";labeljust="c";fontsize="11" wrap="16"
+
+
+}

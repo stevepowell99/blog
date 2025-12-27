@@ -1,0 +1,30 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" ];
+"Enough representatives of Party A convinced !tick"->"Law is passed !tick" "Lobbying Party A !tick"->"Enough representatives of Party A convinced !tick"[samehead="yes";headlabel="OR"] "Enough representatives of B convinced !cross"->"Law is passed !tick" "Lobbying Party B !cross"->"Enough representatives of B convinced !cross"[samehead="yes"]
+graph [ style="rounded,filled";color="/purples9/3";fillcolor="/purples9/1";fontname="arial";labeljust="l";labelloc="t" ];
+"Law is passed !tick"[label=<Law is passed <font color="green">&#x2714;</font><BR/>>]
+"Enough representatives of Party A convinced !tick"[label=<Enough representatives of<BR />Party A convinced <font color="green">&#x2714;</font><BR/>>]
+"Lobbying Party A !tick"[label=<Lobbying Party A <font color="green">&#x2714;</font><BR/>>]
+"Enough representatives of B convinced !cross"[label=<Enough representatives of B<BR />convinced <font color="orange">&#x2718;</font><BR/>>]
+"Lobbying Party B !cross"[label=<Lobbying Party B <font color="orange">&#x2718;</font><BR/>>]
+
+
+
+ bgcolor="white";fontsize="28";fontname="arial"
+
+
+}

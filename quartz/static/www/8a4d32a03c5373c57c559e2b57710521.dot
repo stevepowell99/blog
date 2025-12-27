@@ -1,0 +1,27 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";color="/greens9/1";fontname="helvetica";fontcolor="/greens9/8" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6";fontcolor="#CD5C5C60";penwidth="2";fontname="helvetica" ];
+"NGO Network: how much lobbying activity carried out on proposed law (Levels: from 'none' to 'maximum possible')"->"Prime Minister: whether she votes for the same-sex marriage law (Levels: 'for' or 'against')"
+graph [ style="rounded,filled";color="#ffffff50";fontname="helvetica";labeljust="l";labelloc="t" ];
+"Prime Minister: whether she votes for the same-sex marriage law (Levels: 'for' or 'against')"[label=<Prime Minister:<BR />whether she votes for<BR />the same-sex marriage<BR />law (Levels: 'for' or<BR />'against')<BR/>>]
+"NGO Network: how much lobbying activity carried out on proposed law (Levels: from 'none' to 'maximum possible')"[label=<NGO Network: how much<BR />lobbying activity<BR />carried out on<BR />proposed law (Levels:<BR />from 'none' to<BR />'maximum possible')<BR/>>]
+
+
+
+ bgcolor="/greens9/3";fontsize="28";fontname="tahoma" label=<Try this instead>;fontcolor="/greens9/7";labelloc="b";labeljust="c";fontsize="11" wrap="22" labeljust="c" label=<These are Variables. This is a Theory!>
+
+
+}

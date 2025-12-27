@@ -1,0 +1,31 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";color="/oranges9/2";fontname="helvetica" ];
+edge [labeldistance=1.5;headlabel="" color="/greys9/6";fontcolor="#CD5C5C60";penwidth="2";fontname="helvetica" ];
+"Output: (Feb-May) improved student classwork"->"Outcome: (June) improved student exam results" "Activity (January): student workshop 1 held"->"Output: (Feb-May) improved student classwork" "Activity (January): students given laptops"->"Output: (Feb-May) improved student classwork" "Output: (Feb-May) improved student exam skills"->"Outcome: (June) improved student exam results" "Activity (February): student workshop 2 held"->"Output: (Feb-May) improved student exam skills"
+graph [ style="rounded,filled";color="#ffffff50";fontname="helvetica";labeljust="l";labelloc="t" ];
+"Outcome: (June) improved student exam results"[label=<Outcome: (June)<BR />improved student<BR />exam results<BR/>>][color="/oranges9/5"]
+"Output: (Feb-May) improved student classwork"[label=<Output: (Feb-May)<BR />improved student<BR />classwork<BR/>>][color="/oranges9/3"]
+"Activity (January): student workshop 1 held"[label=<Activity (January):<BR />student workshop 1<BR />held<BR/>>][color="/oranges9/1"]
+"Activity (January): students given laptops"[label=<Activity (January):<BR />students given<BR />laptops<BR/>>][color="/oranges9/1"]
+"Output: (Feb-May) improved student exam skills"[label=<Output: (Feb-May)<BR />improved student<BR />exam skills<BR/>>][color="/oranges9/3"]
+"Activity (February): student workshop 2 held"[label=<Activity (February):<BR />student workshop 2<BR />held<BR/>>][color="/oranges9/1"]
+
+
+
+ bgcolor="/greys9/3";fontsize="28";fontname="tahoma" label=<You don't have to stick to this format>;fontcolor="/greys9/7";labelloc="b";labeljust="c";fontsize="11" wrap="20"
+
+
+}

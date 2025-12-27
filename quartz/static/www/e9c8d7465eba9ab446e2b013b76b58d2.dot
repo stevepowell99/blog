@@ -1,0 +1,28 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" ];
+"How much student feels that they live up to expectationsx"->"Student satisfaction with school" "How much student feels supported and liked"->"Student satisfaction with school"
+graph [ style="rounded,filled";color="/purples9/3";fillcolor="/purples9/1";fontname="arial";labeljust="l";labelloc="t" ];
+"Student satisfaction with school"[label=<Student satisfaction with<BR />school<BR/>>]
+"How much student feels that they live up to expectationsx"[label=<How much student feels that<BR />they live up to expectationsx<BR/>>]
+"How much student feels supported and liked"[label=<How much student feels<BR />supported and liked<BR/>>]
+
+
+
+ bgcolor="white";fontsize="28";fontname="arial"
+
+
+}

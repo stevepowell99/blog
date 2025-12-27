@@ -1,0 +1,31 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";color="/greens9/1";fontname="helvetica";fontcolor="/greens9/8" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6";fontcolor="#CD5C5C60";penwidth="2";fontname="helvetica" ];
+"Output: ((improved)) student classwork scores"->"Outcome: ((improved)) student exam results" "Activity: student workshop 1 ((held))"->"Output: ((improved)) student classwork scores" "Activity: students ((given)) laptops"->"Output: ((improved)) student classwork scores" "Output: ((improved)) student exam skills"->"Outcome: ((improved)) student exam results" "Activity: student workshop 2 ((held))"->"Output: ((improved)) student exam skills"
+graph [ style="rounded,filled";color="#ffffff50";fontname="helvetica";labeljust="l";labelloc="t" ];
+"Outcome: ((improved)) student exam results"[label=<Outcome:  <font color="darkgreen" >((improved))</font> <BR />student exam results<BR/>>][color="/oranges9/5"]
+"Output: ((improved)) student classwork scores"[label=<Output:  <font color="darkgreen" >((improved))</font> <BR />student classwork scores<BR/>>][color="/oranges9/3"]
+"Activity: student workshop 1 ((held))"[label=<Activity: student<BR />workshop 1  <font color="darkgreen" >((held))</font> <BR/>>][color="/oranges9/1"]
+"Activity: students ((given)) laptops"[label=<Activity: students<BR /> <font color="darkgreen" >((given))</font>  laptops<BR/>>][color="/oranges9/1"]
+"Output: ((improved)) student exam skills"[label=<Output:  <font color="darkgreen" >((improved))</font> <BR />student exam skills<BR/>>][color="/oranges9/3"]
+"Activity: student workshop 2 ((held))"[label=<Activity: student<BR />workshop 2  <font color="darkgreen" >((held))</font> <BR/>>][color="/oranges9/1"]
+
+
+
+ bgcolor="/greens9/3";fontsize="28";fontname="tahoma" label=<Try this instead>;fontcolor="/greens9/7";labelloc="b";labeljust="c";fontsize="11" label=<All Variables are expressed using Differences> wrap="24"
+
+
+}

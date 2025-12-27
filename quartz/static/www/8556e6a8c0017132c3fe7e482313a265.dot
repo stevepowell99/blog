@@ -1,0 +1,29 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" ];
+"day Monday: Voter hears the day's speeches"->"day Election Thursday: Voter decides to vote for Tory party" "day Tuesday: Voter hears the day's speeches"->"day Election Thursday: Voter decides to vote for Tory party" "day Wednesday: Voter hears the day's speeches"->"day Election Thursday: Voter decides to vote for Tory party"
+graph [ style="rounded,filled";color="/purples9/2";fontname="arial";labeljust="l";labelloc="t" ];
+"day Election Thursday: Voter decides to vote for Tory party"[label=<day=Election Thursday:<BR />Voter decides to vote<BR />for Tory party<BR/>>]
+"day Monday: Voter hears the day's speeches"[label=<day=Monday: Voter<BR />hears the day's<BR />speeches<BR/>>][color="/purples9/2"]
+"day Tuesday: Voter hears the day's speeches"[label=<day=Tuesday: Voter<BR />hears the day's<BR />speeches<BR/>>][color="/purples9/2"]
+"day Wednesday: Voter hears the day's speeches"[label=<day=Wednesday: Voter<BR />hears the day's<BR />speeches<BR/>>][color="/purples9/2"]
+
+
+
+ bgcolor="white";fontsize="28";fontname="arial" wrap="22"
+
+
+}

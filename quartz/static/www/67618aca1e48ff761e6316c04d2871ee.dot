@@ -1,0 +1,40 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" fontname="Arial" ];
+"pc"->"c"[headlabel="⚡&#x058D;";samehead="yes"] "Level of innovation of project !lohi !heart"->"c"[samehead="yes"] "pc"->"Level of innovation of project !lohi !heart"[label=<֍>;style="dashed"] "sa"->"pc"[samehead="stud";headport="w";headlabel="&#x058D;"] "se"->"pc"[samehead="stud"] "tg"->"pc"[samehead="stud"] "sa"->"tg"[headlabel="&#x058D;"]
+graph [ style="rounded,filled";color="/purples9/3";fillcolor="/purples9/1";fontname="arial";labeljust="l";labelloc="t" ];
+"c"[label=<Potential<BR />positive<BR />impact on<BR />society &#x25EA; <font color='orange'>&hearts;</font><BR/>>]
+"pc"[label=<pc<BR/>>]
+"Level of innovation of project !lohi !heart"[label=<Level of<BR />innovation of<BR />project &#x25EA; <font color='orange'>&hearts;</font><BR/>>][style="dashed"]
+ 
+subgraph cluster_Student {label=<Student<BR/>>fillcolor="/reds9/2"
+"sa"[label=<Student<BR />characteristics<BR />(ability,<BR />personality) &#x25A4;<BR/>>]
+"se"[label=<Effort made by<BR />student &#x25EA;<BR/>>]
+}
+{
+"tg"[label=<Expert gives<BR />tailored<BR />innovation<BR />support to<BR />student<BR/>>]
+}
+"sa"[label=<sa<BR/>>]
+"c"[label=<Potential<BR />positive<BR />impact on<BR />society &#x25EA; <font color='orange'>&hearts;</font><BR/>>]
+"pc"[label=<Characteristics<BR />of completed<BR />project &#x058D;<BR/>>]
+"sa"[label=<Student<BR />characteristics<BR />(ability,<BR />personality) &#x25A4;<BR/>>]
+"se"[label=<Effort made by<BR />student &#x25EA;<BR/>>]
+"tg"[label=<Expert gives<BR />tailored<BR />innovation<BR />support to<BR />student<BR/>>]
+
+ bgcolor="white";fontsize="28";fontname="arial" wrap="16" ratio=".25"
+
+
+}

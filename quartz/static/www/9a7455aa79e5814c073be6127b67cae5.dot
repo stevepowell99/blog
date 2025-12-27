@@ -1,0 +1,27 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" ];
+"Number of students signing recycling petition *1200--*"->"School Principal's support for the recycling initiative (lo-hi) *medium--*"
+graph [ style="rounded,filled";color="/purples9/2";fontname="arial";labeljust="l";labelloc="t" ];
+"School Principal's support for the recycling initiative (lo-hi) *medium--*"[label=<School Principal's<BR />support for the<BR />recycling initiative<BR />(lo-hi) <font  color="darkgreen">*medium--* </font><BR/>>]
+"Number of students signing recycling petition *1200--*"[label=<Number of students<BR />signing recycling<BR />petition <font  color="darkgreen">*1200--* </font><BR/>>]
+
+
+
+ bgcolor="white";fontsize="28";fontname="arial" wrap="20"
+
+
+}

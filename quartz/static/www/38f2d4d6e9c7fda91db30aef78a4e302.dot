@@ -1,0 +1,28 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" ];
+"((12 rather_than 10))  teacher training weekends"->"((20% improved))  teaching quality" "((1000 EUR extra))  NGO financial resources"->"((12 rather_than 10))  teacher training weekends"
+graph [ style="rounded,filled";color="/purples9/2";fontname="arial";labeljust="l";labelloc="t" ];
+"((20% improved))  teaching quality"[label=<<font color="green" >((20%<BR />improved))</font><BR />teaching<BR />quality<BR/>>]
+"((12 rather_than 10))  teacher training weekends"[label=<<font color="green" >((12<BR />rather_than<BR />10))</font><BR />teacher<BR />training<BR />weekends<BR/>>]
+"((1000 EUR extra))  NGO financial resources"[label=<<font color="green" >((1000<BR />EUR<BR />extra))</font><BR />NGO<BR />financial<BR />resources<BR/>>]
+
+
+
+ bgcolor="white";fontsize="28";fontname="arial" wrap="5"
+
+
+}

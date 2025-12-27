@@ -1,0 +1,30 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" ];
+"resilience"->"Goal" "autonomy"->"Goal" "health interventions"->"resilience" "health interventions"->"autonomy" "education interventions"->"resilience" "education interventions"->"autonomy"
+graph [ style="rounded,filled";color="/purples9/3";fillcolor="/purples9/1";fontname="arial";labeljust="l";labelloc="t" ];
+"Goal"[label=<Goal<BR/>>]
+"resilience"[label=<resilience<BR/>>]
+"autonomy"[label=<autonomy<BR/>>]
+"health interventions"[label=<health interventions<BR/>>]
+"education interventions"[label=<education interventions<BR/>>]
+
+
+
+ bgcolor="white";fontsize="28";fontname="arial"
+
+
+}

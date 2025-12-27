@@ -1,0 +1,30 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" ];
+"Log fire is lit  !tick"->"Clothes are dried !tick"[samehead="OR"] "!do Match is struck  !tick"->"Log fire is lit  !tick"[samehead="AND";headlabel="AND"] "Dry wood is available  !tick"->"Log fire is lit  !tick"[samehead="AND"] "Electric heater is switched on !cross"->"Clothes are dried !tick"[samehead="OR";headlabel="OR"]
+graph [ style="rounded,filled";color="/purples9/3";fillcolor="/purples9/1";fontname="arial";labeljust="l";labelloc="t" ];
+"Clothes are dried !tick"[label=<Clothes are dried <font color="green">✔</font><BR/>>][color="/oranges9/4"]
+"Log fire is lit  !tick"[label=<Log fire is lit <font color="green">✔</font><BR/>>][color="/oranges9/4"]
+"!do Match is struck  !tick"[label=<<font color="green">&#9654; </font> Match is struck <font color="green">✔</font><BR/>>][color="/oranges9/4"]
+"Dry wood is available  !tick"[label=<Dry wood is available <font color="green">✔</font><BR/>>]
+"Electric heater is switched on !cross"[label=<Electric heater is switched<BR />on <font color="orange">✘</font><BR/>>]
+
+
+
+ bgcolor="white";fontsize="28";fontname="arial"
+
+
+}

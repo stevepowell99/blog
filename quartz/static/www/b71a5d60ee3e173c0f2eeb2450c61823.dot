@@ -1,0 +1,38 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" ];
+") teaching quality !lohi.   Teacher: !heart"->"Average teaching quality ((improved)). !noyes   Ministry: !heart"[label=<(Better>] ") teaching quality !lohi.   Teacher: !heart"->"((More)) outstanding teaching. !lohi   Trainer: !heart"[label=<(Better>] "tr"->") teaching quality !lohi.   Teacher: !heart" "Teacher:  !do   Makes effort to attend course !noyes"->"tr" "Ministry: !do   Provides in-service teacher training !noyes"->"tr" "Trainer: !do   Provides pro-bono training  !heart !noyes"->"tr" "tr"->"Pay increased.   Teacher: !heart   Ministry: !frown"
+graph [ style="rounded,filled";color="/purples9/3";fillcolor="/purples9/1";fontname="arial";labeljust="l";labelloc="t" ];
+"Average teaching quality ((improved)). !noyes   Ministry: !heart"[label=<Average teaching quality <font color="green" >((improved))</font>. &#x25E8;<BR />Ministry: <font color='orange'>&hearts;</font><BR/>>][style="dashed"]
+"((More)) outstanding teaching. !lohi   Trainer: !heart"[label=<<font color="green" >((More))</font> outstanding teaching. &#x25EA;<BR />Trainer: <font color='orange'>&hearts;</font><BR/>>][style="dashed"]
+ 
+subgraph cluster_Foreachof20teachers {label=<For each of 20 teachers<BR/>>
+") teaching quality !lohi.   Teacher: !heart"[label=<) teaching quality &#x25EA;.<BR />Teacher: <font color='orange'>&hearts;</font><BR/>>]
+"tr"[label=<Teacher receives<BR />training &#x25E8;<BR/>>]
+"Teacher:  !do   Makes effort to attend course !noyes"[label=<Teacher:  <font color="green">&#9654; </font><BR />Makes effort to attend course &#x25E8;<BR/>>]
+}
+{
+"Ministry: !do   Provides in-service teacher training !noyes"[label=<Ministry: <font color="green">&#9654; </font><BR />Provides in-service teacher training &#x25E8;<BR/>>]
+"Trainer: !do   Provides pro-bono training  !heart !noyes"[label=<Trainer: <font color="green">&#9654; </font><BR />Provides pro-bono training  <font color='orange'>&hearts;</font> &#x25E8;<BR/>>]
+"Pay increased.   Teacher: !heart   Ministry: !frown"[label=<Pay increased.<BR />Teacher: <font color='orange'>&hearts;</font><BR />Ministry: &#x2639;<BR/>>]
+}
+"tr"[label=<tr<BR/>>]
+"tr"[label=<Teacher receives<BR />training &#x25E8;<BR/>>]
+
+ bgcolor="white";fontsize="28";fontname="arial"
+
+
+}

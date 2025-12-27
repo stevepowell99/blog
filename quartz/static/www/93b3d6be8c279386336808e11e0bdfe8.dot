@@ -1,0 +1,31 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";color="/oranges9/2";fontname="helvetica" ];
+edge [labeldistance=1.5;headlabel="" color="/greys9/6";fontcolor="#CD5C5C60";penwidth="2";fontname="helvetica" ];
+"Student 1 (Anna): Achievement"->"Teacher: Pride" "Teacher: Ability"->"Student 1 (Anna): Achievement" "Student 2 (Bob): Achievement"->"Teacher: Pride" "Teacher: Ability"->"Student 2 (Bob): Achievement" "Student 3: (Carla): Achievement"->"Teacher: Pride" "Teacher: Ability"->"Student 3: (Carla): Achievement"
+graph [ style="rounded,filled";color="#ffffff50";fontname="helvetica";labeljust="l";labelloc="t" ];
+"Teacher: Pride"[label=<Teacher: Pride<BR/>>]
+"Student 1 (Anna): Achievement"[label=<Student 1 (Anna): Achievement<BR/>>]
+"Teacher: Ability"[label=<Teacher: Ability<BR/>>]
+"Student 2 (Bob): Achievement"[label=<Student 2 (Bob): Achievement<BR/>>]
+"Student 3: (Carla): Achievement"[label=<Student 3: (Carla):<BR />Achievement<BR/>>]
+
+"Teacher: Ability"[label=<Teacher: Ability<BR/>>]
+"Teacher: Ability"[label=<Teacher: Ability<BR/>>]
+
+ bgcolor="/greys9/3";fontsize="28";fontname="tahoma" label=<You don't have to stick to this format>;fontcolor="/greys9/7";labelloc="b";labeljust="c";fontsize="11"
+
+
+}

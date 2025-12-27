@@ -1,0 +1,37 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";color="/greens9/1";fontname="helvetica";fontcolor="/greens9/8" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6";fontcolor="#CD5C5C60";penwidth="2";fontname="helvetica" ];
+"improved student classwork"->"improved student exam results" "student workshop 1 held"->"improved student classwork" "students receive laptops"->"improved student classwork" "improved student exam skills"->"improved student exam results" "student workshop 2 held"->"improved student exam skills" "improved student self-confidence"->"improved student exam results" "student workshop 2 held"->"improved student self-confidence" "improved student self-confidence"->"improved student employment prospects" "students more able to write good CV"->"improved student employment prospects" "students receive laptops"->"students more able to write good CV" "improved student exam results"->"improved student employment prospects"
+graph [ style="rounded,filled";color="#ffffff50";fontname="helvetica";labeljust="l";labelloc="t" ];
+"improved student exam results"[label=<improved<BR />student<BR />exam<BR />results<BR/>>]
+"improved student classwork"[label=<improved<BR />student<BR />classwork<BR/>>]
+"student workshop 1 held"[label=<student<BR />workshop 1<BR />held<BR/>>]
+"students receive laptops"[label=<students<BR />receive<BR />laptops<BR/>>]
+"improved student exam skills"[label=<improved<BR />student<BR />exam<BR />skills<BR/>>]
+"student workshop 2 held"[label=<student<BR />workshop 2<BR />held<BR/>>]
+"improved student self-confidence"[label=<improved<BR />student<BR />self-confidence<BR/>>]
+"improved student employment prospects"[label=<improved<BR />student<BR />employment<BR />prospects<BR/>>]
+"students more able to write good CV"[label=<students<BR />more able<BR />to write<BR />good CV<BR/>>]
+
+"student workshop 2 held"[label=<student<BR />workshop 2<BR />held<BR/>>]
+"improved student self-confidence"[label=<improved<BR />student<BR />self-confidence<BR/>>]
+"students receive laptops"[label=<students<BR />receive<BR />laptops<BR/>>]
+"improved student exam results"[label=<improved<BR />student<BR />exam<BR />results<BR/>>]
+
+ bgcolor="/greens9/3";fontsize="28";fontname="tahoma" label=<Try this instead>;fontcolor="/greens9/7";labelloc="b";labeljust="c";fontsize="11" wrap="10"
+
+
+}

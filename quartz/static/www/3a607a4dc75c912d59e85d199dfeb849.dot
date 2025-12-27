@@ -1,0 +1,59 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" fontsize="48";height="1" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" fontsize="48";penwidth="5" ];
+"International police interdiction"->"Corruption"[label=<⊖>] "International police interdiction"->"Cartels"[label=<⊖>] "International police interdiction"->"Acres of coca"[label=<⊖>] "International police interdiction"->"Profits"[label=<⊖>] "Cartels"->"Acres of coca"[label=<⊕>] "Cartels"->"Drug availability"[label=<⊕>] "Corruption"->"Profits"[label=<⊕>] "Corruption"->"Drug availability"[label=<⊕>] "Profits"->"Drug availability"[label=<⊕>] "User economic hardship"->"Drug usage" "Drug usage"->"Cocaine price"[label=<⊕>] "Cocaine price"->"Cartels"[label=<⊕>] "Cocaine price"->"Street gangs"[label=<⊕>] "American police interdiction"->"Cocaine price"[label=<⊕>] "American police interdiction"->"Street gangs"[label=<⊖>] "American police interdiction"->"Drug availability"[label=<⊖>] "Acres of coca"->"Drug availability"[label=<⊕>] "Cocaine price"->"Drug usage"[label=<⊖>] "Drug availability"->"Drug usage"[label=<⊕>] "Drug availability"->"Profits"[label=<⊕>] "Drug availability"->"American police interdiction"[label=<⊕>] "Street gangs"->"Drug availability"[label=<⊕>]
+graph [ style="rounded,filled";color="/purples9/3";fillcolor="/purples9/1";fontname="arial";labeljust="l";labelloc="t" ];
+"Corruption"[label=<Corruption<BR/>>]
+"Cartels"[label=<Cartels<BR/>>]
+"Acres of coca"[label=<Acres of coca<BR/>>]
+"Profits"[label=<Profits<BR/>>]
+"International police interdiction"[label=<International police<BR />interdiction<BR/>>]
+"Drug availability"[label=<Drug availability<BR/>>]
+"Drug usage"[label=<Drug usage<BR/>>]
+"User economic hardship"[label=<User economic hardship<BR/>>]
+"Cocaine price"[label=<Cocaine price<BR/>>]
+"Street gangs"[label=<Street gangs<BR/>>]
+"American police interdiction"[label=<American police interdiction<BR/>>]
+
+"Acres of coca"[label=<Acres of coca<BR/>>]
+"Cartels"[label=<Cartels<BR/>>]
+"Profits"[label=<Profits<BR/>>]
+"Drug availability"[label=<Drug availability<BR/>>]
+"Corruption"[label=<Corruption<BR/>>]
+"Drug availability"[label=<Drug availability<BR/>>]
+"Profits"[label=<Profits<BR/>>]
+"Drug usage"[label=<Drug usage<BR/>>]
+"Cartels"[label=<Cartels<BR/>>]
+"Cocaine price"[label=<Cocaine price<BR/>>]
+"Cocaine price"[label=<Cocaine price<BR/>>]
+"Street gangs"[label=<Street gangs<BR/>>]
+"Drug availability"[label=<Drug availability<BR/>>]
+"American police interdiction"[label=<American police interdiction<BR/>>]
+"Drug availability"[label=<Drug availability<BR/>>]
+"Acres of coca"[label=<Acres of coca<BR/>>]
+"Drug usage"[label=<Drug usage<BR/>>]
+"Cocaine price"[label=<Cocaine price<BR/>>]
+"Drug usage"[label=<Drug usage<BR/>>]
+"Profits"[label=<Profits<BR/>>]
+"American police interdiction"[label=<American police interdiction<BR/>>]
+"Drug availability"[label=<Drug availability<BR/>>]
+"Drug availability"[label=<Drug availability<BR/>>]
+"Street gangs"[label=<Street gangs<BR/>>]
+
+ bgcolor="white";fontsize="28";fontname="arial" ratio=".3"
+
+
+}

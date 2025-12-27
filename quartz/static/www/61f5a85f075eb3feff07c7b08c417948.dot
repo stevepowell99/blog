@@ -1,0 +1,37 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" ];
+"axsxdf"->"~ Effectiveness of volunteer work (Influence: medium excitement level is best)"[arrowhead="normal";penwidth="0";constraint="NA";arrowsize="1"] "~ Excitement level of volunteers !self"->"~ Effectiveness of volunteer work (Influence: medium excitement level is best)" "~ Inspirational input from staff (Influence: optimise excitement level) !optimise"->"~ Excitement level of volunteers !self" "~ Staff observation of excitement level"->"~ Inspirational input from staff (Influence: optimise excitement level) !optimise" "~ Excitement level of volunteers !self"->"~ Staff observation of excitement level"
+graph [ style="rounded,filled";color="/purples9/3";fillcolor="/purples9/1";fontname="arial";labeljust="l";labelloc="t" ];
+ 
+subgraph cluster_Volunteers {label=<Volunteers<BR/>>
+"~ Effectiveness of volunteer work (Influence: medium excitement level is best)"[label=<~<BR />Effectiveness<BR />of volunteer<BR />work<BR />(Influence:<BR />medium<BR />excitement<BR />level is best)<BR/>>]
+"axsxdf"[label=<axsxdf<BR/>>][fixedsize="true";height="0";style="invis"]
+"~ Excitement level of volunteers !self"[label=<~ Excitement<BR />level of<BR />volunteers &#x21BA;<BR/>>]
+}
+ 
+subgraph cluster_Staff {label=<Staff<BR/>>
+"~ Inspirational input from staff (Influence: optimise excitement level) !optimise"[label=<~<BR />Inspirational<BR />input<BR />from staff<BR />(Influence:<BR />optimise<BR />excitement<BR />level) &#x25A3;<BR/>>]
+"~ Staff observation of excitement level"[label=<~ Staff<BR />observation<BR />of excitement<BR />level<BR/>>]
+}
+{
+}
+"~ Excitement level of volunteers !self"[label=<~ Excitement<BR />level of<BR />volunteers &#x21BA;<BR/>>]
+
+ bgcolor="white";fontsize="28";fontname="arial" wrap="14"
+
+
+}

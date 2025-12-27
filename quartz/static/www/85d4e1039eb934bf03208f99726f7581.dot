@@ -1,0 +1,29 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" height="0" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" ];
+"Love"->"Happiness ///!plus, synergy"[samehead="yes"] "Money"->"Happiness ///!plus, synergy"[samehead="yes"] "Health"->"Happiness ///!plus, synergy"[samehead="yes"]
+graph [ style="rounded,filled";color="/purples9/2";fontname="arial";labeljust="l";labelloc="t" ];
+"Happiness ///!plus, synergy"[label=<Happiness <BR />⊕, synergy<BR/>>]
+"Love"[label=<Love<BR/>>]
+"Money"[label=<Money<BR/>>]
+"Health"[label=<Health<BR/>>]
+
+
+
+ bgcolor="white";fontsize="28";fontname="arial"
+
+
+}

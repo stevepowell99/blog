@@ -1,0 +1,30 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" ];
+"Other influences (1)"->"Student achievement !smile ((10% improvement))" "Teaching quality ((20% improvement))"->"Student achievement !smile ((10% improvement))" "Other influences (2)"->"Teaching quality ((20% improvement))" "!rwedge Quality of teacher training ((50% improvement))"->"Teaching quality ((20% improvement))"
+graph [ style="rounded,filled";color="/purples9/3";fillcolor="/purples9/1";fontname="arial";labeljust="l";labelloc="t" ];
+"Student achievement !smile ((10% improvement))"[label=<Student<BR />achievement &#x1F642;<BR /><font color="green" >((10%<BR />improvement))</font><BR/>>]
+"Other influences (1)"[label=<Other<BR />influences<BR />(1)<BR/>>]
+"Teaching quality ((20% improvement))"[label=<Teaching<BR />quality<BR /><font color="green" >((20%<BR />improvement))</font><BR/>>]
+"Other influences (2)"[label=<Other<BR />influences<BR />(2)<BR/>>]
+"!rwedge Quality of teacher training ((50% improvement))"[label=<&#9658;<BR />Quality<BR />of teacher<BR />training<BR /><font color="green" >((50%<BR />improvement))</font><BR/>>]
+
+
+
+ bgcolor="white";fontsize="28";fontname="arial" wrap="12"
+
+
+}

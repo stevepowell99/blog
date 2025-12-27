@@ -1,0 +1,33 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" ];
+"cn"->"Children's general creativity is increased"[style="dashed"] "cm"->"Children's general creativity is increased"[style="dashed"] "Children take part in the project"->"cm" "cm"->"cn" "cn"->"cm"[style="invis"]
+graph [ style="rounded,filled";color="/purples9/3";fillcolor="/purples9/1";fontname="arial";labeljust="l";labelloc="t" ];
+"Children's general creativity is increased"[label=<Children's<BR />general<BR />creativity is<BR />increased<BR/>>][style="dashed"]
+"cn"[label=<Children's<BR />non-musical<BR />creativity<BR />(several areas)<BR/>>]
+"cm"[label=<Children's<BR />musical<BR />creativity is<BR />increased<BR/>>]
+"Children take part in the project"[label=<Children take<BR />part in the<BR />project<BR/>>]
+
+"cn"[label=<cn<BR/>>]
+"cm"[label=<cm<BR/>>]
+"cn"[label=<Children's<BR />non-musical<BR />creativity<BR />(several areas)<BR/>>]
+"cm"[label=<Children's<BR />musical<BR />creativity is<BR />increased<BR/>>]
+
+ bgcolor="white";fontsize="28";fontname="arial" style="filled" wrap="16"
+
+{rank=same; "cn";"cm" }
+
+}

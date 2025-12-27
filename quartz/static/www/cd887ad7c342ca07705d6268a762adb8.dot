@@ -1,0 +1,31 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";color="/greens9/1";fontname="helvetica";fontcolor="/greens9/8" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6";fontcolor="#CD5C5C60";penwidth="2";fontname="helvetica" ];
+"Output: student classwork scores"->"Outcome: student exam results" "Activity: student workshop 1 held !noyes "->"Output: student classwork scores" "Activity: students given laptops !noyes "->"Output: student classwork scores" "Output: student exam skills"->"Outcome: student exam results" "Activity: student workshop 2 held !noyes "->"Output: student exam skills"
+graph [ style="rounded,filled";color="#ffffff50";fontname="helvetica";labeljust="l";labelloc="t" ];
+"Outcome: student exam results"[label=<Outcome: student<BR />exam results<BR/>>][color="/oranges9/5"]
+"Output: student classwork scores"[label=<Output: student<BR />classwork scores<BR/>>][color="/oranges9/3"]
+"Activity: student workshop 1 held !noyes "[label=<Activity: student<BR />workshop 1<BR />held ◨<BR/>>][color="/oranges9/1"]
+"Activity: students given laptops !noyes "[label=<Activity:<BR />students given<BR />laptops ◨<BR/>>][color="/oranges9/1"]
+"Output: student exam skills"[label=<Output: student<BR />exam skills<BR/>>][color="/oranges9/3"]
+"Activity: student workshop 2 held !noyes "[label=<Activity: student<BR />workshop 2<BR />held ◨<BR/>>][color="/oranges9/1"]
+
+
+
+ bgcolor="/greens9/3";fontsize="28";fontname="tahoma" label=<Try this instead>;fontcolor="/greens9/7";labelloc="b";labeljust="c";fontsize="11" label=<None of the Variables are expressed using Differences> wrap="18"
+
+
+}

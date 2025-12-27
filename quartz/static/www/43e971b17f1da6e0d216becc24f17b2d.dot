@@ -1,0 +1,32 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" ];
+"tr"->"Better teaching.   Teacher: !smile   Ministry: !smile   Trainer: !smile" "Teacher:  !do   Makes effort to attend course"->"tr" "Ministry: !do   Provides in-service teacher training"->"tr" "Trainer: !do   Provides pro-bono training  !smile"->"tr" "tr"->"Pay increased.   Teacher: !smile   Ministry: !xfrown"
+graph [ style="rounded,filled";color="/purples9/3";fillcolor="/purples9/1";fontname="arial";labeljust="l";labelloc="t" ];
+"Better teaching.   Teacher: !smile   Ministry: !smile   Trainer: !smile"[label=<Better teaching.<BR />Teacher: &#x1F642;<BR />Ministry: &#x1F642;<BR />Trainer: &#x1F642;<BR/>>]
+"tr"[label=<Teacher receives training<BR/>>]
+"Teacher:  !do   Makes effort to attend course"[label=<Teacher:  <font color="green">&#9654; </font><BR />Makes effort to attend course<BR/>>]
+"Ministry: !do   Provides in-service teacher training"[label=<Ministry: <font color="green">&#9654; </font><BR />Provides in-service teacher training<BR/>>]
+"Trainer: !do   Provides pro-bono training  !smile"[label=<Trainer: <font color="green">&#9654; </font><BR />Provides pro-bono training  &#x1F642;<BR/>>]
+"Pay increased.   Teacher: !smile   Ministry: !xfrown"[label=<Pay increased.<BR />Teacher: &#x1F642;<BR />Ministry: &#x1f626;<BR/>>]
+
+"tr"[label=<tr<BR/>>]
+"tr"[label=<Teacher receives training<BR/>>]
+
+ bgcolor="white";fontsize="28";fontname="arial"
+
+
+}

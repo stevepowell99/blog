@@ -1,0 +1,29 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";color="/greens9/1";fontname="helvetica";fontcolor="/greens9/8" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6";fontcolor="#CD5C5C60";penwidth="2";fontname="helvetica" ];
+"axsxdf"->"Subjective temperature"[arrowhead="normal";penwidth="0";constraint="NA";arrowsize="1"] "Strength of sunshine"->"Subjective temperature" "Strength of wind"->"Subjective temperature"[label=<!heart>]
+graph [ style="rounded,filled";color="#ffffff50";fontname="helvetica";labeljust="l";labelloc="t" ];
+"Subjective temperature"[label=<Subjective<BR />temperature<BR/>>]
+"axsxdf"[label=<axsxdf<BR/>>][fixedsize="true";height="0";style="invis"]
+"Strength of sunshine"[label=<Strength of<BR />sunshine<BR/>>]
+"Strength of wind"[label=<Strength of<BR />wind<BR/>>]
+
+
+
+ bgcolor="/greens9/3";fontsize="28";fontname="tahoma" label=<Try this instead>;fontcolor="/greens9/7";labelloc="b";labeljust="c";fontsize="11" wrap="14"
+
+
+}

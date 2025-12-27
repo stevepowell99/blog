@@ -1,0 +1,36 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";color="white" color="/greys9/3" ];
+edge [labeldistance=1.5;headlabel="" ];
+"b"->"a" "c"->"a" "d"->"b" "d"->"c" "e"->"b" "e"->"c" "f"->"b" "f"->"c" "g"->"b" "h"->"b"
+graph [ labeljust="r" ];
+"a"[label=<a<BR/>>]
+"b"[label=<b<BR/>>]
+"c"[label=<c<BR/>>]
+"d"[label=<d<BR/>>]
+"e"[label=<e<BR/>>]
+"f"[label=<f<BR/>>]
+"g"[label=<g<BR/>>]
+"h"[label=<h<BR/>>]
+
+"b"[label=<b<BR/>>]
+"h"[label=<h<BR/>>]
+"f"[label=<f<BR/>>]
+"e"[label=<e<BR/>>]
+
+ rankdir="BT"
+
+
+}

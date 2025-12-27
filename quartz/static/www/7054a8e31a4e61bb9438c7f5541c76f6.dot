@@ -1,0 +1,29 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" ];
+"!do Livelihoods intervention !noyes"->" Family income !lohi !smile"[label=<&#x2295>;="NA"]
+graph [ style="rounded,filled";color="/purples9/3";fillcolor="/purples9/1";fontname="arial";labeljust="l";labelloc="t" ];
+ 
+subgraph cluster_Livelihoodssubproject {label=<Livelihoods sub-project<BR/>>color="/oranges9/3"
+" Family income !lohi !smile"[label=<Family income &#x25EA; &#x1F642;<BR/>>]
+"!do Livelihoods intervention !noyes"[label=<<font color="green">&#9654; </font> Livelihoods<BR />intervention &#x25E8;<BR/>>]
+}
+
+
+ bgcolor="white";fontsize="28";fontname="arial"
+
+
+}

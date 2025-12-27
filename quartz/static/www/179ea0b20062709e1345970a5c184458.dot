@@ -1,0 +1,36 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";color="/greens9/1";fontname="helvetica";fontcolor="/greens9/8" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6";fontcolor="#CD5C5C60";penwidth="2";fontname="helvetica" ];
+"Workshops delivered in North Region"->"n" "Workshops delivered in South Region"->"s"
+graph [ style="rounded,filled";color="#ffffff50";fontname="helvetica";labeljust="l";labelloc="t" ];
+ 
+subgraph cluster_Teachersinwholecountryhaveskills {label=<Teachers in whole country<BR />have skills<BR/>>color="green";fillcolor="/greens9/2"
+"n"[label=<Teachers have skills in<BR />North Region<BR/>>]
+"s"[label=<Teachers have skills in<BR />South Region<BR/>>]
+}
+{
+"Workshops delivered in North Region"[label=<Workshops delivered in North<BR />Region<BR/>>]
+"Workshops delivered in South Region"[label=<Workshops delivered in South<BR />Region<BR/>>]
+}
+"n"[label=<n<BR/>>]
+"s"[label=<s<BR/>>]
+"n"[label=<Teachers have skills in<BR />North Region<BR/>>]
+"s"[label=<Teachers have skills in<BR />South Region<BR/>>]
+
+ bgcolor="/greens9/3";fontsize="28";fontname="tahoma" label=<Try this instead>;fontcolor="/greens9/7";labelloc="b";labeljust="c";fontsize="11" label=<Another possibility> wrap="28"
+
+
+}

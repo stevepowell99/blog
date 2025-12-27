@@ -1,0 +1,29 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";color="/oranges9/2";fontname="helvetica" ];
+edge [labeldistance=1.5;headlabel="" color="/greys9/6";fontcolor="#CD5C5C60";penwidth="2";fontname="helvetica" ];
+"Legislators have more favourable views"->"Law on same-sex marriage is passed" "Public opinion improves"->"Legislators have more favourable views" "Our campaign is launched"->"Public opinion improves"
+graph [ style="rounded,filled";color="#ffffff50";fontname="helvetica";labeljust="l";labelloc="t" ];
+"Law on same-sex marriage is passed"[label=<Law on<BR />same-sex<BR />marriage<BR />is passed<BR/>>]
+"Legislators have more favourable views"[label=<Legislators<BR />have more<BR />favourable<BR />views<BR/>>]
+"Public opinion improves"[label=<Public<BR />opinion<BR />improves<BR/>>]
+"Our campaign is launched"[label=<Our<BR />campaign<BR />is<BR />launched<BR/>>]
+
+
+
+ bgcolor="/greys9/3";fontsize="28";fontname="tahoma" label=<You don't have to stick to this format>;fontcolor="/greys9/7";labelloc="b";labeljust="c";fontsize="11" wrap="10"
+
+
+}

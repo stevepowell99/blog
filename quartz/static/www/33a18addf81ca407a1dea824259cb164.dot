@@ -1,0 +1,32 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" color="/greys9/4" ];
+"Valve 3"->"Consumer"[arrowhead="nonenonenonediamond";samehead="v"] "Shop"->"Consumer"[penwidth="3";samehead="v"] "Valve 2"->"Shop"[arrowhead="nonenonenonediamond";samehead="v2"] "Warehouse"->"Shop"[samehead="v2";penwidth="3"] "Valve 1"->"Warehouse"[arrowhead="nonenonenonediamond";samehead="v1"] "Tree"->"Warehouse"[samehead="v1";penwidth="3"]
+graph [ style="rounded,filled";color="/purples9/3";fillcolor="/purples9/1";fontname="arial";labeljust="l";labelloc="t" ];
+"Consumer"[label=<Consumer<BR/>>][shape="oval"]
+"Valve 3"[label=<Valve 3<BR/>>][style="none";color="none";fontsize="8"]
+"Shop"[label=<Shop<BR/>>]
+"Valve 2"[label=<Valve 2<BR/>>][style="none";color="none";fontsize="8"]
+"Warehouse"[label=<Warehouse<BR/>>]
+"Valve 1"[label=<Valve 1<BR/>>][style="none";color="none";fontsize="8"]
+"Tree"[label=<Tree<BR/>>][shape="oval"]
+
+
+
+ bgcolor="white";fontsize="28";fontname="arial"
+
+
+}

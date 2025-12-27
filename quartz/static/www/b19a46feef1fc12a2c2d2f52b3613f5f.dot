@@ -1,0 +1,31 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";color="/greens9/1";fontname="helvetica";fontcolor="/greens9/8" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6";fontcolor="#CD5C5C60";penwidth="2";fontname="helvetica" ];
+"improved student exam results"->"improved student employment prospects//!heart" "improved student self-confidence//!heart"->"improved student exam results" "!do students attend workshop"->"improved student self-confidence//!heart" "improved teacher skills"->"improved student exam results" "!do teachers attend workshop"->"improved teacher skills"
+graph [ style="rounded,filled";color="#ffffff50";fontname="helvetica";labeljust="l";labelloc="t" ];
+"improved student employment prospects//!heart"[label=<improved<BR />student<BR />employment<BR />prospects<BR /><font color='orange'>&hearts;</font><BR/>>]
+"improved student exam results"[label=<improved<BR />student exam<BR />results<BR/>>]
+"improved student self-confidence//!heart"[label=<improved<BR />student<BR />self-confidence<BR /><font color='orange'>&hearts;</font><BR/>>]
+"!do students attend workshop"[label=<<font face="Courier">&#9654; </font> students<BR />attend<BR />workshop<BR/>>]
+"improved teacher skills"[label=<improved<BR />teacher<BR />skills<BR/>>]
+"!do teachers attend workshop"[label=<<font face="Courier">&#9654; </font> teachers<BR />attend<BR />workshop<BR/>>]
+
+
+
+ bgcolor="/greens9/3";fontsize="28";fontname="tahoma" label=<Try this instead>;fontcolor="/greens9/7";labelloc="b";labeljust="c";fontsize="11" wrap="12"
+
+
+}

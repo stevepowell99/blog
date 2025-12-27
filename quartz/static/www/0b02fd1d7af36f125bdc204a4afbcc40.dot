@@ -1,0 +1,27 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";color="/greens9/1";fontname="helvetica";fontcolor="/greens9/8" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6";fontcolor="#CD5C5C60";penwidth="2";fontname="helvetica" ];
+"~ For each day: Voter hears the day's speeches"->"day Election Thursday: Voter decides to vote for Tory party"
+graph [ style="rounded,filled";color="#ffffff50";fontname="helvetica";labeljust="l";labelloc="t" ];
+"day Election Thursday: Voter decides to vote for Tory party"[label=<day=Election Thursday:<BR />Voter decides to vote<BR />for Tory party<BR/>>]
+"~ For each day: Voter hears the day's speeches"[label=<~ For each day:<BR />Voter hears the day's<BR />speeches<BR/>>]
+
+
+
+ bgcolor="/greens9/3";fontsize="28";fontname="tahoma" label=<Try this instead>;fontcolor="/greens9/7";labelloc="b";labeljust="c";fontsize="11" wrap="22"
+
+
+}

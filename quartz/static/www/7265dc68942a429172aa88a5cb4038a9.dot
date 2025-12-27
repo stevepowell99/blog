@@ -1,0 +1,28 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" ];
+"~ Trainee skills during year !self"->"_^ Trainee scores in project-end assessment" "^_ Training delivered at project start"->"~ Trainee skills during year !self"
+graph [ style="rounded,filled";color="/purples9/2";fontname="arial";labeljust="l";labelloc="t" ];
+"_^ Trainee scores in project-end assessment"[label=<_^ Trainee<BR />scores in<BR />project-end<BR />assessment<BR/>>]
+"~ Trainee skills during year !self"[label=<~ Trainee<BR />skills during<BR />year &#x21BA;<BR/>>]
+"^_ Training delivered at project start"[label=<^_ Training<BR />delivered at<BR />project start<BR/>>]
+
+
+
+ bgcolor="white";fontsize="28";fontname="arial" wrap="16"
+
+
+}

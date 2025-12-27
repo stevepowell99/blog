@@ -1,0 +1,35 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";color="/greens9/1";fontname="helvetica";fontcolor="/greens9/8" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6";fontcolor="#CD5C5C60";penwidth="2";fontname="helvetica" ];
+"students receive laptops"->"students can pursue own study interests better//!heart" "students receive laptops"->"students better able to apply for jobs //!heart" "improved student classwork"->"improved student exam results//!heart" "student workshop 1"->"improved student classwork" "students receive laptops"->"improved student classwork" "improved student exam skills"->"improved student exam results//!heart" "student workshop 2"->"improved student exam skills" "student workshop 1"->"students can pursue own study interests better//!heart"
+graph [ style="rounded,filled";color="#ffffff50";fontname="helvetica";labeljust="l";labelloc="t" ];
+"students can pursue own study interests better//!heart"[label=<students can pursue<BR />own study interests<BR />better<BR /><font color='orange'>&hearts;</font><BR/>>]
+"students better able to apply for jobs //!heart"[label=<students better<BR />able to apply for<BR />jobs <BR /><font color='orange'>&hearts;</font><BR/>>]
+"students receive laptops"[label=<students receive<BR />laptops<BR/>>]
+"improved student exam results//!heart"[label=<improved student<BR />exam results<BR /><font color='orange'>&hearts;</font><BR/>>]
+"improved student classwork"[label=<improved student<BR />classwork<BR/>>]
+"student workshop 1"[label=<student workshop 1<BR/>>]
+"improved student exam skills"[label=<improved student<BR />exam skills<BR/>>]
+"student workshop 2"[label=<student workshop 2<BR/>>]
+
+"students receive laptops"[label=<students receive<BR />laptops<BR/>>]
+"students can pursue own study interests better//!heart"[label=<students can pursue<BR />own study interests<BR />better<BR /><font color='orange'>&hearts;</font><BR/>>]
+"student workshop 1"[label=<student workshop 1<BR/>>]
+
+ bgcolor="/greens9/3";fontsize="28";fontname="tahoma" label=<Try this instead>;fontcolor="/greens9/7";labelloc="b";labeljust="c";fontsize="11" wrap="20"
+
+
+}

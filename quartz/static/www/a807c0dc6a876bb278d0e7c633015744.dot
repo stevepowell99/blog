@@ -1,0 +1,35 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" ];
+" Flood risk below critical level !noyes"->"//Village sufficiently resilient !noyes !smile"[samehead="yes";style="dashed"] "!do Preparedness intervention !noyes"->" Flood risk below critical level !noyes" " Family income above critical level !noyes"->"//Village sufficiently resilient !noyes !smile"[samehead="yes";headlabel="AND";style="dashed"] "!do Livelihoods intervention !noyes"->" Family income above critical level !noyes"
+graph [ style="rounded,filled";color="/purples9/3";fillcolor="/purples9/1";fontname="arial";labeljust="l";labelloc="t" ];
+"//Village sufficiently resilient !noyes !smile"[label=<<BR />Village sufficiently<BR />resilient &#x25E8; &#x1F642;<BR/>>][style="dashed";color="/greens9/6"]
+ 
+subgraph cluster_Floodingsubproject {label=<Flooding sub-project<BR/>>color="/oranges9/3"
+" Flood risk below critical level !noyes"[label=<Flood risk below critical<BR />level &#x25E8;<BR/>>]
+"!do Preparedness intervention !noyes"[label=<<font color="green">&#9654; </font> Preparedness<BR />intervention &#x25E8;<BR/>>]
+}
+ 
+subgraph cluster_Livelihoodssubproject {label=<Livelihoods sub-project<BR/>>color="/oranges9/3"
+" Family income above critical level !noyes"[label=<Family income above critical<BR />level &#x25E8;<BR/>>]
+"!do Livelihoods intervention !noyes"[label=<<font color="green">&#9654; </font> Livelihoods<BR />intervention &#x25E8;<BR/>>]
+}
+
+
+ bgcolor="white";fontsize="28";fontname="arial"
+
+
+}

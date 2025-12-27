@@ -1,0 +1,35 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" ];
+"((Increased))  subject knowledge"->"((Improved))  exam performance" "!do content intervention"->"((Increased))  subject knowledge" "((Reduced))  anxiety"->"((Improved))  exam performance" "!do Anxiety intervention"->"((Reduced))  anxiety"
+graph [ style="rounded,filled";color="/purples9/3";fillcolor="/purples9/1";fontname="arial";labeljust="l";labelloc="t" ];
+"((Improved))  exam performance"[label=<<font color="green" >((Improved))</font> exam performance<BR/>>]
+ 
+subgraph cluster_Contentsubproject {label=<Content sub-project<BR/>>
+"((Increased))  subject knowledge"[label=<<font color="green" >((Increased))</font> subject<BR />knowledge<BR/>>]
+"!do content intervention"[label=<<font color="green">&#9654; </font> content intervention<BR/>>]
+}
+ 
+subgraph cluster_Anxietysubproject {label=<Anxiety sub-project<BR/>>
+"((Reduced))  anxiety"[label=<<font color="green" >((Reduced))</font> anxiety<BR/>>]
+"!do Anxiety intervention"[label=<<font color="green">&#9654; </font> Anxiety intervention<BR/>>]
+}
+
+
+ bgcolor="white";fontsize="28";fontname="arial"
+
+
+}

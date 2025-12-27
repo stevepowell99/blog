@@ -1,0 +1,62 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" ];
+ "1.1 Improved access to and use of sustainable sources of safe water in target communities"->"1  Reduce death and illness related to Water and Sanitation related diseases in the targeted communities"  "1.2 Improved access to and use of sustainable sanitation facilities among targeted communities"->"1  Reduce death and illness related to Water and Sanitation related diseases in the targeted communities"  "1.3 Enhanced practice of safe hygiene and sanitation in the household"->"1  Reduce death and illness related to Water and Sanitation related diseases in the targeted communities"  "1.1.1 Community water points constructed or rehabilitated"->"1.1 Improved access to and use of sustainable sources of safe water in target communities"  "1.1.2 Community management of water points is improved"->"1.1 Improved access to and use of sustainable sources of safe water in target communities"  "1.2.1 Sanitation facilities constructed"->"1.2 Improved access to and use of sustainable sanitation facilities among targeted communities"  "1.2.2 Sanitation facility use is promoted"->"1.2 Improved access to and use of sustainable sanitation facilities among targeted communities"  "1.2.3 Community management of sanitation facilities is improved"->"1.2 Improved access to and use of sustainable sanitation facilities among targeted communities"  "1.3.1 Household knowledge increased on safe hygiene and sanitation"->"1.3 Enhanced practice of safe hygiene and sanitation in the household"  "1.3.2 Household training on safe hygiene and sanitation provided"->"1.3 Enhanced practice of safe hygiene and sanitation in the household"
+graph [ style="rounded,filled";color="/purples9/3";fillcolor="/purples9/1";fontname="arial";labeljust="l";labelloc="t" ];
+ 
+subgraph cluster_Goal {label=<Goal<BR/>>fillcolor="/purples9/5";fontcolor="white"
+"1  Reduce death and illness related to Water and Sanitation related diseases in the targeted communities"[label=<1 Reduce death and illness<BR />related to Water and<BR />Sanitation related diseases in<BR />the targeted communities<BR/>>]
+}
+ 
+subgraph cluster_Outcomes {label=<Outcomes<BR/>>fillcolor="/purples9/3"
+ 
+subgraph cluster_Safewater {label=<Safe water<BR/>>fillcolor="/greens9/2"
+"1.1 Improved access to and use of sustainable sources of safe water in target communities"[label=<1.1 Improved access to and use<BR />of sustainable sources of safe<BR />water in target communities<BR/>>]
+}
+ 
+subgraph cluster_Improvedsanitation {label=<Improved sanitation<BR/>>fillcolor="/blues9/2"
+"1.2 Improved access to and use of sustainable sanitation facilities among targeted communities"[label=<1.2 Improved access to and<BR />use of sustainable sanitation<BR />facilities among targeted<BR />communities<BR/>>]
+}
+ 
+subgraph cluster_Improvedhygiene {label=<Improved hygiene<BR/>>fillcolor="/reds9/2"
+"1.3 Enhanced practice of safe hygiene and sanitation in the household"[label=<1.3 Enhanced practice of safe<BR />hygiene and sanitation in the<BR />household<BR/>>]
+}}
+ 
+subgraph cluster_Outputs {label=<Outputs<BR/>>fillcolor="/purples9/1"
+ 
+subgraph cluster_Safewaterduplicated {label=<Safe water<BR/>>fillcolor="/greens9/2"
+"1.1.1 Community water points constructed or rehabilitated"[label=<1.1.1 Community water points<BR />constructed or rehabilitated<BR/>>]
+"1.1.2 Community management of water points is improved"[label=<1.1.2 Community management of<BR />water points is improved<BR/>>]
+}
+ 
+subgraph cluster_Improvedsanitationduplicated {label=<Improved sanitation<BR/>>fillcolor="/blues9/2"
+"1.2.1 Sanitation facilities constructed"[label=<1.2.1 Sanitation facilities<BR />constructed<BR/>>]
+"1.2.2 Sanitation facility use is promoted"[label=<1.2.2 Sanitation facility use<BR />is promoted<BR/>>]
+"1.2.3 Community management of sanitation facilities is improved"[label=<1.2.3 Community management<BR />of sanitation facilities is<BR />improved<BR/>>]
+}
+ 
+subgraph cluster_Improvedhygieneduplicated {label=<Improved hygiene<BR/>>fillcolor="/reds9/2"
+"1.3.1 Household knowledge increased on safe hygiene and sanitation"[label=<1.3.1 Household knowledge<BR />increased on safe hygiene and<BR />sanitation<BR/>>]
+"1.3.2 Household training on safe hygiene and sanitation provided"[label=<1.3.2 Household training on<BR />safe hygiene and sanitation<BR />provided<BR/>>]
+}}
+{
+}
+
+
+ bgcolor="white";fontsize="28";fontname="arial" ratio=".45"
+
+
+}

@@ -1,0 +1,38 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" ];
+"Better teaching.   Teacher: !smile"->"Average teaching standard improved.   Ministry: !smile"[style="dashed"] "Better teaching.   Teacher: !smile"->"More outstanding teaching.   Trainer: !smile"[style="dashed"] "tr"->"Better teaching.   Teacher: !smile" "Teacher:  !do   Makes effort to attend course"->"tr" "Ministry: !do   Provides in-service teacher training"->"tr" "Trainer: !do   Provides pro-bono training  !smile"->"tr" "tr"->"Pay increased.   Teacher: !smile   Ministry: !frown"
+graph [ style="rounded,filled";color="/purples9/3";fillcolor="/purples9/1";fontname="arial";labeljust="l";labelloc="t" ];
+"Average teaching standard improved.   Ministry: !smile"[label=<Average teaching standard improved.<BR />Ministry: &#x1F642;<BR/>>][style="dashed"]
+"More outstanding teaching.   Trainer: !smile"[label=<More outstanding teaching.<BR />Trainer: &#x1F642;<BR/>>][style="dashed"]
+ 
+subgraph cluster_Foreachof20teachers {label=<For each of 20 teachers<BR/>>
+"Better teaching.   Teacher: !smile"[label=<Better teaching.<BR />Teacher: &#x1F642;<BR/>>]
+"tr"[label=<Teacher receives training<BR/>>]
+"Teacher:  !do   Makes effort to attend course"[label=<Teacher:  <font color="green">&#9654; </font><BR />Makes effort to attend course<BR/>>]
+}
+{
+"Ministry: !do   Provides in-service teacher training"[label=<Ministry: <font color="green">&#9654; </font><BR />Provides in-service teacher training<BR/>>]
+"Trainer: !do   Provides pro-bono training  !smile"[label=<Trainer: <font color="green">&#9654; </font><BR />Provides pro-bono training  &#x1F642;<BR/>>]
+"Pay increased.   Teacher: !smile   Ministry: !frown"[label=<Pay increased.<BR />Teacher: &#x1F642;<BR />Ministry: &#x1F641;<BR/>>]
+}
+"tr"[label=<tr<BR/>>]
+"tr"[label=<Teacher receives training<BR/>>]
+
+ bgcolor="white";fontsize="28";fontname="arial"
+
+
+}

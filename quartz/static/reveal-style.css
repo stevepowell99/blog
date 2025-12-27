@@ -1,0 +1,667 @@
+/*allows nav to to hover over it*/
+
+.reveal {
+position: unset;
+
+}
+
+@media print {  
+  @page {
+    size: 210mm 149mm; 
+    /* you can also specify margins here: */
+    margin: 10mm;
+    margin-right: 10mm; /* for compatibility with both A4 and Letter */
+  }
+}
+
+
+.hidden{
+  display: none !important;
+
+}
+
+.reveal section {
+  font-size: 16pt !important;
+  padding: 35px !important;
+  border-radius: 20px;
+  padding: 35px !important;
+  background-color: whitesmoke !important;
+  height: 90%;
+  text-align: left;
+ 
+}
+
+
+.yes {
+background-color: #bffbbf; 
+padding: 0 10px 10px 10px !important;
+margin-bottom: 10px;
+}
+
+
+.no {
+background-color: #f7d3c5; 
+padding: 0 10px 10px 10px !important;
+margin-bottom: 10px;
+}
+
+
+.reveal section img {
+    margin: 6px 0 0 0;
+    background: rgba(255, 255, 255, 0.12);
+    border: 0px solid #000 !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+.editlink {
+   font-size:x-small !important;
+}
+.dualoutput {
+
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+
+div.foldme{
+    margin-bottom: -15px;
+    margin-top: 20px;
+
+}
+div.tinylink {
+  font-size: x-small !important;
+  text-align: right !important;
+}
+
+
+
+.reveal h1 {
+  font-size: 170% !important;
+  font-family: "News Cycle", sans-serif;
+}
+
+h2 {
+  font-size: 1.35em !important;
+}
+
+
+
+
+/*navigation*/
+
+div.over{
+  margin-left: 1px;
+  margin-top: 1px;
+  width: 90px;
+  background-color: white;
+  padding: 5px;
+  font-family: sans-serif;
+  border: 1px solid gray;
+  font-size: 14px;
+}
+
+
+div.overholder{
+  
+  position: absolute;
+  top: 50px;
+  z-index: 999;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+  margin: 5px;
+    padding: 5px;
+    background-color: white;
+}
+
+
+
+#searchinput{
+  width: 110px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+
+}
+
+
+
+/*nav table stuff*/
+
+.reveal table td{
+vertical-align: top;
+    padding-left: 10px;
+    padding-right: 8px;
+}
+
+td.sym {
+  padding: 3px 10px 3px 10px !important;
+  width: 80px;
+  text-align: right !important;
+  vertical-align: middle !important;
+  /*line-height: 35px;*/
+
+}
+
+.reveal table td.type {
+font-size: 10px;
+
+}
+
+
+/*borders*/
+
+.reveal section.type-element::after{
+  content: "Element";
+  top: -10px;
+  position: absolute;
+  left: 5px;
+  border: 2px solid hsl(0, 30%, 80%);
+  background-color: hsl(0, 30%, 80%);
+  color: slategray;
+  border-radius: 3px;
+  padding: 2px;
+  font-size: small;
+}
+
+.reveal section.type-tip::after{
+  content: "Tip";
+  top: -10px;
+  position: absolute;
+  left: 5px;
+  border: 2px solid hsl(120, 30%, 80%);
+  background-color: hsl(120, 30%, 80%);
+  color: slategray;
+  border-radius: 3px;
+  padding: 2px;
+  font-size: small;
+}
+
+.reveal section.type-symbol::after{
+  content: "Symbol";
+  top: -10px;
+  position: absolute;
+  left: 5px;
+  border: 2px solid hsl(240, 30%, 80%);
+  background-color: hsl(240, 30%, 80%);
+  color: slategray;
+  border-radius: 3px;
+  padding: 2px;
+  font-size: small;
+}
+
+.reveal section.type-language::after{
+  content: "Language";
+  top: -10px;
+  position: absolute;
+  left: 5px;
+  border: 2px solid hsl(240, 0%, 80%);
+  background-color: hsl(240, 0%, 80%);
+  color: slategray;
+  border-radius: 3px;
+  padding: 2px;
+  font-size: small;
+}
+
+.reveal section.type-overview::after{
+  content: "Overview";
+  top: -10px;
+  position: absolute;
+  left: 5px;
+  border: 2px solid hsl(240, 0%, 80%);
+  background-color: hsl(300, 0%, 80%);
+  color: slategray;
+  border-radius: 3px;
+  padding: 2px;
+  font-size: small;
+}
+
+
+
+
+
+
+
+.reveal section::before{
+  content: "Press your left and right arrow keys to navigate, M for menu, F for full-screen, O for overview, H for home, ? for help";
+  bottom: -25px;
+  position: absolute;
+  right: 5px;
+  border: 2px solid darkgray;
+  background-color: whitesmoke;
+  color: slategray;
+  border-radius: 3px;
+  padding: 2px;
+  font-size: xx-small;
+  opacity: 0.99;
+}
+
+
+.reveal section.type-element{
+  border: 5px solid hsl(0, 30%, 80%) !important;
+}
+
+.reveal table td.type-element{
+  background-color: hsl(0, 30%, 80%) !important;
+}
+
+.reveal section.type-tip{
+  border: 5px solid hsl(120, 30%, 80%) !important;
+}
+
+.reveal table td.type-tip{
+  background-color: hsl(120, 30%, 80%) !important;
+}
+
+.reveal section.type-symbol{
+  border: 5px solid hsl(240, 30%, 80%) !important;
+}
+
+.reveal table td.type-symbol{
+  background-color: hsl(240, 30%, 80%) !important;
+}
+
+
+.reveal section.type-language{
+  border: 5px solid hsl(240, 0%, 80%) !important;
+}
+
+.reveal table td.type-language{
+  background-color: hsl(240, 0%, 80%) !important;
+}
+
+
+.reveal section.type-overview{
+  border: 5px solid hsl(300, 0%, 80%) !important;
+}
+
+.reveal table td.type-overview{
+  background-color: hsl(300, 0%, 80%) !important;
+}
+
+
+
+html.overview body {
+  /*background:url("images/raiders_warehouse.jpg");*/
+  /*background-position:center;*/
+  /*background-size: 100%;*/
+  background-color:  hsl(250, 20%, 50%);
+}
+html body {
+  /*background:url("images/raiders_warehouse.jpg");*/
+  /*background-position:center;*/
+  /*background-size: 100%;*/
+  background-color: hsl(250, 20%, 30%);
+}
+
+div .slide-menu-button > a{
+  color:whitesmoke;
+}
+
+tr.contentsheader{
+  background-color: hsl(250, 20%, 50%);
+  color: whitesmoke;
+}
+
+tr.contentsfooter{
+  background-color: hsl(250, 20%, 90%);
+  color: whitesmoke;
+}
+
+table.contentstable{
+  border: 2px solid hsl(250, 20%, 50%);
+  margin-top: 10px;
+}
+
+
+.multiCol {
+    display: table;
+    table-layout: fixed; // don't fudge depending on content
+    width: 100%;
+    text-align: left; // matter of taste, makes imho sense
+}
+
+
+.col {
+  vertical-align: top !important;
+}
+
+.col>blockquote{
+  width: 88% !important;
+}
+
+
+.col {
+    display: table-cell;
+    text-align: left !important; 
+    /*background-color: aliceblue;*/
+    border-width:  0 1px 0 1px !important; 
+    border-style: solid !important;
+    border-color:  hsla(250, 20%, 30%, .05) !important;
+        /*box-shadow: 0px 0px 2px /*rgba(0, 0, 0, 0.2);*/
+    width: 50%;
+    padding: 0 1% 0 2% !important; // some vertical, and between columns
+    &:first-of-type { padding-left: 0; !important;} // there's nothing before col1
+}
+
+.col3 {
+    width: 33% !important;
+    
+}
+
+
+.reveal blockquote {
+    border-color:  hsla(250, 20%, 30%, .05) !important;
+    box-shadow: none !important;
+    border-width:  0 0 1px 0!important; 
+    border-style: solid !important;
+    font-style: unset;
+    background-color: white;
+    padding-bottom: 0;
+}
+
+.reveal blockquote:after {
+  content: "Definition";
+  top: 0;
+  position: absolute;
+  left: -15px;
+  border: 2px solid #BDC;
+  background-color: #CED;
+  border-radius: 3px;
+  padding: 2px;
+  font-size: small;
+}
+
+
+
+blockquote strong>em{
+  background-color: #CED;
+  font-style: normal !important;
+}
+
+
+.reveal p {
+    margin: 20px 0 10px 0;
+    
+}
+
+.reveal pre{
+    background-color: white;
+     width: 100%; 
+     margin: 0px auto; 
+     font-size: inherit; 
+     line-height: inherit; 
+     word-wrap: inherit; 
+     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); 
+     overflow: inherit;
+
+}
+
+.reveal pre>code{
+       font-family: sans-serif !important; 
+       overflow: none;
+}
+
+.reveal code{
+background-color: aliceblue;
+margin: 0 6px 0 6px;
+}
+
+
+.twitterholder {
+    top: 10px;
+    right: 10px;
+    display: inline;
+    position: fixed;
+    width: 250px;
+    height: 100px;
+}
+
+a:hover{
+  background-color:white !important;
+}
+
+.fa-linkedin, .fa-twitter, .fa-print, .fa-home{
+    background-color: white;
+    color:purple;
+    opacity: 0.8;
+    padding: 2px;  
+}
+
+.fa-print, .fa-twitter{
+  margin-right: 20px;
+}
+.statement{
+padding: 0 5px 10px 15px;
+background-color: white;
+margin-bottom: 5px !important;
+font-family: monospace !important;
+margin-left: 2px !important;
+
+
+
+}
+
+.apps {
+    font-family: sans-serif;
+    font-weight: bolder;
+    background-color: white;
+    color:purple;
+    text-decoration: none !important;
+    opacity: 0.8;
+    padding: 2px;  
+}
+
+
+.small{
+  font-size:small !important;
+}
+
+.medium{
+  font-size:medium !important;
+}
+
+
+.link-with-popup {
+  position: relative;
+  z-index: 100;
+  margin-bottom: 10px;
+  font: normal 11px tahoma;
+}
+
+.link-with-popup:hover {
+  z-index: 200;
+}
+
+.link {
+  /* stylish design */
+  background: #E0EAF1;
+  padding: 10px 0;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.link:hover {
+  background: #c4dae9;
+}
+
+.link:active + .popup {
+  display: block;
+}
+
+.popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  bottom: 0;
+  display: none;
+}
+
+.popup:hover {
+  display: block;
+}
+
+.popup .box {
+  position: absolute;
+  top: 0;
+  left: 130px;
+  right: 0;
+  bottom: 0;
+  background: #505050;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+
+
+div .note{
+top: 20px;
+right: 0;
+background-color: hsla(100,0%,90%,.95);
+}
+
+div .moti{
+top: 20px;
+right: 0;
+background-color: hsla(100,0%,90%,.95);
+}
+
+div .form{
+top: 20px;
+right: 0;
+background-color: hsla(100,0%,90%,.95);
+}
+
+div .allblock{
+display: none;
+    position: absolute;
+    top:20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0;
+    font-size: smaller !important;
+}
+ 
+
+div .footblock{
+background-color: hsla(100,0%,90%,.95);
+display: none;
+position: absolute;
+z-index: 998;
+padding: 10px;    
+border-radius: 10px;
+margin: 10px;
+font-size: smaller !important;
+}
+ 
+
+body.print-pdf div.allblock span.footblock{
+display: block !important;
+position: relative !important;
+}
+
+
+a:hover + span {
+    display: block;
+}    
+    
+a:hover + div {
+    display: block;
+}    
+a.notelink {
+    top:5px;
+    right:220px;
+} 
+a.formlink {
+    top:5px;
+    right:120px;
+} 
+
+a.motilink {
+    top:5px;
+    right:20px;
+} 
+
+a.alllink {
+    position: absolute;
+    font-size: small;
+    background-color: aliceblue;
+    
+} 
+
+.info{
+  padding: 1px 3px 1px 3px !important;
+  border: 1px solid black !important;
+    border-radius: 4px;
+}
+
+a.footlink {
+    font-size: small;
+    background-color: aliceblue;
+    
+} 
+
+.reveal a{ 
+color: rgb(55,20,200);
+}
+
+p.caption {
+  font-size: 60%;
+  margin-top: 5px;
+}
+
+
+#refs>div>p{
+  font-size: small;
+  line-height: .9;
+}
+
+.date>img{
+  height:70%;
+  width:100%;
+  position: absolute;
+  bottom:0;
+
+  z-index: -99;
+  box-shadow: 0 0 0 0 !important;
+}
+
+.spacebar {
+  position: absolute;
+  font-size: small !important;
+  bottom:30px;
+}
+
+
+div .left{
+  width:50% !important;
+  left:0;
+}
+div .right{
+  width:50% !important;
+  right:0;
+}
+
+
+
+
+
+
+.open {
+  width: 200px !important;
+  height: 400px !important;
+  z-index: 9999
+
+}
+
+.open>p{
+  font-size: 12px;
+}
+
+.open textarea{
+  min-height: 200px !important;
+  width: 200px !important;
+}

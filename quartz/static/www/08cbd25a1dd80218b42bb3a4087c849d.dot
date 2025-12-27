@@ -1,0 +1,31 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";color="/oranges9/2";fontname="helvetica" ];
+edge [labeldistance=1.5;headlabel="" color="/greys9/6";fontcolor="#CD5C5C60";penwidth="2";fontname="helvetica" ];
+"Output: improved student classwork"->"Outcome: improved student exam results" "Activity: student workshop 1 held"->"Output: improved student classwork" "Activity: students given laptops"->"Output: improved student classwork" "Output: improved student exam skills"->"Outcome: improved student exam results" "Activity: student workshop 2 held"->"Output: improved student exam skills"
+graph [ style="rounded,filled";color="#ffffff50";fontname="helvetica";labeljust="l";labelloc="t" ];
+"Outcome: improved student exam results"[label=<Outcome:<BR />improved<BR />student exam<BR />results<BR/>>][color="/oranges9/5"]
+"Output: improved student classwork"[label=<Output:<BR />improved<BR />student<BR />classwork<BR/>>][color="/oranges9/3"]
+"Activity: student workshop 1 held"[label=<Activity:<BR />student<BR />workshop 1<BR />held<BR/>>][color="/oranges9/1"]
+"Activity: students given laptops"[label=<Activity:<BR />students<BR />given<BR />laptops<BR/>>][color="/oranges9/1"]
+"Output: improved student exam skills"[label=<Output:<BR />improved<BR />student exam<BR />skills<BR/>>][color="/oranges9/3"]
+"Activity: student workshop 2 held"[label=<Activity:<BR />student<BR />workshop 2<BR />held<BR/>>][color="/oranges9/1"]
+
+
+
+ bgcolor="/greys9/3";fontsize="28";fontname="tahoma" label=<You don't have to stick to this format>;fontcolor="/greys9/7";labelloc="b";labeljust="c";fontsize="11" wrap="12"
+
+
+}

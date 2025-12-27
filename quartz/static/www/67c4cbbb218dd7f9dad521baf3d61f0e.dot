@@ -1,0 +1,31 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";color="/oranges9/2";fontname="helvetica" ];
+edge [labeldistance=1.5;headlabel="" color="/greys9/6";fontcolor="#CD5C5C60";penwidth="2";fontname="helvetica" ];
+"Output: (in six months) improved student classwork"->"Outcome: (next year) improved student exam results" "Activity: student //workshop 1 held"->"Output: (in six months) improved student classwork" "Activity: students given laptops"->"Output: (in six months) improved student classwork" "Output: (in six months) improved student exam skills"->"Outcome: (next year) improved student exam results" "Activity: student //workshop 2 held"->"Output: (in six months) improved student exam skills"
+graph [ style="rounded,filled";color="#ffffff50";fontname="helvetica";labeljust="l";labelloc="t" ];
+"Outcome: (next year) improved student exam results"[label=<Outcome: (next<BR />year) improved<BR />student exam<BR />results<BR/>>][color="/oranges9/5"]
+"Output: (in six months) improved student classwork"[label=<Output: (in<BR />six months)<BR />improved student<BR />classwork<BR/>>][color="/oranges9/3"]
+"Activity: student //workshop 1 held"[label=<Activity:<BR />student <BR />workshop<BR />1 held<BR/>>][color="/oranges9/1"]
+"Activity: students given laptops"[label=<Activity:<BR />students given<BR />laptops<BR/>>][color="/oranges9/1"]
+"Output: (in six months) improved student exam skills"[label=<Output: (in six<BR />months) improved<BR />student exam<BR />skills<BR/>>][color="/oranges9/3"]
+"Activity: student //workshop 2 held"[label=<Activity:<BR />student <BR />workshop<BR />2 held<BR/>>][color="/oranges9/1"]
+
+
+
+ bgcolor="/greys9/3";fontsize="28";fontname="tahoma" label=<You don't have to stick to this format>;fontcolor="/greys9/7";labelloc="b";labeljust="c";fontsize="11" wrap="16"
+
+
+}

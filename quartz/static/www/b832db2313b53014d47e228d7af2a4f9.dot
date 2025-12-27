@@ -1,0 +1,28 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" ];
+"Teaching quality"->"Student achievement  (I value this)" "Quality of teacher training (I can control this)"->"Teaching quality"
+graph [ style="rounded,filled";color="/purples9/2";fontname="arial";labeljust="l";labelloc="t" ];
+"Student achievement  (I value this)"[label=<Student<BR />achievement<BR />(I value<BR />this)<BR/>>]
+"Teaching quality"[label=<Teaching<BR />quality<BR/>>]
+"Quality of teacher training (I can control this)"[label=<Quality<BR />of teacher<BR />training (I<BR />can control<BR />this)<BR/>>]
+
+
+
+ bgcolor="white";fontsize="28";fontname="arial" wrap="12"
+
+
+}

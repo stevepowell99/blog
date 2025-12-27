@@ -1,0 +1,30 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";color="/greens9/1";fontname="helvetica";fontcolor="/greens9/8" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6";fontcolor="#CD5C5C60";penwidth="2";fontname="helvetica" ];
+"axsxdf"->"My party wins election (14 days from today - very brief event with longer-term consequences) __^"[arrowhead="normal";penwidth="0";constraint="NA";arrowsize="1 )"] "Electorate: more favourable voting intentions (today until election) ~"->"My party wins election (14 days from today - very brief event with longer-term consequences) __^" "axsxdf"->"Electorate: more favourable voting intentions (today until election) ~"[arrowhead="normal";penwidth="0";constraint="NA";arrowsize="1 )"] "Campaign running: (today until election) ~"->"Electorate: more favourable voting intentions (today until election) ~" "Key speeches: (in 3 & 7 days' time) ^^_"->"Electorate: more favourable voting intentions (today until election) ~"
+graph [ style="rounded,filled";color="#ffffff50";fontname="helvetica";labeljust="l";labelloc="t" ];
+"My party wins election (14 days from today - very brief event with longer-term consequences) __^"[label=<My party wins<BR />election (14<BR />days from today<BR />- very brief<BR />event with<BR />longer-term<BR />consequences)<BR />__^<BR/>>]
+"axsxdf"[label=<axsxdf<BR/>>][fixedsize="true";height="0";style="invis"]
+"Electorate: more favourable voting intentions (today until election) ~"[label=<Electorate:<BR />more favourable<BR />voting<BR />intentions<BR />(today until<BR />election) ~<BR/>>]
+"Campaign running: (today until election) ~"[label=<Campaign<BR />running: (today<BR />until election)<BR />~<BR/>>]
+"Key speeches: (in 3 & 7 days' time) ^^_"[label=<Key speeches:<BR />(in 3 &amp; 7 days'<BR />time) ^^_<BR/>>]
+
+"axsxdf"[label=<axsxdf<BR/>>][fixedsize="true";height="0";style="invis"]
+
+ bgcolor="/greens9/3";fontsize="28";fontname="tahoma" label=<Try this instead>;fontcolor="/greens9/7";labelloc="b";labeljust="c";fontsize="11" wrap="16" label=<This is possible too>
+
+
+}

@@ -1,0 +1,35 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" ];
+" Flood risk !lohi"->"Village resilience !noyes !heart "[label=<⊖>;style="dashed"] " !do Preparedness intervention !noyes"->" Flood risk !lohi"[label=<⊖>] "*Increased* family income !lohi"->"Village resilience !noyes !heart "[label=<⊕>;style="dashed"] "!do Livelihoods intervention !noyes"->"*Increased* family income !lohi"[label=<⊕>]
+graph [ style="rounded,filled";color="/purples9/3";fillcolor="/purples9/1";fontname="arial";labeljust="l";labelloc="t" ];
+"Village resilience !noyes !heart "[label=<Village<BR />resilience ◨ <font color='orange'>&hearts;</font><BR/>>][style="dashed";color="/greens9/6"]
+ 
+subgraph cluster_Floodingsubproject {label=<Flooding sub-project<BR/>>
+" Flood risk !lohi"[label=<Flood risk ◪<BR/>>]
+" !do Preparedness intervention !noyes"[label=<<font color="green">&#9654; </font> Preparedness<BR />intervention ◨<BR/>>]
+}
+ 
+subgraph cluster_Livelihoodssubproject {label=<Livelihoods sub-project<BR/>>
+"*Increased* family income !lohi"[label=<<font  color="darkgreen">*Increased* </font> family<BR />income ◪<BR/>>]
+"!do Livelihoods intervention !noyes"[label=<<font color="green">&#9654; </font> Livelihoods<BR />intervention ◨<BR/>>]
+}
+
+
+ bgcolor="white";fontsize="28";fontname="arial"
+
+
+}

@@ -1,0 +1,35 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";color="/greens9/1";fontname="helvetica";fontcolor="/greens9/8" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6";fontcolor="#CD5C5C60";penwidth="2";fontname="helvetica" ];
+"Teachers attend training"->"Student-teacher interaction is more solution-oriented" "Teachers attend workshops"->"Student-teacher interaction is more solution-oriented" "Students attend workshops"->"Student-teacher interaction is more solution-oriented" "Students take part in discussion on social media"->"Student-teacher interaction is more solution-oriented"
+graph [ style="rounded,filled";color="#ffffff50";fontname="helvetica";labeljust="l";labelloc="t" ];
+"Student-teacher interaction is more solution-oriented"[label=<Student-teacher<BR />interaction is more<BR />solution-oriented<BR/>>]
+ 
+subgraph cluster_Activitiesforteachers {label=<Activities for<BR />teachers<BR/>>
+"Teachers attend training"[label=<Teachers attend<BR />training<BR/>>]
+"Teachers attend workshops"[label=<Teachers attend<BR />workshops<BR/>>]
+}
+ 
+subgraph cluster_Activitiesforstudents {label=<Activities for<BR />students<BR/>>
+"Students attend workshops"[label=<Students attend<BR />workshops<BR/>>]
+"Students take part in discussion on social media"[label=<Students take part<BR />in discussion on<BR />social media<BR/>>]
+}
+
+
+ bgcolor="/greens9/3";fontsize="28";fontname="tahoma" label=<Try this instead>;fontcolor="/greens9/7";labelloc="b";labeljust="c";fontsize="11" wrap="20"
+
+
+}

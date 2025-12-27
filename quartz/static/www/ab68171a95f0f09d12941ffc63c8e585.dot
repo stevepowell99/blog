@@ -1,0 +1,29 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" ];
+"xkcdaxis(xrange   c(-20,5),yrange   c(0,5))+"->"myplot+geom_line(data NULL,aes(-20:3,-20:3 %!gt% map_dbl(function(x)500/(100+2^-x))))+" "ylab('Consequence Variable')+"->"xkcdaxis(xrange   c(-20,5),yrange   c(0,5))+" "xlab('Influence Variable')"->"xkcdaxis(xrange   c(-20,5),yrange   c(0,5))+"
+graph [ style="rounded,filled";color="/purples9/2";fontname="arial";labeljust="l";labelloc="t" ];
+"myplot+geom_line(data NULL,aes(-20:3,-20:3 %!gt% map_dbl(function(x)500/(100+2^-x))))+"[label=<myplot+geom_line(data=NULL,aes(-20:3,-20:3<BR />%&gt;%<BR />map_dbl(function(x)500/(100+2^-x))))+<BR/>>]
+"xkcdaxis(xrange   c(-20,5),yrange   c(0,5))+"[label=<xkcdaxis(xrange =<BR />c(-20,5),yrange = c(0,5))+<BR/>>]
+"ylab('Consequence Variable')+"[label=<ylab('Consequence Variable')+<BR/>>]
+"xlab('Influence Variable')"[label=<xlab('Influence Variable')<BR/>>]
+
+
+
+ bgcolor="white";fontsize="28";fontname="arial"
+
+
+}

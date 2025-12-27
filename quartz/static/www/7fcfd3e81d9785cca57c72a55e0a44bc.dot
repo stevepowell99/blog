@@ -1,0 +1,42 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" ];
+"c"->"a" "c"->"b" "d"->"a" "d"->"b" "Inputs"->"c" "Inputs"->"d" "a"->"Shared values !heart"[headlabel="֍";style="dashed"] "b"->"Shared values !heart"[headlabel="֍";style="dashed"] "c"->"Shared values !heart"[headlabel="֍";style="dashed"] "d"->"Shared values !heart"[headlabel="֍";style="dashed"]
+graph [ style="rounded,filled";color="/purples9/3";fillcolor="/purples9/1";fontname="arial";labeljust="l";labelloc="t" ];
+"a"[label=<Official program goal<BR />Officially: <font color='orange'>&hearts;</font><BR/>>]
+"b"[label=<Some other interesting outcome<BR/>>]
+"c"[label=<Some intermediate outcome 1<BR/>>]
+"d"[label=<Some intermediate outcome 2<BR/>>]
+"Inputs"[label=<Inputs<BR/>>]
+"Shared values !heart"[label=<Shared values <font color='orange'>&hearts;</font><BR/>>][style="dashed !spiral"]
+
+"a"[label=<a<BR/>>]
+"b"[label=<b<BR/>>]
+"c"[label=<c<BR/>>]
+"d"[label=<d<BR/>>]
+"a"[label=<a<BR/>>]
+"b"[label=<b<BR/>>]
+"c"[label=<c<BR/>>]
+"d"[label=<d<BR/>>]
+"a"[label=<Official program goal<BR />Officially: <font color='orange'>&hearts;</font><BR/>>]
+"b"[label=<Some other interesting outcome<BR/>>]
+"c"[label=<Some intermediate outcome 1<BR/>>]
+"d"[label=<Some intermediate outcome 2<BR/>>]
+
+ bgcolor="white";fontsize="28";fontname="arial"
+
+
+}

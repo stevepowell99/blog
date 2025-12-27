@@ -1,0 +1,34 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" ];
+"!do Livelihoods intervention !noyes"->" Family income !lohi !heart"[label=<⊕>] " !do Preparedness intervention !noyes"->"fr"[label=<⊖>]
+graph [ style="rounded,filled";color="/purples9/3";fillcolor="/purples9/1";fontname="arial";labeljust="l";labelloc="t" ];
+ 
+subgraph cluster_VillageResilience {label=<Village Resilience<BR/>>
+"fr"[label=<Flood risk &#x25EA; &#x1F641;<BR/>>]
+" Family income !lohi !heart"[label=<Family income &#x25EA; <font color='orange'>&hearts;</font><BR/>>]
+}
+{
+"!do Livelihoods intervention !noyes"[label=<<font color="green">&#9654; </font> Livelihoods intervention &#x25E8;<BR/>>]
+" !do Preparedness intervention !noyes"[label=<<font color="green">&#9654; </font> Preparedness intervention &#x25E8;<BR/>>]
+}
+"fr"[label=<fr<BR/>>]
+"fr"[label=<Flood risk &#x25EA; &#x1F641;<BR/>>]
+
+ bgcolor="white";fontsize="28";fontname="arial" wrap="99"
+
+
+}

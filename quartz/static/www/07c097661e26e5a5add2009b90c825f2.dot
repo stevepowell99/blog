@@ -1,0 +1,27 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";color="/oranges9/2";fontname="helvetica" ];
+edge [labeldistance=1.5;headlabel="" color="/greys9/6";fontcolor="#CD5C5C60";penwidth="2";fontname="helvetica" ];
+"Voter hears speeches"->"Voter decides to vote for Tory party"
+graph [ style="rounded,filled";color="#ffffff50";fontname="helvetica";labeljust="l";labelloc="t" ];
+"Voter decides to vote for Tory party"[label=<Voter decides<BR />to vote for Tory<BR />party<BR/>>]
+"Voter hears speeches"[label=<Voter hears<BR />speeches<BR/>>]
+
+
+
+ bgcolor="/greys9/3";fontsize="28";fontname="tahoma" label=<You don't have to stick to this format>;fontcolor="/greys9/7";labelloc="b";labeljust="c";fontsize="11" label=<In most ordinary Theories of Change, you usually can't tell if a Variable stretches across time, is repeated, or not.> wrap="16"
+
+
+}

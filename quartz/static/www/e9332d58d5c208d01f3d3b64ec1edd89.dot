@@ -1,0 +1,32 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";color="/oranges9/2";fontname="helvetica" ];
+edge [labeldistance=1.5;headlabel="" color="/greys9/6";fontcolor="#CD5C5C60";penwidth="2";fontname="helvetica" ];
+ "A.1 Outcome 1"->"A. Goal"  "A.1.a Output"->"A.1 Outcome 1"  "A.1.b Output"->"A.1 Outcome 1"  "A.2 Outcome 2"->"A. Goal"  "A.2.a Output"->"A.2 Outcome 2"  "A.2.b Output"->"A.2 Outcome 2"
+graph [ style="rounded,filled";color="#ffffff50";fontname="helvetica";labeljust="l";labelloc="t" ];
+"A. Goal"[label=<A. Goal<BR/>>]
+"A.1 Outcome 1"[label=<A.1 Outcome 1<BR/>>]
+"A.1.a Output"[label=<A.1.a Output<BR/>>]
+"A.1.b Output"[label=<A.1.b Output<BR/>>]
+"A.2 Outcome 2"[label=<A.2 Outcome 2<BR/>>]
+"A.2.a Output"[label=<A.2.a Output<BR/>>]
+"A.2.b Output"[label=<A.2.b Output<BR/>>]
+
+
+
+ bgcolor="/greys9/3";fontsize="28";fontname="tahoma" label=<You don't have to stick to this format>;fontcolor="/greys9/7";labelloc="b";labeljust="c";fontsize="11"
+
+
+}

@@ -1,0 +1,35 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" ];
+" ((Significantly reduced)) flood risk !lohi !frown"->"Village resilience !lohi"[label=<⊖>;style="dashed"] " !do Preparedness intervention !tick"->" ((Significantly reduced)) flood risk !lohi !frown"[label=<⊖>] " Average family income ((5USD/day rather_than 4USD/day)) !lohi !smile"->"Village resilience !lohi"[label=<⊕>;style="dashed"] "!do Livelihoods intervention !tick"->" Average family income ((5USD/day rather_than 4USD/day)) !lohi !smile"[label=<⊕>]
+graph [ style="rounded,filled";color="/purples9/3";fillcolor="/purples9/1";fontname="arial";labeljust="l";labelloc="t" ];
+"Village resilience !lohi"[label=<Village resilience &#x25EA;<BR/>>][style="dashed";color="/greens9/6"]
+ 
+subgraph cluster_Floodingsubproject {label=<Flooding sub-project<BR/>>color="/oranges9/3"
+" ((Significantly reduced)) flood risk !lohi !frown"[label=<<font color="green" >((Significantly reduced))</font> flood risk &#x25EA; &#x1F641;<BR/>>]
+" !do Preparedness intervention !tick"[label=<<font color="green">&#9654; </font> Preparedness intervention <font color="green">&#x2714;</font><BR/>>]
+}
+ 
+subgraph cluster_Livelihoodssubproject {label=<Livelihoods sub-project<BR/>>color="/oranges9/3"
+" Average family income ((5USD/day rather_than 4USD/day)) !lohi !smile"[label=<Average family income <font color="green" >((5USD/day rather_than 4USD/day))</font> &#x25EA; &#x1F642;<BR/>>]
+"!do Livelihoods intervention !tick"[label=<<font color="green">&#9654; </font> Livelihoods intervention <font color="green">&#x2714;</font><BR/>>]
+}
+
+
+ bgcolor="white";fontsize="28";fontname="arial" wrap="99"
+
+
+}

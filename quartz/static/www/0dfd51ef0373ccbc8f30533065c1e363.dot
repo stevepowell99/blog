@@ -1,0 +1,33 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" ];
+"S"->"S"[label=<delay:1>] "W"->"S"[label=<delay:1>] "W"->"W"[label=<delay:1>] "Valve 2"->"S" "Valve 2"->"W"
+graph [ style="rounded,filled";color="/purples9/3";fillcolor="/purples9/1";fontname="arial";labeljust="l";labelloc="t" ];
+"S"[label=<S<BR/>>]
+"W"[label=<W<BR/>>]
+"Valve 2"[label=<Valve 2<BR/>>]
+
+"S"[label=<S<BR/>>]
+"W"[label=<W<BR/>>]
+"S"[label=<S<BR/>>]
+"W"[label=<W<BR/>>]
+"W"[label=<Warehouse<BR />(Influence: Upstream)<BR/>>]
+"S"[label=<Shop<BR />(Influence: Downstream)<BR/>>]
+
+ bgcolor="white";fontsize="28";fontname="arial"
+
+
+}

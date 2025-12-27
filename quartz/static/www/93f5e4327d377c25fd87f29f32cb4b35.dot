@@ -1,0 +1,35 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" ];
+" Flood risk///((low rather_than high)) !lohi !frown"->"((Improved))  village resilience !lohi"[label=<⊖>;style="dashed"] " !do Preparedness intervention !tick"->" Flood risk///((low rather_than high)) !lohi !frown"[label=<⊖>] " Average family income ///((5USD rather_than 4USD)) !lohi !smile"->"((Improved))  village resilience !lohi"[label=<⊕>;style="dashed"] "!do Livelihoods intervention !tick"->" Average family income ///((5USD rather_than 4USD)) !lohi !smile"[label=<⊕>]
+graph [ style="rounded,filled";color="/purples9/3";fillcolor="/purples9/1";fontname="arial";labeljust="l";labelloc="t" ];
+"((Improved))  village resilience !lohi"[label=<<font color="green" >((Improved))</font> village resilience &#x25EA;<BR/>>][style="dashed";color="/greens9/6"]
+ 
+subgraph cluster_Floodingsubproject {label=<Flooding sub-project<BR/>>color="/oranges9/3"
+" Flood risk///((low rather_than high)) !lohi !frown"[label=< Flood risk<BR /><font color="green" >((low rather_than high))</font> &#x25EA; &#x1F641;<BR/>>]
+" !do Preparedness intervention !tick"[label=<<font color="green">&#9654; </font> Preparedness intervention <font color="green">&#x2714;</font><BR/>>]
+}
+ 
+subgraph cluster_Livelihoodssubproject {label=<Livelihoods sub-project<BR/>>color="/oranges9/3"
+" Average family income ///((5USD rather_than 4USD)) !lohi !smile"[label=< Average family income <BR /><font color="green" >((5USD rather_than 4USD))</font> &#x25EA; &#x1F642;<BR/>>]
+"!do Livelihoods intervention !tick"[label=<<font color="green">&#9654; </font> Livelihoods intervention <font color="green">&#x2714;</font><BR/>>]
+}
+
+
+ bgcolor="white";fontsize="28";fontname="arial" wrap="99"
+
+
+}

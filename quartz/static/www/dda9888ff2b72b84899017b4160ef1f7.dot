@@ -1,0 +1,28 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" ];
+"More innovation at Universities in Croatia !spiral"->"Universities in Croatia are more successful" "Support given to innovation at Universities in Croatia"->"More innovation at Universities in Croatia !spiral"
+graph [ style="rounded,filled";color="/purples9/2";fontname="arial";labeljust="l";labelloc="t" ];
+"Universities in Croatia are more successful"[label=<Universities in<BR />Croatia are more<BR />successful<BR/>>]
+"More innovation at Universities in Croatia !spiral"[label=<More<BR />innovation at<BR />Universities in<BR />Croatia &#x058D;<BR/>>]
+"Support given to innovation at Universities in Croatia"[label=<Support given<BR />to innovation at<BR />Universities in<BR />Croatia<BR/>>]
+
+
+
+ bgcolor="white";fontsize="28";fontname="arial" wrap="16"
+
+
+}

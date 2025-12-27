@@ -1,0 +1,31 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" ];
+"Legislators have more favourable views !smile"->"Law on same-sex marriage is passed !smile" "Other campaign  lobbies legislators"->"Legislators have more favourable views !smile" "Public opinion improves !smile"->"Legislators have more favourable views !smile" "!do Our campaign is launched"->"Public opinion improves !smile" "Celebrities speak out"->"Public opinion improves !smile"
+graph [ style="rounded,filled";color="/purples9/3";fillcolor="/purples9/1";fontname="arial";labeljust="l";labelloc="t" ];
+"Law on same-sex marriage is passed !smile"[label=<Law on<BR />same-sex<BR />marriage<BR />is<BR />passed &#x1F642;<BR/>>]
+"Legislators have more favourable views !smile"[label=<Legislators<BR />have more<BR />favourable<BR />views &#x1F642;<BR/>>]
+"Other campaign  lobbies legislators"[label=<Other<BR />campaign<BR />lobbies<BR />legislators<BR/>>]
+"Public opinion improves !smile"[label=<Public<BR />opinion<BR />improves &#x1F642;<BR/>>]
+"!do Our campaign is launched"[label=<<font color="green">&#9654; </font> Our<BR />campaign<BR />is<BR />launched<BR/>>]
+"Celebrities speak out"[label=<Celebrities<BR />speak out<BR/>>]
+
+
+
+ bgcolor="white";fontsize="28";fontname="arial" wrap="10"
+
+
+}

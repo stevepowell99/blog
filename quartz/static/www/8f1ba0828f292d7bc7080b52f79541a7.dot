@@ -1,0 +1,36 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";color="white" color="/greys9/3" ];
+edge [labeldistance=1.5;headlabel="" ];
+"b"->"a" "c"->"a" "d"->"b" "d"->"c" "e"->"b" "e"->"c" "f"->"b" "f"->"c" "g"->"b" "h"->"b" "i"->"g" "i"->"h" "j"->"g" "j"->"h" "k"->"g" "k"->"h"
+graph [ labeljust="r" ];
+"a"[label=<a<BR/>>][color="/greens9/3"]
+"b"[label=<b<BR/>>][color="/reds9/3"]
+"c"[label=<c<BR/>>][color="/reds9/3"]
+"d"[label=<d<BR/>>][color="/blues9/3"]
+"e"[label=<e<BR/>>][color="/blues9/3"]
+"f"[label=<f<BR/>>][color="/blues9/3"]
+"g"[label=<g<BR/>>][color="/greens9/3"]
+"h"[label=<h<BR/>>][color="/greens9/3"]
+"i"[label=<i<BR/>>][color="/purples9/3"]
+"j"[label=<j<BR/>>][color="/purples9/3"]
+"k"[label=<k<BR/>>][color="/purples9/3"]
+
+"b"[label=<b<BR/>>][color="/greens9/3"]
+
+ rankdir="BT" ratio=".5"
+
+
+}

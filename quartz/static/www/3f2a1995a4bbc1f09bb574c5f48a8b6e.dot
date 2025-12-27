@@ -1,0 +1,30 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" ];
+"Teacher attends course"->"Better teaching Ministry: !heart Teacher: !heart" "Teacher attends course"->"More pay ///Teacher: !heart" "Ministry: !do ///Provides in-service teacher training"->"Teacher attends course" "Teacher:  !do ///Effort to attend course"->"Teacher attends course"
+graph [ style="rounded,filled";color="/purples9/3";fillcolor="/purples9/1";fontname="arial";labeljust="l";labelloc="t" ];
+"Better teaching Ministry: !heart Teacher: !heart"[label=<Better teaching<BR />Ministry: <font color='orange'>&hearts;</font><BR />Teacher: <font color='orange'>&hearts;</font><BR/>>]
+"More pay ///Teacher: !heart"[label=<More pay <BR />Teacher: <font color='orange'>&hearts;</font><BR/>>]
+"Teacher attends course"[label=<Teacher attends course<BR/>>]
+"Ministry: !do ///Provides in-service teacher training"[label=<Ministry: <font color="green">&#9654; </font> <BR />Provides in-service teacher training<BR/>>]
+"Teacher:  !do ///Effort to attend course"[label=<Teacher:  <font color="green">&#9654; </font> <BR />Effort to attend course<BR/>>]
+
+
+
+ bgcolor="white";fontsize="28";fontname="arial"
+
+
+}

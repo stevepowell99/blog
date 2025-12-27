@@ -1,0 +1,33 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" ];
+"Student feels they live up to expectations"->"Student satisfaction with school" "Student receives pastoral support"->"Student satisfaction with school"
+graph [ style="rounded,filled";color="/purples9/2";fontname="arial";labeljust="l";labelloc="t" ];
+ 
+subgraph cluster_ConsequenceVariable {label=<Consequence Variable<BR/>>
+"Student satisfaction with school"[label=<Student satisfaction with<BR />school<BR/>>]
+}
+ 
+subgraph cluster_InfluenceVariables {label=<Influence Variables<BR/>>
+"Student feels they live up to expectations"[label=<Student feels they live up to<BR />expectations<BR/>>]
+"Student receives pastoral support"[label=<Student receives pastoral<BR />support<BR/>>]
+}
+
+
+ bgcolor="white";fontsize="28";fontname="arial"
+
+
+}

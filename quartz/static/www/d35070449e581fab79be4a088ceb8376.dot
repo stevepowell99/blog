@@ -1,0 +1,28 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";fontname="arial";penwidth="2";fontname="arial";color="/greens9/2" ];
+edge [labeldistance=1.5;headlabel="" color="/greens9/6" ];
+"Weight of straw on camel ///Influence: !memory"->"Camel's back breaks !noyes ///Influence: threshold" "Weight of extra straw added to camel's load"->"Weight of straw on camel ///Influence: !memory"
+graph [ style="rounded,filled";color="/purples9/2";fontname="arial";labeljust="l";labelloc="t" ];
+"Camel's back breaks !noyes ///Influence: threshold"[label=<Camel's back breaks ◨ <BR />Influence: threshold<BR/>>]
+"Weight of straw on camel ///Influence: !memory"[label=<Weight of straw on camel <BR />Influence: ↺<BR/>>]
+"Weight of extra straw added to camel's load"[label=<Weight of extra straw added to<BR />camel's load<BR/>>]
+
+
+
+ bgcolor="white";fontsize="28";fontname="arial"
+
+
+}

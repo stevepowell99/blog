@@ -1,0 +1,41 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";color="#00000010";fontname="verdana" ];
+edge [labeldistance=1.5;headlabel="" color="/blues9/5";fontcolor="/reds9/9";fontname="verdana" arrowhead="none" ];
+"Simple"->"Variables" "Ordered"->"Simple" "Continuous"->"Ordered" "Lo-hi"->"Continuous" "Anchored lo-hi  ///e.g. approval"->"Lo-hi" "Counting numbers ///e.g. number of visitors"->"Continuous" "Rational numbers ///e.g. length"->"Continuous" "Ordinal ///e.g. alert level"->"Ordered" "Binary (false/true) ///e.g. the law is passed"->"Ordered" "Cyclic ///e.g. seasons"->"Simple" "Hierarchical ///e.g. species taxonomy"->"Simple" "Nominal ///e.g. gender"->"Simple" "Binary ///e.g. heads/tails"->"Nominal ///e.g. gender" "Narrative"->"Simple" "Combinations e.g. quantity of teachers completing the course x the standard they reached"->"Variables"
+graph [ style="rounded,filled";fillcolor="#ffffff90";color="/blues9/4";fontname="verdana";labeljust="r" ];
+"Variables"[label=<Variables<BR/>>]
+"Simple"[label=<Simple<BR/>>]
+"Ordered"[label=<Ordered<BR/>>]
+"Continuous"[label=<Continuous<BR/>>]
+"Lo-hi"[label=<Lo-hi<BR/>>]
+"Anchored lo-hi  ///e.g. approval"[label=<Anchored lo-hi  <BR />e.g. approval<BR/>>]
+"Counting numbers ///e.g. number of visitors"[label=<Counting numbers <BR />e.g. number of visitors<BR/>>]
+"Rational numbers ///e.g. length"[label=<Rational numbers <BR />e.g. length<BR/>>]
+"Ordinal ///e.g. alert level"[label=<Ordinal <BR />e.g. alert level<BR/>>]
+"Binary (false/true) ///e.g. the law is passed"[label=<Binary (false/true) <BR />e.g. the law is passed<BR/>>]
+"Cyclic ///e.g. seasons"[label=<Cyclic <BR />e.g. seasons<BR/>>]
+"Hierarchical ///e.g. species taxonomy"[label=<Hierarchical <BR />e.g. species taxonomy<BR/>>]
+"Nominal ///e.g. gender"[label=<Nominal <BR />e.g. gender<BR/>>]
+"Binary ///e.g. heads/tails"[label=<Binary <BR />e.g. heads/tails<BR/>>]
+"Narrative"[label=<Narrative<BR/>>]
+"Combinations e.g. quantity of teachers completing the course x the standard they reached"[label=<Combinations e.g. quantity of<BR />teachers completing the course<BR />x the standard they reached<BR/>>]
+
+
+
+ bgcolor="/blues9/2" rankdir="BT"
+
+
+}

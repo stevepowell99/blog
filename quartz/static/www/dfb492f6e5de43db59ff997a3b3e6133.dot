@@ -1,0 +1,37 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";color="#00000010";fontname="verdana" ];
+edge [labeldistance=1.5;headlabel="" color="/blues9/5";fontcolor="/reds9/9";fontname="verdana" arrowhead="none" ];
+"Ordered"->"Variables" "Continuous"->"Ordered" "Lo-hi"->"Continuous" "Anchored lo-hi"->"Lo-hi" "Counting numbers"->"Lo-hi" "Rational numbers"->"Lo-hi" "Binary (no/yes)"->"Continuous" "Cyclic"->"Variables" "Hierarchical"->"Variables" "Nominal"->"Variables" "Binary e.g. heads/tails"->"Nominal"
+graph [ style="rounded,filled";fillcolor="#ffffff90";color="/blues9/4";fontname="verdana";labeljust="r" ];
+"Variables"[label=<Variables<BR/>>]
+"Ordered"[label=<Ordered<BR/>>]
+"Continuous"[label=<Continuous<BR/>>]
+"Lo-hi"[label=<Lo-hi<BR/>>]
+"Anchored lo-hi"[label=<Anchored lo-hi<BR/>>]
+"Counting numbers"[label=<Counting numbers<BR/>>]
+"Rational numbers"[label=<Rational numbers<BR/>>]
+"Binary (no/yes)"[label=<Binary (no/yes)<BR/>>]
+"Cyclic"[label=<Cyclic<BR/>>]
+"Hierarchical"[label=<Hierarchical<BR/>>]
+"Nominal"[label=<Nominal<BR/>>]
+"Binary e.g. heads/tails"[label=<Binary e.g. heads/tails<BR/>>]
+
+
+
+ bgcolor="/blues9/2"
+
+
+}

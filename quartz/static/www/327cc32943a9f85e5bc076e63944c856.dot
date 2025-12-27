@@ -1,0 +1,28 @@
+digraph foo{
+    compound=true;  newrank=true; charset=UTF8;
+    tooltip=" " ;
+    ranksep=0.7
+    nodesep=0.2
+    fontsize="14pt";
+
+
+    ratio="" ;
+    rankdir="LR" ;
+    # ordering="in" ;
+    label="" ;
+
+
+node [ shape="rectangle";style="filled";color="white" ];
+edge [labeldistance=1.5;headlabel="" ];
+"Teacher behaviour in classroom !rich"->"Student academic achievement !heart" "!do Amount of training which teachers receive on the new teaching method"->"Teacher behaviour in classroom !rich"
+graph [ labeljust="r" ];
+"Student academic achievement !heart"[label=<Student academic<BR />achievement <font color='orange'>&hearts;</font><BR/>>]
+"Teacher behaviour in classroom !rich"[label=<Teacher behaviour in<BR />classroom &#9819;<BR/>>]
+"!do Amount of training which teachers receive on the new teaching method"[label=<<font color="darkgreen">&#9654; </font> Amount of training which<BR />teachers receive on the new<BR />teaching method<BR/>>]
+
+
+
+
+
+
+}
