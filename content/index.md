@@ -40,14 +40,12 @@ As you might be able to guess from the above, I have studied philosophy, maths a
 
 I have been lucky enough to work in about 30 different countries (mainly SE Europe, S & SE Asia / Pacific, Sub-Saharan Africa) on a wide variety of topics from disaster response in Haiti and psychosocial programming after the 2004 tsunami to social capital in the former Soviet Union and counting stray dogs in Sarajevo. 
 
-I am strong in both quantitative (GIS, “big data”, online & mobile, SPSS; R) and qualitative (Outcome Mapping, text analysis) research and evaluation approaches. I try to make my evidence-gathering transparent and am convinced of the importance of reproducible research.
-
 ### Everyone Counts
 
 As a freelancer, I often work for international development and disaster recovery programmes. This has meant working with some great people, especially at the [IFRC](http://ifrc.org). I was honoured to be Lead Researcher and Statistican for several global ["Everyone counts"](https://data.ifrc.org/everyone-counts-report-and-analysis) reports based on the FDRS.
 
 
-## Writings
+## Attic of of random writings
 
 ### Evaluation & research
 
@@ -57,21 +55,18 @@ As a freelancer, I often work for international development and disaster recover
 - [[IUCN|Small conservation grants (IUCN)]]
 - [[students-in-predominantly-ethnic-minority-classes-want-segregated-education-very-much-the-others-dont|Segregated education (plot)]]
 - [Evaluation puzzles](/puzzles/)
+- [[theorymaker-again|Theorymaker lives again]]
+- [[theorymaker|Shutdown of the original Theorymaker]]
 
 ### Causal mapping
 
 - [[CMhelp|Causal Mapping (older guide)]]
 - [[guide2|Causal Map Guide (Version 2)]]
 
-### Teaching
+### Teaching English
 
 - [[tenses-in-colour|Tenses in Colour]]
 
-### Notes
-
-- [[moved|Moved to Clevedon, UK]]
-- [[theorymaker-again|Theorymaker lives again]]
-- [[theorymaker|Shutdown of the original Theorymaker]]
 
 ## Theories of Change in evaluation
 
