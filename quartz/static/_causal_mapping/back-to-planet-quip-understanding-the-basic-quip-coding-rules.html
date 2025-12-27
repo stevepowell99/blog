@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Section 24 Back to planet QuIP: Understanding the basic QuIP coding rules | Causal Mapping</title>
+  <meta name="description" content="Section 24 Back to planet QuIP: Understanding the basic QuIP coding rules | Causal Mapping" />
+  <meta name="generator" content="bookdown 0.12 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Section 24 Back to planet QuIP: Understanding the basic QuIP coding rules | Causal Mapping" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Section 24 Back to planet QuIP: Understanding the basic QuIP coding rules | Causal Mapping" />
+  
+  
+  
+
+<meta name="author" content="Steve Powell" />
+
+
+<meta name="date" content="2019-09-16" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="propositions.html">
+<link rel="next" href="variable-based-and-propositional-based-approaches-to-causal-diagrams-chalk-and-cheese.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<script src="libs/d3-3.3.8/d3.min.js"></script>
+<script src="libs/dagre-0.4.0/dagre-d3.min.js"></script>
+<link href="libs/mermaid-0.3.0/dist/mermaid.css" rel="stylesheet" />
+<script src="libs/mermaid-0.3.0/dist/mermaid.slim.min.js"></script>
+<link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+<script src="libs/chromatography-0.1/chromatography.js"></script>
+<script src="libs/DiagrammeR-binding-1.0.1/DiagrammeR.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Causal Mapping</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> What’s in this guide?</a></li>
+<li class="part"><span><b>I Introduction</b></span></li>
+<li class="chapter" data-level="2" data-path="manifesto.html"><a href="manifesto.html"><i class="fa fa-check"></i><b>2</b> Manifesto: piecing together fragments of causal information</a></li>
+<li class="chapter" data-level="3" data-path="soft.html"><a href="soft.html"><i class="fa fa-check"></i><b>3</b> We need a “soft arithmetic” for causal maps</a><ul>
+<li class="chapter" data-level="3.1" data-path="soft.html"><a href="soft.html#an-ambitious-project"><i class="fa fa-check"></i><b>3.1</b> An ambitious project</a></li>
+<li class="chapter" data-level="3.2" data-path="soft.html"><a href="soft.html#users-of-a-causal-map-expect-to-be-able-to-deduce-some-kind-of-comparative-information-from-it"><i class="fa fa-check"></i><b>3.2</b> Users of a causal map expect to be able to deduce some kind of comparative information from it</a></li>
+<li class="chapter" data-level="3.3" data-path="soft.html"><a href="soft.html#asking-and-answering-those-kinds-of-typical-questions-of-a-causal-map-boils-down-to-assigning-some-kinds-of-numbers-to-its-elements"><i class="fa fa-check"></i><b>3.3</b> Asking and answering those kinds of “typical questions” of a causal map boils down to assigning some kinds of numbers to its elements</a></li>
+<li class="chapter" data-level="3.4" data-path="soft.html"><a href="soft.html#arent-there-strategies-to-encode-causal-information-without-using-any-kind-of-number"><i class="fa fa-check"></i><b>3.4</b> Aren’t there strategies to encode causal information without using any kind of number?</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="meaning.html"><a href="meaning.html"><i class="fa fa-check"></i><b>4</b> We need rules about how to encode causal information in a causal map (and decode it again)</a><ul>
+<li class="chapter" data-level="4.1" data-path="meaning.html"><a href="meaning.html#how-do-causal-claims-work-within-ordinary-language"><i class="fa fa-check"></i><b>4.1</b> How do causal claims work within ordinary language?</a></li>
+<li class="chapter" data-level="4.2" data-path="meaning.html"><a href="meaning.html#understanding-the-elements-of-a-causal-map-by-agreeing-how-to-make-deductions-with-them"><i class="fa fa-check"></i><b>4.2</b> Understanding the elements of a causal map by agreeing how to make deductions with them</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="meaning-is-arithmetic.html"><a href="meaning-is-arithmetic.html"><i class="fa fa-check"></i><b>5</b> Soft arithmetic is also the answer to understanding causal maps</a></li>
+<li class="chapter" data-level="6" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i><b>6</b> Overview of related approaches</a><ul>
+<li class="chapter" data-level="6.1" data-path="overview.html"><a href="overview.html#problems-to-be-addressed"><i class="fa fa-check"></i><b>6.1</b> Problems to be addressed</a></li>
+<li class="chapter" data-level="6.2" data-path="overview.html"><a href="overview.html#literature"><i class="fa fa-check"></i><b>6.2</b> Literature</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="overview.html"><a href="overview.html#examplesOfMaps"><i class="fa fa-check"></i><b>6.2.1</b> Examples of different kinds of causal maps from different disciplines</a></li>
+<li class="chapter" data-level="6.2.2" data-path="overview.html"><a href="overview.html#pearl"><i class="fa fa-check"></i><b>6.2.2</b> Pearl</a></li>
+<li class="chapter" data-level="6.2.3" data-path="overview.html"><a href="overview.html#philosophy-of-causation"><i class="fa fa-check"></i><b>6.2.3</b> Philosophy of causation</a></li>
+<li class="chapter" data-level="6.2.4" data-path="overview.html"><a href="overview.html#modal-logic-of-belief"><i class="fa fa-check"></i><b>6.2.4</b> Modal logic of belief</a></li>
+<li class="chapter" data-level="6.2.5" data-path="overview.html"><a href="overview.html#dempster-shafer-theory"><i class="fa fa-check"></i><b>6.2.5</b> Dempster-Shafer theory</a></li>
+<li class="chapter" data-level="6.2.6" data-path="overview.html"><a href="overview.html#propositional-logic"><i class="fa fa-check"></i><b>6.2.6</b> Propositional logic</a></li>
+<li class="chapter" data-level="6.2.7" data-path="overview.html"><a href="overview.html#causal-mapping-in-the-narrower-sense"><i class="fa fa-check"></i><b>6.2.7</b> Causal mapping in the narrower sense:</a></li>
+<li class="chapter" data-level="6.2.8" data-path="overview.html"><a href="overview.html#knowledge-graphs-semantic-networks"><i class="fa fa-check"></i><b>6.2.8</b> Knowledge graphs, semantic networks</a></li>
+<li class="chapter" data-level="6.2.9" data-path="overview.html"><a href="overview.html#system-effects"><i class="fa fa-check"></i><b>6.2.9</b> “System Effects”</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="metalanguage-some-words-for-talking-about-causal-maps.html"><a href="metalanguage-some-words-for-talking-about-causal-maps.html"><i class="fa fa-check"></i><b>7</b> Metalanguage: some words for talking about causal maps</a><ul>
+<li class="chapter" data-level="7.1" data-path="metalanguage-some-words-for-talking-about-causal-maps.html"><a href="metalanguage-some-words-for-talking-about-causal-maps.html#the-cause-a-cause-causal-influence"><i class="fa fa-check"></i><b>7.1</b> “The cause”, “a cause”, “(causal) influence”</a></li>
+<li class="chapter" data-level="7.2" data-path="metalanguage-some-words-for-talking-about-causal-maps.html"><a href="metalanguage-some-words-for-talking-about-causal-maps.html#nodes-variables-vertices"><i class="fa fa-check"></i><b>7.2</b> Nodes, variables, vertices …</a></li>
+<li class="chapter" data-level="7.3" data-path="metalanguage-some-words-for-talking-about-causal-maps.html"><a href="metalanguage-some-words-for-talking-about-causal-maps.html#influence-variable-consequence-variable-package-of-variables"><i class="fa fa-check"></i><b>7.3</b> Influence variable, consequence variable, package of variables</a></li>
+<li class="chapter" data-level="7.4" data-path="metalanguage-some-words-for-talking-about-causal-maps.html"><a href="metalanguage-some-words-for-talking-about-causal-maps.html#mechanism-theory-."><i class="fa fa-check"></i><b>7.4</b> Mechanism, theory ….</a></li>
+</ul></li>
+<li class="part"><span><b>II The rules of Soft Arithmetic for causal maps</b></span></li>
+<li class="chapter" data-level="8" data-path="mini-map-rule.html"><a href="mini-map-rule.html"><i class="fa fa-check"></i><b>8</b> The mini-map coding rule</a><ul>
+<li class="chapter" data-level="8.1" data-path="mini-map-rule.html"><a href="mini-map-rule.html#meaning-depends-also-on-elicitation-context"><i class="fa fa-check"></i><b>8.1</b> Meaning depends also on elicitation context</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="rules-mini-func.html"><a href="rules-mini-func.html"><i class="fa fa-check"></i><b>9</b> The mini-map coding rule – functional form</a></li>
+<li class="chapter" data-level="10" data-path="the-extras-rule-adding-extra-information-in-particular-about-the-levels-or-values-of-the-variables.html"><a href="the-extras-rule-adding-extra-information-in-particular-about-the-levels-or-values-of-the-variables.html"><i class="fa fa-check"></i><b>10</b> The extras rule: adding extra information, in particular about the levels or values of the variables</a><ul>
+<li class="chapter" data-level="10.1" data-path="the-extras-rule-adding-extra-information-in-particular-about-the-levels-or-values-of-the-variables.html"><a href="the-extras-rule-adding-extra-information-in-particular-about-the-levels-or-values-of-the-variables.html#interpretation"><i class="fa fa-check"></i><b>10.1</b> Interpretation</a></li>
+<li class="chapter" data-level="10.2" data-path="the-extras-rule-adding-extra-information-in-particular-about-the-levels-or-values-of-the-variables.html"><a href="the-extras-rule-adding-extra-information-in-particular-about-the-levels-or-values-of-the-variables.html#corollary-ordinary-reasoning"><i class="fa fa-check"></i><b>10.2</b> Corollary: Ordinary reasoning</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="the-juxtaposition-rule.html"><a href="the-juxtaposition-rule.html"><i class="fa fa-check"></i><b>11</b> The juxtaposition rule</a></li>
+<li class="chapter" data-level="12" data-path="rules-for-joining-maps.html"><a href="rules-for-joining-maps.html"><i class="fa fa-check"></i><b>12</b> Rules for joining maps</a><ul>
+<li class="chapter" data-level="12.1" data-path="rules-for-joining-maps.html"><a href="rules-for-joining-maps.html#chaining-rule"><i class="fa fa-check"></i><b>12.1</b> The chaining rule</a></li>
+<li class="chapter" data-level="12.2" data-path="rules-for-joining-maps.html"><a href="rules-for-joining-maps.html#shared-consequence-rule"><i class="fa fa-check"></i><b>12.2</b> The shared consequence rule</a></li>
+<li class="chapter" data-level="12.3" data-path="rules-for-joining-maps.html"><a href="rules-for-joining-maps.html#shared-influence-rule"><i class="fa fa-check"></i><b>12.3</b> The shared influence rule</a></li>
+<li class="chapter" data-level="12.4" data-path="rules-for-joining-maps.html"><a href="rules-for-joining-maps.html#merge-same-arrow"><i class="fa fa-check"></i><b>12.4</b> The shared arrow rule</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="rules-for-joining-maps-what-counts-as-the-same-variable.html"><a href="rules-for-joining-maps-what-counts-as-the-same-variable.html"><i class="fa fa-check"></i><b>13</b> Rules for joining maps: what counts as “the same” variable?</a></li>
+<li class="chapter" data-level="14" data-path="zooming-out.html"><a href="zooming-out.html"><i class="fa fa-check"></i><b>14</b> The chaining rule, functional form (zooming out / black-box rule)</a><ul>
+<li class="chapter" data-level="14.1" data-path="zooming-out.html"><a href="zooming-out.html#two-special-cases"><i class="fa fa-check"></i><b>14.1</b> Two special cases</a><ul>
+<li class="chapter" data-level="14.1.1" data-path="zooming-out.html"><a href="zooming-out.html#bare-influence"><i class="fa fa-check"></i><b>14.1.1</b> Bare influence</a></li>
+<li class="chapter" data-level="14.1.2" data-path="zooming-out.html"><a href="zooming-out.html#total-control"><i class="fa fa-check"></i><b>14.1.2</b> Total control</a></li>
+</ul></li>
+<li class="chapter" data-level="14.2" data-path="zooming-out.html"><a href="zooming-out.html#technical-note"><i class="fa fa-check"></i><b>14.2</b> Technical note</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="shared-consequence.html"><a href="shared-consequence.html"><i class="fa fa-check"></i><b>15</b> The shared consequence rule, functional version</a><ul>
+<li class="chapter" data-level="15.1" data-path="shared-consequence.html"><a href="shared-consequence.html#contradictory-combinations"><i class="fa fa-check"></i><b>15.1</b> Contradictory combinations</a></li>
+<li class="chapter" data-level="15.2" data-path="shared-consequence.html"><a href="shared-consequence.html#but-which-case-is-which"><i class="fa fa-check"></i><b>15.2</b> But which case is which?</a></li>
+<li class="chapter" data-level="15.3" data-path="shared-consequence.html"><a href="shared-consequence.html#extension-to-causal-packages"><i class="fa fa-check"></i><b>15.3</b> Extension to causal <em>packages</em></a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="shared-influence-function.html"><a href="shared-influence-function.html"><i class="fa fa-check"></i><b>16</b> The shared influence rule, functional version</a></li>
+<li class="chapter" data-level="17" data-path="the-shared-arrow-rule-functional-form-.html"><a href="the-shared-arrow-rule-functional-form-.html"><i class="fa fa-check"></i><b>17</b> The shared arrow rule, functional form.</a></li>
+<li class="chapter" data-level="18" data-path="the-rule-for-merging-arrows-weight-of-evidence-.html"><a href="the-rule-for-merging-arrows-weight-of-evidence-.html"><i class="fa fa-check"></i><b>18</b> The rule for merging arrows. Weight of evidence.</a><ul>
+<li class="chapter" data-level="18.1" data-path="the-rule-for-merging-arrows-weight-of-evidence-.html"><a href="the-rule-for-merging-arrows-weight-of-evidence-.html#problems-with-evidence"><i class="fa fa-check"></i><b>18.1</b> Problems with evidence</a></li>
+</ul></li>
+<li class="chapter" data-level="19" data-path="the-chaining-rule-with-loops.html"><a href="the-chaining-rule-with-loops.html"><i class="fa fa-check"></i><b>19</b> The chaining rule with loops</a></li>
+<li class="chapter" data-level="20" data-path="conceptual-rule.html"><a href="conceptual-rule.html"><i class="fa fa-check"></i><b>20</b> The rule for conceptual links</a><ul>
+<li class="chapter" data-level="20.1" data-path="conceptual-rule.html"><a href="conceptual-rule.html#variations"><i class="fa fa-check"></i><b>20.1</b> Variations</a></li>
+<li class="chapter" data-level="20.2" data-path="conceptual-rule.html"><a href="conceptual-rule.html#problems"><i class="fa fa-check"></i><b>20.2</b> Problems</a></li>
+</ul></li>
+<li class="chapter" data-level="21" data-path="combining-extra-information-like-the-values-or-levels-of-variables.html"><a href="combining-extra-information-like-the-values-or-levels-of-variables.html"><i class="fa fa-check"></i><b>21</b> Combining “extra” information like the values or levels of variables</a></li>
+<li class="chapter" data-level="22" data-path="context.html"><a href="context.html"><i class="fa fa-check"></i><b>22</b> Context</a><ul>
+<li class="chapter" data-level="22.1" data-path="context.html"><a href="context.html#intersections"><i class="fa fa-check"></i><b>22.1</b> Intersections</a></li>
+<li class="chapter" data-level="22.2" data-path="context.html"><a href="context.html#replacing-contexts-with-variables"><i class="fa fa-check"></i><b>22.2</b> Replacing contexts with variables</a></li>
+</ul></li>
+<li class="chapter" data-level="23" data-path="propositions.html"><a href="propositions.html"><i class="fa fa-check"></i><b>23</b> Maybe the nodes are not variables, maybe they are … propositions, events, schemas?</a><ul>
+<li class="chapter" data-level="23.1" data-path="propositions.html"><a href="propositions.html#events"><i class="fa fa-check"></i><b>23.1</b> Events</a></li>
+<li class="chapter" data-level="23.2" data-path="propositions.html"><a href="propositions.html#propositions-1"><i class="fa fa-check"></i><b>23.2</b> Propositions</a></li>
+<li class="chapter" data-level="23.3" data-path="propositions.html"><a href="propositions.html#schemas-schemata"><i class="fa fa-check"></i><b>23.3</b> Schemas / Schemata</a></li>
+</ul></li>
+<li class="chapter" data-level="24" data-path="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html"><a href="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html"><i class="fa fa-check"></i><b>24</b> Back to planet QuIP: Understanding the basic QuIP coding rules</a><ul>
+<li class="chapter" data-level="24.1" data-path="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html"><a href="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html#classic-quip-overview"><i class="fa fa-check"></i><b>24.1</b> Classic QuIP: overview</a></li>
+<li class="chapter" data-level="24.2" data-path="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html"><a href="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html#the-nature-of-the-items"><i class="fa fa-check"></i><b>24.2</b> The nature of the items</a><ul>
+<li class="chapter" data-level="24.2.1" data-path="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html"><a href="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html#the-items-are-subjective-propositions-not-variables"><i class="fa fa-check"></i><b>24.2.1</b> The items are (subjective) propositions, not variables</a></li>
+<li class="chapter" data-level="24.2.2" data-path="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html"><a href="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html#the-items-have-to-have-been-individually-experienced"><i class="fa fa-check"></i><b>24.2.2</b> The items have to have been individually experienced</a></li>
+<li class="chapter" data-level="24.2.3" data-path="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html"><a href="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html#do-the-items-necessarily-express-changes-states-events"><i class="fa fa-check"></i><b>24.2.3</b> Do the items necessarily express changes? States? Events?</a></li>
+</ul></li>
+<li class="chapter" data-level="24.3" data-path="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html"><a href="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html#the-nature-of-the-links"><i class="fa fa-check"></i><b>24.3</b> The nature of the links</a><ul>
+<li class="chapter" data-level="24.3.1" data-path="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html"><a href="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html#contrastive-implications"><i class="fa fa-check"></i><b>24.3.1</b> Contrastive implications</a></li>
+<li class="chapter" data-level="24.3.2" data-path="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html"><a href="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html#need-for-a-distinction-between-plus-and-minus-links"><i class="fa fa-check"></i><b>24.3.2</b> Need for a distinction between “plus” and “minus” links?</a></li>
+<li class="chapter" data-level="24.3.3" data-path="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html"><a href="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html#establishing-common-codes"><i class="fa fa-check"></i><b>24.3.3</b> Establishing common codes</a></li>
+<li class="chapter" data-level="24.3.4" data-path="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html"><a href="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html#mono-versus-multiple-causation"><i class="fa fa-check"></i><b>24.3.4</b> Mono versus multiple causation</a></li>
+<li class="chapter" data-level="24.3.5" data-path="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html"><a href="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html#explicit-causal-knowledge"><i class="fa fa-check"></i><b>24.3.5</b> Explicit causal knowledge</a></li>
+<li class="chapter" data-level="24.3.6" data-path="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html"><a href="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html#causal-links-within-causal-chains"><i class="fa fa-check"></i><b>24.3.6</b> Causal links within causal chains</a></li>
+<li class="chapter" data-level="24.3.7" data-path="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html"><a href="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html#causal-chains-and-attribution"><i class="fa fa-check"></i><b>24.3.7</b> Causal chains and attribution</a></li>
+</ul></li>
+<li class="chapter" data-level="24.4" data-path="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html"><a href="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html#problems-1"><i class="fa fa-check"></i><b>24.4</b> Problems</a><ul>
+<li class="chapter" data-level="24.4.1" data-path="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html"><a href="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html#contrasts-and-anchoring"><i class="fa fa-check"></i><b>24.4.1</b> Contrasts and anchoring</a></li>
+<li class="chapter" data-level="24.4.2" data-path="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html"><a href="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html#focus-on-initial-items-drivers"><i class="fa fa-check"></i><b>24.4.2</b> Focus on initial items (“drivers”)</a></li>
+<li class="chapter" data-level="24.4.3" data-path="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html"><a href="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html#vulnerability-to-luck-coincidence"><i class="fa fa-check"></i><b>24.4.3</b> Vulnerability to luck / coincidence</a></li>
+</ul></li>
+<li class="chapter" data-level="24.5" data-path="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html"><a href="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html#conclusion"><i class="fa fa-check"></i><b>24.5</b> Conclusion</a></li>
+<li class="chapter" data-level="24.6" data-path="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html"><a href="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html#other-extensions"><i class="fa fa-check"></i><b>24.6</b> Other extensions</a></li>
+<li class="chapter" data-level="24.7" data-path="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html"><a href="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html#suggestion"><i class="fa fa-check"></i><b>24.7</b> Suggestion</a></li>
+</ul></li>
+<li class="chapter" data-level="25" data-path="variable-based-and-propositional-based-approaches-to-causal-diagrams-chalk-and-cheese.html"><a href="variable-based-and-propositional-based-approaches-to-causal-diagrams-chalk-and-cheese.html"><i class="fa fa-check"></i><b>25</b> Variable-based and propositional-based approaches to causal diagrams: chalk and cheese?</a><ul>
+<li class="chapter" data-level="25.1" data-path="variable-based-and-propositional-based-approaches-to-causal-diagrams-chalk-and-cheese.html"><a href="variable-based-and-propositional-based-approaches-to-causal-diagrams-chalk-and-cheese.html#the-variable-based-approach"><i class="fa fa-check"></i><b>25.1</b> The variable-based approach</a></li>
+<li class="chapter" data-level="25.2" data-path="variable-based-and-propositional-based-approaches-to-causal-diagrams-chalk-and-cheese.html"><a href="variable-based-and-propositional-based-approaches-to-causal-diagrams-chalk-and-cheese.html#more-on-the-proposition-based-approach"><i class="fa fa-check"></i><b>25.2</b> More on the proposition-based approach</a><ul>
+<li class="chapter" data-level="25.2.1" data-path="variable-based-and-propositional-based-approaches-to-causal-diagrams-chalk-and-cheese.html"><a href="variable-based-and-propositional-based-approaches-to-causal-diagrams-chalk-and-cheese.html#the-items-are-propositions-not-variables"><i class="fa fa-check"></i><b>25.2.1</b> The items are propositions, not variables</a></li>
+<li class="chapter" data-level="25.2.2" data-path="variable-based-and-propositional-based-approaches-to-causal-diagrams-chalk-and-cheese.html"><a href="variable-based-and-propositional-based-approaches-to-causal-diagrams-chalk-and-cheese.html#the-items-have-been-individually-experienced"><i class="fa fa-check"></i><b>25.2.2</b> The items have been individually experienced</a></li>
+<li class="chapter" data-level="25.2.3" data-path="variable-based-and-propositional-based-approaches-to-causal-diagrams-chalk-and-cheese.html"><a href="variable-based-and-propositional-based-approaches-to-causal-diagrams-chalk-and-cheese.html#the-propositions-have-contrastive-implications"><i class="fa fa-check"></i><b>25.2.3</b> The propositions have contrastive implications</a></li>
+<li class="chapter" data-level="25.2.4" data-path="variable-based-and-propositional-based-approaches-to-causal-diagrams-chalk-and-cheese.html"><a href="variable-based-and-propositional-based-approaches-to-causal-diagrams-chalk-and-cheese.html#two-sidedness-of-propositions"><i class="fa fa-check"></i><b>25.2.4</b> Two-sidedness of propositions</a></li>
+<li class="chapter" data-level="25.2.5" data-path="variable-based-and-propositional-based-approaches-to-causal-diagrams-chalk-and-cheese.html"><a href="variable-based-and-propositional-based-approaches-to-causal-diagrams-chalk-and-cheese.html#aggregation"><i class="fa fa-check"></i><b>25.2.5</b> Aggregation</a></li>
+<li class="chapter" data-level="25.2.6" data-path="variable-based-and-propositional-based-approaches-to-causal-diagrams-chalk-and-cheese.html"><a href="variable-based-and-propositional-based-approaches-to-causal-diagrams-chalk-and-cheese.html#the-items-can-express-changes-states-or-events"><i class="fa fa-check"></i><b>25.2.6</b> The items can express changes, states or events</a></li>
+<li class="chapter" data-level="25.2.7" data-path="variable-based-and-propositional-based-approaches-to-causal-diagrams-chalk-and-cheese.html"><a href="variable-based-and-propositional-based-approaches-to-causal-diagrams-chalk-and-cheese.html#golden-threads"><i class="fa fa-check"></i><b>25.2.7</b> Golden threads</a></li>
+</ul></li>
+<li class="chapter" data-level="25.3" data-path="variable-based-and-propositional-based-approaches-to-causal-diagrams-chalk-and-cheese.html"><a href="variable-based-and-propositional-based-approaches-to-causal-diagrams-chalk-and-cheese.html#statistics"><i class="fa fa-check"></i><b>25.3</b> Statistics?</a></li>
+<li class="chapter" data-level="25.4" data-path="variable-based-and-propositional-based-approaches-to-causal-diagrams-chalk-and-cheese.html"><a href="variable-based-and-propositional-based-approaches-to-causal-diagrams-chalk-and-cheese.html#conclusion-1"><i class="fa fa-check"></i><b>25.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="26" data-path="limitations-to-the-proposition-based-approach.html"><a href="limitations-to-the-proposition-based-approach.html"><i class="fa fa-check"></i><b>26</b> Limitations to the proposition-based approach</a><ul>
+<li class="chapter" data-level="26.1" data-path="limitations-to-the-proposition-based-approach.html"><a href="limitations-to-the-proposition-based-approach.html#problems-within-the-proposition-based-approach"><i class="fa fa-check"></i><b>26.1</b> Problems <em>within</em> the proposition-based approach</a><ul>
+<li class="chapter" data-level="26.1.1" data-path="limitations-to-the-proposition-based-approach.html"><a href="limitations-to-the-proposition-based-approach.html#problem-with-only-coding-personal-observations-rather-than-personal-causal-knowledge"><i class="fa fa-check"></i><b>26.1.1</b> Problem with only coding personal observations rather than personal causal knowledge</a></li>
+<li class="chapter" data-level="26.1.2" data-path="limitations-to-the-proposition-based-approach.html"><a href="limitations-to-the-proposition-based-approach.html#problems-with-establishing-common-codes-using-difference-of-degree"><i class="fa fa-check"></i><b>26.1.2</b> Problems with establishing common codes using difference of degree</a></li>
+<li class="chapter" data-level="26.1.3" data-path="limitations-to-the-proposition-based-approach.html"><a href="limitations-to-the-proposition-based-approach.html#need-for-a-distinction-between-plus-and-minus-links-1"><i class="fa fa-check"></i><b>26.1.3</b> Need for a distinction between “plus” and “minus” links?</a></li>
+</ul></li>
+<li class="chapter" data-level="26.2" data-path="limitations-to-the-proposition-based-approach.html"><a href="limitations-to-the-proposition-based-approach.html#limitations-problems-with-extending-the-proposition-based-approach"><i class="fa fa-check"></i><b>26.2</b> Limitations: Problems with <em>extending</em> the proposition-based approach</a><ul>
+<li class="chapter" data-level="26.2.1" data-path="limitations-to-the-proposition-based-approach.html"><a href="limitations-to-the-proposition-based-approach.html#no-way-to-code-multiple-causation"><i class="fa fa-check"></i><b>26.2.1</b> No way to code multiple causation</a></li>
+<li class="chapter" data-level="26.2.2" data-path="limitations-to-the-proposition-based-approach.html"><a href="limitations-to-the-proposition-based-approach.html#problems-with-expressing-difference-of-degree"><i class="fa fa-check"></i><b>26.2.2</b> Problems with expressing difference of degree</a></li>
+<li class="chapter" data-level="26.2.3" data-path="limitations-to-the-proposition-based-approach.html"><a href="limitations-to-the-proposition-based-approach.html#explicit-causal-knowledge-1"><i class="fa fa-check"></i><b>26.2.3</b> Explicit causal knowledge</a></li>
+<li class="chapter" data-level="26.2.4" data-path="limitations-to-the-proposition-based-approach.html"><a href="limitations-to-the-proposition-based-approach.html#vulnerability-to-luck-coincidence-1"><i class="fa fa-check"></i><b>26.2.4</b> Vulnerability to luck / coincidence</a></li>
+<li class="chapter" data-level="26.2.5" data-path="limitations-to-the-proposition-based-approach.html"><a href="limitations-to-the-proposition-based-approach.html#unable-to-code-necessarysufficient-conditions"><i class="fa fa-check"></i><b>26.2.5</b> Unable to code necessary/sufficient conditions</a></li>
+</ul></li>
+<li class="chapter" data-level="26.3" data-path="limitations-to-the-proposition-based-approach.html"><a href="limitations-to-the-proposition-based-approach.html#weaknesses-of-the-variable-based-approach"><i class="fa fa-check"></i><b>26.3</b> Weaknesses of the variable-based approach</a></li>
+<li class="chapter" data-level="26.4" data-path="limitations-to-the-proposition-based-approach.html"><a href="limitations-to-the-proposition-based-approach.html#what-is-to-be-done-suggestions-for-quip"><i class="fa fa-check"></i><b>26.4</b> What is to be done? Suggestions for QuIP</a></li>
+</ul></li>
+<li class="chapter" data-level="27" data-path="clarifying-how-to-ask-quip-questions-in-contexts-when-the-final-outcomes-are-not-necessarily-changes.html"><a href="clarifying-how-to-ask-quip-questions-in-contexts-when-the-final-outcomes-are-not-necessarily-changes.html"><i class="fa fa-check"></i><b>27</b> Clarifying how to ask QuIP questions in contexts when the final outcomes are not necessarily “changes”</a><ul>
+<li class="chapter" data-level="27.1" data-path="clarifying-how-to-ask-quip-questions-in-contexts-when-the-final-outcomes-are-not-necessarily-changes.html"><a href="clarifying-how-to-ask-quip-questions-in-contexts-when-the-final-outcomes-are-not-necessarily-changes.html#classic-quip-the-focus-on-changes"><i class="fa fa-check"></i><b>27.1</b> Classic QuIP: the focus on changes</a></li>
+<li class="chapter" data-level="27.2" data-path="clarifying-how-to-ask-quip-questions-in-contexts-when-the-final-outcomes-are-not-necessarily-changes.html"><a href="clarifying-how-to-ask-quip-questions-in-contexts-when-the-final-outcomes-are-not-necessarily-changes.html#even-final-outcomes-dont-have-to-be-changes"><i class="fa fa-check"></i><b>27.2</b> Even final outcomes don’t have to be changes</a><ul>
+<li class="chapter" data-level="27.2.1" data-path="clarifying-how-to-ask-quip-questions-in-contexts-when-the-final-outcomes-are-not-necessarily-changes.html"><a href="clarifying-how-to-ask-quip-questions-in-contexts-when-the-final-outcomes-are-not-necessarily-changes.html#one-off-events"><i class="fa fa-check"></i><b>27.2.1</b> One-off events</a></li>
+<li class="chapter" data-level="27.2.2" data-path="clarifying-how-to-ask-quip-questions-in-contexts-when-the-final-outcomes-are-not-necessarily-changes.html"><a href="clarifying-how-to-ask-quip-questions-in-contexts-when-the-final-outcomes-are-not-necessarily-changes.html#maintaining-the-status-quo"><i class="fa fa-check"></i><b>27.2.2</b> Maintaining the status quo</a></li>
+<li class="chapter" data-level="27.2.3" data-path="clarifying-how-to-ask-quip-questions-in-contexts-when-the-final-outcomes-are-not-necessarily-changes.html"><a href="clarifying-how-to-ask-quip-questions-in-contexts-when-the-final-outcomes-are-not-necessarily-changes.html#status-quo-as-a-divergent-counterexample"><i class="fa fa-check"></i><b>27.2.3</b> Status quo as a divergent counterexample</a></li>
+</ul></li>
+<li class="chapter" data-level="27.3" data-path="clarifying-how-to-ask-quip-questions-in-contexts-when-the-final-outcomes-are-not-necessarily-changes.html"><a href="clarifying-how-to-ask-quip-questions-in-contexts-when-the-final-outcomes-are-not-necessarily-changes.html#preceding-items-dont-have-to-be-changes-either"><i class="fa fa-check"></i><b>27.3</b> Preceding items don’t have to be changes either</a></li>
+<li class="chapter" data-level="27.4" data-path="clarifying-how-to-ask-quip-questions-in-contexts-when-the-final-outcomes-are-not-necessarily-changes.html"><a href="clarifying-how-to-ask-quip-questions-in-contexts-when-the-final-outcomes-are-not-necessarily-changes.html#how-to-focus-on-the-relevant-contrast"><i class="fa fa-check"></i><b>27.4</b> How to focus on the relevant contrast</a></li>
+</ul></li>
+<li class="chapter" data-level="28" data-path="types-of-variable.html"><a href="types-of-variable.html"><i class="fa fa-check"></i><b>28</b> Types of variable</a></li>
+<li class="chapter" data-level="29" data-path="causal-thinking-is-essentially-contrastive-thinking.html"><a href="causal-thinking-is-essentially-contrastive-thinking.html"><i class="fa fa-check"></i><b>29</b> Causal thinking is essentially contrastive thinking</a></li>
+<li class="chapter" data-level="30" data-path="lo-hi.html"><a href="lo-hi.html"><i class="fa fa-check"></i><b>30</b> Lo/hi Variables, types of variable, and contrasts</a></li>
+<li class="chapter" data-level="31" data-path="for-each-variables.html"><a href="for-each-variables.html"><i class="fa fa-check"></i><b>31</b> “For each ..….” variables</a></li>
+<li class="chapter" data-level="32" data-path="add-influences.html"><a href="add-influences.html"><i class="fa fa-check"></i><b>32</b> Coding specific influences – individually and in combination</a><ul>
+<li class="chapter" data-level="32.1" data-path="add-influences.html"><a href="add-influences.html#summary-of-the-argument-so-far"><i class="fa fa-check"></i><b>32.1</b> Summary of the argument so far</a></li>
+<li class="chapter" data-level="32.2" data-path="add-influences.html"><a href="add-influences.html#encoding-causal-influences-between-lohi-variables"><i class="fa fa-check"></i><b>32.2</b> Encoding causal influences between lo/hi variables</a></li>
+<li class="chapter" data-level="32.3" data-path="add-influences.html"><a href="add-influences.html#breaking-down-the-problem"><i class="fa fa-check"></i><b>32.3</b> Breaking down the problem</a></li>
+<li class="chapter" data-level="32.4" data-path="add-influences.html"><a href="add-influences.html#some-mono-functions-functions-with-a-single-influence-variable"><i class="fa fa-check"></i><b>32.4</b> Some “mono functions”: functions with a single influence variable</a></li>
+<li class="chapter" data-level="32.5" data-path="add-influences.html"><a href="add-influences.html#some-multi-functions-functions-for-packages-with-more-than-one-influencing-variable"><i class="fa fa-check"></i><b>32.5</b> Some “multi functions”: functions for packages with more than one influencing variable:</a><ul>
+<li class="chapter" data-level="32.5.1" data-path="add-influences.html"><a href="add-influences.html#SOFTADD"><i class="fa fa-check"></i><b>32.5.1</b> SOFTADD</a></li>
+</ul></li>
+<li class="chapter" data-level="32.6" data-path="add-influences.html"><a href="add-influences.html#package-free-combinations"><i class="fa fa-check"></i><b>32.6</b> “Package-free” combinations</a></li>
+<li class="chapter" data-level="32.7" data-path="add-influences.html"><a href="add-influences.html#contradictions"><i class="fa fa-check"></i><b>32.7</b> Contradictions?</a></li>
+<li class="chapter" data-level="32.8" data-path="add-influences.html"><a href="add-influences.html#building-up-more-functions-from-these-building-blocks"><i class="fa fa-check"></i><b>32.8</b> Building up more functions from these building blocks</a></li>
+<li class="chapter" data-level="32.9" data-path="add-influences.html"><a href="add-influences.html#coding-influences-within-in-the-app"><i class="fa fa-check"></i><b>32.9</b> Coding influences within in the app</a></li>
+</ul></li>
+<li class="chapter" data-level="33" data-path="universal.html"><a href="universal.html"><i class="fa fa-check"></i><b>33</b> One function to rule them all?</a><ul>
+<li class="chapter" data-level="33.1" data-path="universal.html"><a href="universal.html#one-universal-type-of-function-for-coding-causal-claims-with-exclusively-lohi-variables."><i class="fa fa-check"></i><b>33.1</b> One universal type of function for coding causal claims with exclusively lo/hi variables.</a></li>
+</ul></li>
+<li class="chapter" data-level="34" data-path="absence-of-link.html"><a href="absence-of-link.html"><i class="fa fa-check"></i><b>34</b> Coding a claim about the absence of a causal link</a></li>
+<li class="chapter" data-level="35" data-path="strength-importance.html"><a href="strength-importance.html"><i class="fa fa-check"></i><b>35</b> Strength / importance</a><ul>
+<li class="chapter" data-level="35.1" data-path="strength-importance.html"><a href="strength-importance.html#including-the-idea-of-strength-in-our-functional-equation"><i class="fa fa-check"></i><b>35.1</b> Including the idea of strength in our functional equation</a></li>
+<li class="chapter" data-level="35.2" data-path="strength-importance.html"><a href="strength-importance.html#direct-ways-of-eliciting-how-important-is-one-variables-contribution-to-another.-fiona"><i class="fa fa-check"></i><b>35.2</b> Direct ways of eliciting how important is one variable’s contribution to another. (Fiona)</a></li>
+</ul></li>
+<li class="chapter" data-level="36" data-path="inference.html"><a href="inference.html"><i class="fa fa-check"></i><b>36</b> Causal Inference</a><ul>
+<li class="chapter" data-level="36.1" data-path="inference.html"><a href="inference.html#specifying-the-map"><i class="fa fa-check"></i><b>36.1</b> Specifying the map</a><ul>
+<li class="chapter" data-level="36.1.1" data-path="inference.html"><a href="inference.html#exogenous-variables-and-the-grid"><i class="fa fa-check"></i><b>36.1.1</b> Exogenous variables and the Grid</a></li>
+<li class="chapter" data-level="36.1.2" data-path="inference.html"><a href="inference.html#inference-in-action"><i class="fa fa-check"></i><b>36.1.2</b> Inference in action</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="37" data-path="upstream-bayesian-inference.html"><a href="upstream-bayesian-inference.html"><i class="fa fa-check"></i><b>37</b> Upstream (Bayesian) inference</a></li>
+<li class="chapter" data-level="38" data-path="contour.html"><a href="contour.html"><i class="fa fa-check"></i><b>38</b> Contour</a><ul>
+<li class="chapter" data-level="38.1" data-path="contour.html"><a href="contour.html#flipping"><i class="fa fa-check"></i><b>38.1</b> Flipping</a></li>
+</ul></li>
+<li class="chapter" data-level="39" data-path="valence.html"><a href="valence.html"><i class="fa fa-check"></i><b>39</b> Valence</a></li>
+<li class="chapter" data-level="40" data-path="valence-and-direction.html"><a href="valence-and-direction.html"><i class="fa fa-check"></i><b>40</b> Valence and direction</a></li>
+<li class="chapter" data-level="41" data-path="effect-two-kinds.html"><a href="effect-two-kinds.html"><i class="fa fa-check"></i><b>41</b> Effect: two kinds</a></li>
+<li class="chapter" data-level="42" data-path="value.html"><a href="value.html"><i class="fa fa-check"></i><b>42</b> Interventions and differences</a><ul>
+<li class="chapter" data-level="42.1" data-path="value.html"><a href="value.html#shortcuts"><i class="fa fa-check"></i><b>42.1</b> Shortcuts</a></li>
+</ul></li>
+<li class="chapter" data-level="43" data-path="contribution.html"><a href="contribution.html"><i class="fa fa-check"></i><b>43</b> Contribution</a><ul>
+<li class="chapter" data-level="43.1" data-path="contribution.html"><a href="contribution.html#why-reporting-correlation-is-not-helpful"><i class="fa fa-check"></i><b>43.1</b> Why reporting correlation is not helpful</a></li>
+</ul></li>
+<li class="chapter" data-level="44" data-path="information-about-the-source-of-our-causal-information.html"><a href="information-about-the-source-of-our-causal-information.html"><i class="fa fa-check"></i><b>44</b> Information about the <em>source</em> of our causal information</a><ul>
+<li class="chapter" data-level="44.1" data-path="information-about-the-source-of-our-causal-information.html"><a href="information-about-the-source-of-our-causal-information.html#applying-the-trust-attribute-source-by-source"><i class="fa fa-check"></i><b>44.1</b> Applying the “trust” attribute source-by-source</a></li>
+<li class="chapter" data-level="44.2" data-path="information-about-the-source-of-our-causal-information.html"><a href="information-about-the-source-of-our-causal-information.html#including-information-about-sources"><i class="fa fa-check"></i><b>44.2</b> Including information about sources</a></li>
+</ul></li>
+<li class="chapter" data-level="45" data-path="clusters-of-similar-maps.html"><a href="clusters-of-similar-maps.html"><i class="fa fa-check"></i><b>45</b> Clusters of similar maps</a></li>
+<li class="chapter" data-level="46" data-path="maps-of-maps.html"><a href="maps-of-maps.html"><i class="fa fa-check"></i><b>46</b> Maps of maps</a></li>
+<li class="chapter" data-level="47" data-path="pdfs.html"><a href="pdfs.html"><i class="fa fa-check"></i><b>47</b> Probability density functions</a></li>
+<li class="part"><span><b>III Simplification</b></span></li>
+<li class="chapter" data-level="48" data-path="simplifying-causal-maps-aggregation-and-filtering.html"><a href="simplifying-causal-maps-aggregation-and-filtering.html"><i class="fa fa-check"></i><b>48</b> Simplifying causal maps: aggregation and filtering</a><ul>
+<li class="chapter" data-level="48.1" data-path="simplifying-causal-maps-aggregation-and-filtering.html"><a href="simplifying-causal-maps-aggregation-and-filtering.html#why-simplify-a-causal-map"><i class="fa fa-check"></i><b>48.1</b> Why simplify a causal map?</a></li>
+<li class="chapter" data-level="48.2" data-path="simplifying-causal-maps-aggregation-and-filtering.html"><a href="simplifying-causal-maps-aggregation-and-filtering.html#the-tables-available"><i class="fa fa-check"></i><b>48.2</b> The tables available</a><ul>
+<li class="chapter" data-level="48.2.1" data-path="simplifying-causal-maps-aggregation-and-filtering.html"><a href="simplifying-causal-maps-aggregation-and-filtering.html#table-of-statements"><i class="fa fa-check"></i><b>48.2.1</b> Table of Statements</a></li>
+<li class="chapter" data-level="48.2.2" data-path="simplifying-causal-maps-aggregation-and-filtering.html"><a href="simplifying-causal-maps-aggregation-and-filtering.html#table-of-variables"><i class="fa fa-check"></i><b>48.2.2</b> Table of Variables</a></li>
+<li class="chapter" data-level="48.2.3" data-path="simplifying-causal-maps-aggregation-and-filtering.html"><a href="simplifying-causal-maps-aggregation-and-filtering.html#table-of-arrows"><i class="fa fa-check"></i><b>48.2.3</b> Table of Arrows</a></li>
+</ul></li>
+<li class="chapter" data-level="48.3" data-path="simplifying-causal-maps-aggregation-and-filtering.html"><a href="simplifying-causal-maps-aggregation-and-filtering.html#the-steps-taken-by-the-app-when-simplifying-a-network-according-to-user-commands-andor-automatically-if-requested."><i class="fa fa-check"></i><b>48.3</b> The steps taken by the app when simplifying a network according to user commands and/or automatically if requested.</a><ul>
+<li class="chapter" data-level="48.3.1" data-path="simplifying-causal-maps-aggregation-and-filtering.html"><a href="simplifying-causal-maps-aggregation-and-filtering.html#inference-1"><i class="fa fa-check"></i><b>48.3.1</b> Inference</a></li>
+<li class="chapter" data-level="48.3.2" data-path="simplifying-causal-maps-aggregation-and-filtering.html"><a href="simplifying-causal-maps-aggregation-and-filtering.html#calculation-of-source-by-source-data"><i class="fa fa-check"></i><b>48.3.2</b> Calculation of source-by-source data</a></li>
+<li class="chapter" data-level="48.3.3" data-path="simplifying-causal-maps-aggregation-and-filtering.html"><a href="simplifying-causal-maps-aggregation-and-filtering.html#merging-together-variables-which-are-in-the-same-cluster"><i class="fa fa-check"></i><b>48.3.3</b> Merging together variables which are in the same cluster</a></li>
+<li class="chapter" data-level="48.3.4" data-path="simplifying-causal-maps-aggregation-and-filtering.html"><a href="simplifying-causal-maps-aggregation-and-filtering.html#merge-information-about-statements-into-the-arrows-which-are-based-on-them"><i class="fa fa-check"></i><b>48.3.4</b> Merge information about Statements into the arrows which are based on them</a></li>
+<li class="chapter" data-level="48.3.5" data-path="simplifying-causal-maps-aggregation-and-filtering.html"><a href="simplifying-causal-maps-aggregation-and-filtering.html#filter-sources"><i class="fa fa-check"></i><b>48.3.5</b> Filter sources</a></li>
+<li class="chapter" data-level="48.3.6" data-path="simplifying-causal-maps-aggregation-and-filtering.html"><a href="simplifying-causal-maps-aggregation-and-filtering.html#hard-coded-calculations"><i class="fa fa-check"></i><b>48.3.6</b> Hard-coded calculations</a></li>
+<li class="chapter" data-level="48.3.7" data-path="simplifying-causal-maps-aggregation-and-filtering.html"><a href="simplifying-causal-maps-aggregation-and-filtering.html#merge-arrows"><i class="fa fa-check"></i><b>48.3.7</b> Merge arrows</a></li>
+<li class="chapter" data-level="48.3.8" data-path="simplifying-causal-maps-aggregation-and-filtering.html"><a href="simplifying-causal-maps-aggregation-and-filtering.html#calculate-quip-style-metrics-e.g.-summaries-per-domain."><i class="fa fa-check"></i><b>48.3.8</b> Calculate QuIP-style metrics, e.g. summaries per domain.</a></li>
+<li class="chapter" data-level="48.3.9" data-path="simplifying-causal-maps-aggregation-and-filtering.html"><a href="simplifying-causal-maps-aggregation-and-filtering.html#filter-out-arrows-below-a-minimum-frequency"><i class="fa fa-check"></i><b>48.3.9</b> Filter out arrows below a minimum frequency</a></li>
+<li class="chapter" data-level="48.3.10" data-path="simplifying-causal-maps-aggregation-and-filtering.html"><a href="simplifying-causal-maps-aggregation-and-filtering.html#add-arrow-attributes-to-variables"><i class="fa fa-check"></i><b>48.3.10</b> Add arrow attributes to variables</a></li>
+<li class="chapter" data-level="48.3.11" data-path="simplifying-causal-maps-aggregation-and-filtering.html"><a href="simplifying-causal-maps-aggregation-and-filtering.html#filter-out-variables-below-a-minimum-frequency"><i class="fa fa-check"></i><b>48.3.11</b> Filter out variables below a minimum frequency</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="49" data-path="aggregating-and-filtering-beliefs.html"><a href="aggregating-and-filtering-beliefs.html"><i class="fa fa-check"></i><b>49</b> Aggregating and filtering beliefs</a></li>
+<li class="chapter" data-level="50" data-path="aggregation-and-filtering-based-on-face-value.html"><a href="aggregation-and-filtering-based-on-face-value.html"><i class="fa fa-check"></i><b>50</b> Aggregation and filtering based on face value</a></li>
+<li class="chapter" data-level="51" data-path="aggregation-and-filtering-based-on-particular-research-questions.html"><a href="aggregation-and-filtering-based-on-particular-research-questions.html"><i class="fa fa-check"></i><b>51</b> Aggregation and filtering based on particular research questions</a></li>
+<li class="chapter" data-level="52" data-path="aggregation-and-filtering-based-on-metrics.html"><a href="aggregation-and-filtering-based-on-metrics.html"><i class="fa fa-check"></i><b>52</b> Aggregation and filtering based on metrics</a><ul>
+<li class="chapter" data-level="52.1" data-path="aggregation-and-filtering-based-on-metrics.html"><a href="aggregation-and-filtering-based-on-metrics.html#network-metrics"><i class="fa fa-check"></i><b>52.1</b> Network metrics</a></li>
+</ul></li>
+<li class="chapter" data-level="53" data-path="citation-intensity.html"><a href="citation-intensity.html"><i class="fa fa-check"></i><b>53</b> Citation intensity</a></li>
+<li class="chapter" data-level="54" data-path="conspicuous-absence.html"><a href="conspicuous-absence.html"><i class="fa fa-check"></i><b>54</b> Conspicuous absence</a></li>
+<li class="chapter" data-level="55" data-path="notForwards.html"><a href="notForwards.html"><i class="fa fa-check"></i><b>55</b> Not forwards</a></li>
+<li class="chapter" data-level="56" data-path="homogenity-of-paths.html"><a href="homogenity-of-paths.html"><i class="fa fa-check"></i><b>56</b> Homogenity of paths</a><ul>
+<li class="chapter" data-level="56.1" data-path="homogenity-of-paths.html"><a href="homogenity-of-paths.html#non--solution-1"><i class="fa fa-check"></i><b>56.1</b> (non-) solution 1)</a></li>
+<li class="chapter" data-level="56.2" data-path="homogenity-of-paths.html"><a href="homogenity-of-paths.html#solution-2"><i class="fa fa-check"></i><b>56.2</b> Solution 2)</a></li>
+<li class="chapter" data-level="56.3" data-path="homogenity-of-paths.html"><a href="homogenity-of-paths.html#solution-3"><i class="fa fa-check"></i><b>56.3</b> Solution 3)</a></li>
+<li class="chapter" data-level="56.4" data-path="homogenity-of-paths.html"><a href="homogenity-of-paths.html#solution-4"><i class="fa fa-check"></i><b>56.4</b> Solution 4)</a></li>
+<li class="chapter" data-level="56.5" data-path="homogenity-of-paths.html"><a href="homogenity-of-paths.html#solution-5"><i class="fa fa-check"></i><b>56.5</b> Solution 5)</a></li>
+</ul></li>
+<li class="part"><span><b>IV Visualising</b></span></li>
+<li class="chapter" data-level="57" data-path="visualising-and-formatting-causal-maps.html"><a href="visualising-and-formatting-causal-maps.html"><i class="fa fa-check"></i><b>57</b> Visualising and formatting causal maps</a><ul>
+<li class="chapter" data-level="57.1" data-path="visualising-and-formatting-causal-maps.html"><a href="visualising-and-formatting-causal-maps.html#conditional-formatting"><i class="fa fa-check"></i><b>57.1</b> Conditional formatting</a></li>
+<li class="chapter" data-level="57.2" data-path="visualising-and-formatting-causal-maps.html"><a href="visualising-and-formatting-causal-maps.html#hard-coded-formatting"><i class="fa fa-check"></i><b>57.2</b> Hard-coded formatting</a></li>
+<li class="chapter" data-level="57.3" data-path="visualising-and-formatting-causal-maps.html"><a href="visualising-and-formatting-causal-maps.html#constructing-labels-and-tooltips"><i class="fa fa-check"></i><b>57.3</b> Constructing labels and tooltips</a></li>
+<li class="chapter" data-level="57.4" data-path="visualising-and-formatting-causal-maps.html"><a href="visualising-and-formatting-causal-maps.html#focus"><i class="fa fa-check"></i><b>57.4</b> Focus</a></li>
+</ul></li>
+<li class="chapter" data-level="58" data-path="coding-using-the-ui-outdated.html"><a href="coding-using-the-ui-outdated.html"><i class="fa fa-check"></i><b>58</b> Coding using the UI (outdated)</a><ul>
+<li class="chapter" data-level="58.1" data-path="coding-using-the-ui-outdated.html"><a href="coding-using-the-ui-outdated.html#show-that-the-influence-of-one-variable-on-another-has-a-particular-contour."><i class="fa fa-check"></i><b>58.1</b> Show that the influence of one variable on another has a particular contour.</a></li>
+<li class="chapter" data-level="58.2" data-path="coding-using-the-ui-outdated.html"><a href="coding-using-the-ui-outdated.html#show-that-variable-x-is-part-of-the-definition-of-variable-y."><i class="fa fa-check"></i><b>58.2</b> Show that variable X is part of the definition of variable Y.</a></li>
+<li class="chapter" data-level="58.3" data-path="coding-using-the-ui-outdated.html"><a href="coding-using-the-ui-outdated.html#show-that-variables-x-and-y-are-linked-by-definition"><i class="fa fa-check"></i><b>58.3</b> Show that variables X and Y are linked by definition</a></li>
+<li class="chapter" data-level="58.4" data-path="coding-using-the-ui-outdated.html"><a href="coding-using-the-ui-outdated.html#show-that-a-set-of-influence-variables-influence-the-consequence-variable-collectively."><i class="fa fa-check"></i><b>58.4</b> Show that a set of influence variables influence the consequence variable <em>collectively</em>.</a></li>
+</ul></li>
+<li class="part"><span><b>V Summary</b></span></li>
+<li class="chapter" data-level="59" data-path="summary-of-the-rules-for-inference-in-causal-maps-aka-soft-arithmetic.html"><a href="summary-of-the-rules-for-inference-in-causal-maps-aka-soft-arithmetic.html"><i class="fa fa-check"></i><b>59</b> Summary of the rules for inference in causal maps, aka “Soft Arithmetic”</a><ul>
+<li class="chapter" data-level="59.1" data-path="summary-of-the-rules-for-inference-in-causal-maps-aka-soft-arithmetic.html"><a href="summary-of-the-rules-for-inference-in-causal-maps-aka-soft-arithmetic.html#the-inference-rules-for-causal-maps"><i class="fa fa-check"></i><b>59.1</b> The inference rules for causal maps</a></li>
+<li class="chapter" data-level="59.2" data-path="summary-of-the-rules-for-inference-in-causal-maps-aka-soft-arithmetic.html"><a href="summary-of-the-rules-for-inference-in-causal-maps-aka-soft-arithmetic.html#the-mini-map-coding-rule"><i class="fa fa-check"></i><b>59.2</b> The mini-map coding rule</a></li>
+<li class="chapter" data-level="59.3" data-path="summary-of-the-rules-for-inference-in-causal-maps-aka-soft-arithmetic.html"><a href="summary-of-the-rules-for-inference-in-causal-maps-aka-soft-arithmetic.html#focus-on-lohi-variables-and-functions-between-them"><i class="fa fa-check"></i><b>59.3</b> Focus on “lo/hi” variables and functions between them</a></li>
+<li class="chapter" data-level="59.4" data-path="summary-of-the-rules-for-inference-in-causal-maps-aka-soft-arithmetic.html"><a href="summary-of-the-rules-for-inference-in-causal-maps-aka-soft-arithmetic.html#recording-the-actual-values-of-variables"><i class="fa fa-check"></i><b>59.4</b> Recording the actual values of variables</a></li>
+<li class="chapter" data-level="59.5" data-path="summary-of-the-rules-for-inference-in-causal-maps-aka-soft-arithmetic.html"><a href="summary-of-the-rules-for-inference-in-causal-maps-aka-soft-arithmetic.html#the-rule-for-conceptual-links"><i class="fa fa-check"></i><b>59.5</b> The rule for conceptual links</a></li>
+<li class="chapter" data-level="59.6" data-path="summary-of-the-rules-for-inference-in-causal-maps-aka-soft-arithmetic.html"><a href="summary-of-the-rules-for-inference-in-causal-maps-aka-soft-arithmetic.html#the-rules-for-coding-different-types-of-influence-single-influence-variable"><i class="fa fa-check"></i><b>59.6</b> The rules for coding different types of influence; single influence variable</a></li>
+<li class="chapter" data-level="59.7" data-path="summary-of-the-rules-for-inference-in-causal-maps-aka-soft-arithmetic.html"><a href="summary-of-the-rules-for-inference-in-causal-maps-aka-soft-arithmetic.html#the-rules-for-coding-different-types-of-influence-packages-of-multiple-influence-variables"><i class="fa fa-check"></i><b>59.7</b> The rules for coding different types of influence; packages of multiple influence variables</a></li>
+<li class="chapter" data-level="59.8" data-path="summary-of-the-rules-for-inference-in-causal-maps-aka-soft-arithmetic.html"><a href="summary-of-the-rules-for-inference-in-causal-maps-aka-soft-arithmetic.html#inus"><i class="fa fa-check"></i><b>59.8</b> INUS</a><ul>
+<li class="chapter" data-level="59.8.1" data-path="summary-of-the-rules-for-inference-in-causal-maps-aka-soft-arithmetic.html"><a href="summary-of-the-rules-for-inference-in-causal-maps-aka-soft-arithmetic.html#softadd"><i class="fa fa-check"></i><b>59.8.1</b> SOFTADD</a></li>
+</ul></li>
+<li class="chapter" data-level="59.9" data-path="summary-of-the-rules-for-inference-in-causal-maps-aka-soft-arithmetic.html"><a href="summary-of-the-rules-for-inference-in-causal-maps-aka-soft-arithmetic.html#coding-the-strength-of-the-influence-of-a-package"><i class="fa fa-check"></i><b>59.9</b> Coding the strength of the influence of a package</a></li>
+<li class="chapter" data-level="59.10" data-path="summary-of-the-rules-for-inference-in-causal-maps-aka-soft-arithmetic.html"><a href="summary-of-the-rules-for-inference-in-causal-maps-aka-soft-arithmetic.html#causal-claim-coding-form"><i class="fa fa-check"></i><b>59.10</b> Causal claim coding form</a></li>
+<li class="chapter" data-level="59.11" data-path="summary-of-the-rules-for-inference-in-causal-maps-aka-soft-arithmetic.html"><a href="summary-of-the-rules-for-inference-in-causal-maps-aka-soft-arithmetic.html#problems-2"><i class="fa fa-check"></i><b>59.11</b> Problems</a></li>
+</ul></li>
+<li class="part"><span><b>VI The why question</b></span></li>
+<li class="chapter" data-level="60" data-path="the-why-question-as-a-generic-method-in-social-research.html"><a href="the-why-question-as-a-generic-method-in-social-research.html"><i class="fa fa-check"></i><b>60</b> The “<em>why</em> question” as a generic method in social research</a><ul>
+<li class="chapter" data-level="60.1" data-path="the-why-question-as-a-generic-method-in-social-research.html"><a href="the-why-question-as-a-generic-method-in-social-research.html#steps-to-asking-the-why-question"><i class="fa fa-check"></i><b>60.1</b> Steps to asking “the why question”</a><ul>
+<li class="chapter" data-level="60.1.1" data-path="the-why-question-as-a-generic-method-in-social-research.html"><a href="the-why-question-as-a-generic-method-in-social-research.html#formulate"><i class="fa fa-check"></i><b>60.1.1</b> Formulate …</a></li>
+<li class="chapter" data-level="60.1.2" data-path="the-why-question-as-a-generic-method-in-social-research.html"><a href="the-why-question-as-a-generic-method-in-social-research.html#pose-the-question"><i class="fa fa-check"></i><b>60.1.2</b> Pose the question</a></li>
+<li class="chapter" data-level="60.1.3" data-path="the-why-question-as-a-generic-method-in-social-research.html"><a href="the-why-question-as-a-generic-method-in-social-research.html#get-the-answers-into-a-spreadsheet"><i class="fa fa-check"></i><b>60.1.3</b> Get the answers into a spreadsheet</a></li>
+</ul></li>
+<li class="chapter" data-level="60.2" data-path="the-why-question-as-a-generic-method-in-social-research.html"><a href="the-why-question-as-a-generic-method-in-social-research.html#when-would-you-not-want-to-use-this-approach"><i class="fa fa-check"></i><b>60.2</b> When would you <em>not</em> want to use this approach?</a></li>
+</ul></li>
+<li class="chapter" data-level="61" data-path="the-why-question-asking-about-changes.html"><a href="the-why-question-asking-about-changes.html"><i class="fa fa-check"></i><b>61</b> The “<em>why</em> question” – asking about changes</a><ul>
+<li class="chapter" data-level="61.1" data-path="the-why-question-asking-about-changes.html"><a href="the-why-question-asking-about-changes.html#changes-1"><i class="fa fa-check"></i><b>61.1</b> “Changes”</a></li>
+</ul></li>
+<li class="part"><span><b>VII Using the causal map app</b></span></li>
+<li class="chapter" data-level="62" data-path="using-the-causal-map-app-already-partly-outdated.html"><a href="using-the-causal-map-app-already-partly-outdated.html"><i class="fa fa-check"></i><b>62</b> Using the causal map app – already partly outdated!</a><ul>
+<li class="chapter" data-level="62.1" data-path="using-the-causal-map-app-already-partly-outdated.html"><a href="using-the-causal-map-app-already-partly-outdated.html#about-the-tables"><i class="fa fa-check"></i><b>62.1</b> About the tables</a></li>
+<li class="chapter" data-level="62.2" data-path="using-the-causal-map-app-already-partly-outdated.html"><a href="using-the-causal-map-app-already-partly-outdated.html#left-hand-tabs-for-producing-and-coding-your-diagram"><i class="fa fa-check"></i><b>62.2</b> Left-hand tabs for producing and coding your diagram</a><ul>
+<li class="chapter" data-level="62.2.1" data-path="using-the-causal-map-app-already-partly-outdated.html"><a href="using-the-causal-map-app-already-partly-outdated.html#import"><i class="fa fa-check"></i><b>62.2.1</b> Import</a></li>
+<li class="chapter" data-level="62.2.2" data-path="using-the-causal-map-app-already-partly-outdated.html"><a href="using-the-causal-map-app-already-partly-outdated.html#code"><i class="fa fa-check"></i><b>62.2.2</b> Code</a></li>
+<li class="chapter" data-level="62.2.3" data-path="using-the-causal-map-app-already-partly-outdated.html"><a href="using-the-causal-map-app-already-partly-outdated.html#merge"><i class="fa fa-check"></i><b>62.2.3</b> Merge</a></li>
+<li class="chapter" data-level="62.2.4" data-path="using-the-causal-map-app-already-partly-outdated.html"><a href="using-the-causal-map-app-already-partly-outdated.html#display"><i class="fa fa-check"></i><b>62.2.4</b> Display</a></li>
+</ul></li>
+<li class="chapter" data-level="62.3" data-path="using-the-causal-map-app-already-partly-outdated.html"><a href="using-the-causal-map-app-already-partly-outdated.html#right-hand-tabs-for-outputs-viewing-diagram-etc"><i class="fa fa-check"></i><b>62.3</b> Right-hand tabs for outputs: viewing diagram etc</a><ul>
+<li class="chapter" data-level="62.3.1" data-path="using-the-causal-map-app-already-partly-outdated.html"><a href="using-the-causal-map-app-already-partly-outdated.html#diagram"><i class="fa fa-check"></i><b>62.3.1</b> Diagram</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="63" data-path="using-the-causal-map-app-for-real-time-collaborative-theory-construction.html"><a href="using-the-causal-map-app-for-real-time-collaborative-theory-construction.html"><i class="fa fa-check"></i><b>63</b> Using the causal map app for real-time, collaborative theory construction</a></li>
+<li class="part"><span><b>VIII Case studies</b></span></li>
+<li class="chapter" data-level="64" data-path="case-study-the-strawberry-line.html"><a href="case-study-the-strawberry-line.html"><i class="fa fa-check"></i><b>64</b> Case Study: the Strawberry Line</a><ul>
+<li class="chapter" data-level="64.0.1" data-path="case-study-the-strawberry-line.html"><a href="case-study-the-strawberry-line.html#theories-gathered-from-activists"><i class="fa fa-check"></i><b>64.0.1</b> Theories gathered from activists</a></li>
+<li class="chapter" data-level="64.0.2" data-path="case-study-the-strawberry-line.html"><a href="case-study-the-strawberry-line.html#stories-gathered-from-the-public"><i class="fa fa-check"></i><b>64.0.2</b> Stories gathered from the public</a></li>
+</ul></li>
+<li class="chapter" data-level="65" data-path="case-study-global-young-academy-tracing-the-paths-of-gyas-impact.html"><a href="case-study-global-young-academy-tracing-the-paths-of-gyas-impact.html"><i class="fa fa-check"></i><b>65</b> Case study: Global Young Academy. Tracing the paths of GYA’s impact</a><ul>
+<li class="chapter" data-level="65.1" data-path="case-study-global-young-academy-tracing-the-paths-of-gyas-impact.html"><a href="case-study-global-young-academy-tracing-the-paths-of-gyas-impact.html#more-details"><i class="fa fa-check"></i><b>65.1</b> More details</a><ul>
+<li class="chapter" data-level="65.1.1" data-path="case-study-global-young-academy-tracing-the-paths-of-gyas-impact.html"><a href="case-study-global-young-academy-tracing-the-paths-of-gyas-impact.html#aims"><i class="fa fa-check"></i><b>65.1.1</b> Aims</a></li>
+<li class="chapter" data-level="65.1.2" data-path="case-study-global-young-academy-tracing-the-paths-of-gyas-impact.html"><a href="case-study-global-young-academy-tracing-the-paths-of-gyas-impact.html#methods"><i class="fa fa-check"></i><b>65.1.2</b> Methods</a></li>
+<li class="chapter" data-level="65.1.3" data-path="case-study-global-young-academy-tracing-the-paths-of-gyas-impact.html"><a href="case-study-global-young-academy-tracing-the-paths-of-gyas-impact.html#findings"><i class="fa fa-check"></i><b>65.1.3</b> Findings</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="66" data-path="appendix-previous-work.html"><a href="appendix-previous-work.html"><i class="fa fa-check"></i><b>66</b> Appendix: previous work</a><ul>
+<li class="chapter" data-level="66.1" data-path="appendix-previous-work.html"><a href="appendix-previous-work.html#from-theorymaker-to-causal-mapping-and-from-theories-of-change-to-causal-maps"><i class="fa fa-check"></i><b>66.1</b> From “Theorymaker” to “Causal Mapping” and from “Theories of Change” to “Causal Maps”</a></li>
+<li class="chapter" data-level="66.2" data-path="appendix-previous-work.html"><a href="appendix-previous-work.html#articles"><i class="fa fa-check"></i><b>66.2</b> Articles</a></li>
+<li class="chapter" data-level="66.3" data-path="appendix-previous-work.html"><a href="appendix-previous-work.html#presentations"><i class="fa fa-check"></i><b>66.3</b> Presentations</a></li>
+<li class="chapter" data-level="66.4" data-path="appendix-previous-work.html"><a href="appendix-previous-work.html#poster"><i class="fa fa-check"></i><b>66.4</b> Poster</a></li>
+<li class="chapter" data-level="66.5" data-path="appendix-previous-work.html"><a href="appendix-previous-work.html#longer-blog-posts"><i class="fa fa-check"></i><b>66.5</b> Longer blog posts</a></li>
+<li class="chapter" data-level="66.6" data-path="appendix-previous-work.html"><a href="appendix-previous-work.html#resources-and-apps"><i class="fa fa-check"></i><b>66.6</b> Resources and apps</a></li>
+</ul></li>
+<li class="chapter" data-level="67" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>67</b> References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Causal Mapping</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="back-to-planet-quip-understanding-the-basic-quip-coding-rules" class="section level1">
+<h1><span class="header-section-number">Section 24</span> Back to planet QuIP: Understanding the basic QuIP coding rules</h1>
+<p>James and Fiona, I think I’ve been rushing too much in trying to fit my understanding of QuIP causal diagrams some preconceived schema. In this note, I want to try to understand and characterise QuIP coding rules as they stand.</p>
+<p>I’d like to ask if I’ve managed to characterise the QuIP correctly, and if not, please correct me! I need to get these things right in order to make the causal map app useful for QuIP. I’ve preceded specific questions to you with a “<strong>??</strong>” sign.</p>
+<p>Actually I will focus on “classic” QuIP methods as presented in <span class="citation">BSDR (2017)</span>, (and also in the Appendix to <span class="citation">Copestake, Morsink, and Remnant (2019)</span>) e.g. before any innovations like the coding of multiple influence items or positive versus negative links.</p>
+<p>I understand classic QuIP to be a <em>proposition-based</em> approach in which the items are propositions like “higher unemployment” or “sold cow”. This approach contrasts with a variable-based approach as in SEM, in which the items are e.g. <em>level of</em> unemployment, retention of cattle. These variables are not true or false; specification of the actual / current / predicted value of the variables is an additional, optional step.</p>
+<p>The propositional approach has many advantages which I have tried to set out here: above all, it is a part of a very natural way to ask about and record causal influences and which gathers evidence with high plausibility. I also suspect that its simple “causal chain” model is easier to translate for different settings and cultural contexts.</p>
+<p>My worry is that it is nothing like as general as a variable-based approach and has trouble dealing with common cases like multiple influence variables.</p>
+<p>I’d like to help make sure that any suggested innovations to “classic QuIP” still retain all its tried-and-tested added value.</p>
+<p>Terminology: I will follow the terminology in the Glossary in <span class="citation">BSDR (2017)</span>, together with our recent additional Glossary (also, I will call the nodes of the causal maps “items”, which is a more neutral and appropriate term than “variables”).</p>
+<div id="classic-quip-overview" class="section level2">
+<h2><span class="header-section-number">24.1</span> Classic QuIP: overview</h2>
+<p>The QuIP protocol begins by asking respondents questions about changes in pre-defined domains of interest like nutrition within a reference period. Sources mention items important for them in that domain and work backwards from each to provide chains of antecedent causes. QuIP is above all interested in the extent to which respondents spontaneously mention the project of interest amongst the causal antecedents.</p>
+<p>Here’s an imaginary QuIP causal chain derived from some corresponding statement(s) from a single source.</p>
+<div id="htmlwidget-f46ac559b552fa0b59ac" style="width:900px;height:300px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-f46ac559b552fa0b59ac">{"x":{"diagram":"\ngraph LR\n\nUnemployment --> s(Less money <br>for food)\n\ns --> h(Increased <br>hunger)\n\n\n"},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="the-nature-of-the-items" class="section level2">
+<h2><span class="header-section-number">24.2</span> The nature of the items</h2>
+<div id="the-items-are-subjective-propositions-not-variables" class="section level3">
+<h3><span class="header-section-number">24.2.1</span> The items are (subjective) propositions, not variables</h3>
+<p>I believe that QuIP tends to treat the items (the boxes or nodes between which arrows are drawn) as <strong>propositions</strong> and not, for example, as variables. The items themselves (and not just the links) are specific empirical (but not causal) claims made in and about a specific context (such as “X has increased” or “Y has got worse”) and are, broadly speaking, more or less true or false in that context. (The claims have a varying amount of subjectivity, from a fairly subjective “this has got worse for me” to a fairly intersubjective “the rains have got worse”; nevertheless they are grammatically all claims, which can in principle be more or less true or false.)</p>
+<p>“<strong>??</strong>” Presumably, in the example above, we could if necessary be more precise in writing “presence of unemployment” rather than just “unemployment”, to make it clear that this is something that can be true or false, rather than just the name of something.</p>
+</div>
+<div id="the-items-have-to-have-been-individually-experienced" class="section level3">
+<h3><span class="header-section-number">24.2.2</span> The items have to have been individually experienced</h3>
+<p>In general, the propositions have to be / have been <strong>personally true for / experienced by the source</strong> – <span class="citation">BSDR (2017)</span> doesn’t say this explicitly, and focus group data asks for information on “people like me”.</p>
+<p>… Certainly, the changes in the final outcomes must have been personally experienced. So even if the new seeds produced better crops for 99 of the hundred farmers, the one farmer who actually got worse crops when using the new seeds will report “new seeds –&gt; worse crops” even though they know that the new seeds are great for nearly everyone.</p>
+<p>From a SEM perspective, this seems bizarre. But from the perspective of, say, an evaluator conducting an ordinary summative evaluation of a project, it is a completely normal way of thinking.</p>
+<p>Evidence based on testimony from respondents who have “actually experienced” all the parts of a causal link (yes, I got the new seeds, and yes, I got better harvests, and yes I think the one is the cause of the other) usually carries a lot more weight for the reader than hypothetical statements. On the other hand, I think this oversells the importance of experience of co-occurring events (which opens QuIP to criticisms about small sample size) and underplays the importance of respondents’ more fundamental, underlying knowledge about this kind of causal link which is not derived from just this particular chain of events.</p>
+<p>(The above also implies that all the propositions are in fact, perhaps even necessarily, in the <em>past</em>.)</p>
+</div>
+<div id="do-the-items-necessarily-express-changes-states-events" class="section level3">
+<h3><span class="header-section-number">24.2.3</span> Do the items necessarily express changes? States? Events?</h3>
+<p>Can we be more precise about the nature of the events?</p>
+<p>The definitions in the Glossary in <span class="citation">BSDR (2017)</span> are not completely consistent. So, a Driver is “An action or state (X or Z) behind outcomes (Y).” and Outcomes are “Changes (positive or negative) reported by respondents”; as “outcomes can also become drivers of change”, this means that the apparent distinction between “actions or state” on the one hand and “changes” on the other hand is blurred (because any one item can be both). My understanding is that actually, it is final (“no-child”) outcomes which have to be expressed as changes in the reference period, whereas other items can be expressed in a variety of ways (though still as propositions).</p>
+<p>Perhaps each item does have to express a <em>change</em>, e.g. from the beginning to the end of a reference period? But this doesn’t work here in the case of “unemployment” which is mentioned as a reason why for having less money, and perhaps remained at a high level throughout the reference period. Perhaps the source even explicitly mentioned “if we’d had jobs, we could just have worked overtime to compensate”, contrasting unemployment only with its absence, namely employment. Here, unemployment is not mentioned as something which changes over time; rather, it is contrasted with another situation which might have existed outside the reference period or simply as a desirable but non-existent situation.</p>
+<p>Putative static causes like “unemployment” are, I believe, a frequent headache in QuIP coding: inflation, migration, God’s will … things whose status may not be changing, and which may have a role in the language-game of “explanation” in a particular social context but may not really help with understanding causes. (Of course, causal claims about <em>changes</em> in an influencing factor like “<em>increasing</em> unemployment” are also possible and not so problematic.)</p>
+<p>A strength of this kind of proposition-based analysis of causal statements is that it quite naturally captures the kinds of causal explanations which people actually give. One could argue that we shouldn’t even be worrying about what format the antecedent causes take, because they are just whatever explanations people give. But this is problematic, because the coder needs to understand the items within a claim, rather than just reproducing them verbatim, in order to be able to judge whether a different claim by a different source involves <em>the same</em> item or not.</p>
+<p>I guess most project logframes and Theories of Change are formulated in a propositional rather than a variable-based way.</p>
+<div id="events-1" class="section level4">
+<h4><span class="header-section-number">24.2.3.1</span> Events</h4>
+<p>There seems no reason why events shouldn’t be causes too.</p>
+<div id="htmlwidget-5e14da3c12bfe183d009" style="width:900px;height:300px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5e14da3c12bfe183d009">{"x":{"diagram":"\ngraph LR\ni(Introduction of<br>higher food taxes)-->h(Increased hunger)\n\n\n"},"evals":[],"jsHooks":[]}</script>
+<p>In this case, the event can also be parsed as a change, from lower to higher food taxes. But …</p>
+<div id="htmlwidget-e91580c8f05760164180" style="width:900px;height:300px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e91580c8f05760164180">{"x":{"diagram":"\ngraph LR\ni(January incursion of<br>terrorists)-->l(loss of cattle)\nl-->h(Increased hunger)\n\n\n"},"evals":[],"jsHooks":[]}</script>
+<p>… in this case, the triggering event can hardly be described as a <em>change</em>. It is a clear example of a one-off event.</p>
+<p>“Events” pass the contrastive test (see below): if the incursion hadn’t happened, we wouldn’t have lost (so many) cattle, but it did, and we did.</p>
+<p>Events are easy to capture with a proposition-based approach and harder to capture with a variables-based approach. So the assassination of Arch-Duke Ferdinand was a causal trigger for WWI, but it is hard to conceive of that assassination as a variable, (something that would still be around but not actuated in an alternative history in which he never went to Sarajevo).</p>
+</div>
+<div id="do-final-outcomes-have-to-be-changes-status-quo" class="section level4">
+<h4><span class="header-section-number">24.2.3.2</span> Do final outcomes have to be changes? status quo</h4>
+<div id="htmlwidget-385fad42cdf6bb1466fd" style="width:900px;height:300px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-385fad42cdf6bb1466fd">{"x":{"diagram":"\ngraph LR\nB(Project intervenes to<br> strengthen riverbank)-->E(River levels the same)\n\n\n"},"evals":[],"jsHooks":[]}</script>
+<p>The rule that final outcomes have to be expressed as changes (because anyway that is the way the very questions are formulated) would mean we can’t use QuIP to evaluate projects which aim to maintain the status quo, and that it is difficult to use classic QuIP to evaluate any project in which key outcomes are changing anyway. This seems like a big problem.</p>
+</div>
+<div id="do-individual-final-outcomes-have-to-be-changes" class="section level4">
+<h4><span class="header-section-number">24.2.3.3</span> Do <em>individual</em> final outcomes have to be changes?</h4>
+<p><strong>??</strong> It is also worth noting that as I understand it, even when a positive change is expected and reported by many respondents, the QuIP protocol suppresses the experience of others who did <em>not</em> experience a change. As they can only provide causal chains ending in a change, their experience is missed out. (Sure, as QuIP generally only includes respondents who have been exposed to the project, the <em>lack</em> of positive responses from a subset can at least be counted. But nevertheless their evidence goes missing. What if they would have been able to report that they didn’t get good crops because of the presence of a pest, but that information never gets written down?)</p>
+</div>
+<div id="do-final-outcomes-have-to-be-changes-one-off-events" class="section level4">
+<h4><span class="header-section-number">24.2.3.4</span> Do final outcomes have to be changes? one-off events</h4>
+<div id="htmlwidget-956ab1663f4be965268a" style="width:900px;height:300px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-956ab1663f4be965268a">{"x":{"diagram":"\ngraph LR\np(Project activities)-->a\na(Better preparation<br>of employers) --> h(Better retention <br>of first-time<br>workers)\n\n\n"},"evals":[],"jsHooks":[]}</script>
+<p>The commissioner of this evaluation might have been involved in, say, providing the preparation of employers and is very interested in improving the retention of first-time workers within the reference period. But the individual students interviewed as part of this evaluation are not, from their own individual perspectives, describing changes of any kind; they are describing an experience which is by definition a one-off. They are describing contrasts with <em>hypothetical alternatives</em>, not with <em>prior states</em> experienced by the respondents themselves. “I really knew what to expect and the people knew what support to give, much better than what my cousin said it is like where she lives.”</p>
+<p>Weddings, births, transition to first employment etc, and their specific characteristics are all stand-out examples of events which are obviously important in individual life cycles and are often mentioned in QuIP interviews but which, at least from the perspective of individuals, can only with difficulty be characterised as changes within a reference period.</p>
+</div>
+<div id="do-all-chains-have-to-end-with-an-outcome-of-interest" class="section level4">
+<h4><span class="header-section-number">24.2.3.5</span> Do all chains have to end with an outcome of interest?</h4>
+<p><strong>??</strong> I am not clear what happens if a respondent happens to mention, in passing, some causal links which do not culminate in an outcome of interest. Is the information left uncoded?</p>
+</div>
+<div id="conclusion-on-events-states-changes" class="section level4">
+<h4><span class="header-section-number">24.2.3.6</span> Conclusion on events / states / changes</h4>
+<p>In the face of some real difficulties above, an obvious response would be to replace the idea of “changes” with the broader idea of “differences” or “deltas” (<a href="https://www.linkedin.com/pulse/dear-world-bank-its-differences-changes-we-look-impact-steve-powell/" class="uri">https://www.linkedin.com/pulse/dear-world-bank-its-differences-changes-we-look-impact-steve-powell/</a>).</p>
+<p>All the examples above can be covered by the idea of “differences”; things being one way rather than some expected or possible contrast: a state of unemployment rather than a state of employment, a status quo in flood levels rather than the feared contrast of floods, an incursion of terrorists rather than none, and so on. This would also allow QuIP to evaluate projects with the aim of maintaining the status quo, although obviously the questions would have to be formulated a little differently.</p>
+<p>But, of course, replacing “changes” with “differences” means introducing a variable-based approach. The strength of now being able to also ask about hypothetical situations is also a weakness because it could reduce the face-value believability of the combined body of evidence.</p>
+<p><strong>??</strong> My question is, if indeed deltas or differences are not an acceptable alternative or more general characterisation of the nature of the items in QuIP causal maps, rather than considering them to be changes / states / events, do we have a more systematic account of the nature of the items?</p>
+</div>
+</div>
+</div>
+<div id="the-nature-of-the-links" class="section level2">
+<h2><span class="header-section-number">24.3</span> The nature of the links</h2>
+<div id="contrastive-implications" class="section level3">
+<h3><span class="header-section-number">24.3.1</span> Contrastive implications</h3>
+<p>I think that the QuIP way of coding a causal claim concurs with the mainstream that it always <em>implies</em> a “counterfactual” contrast (which is quite another thing from saying that the people making it have to be in possession of corresponding evidence, and is compatible with a proposition-based as well as a variable-based approach). If someone makes a claim of the form that “X is a causal package containing the main factors which causally influenced Y”, but then say that actually even if X had not happened in that way, this wouldn’t have made any difference to Y, and that Y can happen or not happen irrespective of X", I think that a QuIP coder too would conclude that the speaker does not share our understanding of causality, and would <strong>not</strong> code the initial statement as a causal claim.</p>
+<p>For example, if someone says that the reason my crops were good is because it is the Year of the Dolphin, and the reason my neighbour’s crops were poor is also because it is the Year of the Dolphin, if they have not named further explanatory factors we would probably not code this/these as causal claims.</p>
+</div>
+<div id="need-for-a-distinction-between-plus-and-minus-links" class="section level3">
+<h3><span class="header-section-number">24.3.2</span> Need for a distinction between “plus” and “minus” links?</h3>
+<p>The rationale for including successive antecedents in a causal chain is that each causally explains the item it influences. In this paradigm, there is no initial room or need for the idea of “directionality” of links.</p>
+<p>The need only arises when we (understandably) want to be able to code “failing the exam” from one causal chain as the same item as “passing the exam” from another chain; but if we do recode all “failing” items as “passing”, all the old links will have to have reversed directionality.</p>
+<p>It’s also worth noting that if a revised QuIP is going to allow minus as well as plus links, the simple ways to summarise project impact on p. 4 and 5 of <span class="citation">BSDR (2017)</span> have to be adjusted.</p>
+</div>
+<div id="establishing-common-codes" class="section level3">
+<h3><span class="header-section-number">24.3.3</span> Establishing common codes</h3>
+<p>Classic QuIP does already take one very important step beyond from the most basic and literal coding of individual causal claims, namely by establishing common codes for similar items across sources, as mentioned above. This is already a kind of aggregation and all on its own brings some familiar problems which perhaps can only be dealt with by adopting a variable-based approach. For example, if one source mentions “some health problems” and another mentions “severe health problems”, this could be combined as, say, “health problems” meaning that the difference in degree has to be dealt with separately, perhaps by conceiving the item as some kind of variable quantity and/or by introducing the idea of links of different strengths.</p>
+</div>
+<div id="mono-versus-multiple-causation" class="section level3">
+<h3><span class="header-section-number">24.3.4</span> Mono versus multiple causation</h3>
+<p>In “classic QuIP”, there is only one influencing item for each consequence item in a causal chain.</p>
+<p>(However, the same source may mention “the same” item as part of different chains – when mentioning several chains leading to the same final outcome, or when chains share an intermediate or initial item. This issue is governed by rules for combining atomic maps, which I am not covering here.)</p>
+<p>Allowing causal packages with more than one influencing item means revisiting the coding rules above. This might not be as simple as it sounds, not least because of the provision “items have to have been individually experienced”.</p>
+<div id="htmlwidget-bd502787eb8113a43a6d" style="width:900px;height:300px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-bd502787eb8113a43a6d">{"x":{"diagram":"\ngraph LR\nB(Project provides <br>some funds)-- opposite direction -->E(Income goes down)\nL(Large loss of<br>sales<br>due to drought)-->E(Income goes down)\n\n\n"},"evals":[],"jsHooks":[]}</script>
+<p>In this case, from our God-like, variable-based perspective we can see that there is a simple, continuous outcome. The project has a small, plus effect on it, which is outweighed by another larger, minus influence. The overall change (the only thing which the classic QuIP protocol can record) is a moderate reduction in income.</p>
+<p>The logic of “attribution” coding is tricky here. On the surface, this is a negative change, a negative outcome, which is also (partially) attributable to the project! This would make the project seem <em>bad</em>, whereas in fact the specific contribution of the project is (from our God-like, variable-based perspective) positive.</p>
+<p>Also the requirement that “the items and causal mechanisms have to have been actually witnessed by the respondent” is harder to understand/implement here. It’s not quite clear what this means in the case of two opposing, if independent, forces. If I watch two ropes pulling on an object with equal force in opposite directions, do I really witness the causal effects of the two opposing forces in the same way that I might witness just one rope pulling unopposed on the same object?</p>
+<p>Even in these very simple, additive / subtractive cases, as soon as we introduce multiple influence items, the very grass-roots, narrative / propositional approach taken by QuIP gets a lot more difficult to apply.</p>
+</div>
+<div id="explicit-causal-knowledge" class="section level3">
+<h3><span class="header-section-number">24.3.5</span> Explicit causal knowledge</h3>
+<p>I think it is also important that what is to be coded is an explicitly <em>causal</em> claim. It is not enough that the respondent says “I noted that X changed. I also noticed that Y changed.” The QuIP protocol is designed to draw on respondents’ underlying causal world-view, and not primarily on observation of co-occurrence.</p>
+</div>
+<div id="causal-links-within-causal-chains" class="section level3">
+<h3><span class="header-section-number">24.3.6</span> Causal links within causal chains</h3>
+<p>QuIP has the notion of a causal chain of two or more causal links. But I <em>think</em> that, also for QuIP, <em>the notion of causality expressed with the individual atomic links is the same regardless of the position that link might take within a causal chain</em>. In other words, we don’t need different “atomic coding rules” depending on whether the link in question is at the beginning, middle or end of a chain. A coder means the same thing when coding such a link regardless of its position, and someone reading the map understands the same thing.</p>
+<p>That is good: the simpler and more universal the rules, the better.</p>
+</div>
+<div id="causal-chains-and-attribution" class="section level3">
+<h3><span class="header-section-number">24.3.7</span> Causal chains and attribution</h3>
+<p>On the other hand, the concept of an entire causal chain is still important in QuIP and, on the face of it, not reducible to a bunch of individual links. This is because attribution codes are given to whole chains, <em>not</em> to individual links.</p>
+<p>It’s of practical benefit that BSDR has now adapted the coding process to be built up from individual atomic maps, rather than chains. But does this mean that chains have disappeared from the coding process? The question is to what extent attribution codes are irreducible or can now potentially be “read off” from the rest of the database of causal chains.</p>
+<p><strong>??</strong> I understand that it is essential for QuIP to be able to track from outcomes of interest back to project interventions within individual causal claims from individual respondents. I understand that this is gold for QuIP; we can call them “gold threads”. It is much more valuable than a case in which one respondent mentions a link from the project to X, and another mentions a link from X to an outcome of interest. This cannot be done if we just construct a causal map for all respondents from a pile of atomic links. The information about which chain each link belongs to has to be additionally retained, in order to be able to dig for QuIP gold.</p>
+<p>By all means, the additional information about paths from the project to an outcome of interest which are not (or not necessarily) contained within individual chains is interesting too. But it does not replace QuIP gold.</p>
+<p><strong>??</strong> A question: suppose respondent R mentions a link (or chain) from the project P to an outcome O1 in answer to one question, and mentions another link (or chain) from O1 to another outcome O2 in answer to a different question. Here there is one golden thread from P to O1, but is there another from P to O2, and if so, where is it coded? Are both links explicitly coded for the second answer, with a reference to the first? (I think these are written between square brackets in the Nepal Pigs file?)</p>
+</div>
+</div>
+<div id="problems-1" class="section level2">
+<h2><span class="header-section-number">24.4</span> Problems</h2>
+<div id="contrasts-and-anchoring" class="section level3">
+<h3><span class="header-section-number">24.4.1</span> Contrasts and anchoring</h3>
+<p>A feature of propositions, as opposed to variables, is that their flip sides are not always clear: what has to be the case for a particular proposition to be <em>false</em>? One can see this as hopeless lack of clarity or a useful feature which is close to ordinary langauge.</p>
+<p>So we can reasonably ask: if “unemployment” exerts some kind of causal influence here, it can’t be eternally true or present, presumably there are situations or contexts would count as a lack of unemployment, but which?<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></p>
+<p><strong>??</strong> A related issue about anchoring / scaling: If two sources both mention the item “health problems”, does it matter that one is thinking of dandruff and another of heart disease?</p>
+<p>Fuzzy Sets <span class="citation">Ragin and Pennings (2005)</span> provide a possible way to solve this problem for propositions: the items (like “unemployment” or “democracy”) can carry on as monolithic ideals, but respondent <em>claims</em> about them can be moderated according to degree of accordance with that ideal, aka degree of membership of that fuzzy set.</p>
+</div>
+<div id="focus-on-initial-items-drivers" class="section level3">
+<h3><span class="header-section-number">24.4.2</span> Focus on initial items (“drivers”)</h3>
+<p>I think that classic QuIP gives a special role to the notion of drivers as the beginning of a causal chain; the project of interest is, of course, by definition a driver, but other “beginnings” get special status too?
+I’m thinking of Fig 5 in <span class="citation">BSDR (2017)</span>, which shows a table of outcomes attributed to each driver.</p>
+<p>The word “driver” seems to suggest that the beginning of a chain is the wicked initiator, and the intervening items are just innocent bystanders transmitting an impulse. But most real chains aren’t like that are they?</p>
+<div id="htmlwidget-7c6c7b336e275419e1ae" style="width:900px;height:300px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-7c6c7b336e275419e1ae">{"x":{"diagram":"\ngraph LR\ng(Government<br>ineptitude)-->u(Unemployment)\nu-->Poverty\n\n\n"},"evals":[],"jsHooks":[]}</script>
+<p>In this example, unemployment might be a relevant and actually present causal factor even without government ineptitude.
+I’d have thought you’d want to see “unemployment” in Fig 5 even though it might never appear at the beginning of a chain? In other words, does it matter to QuIP that an item (apart from the project itself) is at the beginning of a causal chain, does that give it a special status?</p>
+</div>
+<div id="vulnerability-to-luck-coincidence" class="section level3">
+<h3><span class="header-section-number">24.4.3</span> Vulnerability to luck / coincidence</h3>
+<p>Like most practical evaluation techniques, QuIP is vulnerable to over-interpretation of happenstance. For example, if a perfectly-conceived and prepared project is denied success by an incredibly unlucky meteorite strike at the last minute, QuIP is unable even to begin an evaluation, because there are, unluckily, no “positive changes” to put at the end of causal chains. QuIP is not alone in this: most narrative approaches to evaluation would have the same problem. Whereas a broader variable-based perspective<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a> might ask to what extent the project was the right kind of tool to address the problem, regardless of the fact that it was denied success in an unforeseeable way at the last moment.</p>
+<p>This is the difference between evaluating overall <em>success potential</em> (most interesting for scientists and policy-makers) and <em>actual success / failure</em> (most interesting for journalists, law courts, and Ambassadors).</p>
+<p>There is a big tension between plausibility and validity.</p>
+<p>The Ambassador might well have trouble understanding why an evaluation of success potential might give a project full marks even though it was ultimately unsuccessful.</p>
+<p>(The same problem works the other way round, when a poor project “achieves” positive changes via lucky pathways.)</p>
+</div>
+</div>
+<div id="conclusion" class="section level2">
+<h2><span class="header-section-number">24.5</span> Conclusion</h2>
+<p>So perhaps we can say:</p>
+<ul>
+<li>The basic unit of “classic” QuIP coding is the causal chain.</li>
+<li>The final item in the chain is a change experienced by the respondent in a given domain during a given reference period.</li>
+<li>Going backwards from the final outcome, each link in the chain codes how the influencing item causally explains (or partly explains?) the consequence item.</li>
+<li>The logical nature of the preceding items is not specifically defined; anything is allowed which could count as a (partial) causal explanation of the item it influences. This can include events, changes during the reference period, and contrasts with hypothetical alternatives.</li>
+<li>Each item and each causal link has to be something which the respondent themselves has directly experienced/witnessed.</li>
+<li>Each chain is tagged with an assessment of the extent to which the final item (the change) can be attributed to the evaluated project.</li>
+</ul>
+<p>Advantages: This proposition-based approach is natural, relatively easy to apply and explain, produces highly plausible evidence, and has a very natural and persuasive way of presenting the extent to which a project seems to have led to key outcomes, which is what commissioners want most. In particular it produces “golden threads”: when one respondent explicitly mentions a causal chain from the project to an outcome.</p>
+<p>Disadvantages:</p>
+<ul>
+<li>It is difficult to apply consistently with
+<ul>
+<li>projects in which the outcomes are one-offs for the respondents</li>
+<li>projects which attempt to maintain the status quo</li>
+<li>more generally, with projects in which the outcomes of interest change anyway</li>
+</ul></li>
+<li>It is hard to accommodate causal explanations involving more then one influence item, especially when they “pull in different directions”</li>
+<li>The (possibly important) evidence of respondents who did <em>not</em> experience a particular change is not gathered</li>
+<li>It is vulnerable to luck and coincidence.</li>
+<li>Coding items from different causal chains as “the same” item can be problematic when the original items seem to have different degree or polarity</li>
+</ul>
+<p>While all of the above problems can be mitigated, it is hard to do so without (more or less radically) switching to a variable-based paradigm and perhaps losing some of the advantages.</p>
+<p>Here, I have only touched on some additional important issues surrounding synthesis and aggregation in a proposition-based versus a variable-based approach to causal coding. That would be for another day.</p>
+</div>
+<div id="other-extensions" class="section level2">
+<h2><span class="header-section-number">24.6</span> Other extensions</h2>
+<p>It seems to me that just about any extensions of the Classic QuIP perspective, like</p>
+<ul>
+<li>“strength” of a connection</li>
+<li>necessary / sufficient conditions</li>
+</ul>
+<p>lead us into the same type of quandary as introducing multiple influencing items: it is all quite possible, but they seem to make a transition to a variable-based approach inevitable.</p>
+</div>
+<div id="suggestion" class="section level2">
+<h2><span class="header-section-number">24.7</span> Suggestion</h2>
+<p>I think the most sensible thing is indeed to use a variable-based model, as already discussed, but to make more effort also to preserve the simplicity and plausibility of the classic model. For example, the existing method of attribution coding can put special emphasis on “gold threads” when and if they appear; plus, “gold threads” can to a large extent be identified automatically.</p>
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="4">
+<li id="fn4"><p>One of the strengths of Rubin’s Potential Outcomes Framework, which ignited the causal revolution in statistics <span class="citation">Rubin (2005)</span>, is that it clarifies the contrasts within a causal statement.<a href="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html#fnref4" class="footnote-back">↩</a></p></li>
+<li id="fn5"><p>One could argue how “theory-based evaluation” fits in here<a href="back-to-planet-quip-understanding-the-basic-quip-coding-rules.html#fnref5" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="propositions.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="variable-based-and-propositional-based-approaches-to-causal-diagrams-chalk-and-cheese.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 3
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["Causal_Mapping.pdf"],
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

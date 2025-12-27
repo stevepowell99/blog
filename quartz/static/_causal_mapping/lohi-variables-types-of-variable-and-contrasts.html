@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Section 27 Lo/hi Variables, types of variable, and contrasts | Causal Mapping</title>
+  <meta name="description" content="Section 27 Lo/hi Variables, types of variable, and contrasts | Causal Mapping" />
+  <meta name="generator" content="bookdown 0.10 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Section 27 Lo/hi Variables, types of variable, and contrasts | Causal Mapping" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Section 27 Lo/hi Variables, types of variable, and contrasts | Causal Mapping" />
+  
+  
+  
+
+<meta name="author" content="Steve Powell" />
+
+
+<meta name="date" content="2019-06-25" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="for-each-variables.html">
+<link rel="next" href="levels.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<script src="libs/d3-3.3.8/d3.min.js"></script>
+<script src="libs/dagre-0.4.0/dagre-d3.min.js"></script>
+<link href="libs/mermaid-0.3.0/dist/mermaid.css" rel="stylesheet" />
+<script src="libs/mermaid-0.3.0/dist/mermaid.slim.min.js"></script>
+<link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+<script src="libs/chromatography-0.1/chromatography.js"></script>
+<script src="libs/DiagrammeR-binding-1.0.1/DiagrammeR.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Causal Mapping</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> What’s in this book</a></li>
+<li class="chapter" data-level="2" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i><b>2</b> Acknowledgements</a><ul>
+<li class="chapter" data-level="2.1" data-path="acknowledgements.html"><a href="acknowledgements.html#people"><i class="fa fa-check"></i><b>2.1</b> People</a></li>
+<li class="chapter" data-level="2.2" data-path="acknowledgements.html"><a href="acknowledgements.html#software"><i class="fa fa-check"></i><b>2.2</b> Software</a></li>
+</ul></li>
+<li class="part"><span><b>I Introduction</b></span></li>
+<li class="chapter" data-level="3" data-path="manifesto-piecing-together-fragments-of-causal-information.html"><a href="manifesto-piecing-together-fragments-of-causal-information.html"><i class="fa fa-check"></i><b>3</b> Manifesto: piecing together fragments of causal information</a></li>
+<li class="chapter" data-level="4" data-path="previous-work.html"><a href="previous-work.html"><i class="fa fa-check"></i><b>4</b> Previous work</a><ul>
+<li class="chapter" data-level="4.1" data-path="previous-work.html"><a href="previous-work.html#from-theorymaker-to-causal-mapping-and-from-theories-of-change-to-causal-maps"><i class="fa fa-check"></i><b>4.1</b> From “Theorymaker” to “Causal Mapping” and from “Theories of Change” to “Causal Maps”</a></li>
+<li class="chapter" data-level="4.2" data-path="previous-work.html"><a href="previous-work.html#articles"><i class="fa fa-check"></i><b>4.2</b> Articles</a></li>
+<li class="chapter" data-level="4.3" data-path="previous-work.html"><a href="previous-work.html#presentations"><i class="fa fa-check"></i><b>4.3</b> Presentations</a></li>
+<li class="chapter" data-level="4.4" data-path="previous-work.html"><a href="previous-work.html#poster"><i class="fa fa-check"></i><b>4.4</b> Poster</a></li>
+<li class="chapter" data-level="4.5" data-path="previous-work.html"><a href="previous-work.html#longer-blog-posts"><i class="fa fa-check"></i><b>4.5</b> Longer blog posts</a></li>
+<li class="chapter" data-level="4.6" data-path="previous-work.html"><a href="previous-work.html#resources-and-apps"><i class="fa fa-check"></i><b>4.6</b> Resources and apps</a></li>
+</ul></li>
+<li class="part"><span><b>II Soft arithmetic: rules for causal maps</b></span></li>
+<li class="chapter" data-level="5" data-path="soft.html"><a href="soft.html"><i class="fa fa-check"></i><b>5</b> We need a “soft arithmetic” for causal maps</a><ul>
+<li class="chapter" data-level="5.1" data-path="soft.html"><a href="soft.html#examplesOfMaps"><i class="fa fa-check"></i><b>5.1</b> Examples of different kinds of causal maps</a></li>
+<li class="chapter" data-level="5.2" data-path="soft.html"><a href="soft.html#users-of-a-causal-map-expect-to-be-able-to-deduce-some-kind-of-comparative-information-from-it"><i class="fa fa-check"></i><b>5.2</b> Users of a causal map expect to be able to deduce some kind of comparative information from it</a></li>
+<li class="chapter" data-level="5.3" data-path="soft.html"><a href="soft.html#asking-and-answering-those-kinds-of-typical-questions-of-a-causal-map-boils-down-to-assigning-some-kinds-of-numbers-to-its-elements"><i class="fa fa-check"></i><b>5.3</b> Asking and answering those kinds of “typical questions” of a causal map boils down to assigning some kinds of numbers to its elements</a></li>
+<li class="chapter" data-level="5.4" data-path="soft.html"><a href="soft.html#two-simple-but-inadequate-strategies-to-encode-causal-information-without-using-any-kind-of-number"><i class="fa fa-check"></i><b>5.4</b> Two simple (but inadequate) strategies to encode causal information without using any kind of number</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="meaning.html"><a href="meaning.html"><i class="fa fa-check"></i><b>6</b> We need rules about how to encode causal information in a causal map (and decode it again)</a><ul>
+<li class="chapter" data-level="6.1" data-path="meaning.html"><a href="meaning.html#how-do-causal-claims-work-within-ordinary-language"><i class="fa fa-check"></i><b>6.1</b> How do causal claims work within ordinary language?</a></li>
+<li class="chapter" data-level="6.2" data-path="meaning.html"><a href="meaning.html#understanding-the-elements-of-a-causal-map-by-agreeing-how-to-make-deductions-with-them"><i class="fa fa-check"></i><b>6.2</b> Understanding the elements of a causal map by agreeing how to make deductions with them</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="soft-arithmetic-is-also-the-answer-to-understanding-causal-maps.html"><a href="soft-arithmetic-is-also-the-answer-to-understanding-causal-maps.html"><i class="fa fa-check"></i><b>7</b> Soft arithmetic is also the answer to understanding causal maps</a></li>
+<li class="chapter" data-level="8" data-path="overview-of-issues-which-a-soft-arithmetic-for-causal-maps-needs-to-cover.html"><a href="overview-of-issues-which-a-soft-arithmetic-for-causal-maps-needs-to-cover.html"><i class="fa fa-check"></i><b>8</b> Overview of issues which a “soft arithmetic for causal maps” needs to cover</a></li>
+<li class="chapter" data-level="9" data-path="metalanguage-talking-about-causal-maps.html"><a href="metalanguage-talking-about-causal-maps.html"><i class="fa fa-check"></i><b>9</b> Metalanguage: talking about causal maps</a><ul>
+<li class="chapter" data-level="9.1" data-path="metalanguage-talking-about-causal-maps.html"><a href="metalanguage-talking-about-causal-maps.html#influence-variable-consequence-variable"><i class="fa fa-check"></i><b>9.1</b> Influence variable, consequence variable</a></li>
+<li class="chapter" data-level="9.2" data-path="metalanguage-talking-about-causal-maps.html"><a href="metalanguage-talking-about-causal-maps.html#the-cause-a-cause"><i class="fa fa-check"></i><b>9.2</b> “The cause”, “a cause”</a></li>
+<li class="chapter" data-level="9.3" data-path="metalanguage-talking-about-causal-maps.html"><a href="metalanguage-talking-about-causal-maps.html#mechanism-theory-."><i class="fa fa-check"></i><b>9.3</b> Mechanism, theory ….</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="mini-map-rule.html"><a href="mini-map-rule.html"><i class="fa fa-check"></i><b>10</b> The mini-map coding rule</a></li>
+<li class="chapter" data-level="11" data-path="mini-function.html"><a href="mini-function.html"><i class="fa fa-check"></i><b>11</b> The mini-map coding rule – functional form</a></li>
+<li class="chapter" data-level="12" data-path="the-extras-rule-adding-extra-information-in-particular-about-the-levels-or-values-of-the-variables.html"><a href="the-extras-rule-adding-extra-information-in-particular-about-the-levels-or-values-of-the-variables.html"><i class="fa fa-check"></i><b>12</b> The extras rule: adding extra information, in particular about the levels or values of the variables</a><ul>
+<li class="chapter" data-level="12.1" data-path="the-extras-rule-adding-extra-information-in-particular-about-the-levels-or-values-of-the-variables.html"><a href="the-extras-rule-adding-extra-information-in-particular-about-the-levels-or-values-of-the-variables.html#interpretation"><i class="fa fa-check"></i><b>12.1</b> Interpretation</a></li>
+<li class="chapter" data-level="12.2" data-path="the-extras-rule-adding-extra-information-in-particular-about-the-levels-or-values-of-the-variables.html"><a href="the-extras-rule-adding-extra-information-in-particular-about-the-levels-or-values-of-the-variables.html#corollary-ordinary-reasoning"><i class="fa fa-check"></i><b>12.2</b> Corollary: Ordinary reasoning</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="the-juxtaposition-rule.html"><a href="the-juxtaposition-rule.html"><i class="fa fa-check"></i><b>13</b> The juxtaposition rule</a></li>
+<li class="chapter" data-level="14" data-path="rules-for-joining-maps.html"><a href="rules-for-joining-maps.html"><i class="fa fa-check"></i><b>14</b> Rules for joining maps</a><ul>
+<li class="chapter" data-level="14.1" data-path="rules-for-joining-maps.html"><a href="rules-for-joining-maps.html#the-chaining-rule"><i class="fa fa-check"></i><b>14.1</b> The chaining rule</a></li>
+<li class="chapter" data-level="14.2" data-path="rules-for-joining-maps.html"><a href="rules-for-joining-maps.html#the-shared-consequence-rule"><i class="fa fa-check"></i><b>14.2</b> The shared consequence rule</a></li>
+<li class="chapter" data-level="14.3" data-path="rules-for-joining-maps.html"><a href="rules-for-joining-maps.html#the-shared-influence-rule"><i class="fa fa-check"></i><b>14.3</b> The shared influence rule</a></li>
+<li class="chapter" data-level="14.4" data-path="rules-for-joining-maps.html"><a href="rules-for-joining-maps.html#merge-same-arrow"><i class="fa fa-check"></i><b>14.4</b> The shared arrow rule</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="the-chaining-rule-functional-form-zooming-out-black-box-rule.html"><a href="the-chaining-rule-functional-form-zooming-out-black-box-rule.html"><i class="fa fa-check"></i><b>15</b> The chaining rule, functional form (zooming out / black-box rule)</a><ul>
+<li class="chapter" data-level="15.1" data-path="the-chaining-rule-functional-form-zooming-out-black-box-rule.html"><a href="the-chaining-rule-functional-form-zooming-out-black-box-rule.html#two-special-cases"><i class="fa fa-check"></i><b>15.1</b> Two special cases</a></li>
+<li class="chapter" data-level="15.2" data-path="the-chaining-rule-functional-form-zooming-out-black-box-rule.html"><a href="the-chaining-rule-functional-form-zooming-out-black-box-rule.html#bare-influence"><i class="fa fa-check"></i><b>15.2</b> Bare influence</a><ul>
+<li class="chapter" data-level="15.2.1" data-path="the-chaining-rule-functional-form-zooming-out-black-box-rule.html"><a href="the-chaining-rule-functional-form-zooming-out-black-box-rule.html#total-control"><i class="fa fa-check"></i><b>15.2.1</b> Total control</a></li>
+</ul></li>
+<li class="chapter" data-level="15.3" data-path="the-chaining-rule-functional-form-zooming-out-black-box-rule.html"><a href="the-chaining-rule-functional-form-zooming-out-black-box-rule.html#technical-note"><i class="fa fa-check"></i><b>15.3</b> Technical note</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="the-shared-consequence-rule-functional-version.html"><a href="the-shared-consequence-rule-functional-version.html"><i class="fa fa-check"></i><b>16</b> The shared consequence rule, functional version</a><ul>
+<li class="chapter" data-level="16.1" data-path="the-shared-consequence-rule-functional-version.html"><a href="the-shared-consequence-rule-functional-version.html#complementary-combinations"><i class="fa fa-check"></i><b>16.1</b> Complementary combinations</a></li>
+<li class="chapter" data-level="16.2" data-path="the-shared-consequence-rule-functional-version.html"><a href="the-shared-consequence-rule-functional-version.html#contradictory-combinations"><i class="fa fa-check"></i><b>16.2</b> Contradictory combinations</a></li>
+<li class="chapter" data-level="16.3" data-path="the-shared-consequence-rule-functional-version.html"><a href="the-shared-consequence-rule-functional-version.html#but-which-case-is-which"><i class="fa fa-check"></i><b>16.3</b> But which case is which?</a></li>
+<li class="chapter" data-level="16.4" data-path="the-shared-consequence-rule-functional-version.html"><a href="the-shared-consequence-rule-functional-version.html#combinations-packages"><i class="fa fa-check"></i><b>16.4</b> Combinations / packages</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="shared-influence-function.html"><a href="shared-influence-function.html"><i class="fa fa-check"></i><b>17</b> The shared influence rule, functional version</a></li>
+<li class="chapter" data-level="18" data-path="the-shared-arrow-rule-functional-form-.html"><a href="the-shared-arrow-rule-functional-form-.html"><i class="fa fa-check"></i><b>18</b> The shared arrow rule, functional form.</a></li>
+<li class="chapter" data-level="19" data-path="the-rule-for-merging-arrows-weight-of-evidence-.html"><a href="the-rule-for-merging-arrows-weight-of-evidence-.html"><i class="fa fa-check"></i><b>19</b> The rule for merging arrows. Weight of evidence.</a></li>
+<li class="chapter" data-level="20" data-path="the-chaining-rule-with-loops.html"><a href="the-chaining-rule-with-loops.html"><i class="fa fa-check"></i><b>20</b> The chaining rule with loops</a></li>
+<li class="chapter" data-level="21" data-path="the-rule-for-conceptual-links.html"><a href="the-rule-for-conceptual-links.html"><i class="fa fa-check"></i><b>21</b> The rule for conceptual links</a></li>
+<li class="chapter" data-level="22" data-path="combining-extra-information-like-the-values-or-levels-of-variables.html"><a href="combining-extra-information-like-the-values-or-levels-of-variables.html"><i class="fa fa-check"></i><b>22</b> Combining “extra” information like the values or levels of variables</a></li>
+<li class="chapter" data-level="23" data-path="context.html"><a href="context.html"><i class="fa fa-check"></i><b>23</b> Context</a></li>
+<li class="chapter" data-level="24" data-path="variables-versus-propositions-and-events.html"><a href="variables-versus-propositions-and-events.html"><i class="fa fa-check"></i><b>24</b> Variables versus propositions and events</a><ul>
+<li class="chapter" data-level="24.1" data-path="variables-versus-propositions-and-events.html"><a href="variables-versus-propositions-and-events.html#section"><i class="fa fa-check"></i><b>24.1</b> </a></li>
+</ul></li>
+<li class="chapter" data-level="25" data-path="the-elements-of-a-causal-map.html"><a href="the-elements-of-a-causal-map.html"><i class="fa fa-check"></i><b>25</b> The elements of a causal map</a><ul>
+<li class="chapter" data-level="25.1" data-path="the-elements-of-a-causal-map.html"><a href="the-elements-of-a-causal-map.html#variables-types-of-variable-and-contrasts"><i class="fa fa-check"></i><b>25.1</b> Variables, types of variable, and contrasts</a></li>
+<li class="chapter" data-level="25.2" data-path="the-elements-of-a-causal-map.html"><a href="the-elements-of-a-causal-map.html#causal-thinking-is-essentially-contrastive-thinking"><i class="fa fa-check"></i><b>25.2</b> Causal thinking is essentially contrastive thinking</a></li>
+</ul></li>
+<li class="chapter" data-level="26" data-path="for-each-variables.html"><a href="for-each-variables.html"><i class="fa fa-check"></i><b>26</b> “For each ..….” variables</a></li>
+<li class="chapter" data-level="27" data-path="lohi-variables-types-of-variable-and-contrasts.html"><a href="lohi-variables-types-of-variable-and-contrasts.html"><i class="fa fa-check"></i><b>27</b> Lo/hi Variables, types of variable, and contrasts</a></li>
+<li class="chapter" data-level="28" data-path="levels.html"><a href="levels.html"><i class="fa fa-check"></i><b>28</b> The coding rule for values of variables</a><ul>
+<li class="chapter" data-level="28.1" data-path="levels.html"><a href="levels.html#what-is-a-lohi-variable"><i class="fa fa-check"></i><b>28.1</b> What is a lo/hi variable?</a></li>
+<li class="chapter" data-level="28.2" data-path="levels.html"><a href="levels.html#setting-base-and-intervention-levels"><i class="fa fa-check"></i><b>28.2</b> Setting base and intervention levels</a></li>
+</ul></li>
+<li class="chapter" data-level="29" data-path="coding-influences-individual-and-in-combination.html"><a href="coding-influences-individual-and-in-combination.html"><i class="fa fa-check"></i><b>29</b> Coding influences – individual and in combination</a><ul>
+<li class="chapter" data-level="29.1" data-path="coding-influences-individual-and-in-combination.html"><a href="coding-influences-individual-and-in-combination.html#the-problem"><i class="fa fa-check"></i><b>29.1</b> The problem</a></li>
+<li class="chapter" data-level="29.2" data-path="coding-influences-individual-and-in-combination.html"><a href="coding-influences-individual-and-in-combination.html#how-to-encode-causal-influences-in-the-app"><i class="fa fa-check"></i><b>29.2</b> How to encode causal influences in the app</a></li>
+<li class="chapter" data-level="29.3" data-path="coding-influences-individual-and-in-combination.html"><a href="coding-influences-individual-and-in-combination.html#restriction-to-lo-hi-variables-and-functions-between-them"><i class="fa fa-check"></i><b>29.3</b> Restriction to lo-hi variables and functions between them</a><ul>
+<li class="chapter" data-level="29.3.1" data-path="coding-influences-individual-and-in-combination.html"><a href="coding-influences-individual-and-in-combination.html#generalisation-of-functions-usually-defined-on-binary-variables-to-lo-hi-variables"><i class="fa fa-check"></i><b>29.3.1</b> Generalisation of functions usually defined on binary variables to lo-hi variables</a></li>
+<li class="chapter" data-level="29.3.2" data-path="coding-influences-individual-and-in-combination.html"><a href="coding-influences-individual-and-in-combination.html#restriction-to-symmetrical-functions"><i class="fa fa-check"></i><b>29.3.2</b> Restriction to symmetrical functions</a></li>
+<li class="chapter" data-level="29.3.3" data-path="coding-influences-individual-and-in-combination.html"><a href="coding-influences-individual-and-in-combination.html#some-mono-functions-functions-with-a-single-influence-variable"><i class="fa fa-check"></i><b>29.3.3</b> Some “mono functions”: functions with a single influence variable</a></li>
+<li class="chapter" data-level="29.3.4" data-path="coding-influences-individual-and-in-combination.html"><a href="coding-influences-individual-and-in-combination.html#some-multi-functions-functions-with-a-more-than-one-influencing-variable"><i class="fa fa-check"></i><b>29.3.4</b> Some “multi functions”: functions with a more than one influencing variable:</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="30" data-path="inference.html"><a href="inference.html"><i class="fa fa-check"></i><b>30</b> Inference</a><ul>
+<li class="chapter" data-level="30.1" data-path="inference.html"><a href="inference.html#specifying-the-map"><i class="fa fa-check"></i><b>30.1</b> Specifying the map</a><ul>
+<li class="chapter" data-level="30.1.1" data-path="inference.html"><a href="inference.html#exogenous-variables-and-the-grid"><i class="fa fa-check"></i><b>30.1.1</b> Exogenous variables and the Grid</a></li>
+<li class="chapter" data-level="30.1.2" data-path="inference.html"><a href="inference.html#inference-in-action"><i class="fa fa-check"></i><b>30.1.2</b> Inference in action</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="31" data-path="the-rule-for-joining-different-influences.html"><a href="the-rule-for-joining-different-influences.html"><i class="fa fa-check"></i><b>31</b> The rule for joining different influences</a></li>
+<li class="chapter" data-level="32" data-path="bayesian-inference.html"><a href="bayesian-inference.html"><i class="fa fa-check"></i><b>32</b> Bayesian inference</a><ul>
+<li class="chapter" data-level="32.1" data-path="bayesian-inference.html"><a href="bayesian-inference.html#specifying-the-strength-of-individual-influences"><i class="fa fa-check"></i><b>32.1</b> Specifying the strength of individual influences</a></li>
+<li class="chapter" data-level="32.2" data-path="bayesian-inference.html"><a href="bayesian-inference.html#specifying-the-residual"><i class="fa fa-check"></i><b>32.2</b> Specifying the residual</a></li>
+<li class="chapter" data-level="32.3" data-path="bayesian-inference.html"><a href="bayesian-inference.html#combinations-ways-in-which-the-consequence-variable-can-combine-its-influences"><i class="fa fa-check"></i><b>32.3</b> Combinations: Ways in which the consequence variable can combine its influences</a></li>
+<li class="chapter" data-level="32.4" data-path="bayesian-inference.html"><a href="bayesian-inference.html#flipping"><i class="fa fa-check"></i><b>32.4</b> Flipping</a></li>
+<li class="chapter" data-level="32.5" data-path="bayesian-inference.html"><a href="bayesian-inference.html#shortcuts"><i class="fa fa-check"></i><b>32.5</b> Shortcuts</a></li>
+</ul></li>
+<li class="chapter" data-level="33" data-path="valence.html"><a href="valence.html"><i class="fa fa-check"></i><b>33</b> Valence</a></li>
+<li class="chapter" data-level="34" data-path="valence-and-direction.html"><a href="valence-and-direction.html"><i class="fa fa-check"></i><b>34</b> Valence and direction</a></li>
+<li class="chapter" data-level="35" data-path="effect-two-kinds.html"><a href="effect-two-kinds.html"><i class="fa fa-check"></i><b>35</b> Effect: two kinds</a></li>
+<li class="chapter" data-level="36" data-path="interventions.html"><a href="interventions.html"><i class="fa fa-check"></i><b>36</b> Interventions</a></li>
+<li class="chapter" data-level="37" data-path="contribution.html"><a href="contribution.html"><i class="fa fa-check"></i><b>37</b> Contribution</a></li>
+<li class="chapter" data-level="38" data-path="the-quality-qualifier-rule-from-claim-to-fact.html"><a href="the-quality-qualifier-rule-from-claim-to-fact.html"><i class="fa fa-check"></i><b>38</b> The Quality Qualifier Rule: from claim to fact</a></li>
+<li class="chapter" data-level="39" data-path="information-about-the-source-of-our-causal-information.html"><a href="information-about-the-source-of-our-causal-information.html"><i class="fa fa-check"></i><b>39</b> Information about the <em>source</em> of our causal information</a><ul>
+<li class="chapter" data-level="39.1" data-path="information-about-the-source-of-our-causal-information.html"><a href="information-about-the-source-of-our-causal-information.html#applying-the-quality-qualifier-rule-source-by-source"><i class="fa fa-check"></i><b>39.1</b> Applying the Quality Qualifier Rule source-by-source</a></li>
+<li class="chapter" data-level="39.2" data-path="information-about-the-source-of-our-causal-information.html"><a href="information-about-the-source-of-our-causal-information.html#including-information-about-sources"><i class="fa fa-check"></i><b>39.2</b> Including information about sources</a></li>
+</ul></li>
+<li class="chapter" data-level="40" data-path="maps-of-maps.html"><a href="maps-of-maps.html"><i class="fa fa-check"></i><b>40</b> Maps of maps</a></li>
+<li class="chapter" data-level="41" data-path="simplifying-causal-maps-aggregation-and-filtering.html"><a href="simplifying-causal-maps-aggregation-and-filtering.html"><i class="fa fa-check"></i><b>41</b> Simplifying causal maps: aggregation and filtering</a><ul>
+<li class="chapter" data-level="41.1" data-path="simplifying-causal-maps-aggregation-and-filtering.html"><a href="simplifying-causal-maps-aggregation-and-filtering.html#why-simplify-a-causal-map"><i class="fa fa-check"></i><b>41.1</b> Why simplify a causal map?</a><ul>
+<li class="chapter" data-level="41.1.1" data-path="simplifying-causal-maps-aggregation-and-filtering.html"><a href="simplifying-causal-maps-aggregation-and-filtering.html#table-of-statements"><i class="fa fa-check"></i><b>41.1.1</b> Table of Statements</a></li>
+<li class="chapter" data-level="41.1.2" data-path="simplifying-causal-maps-aggregation-and-filtering.html"><a href="simplifying-causal-maps-aggregation-and-filtering.html#table-of-variables"><i class="fa fa-check"></i><b>41.1.2</b> Table of Variables</a></li>
+<li class="chapter" data-level="41.1.3" data-path="simplifying-causal-maps-aggregation-and-filtering.html"><a href="simplifying-causal-maps-aggregation-and-filtering.html#table-of-arrows"><i class="fa fa-check"></i><b>41.1.3</b> Table of Arrows</a></li>
+</ul></li>
+<li class="chapter" data-level="41.2" data-path="simplifying-causal-maps-aggregation-and-filtering.html"><a href="simplifying-causal-maps-aggregation-and-filtering.html#inference-1"><i class="fa fa-check"></i><b>41.2</b> Inference</a></li>
+<li class="chapter" data-level="41.3" data-path="simplifying-causal-maps-aggregation-and-filtering.html"><a href="simplifying-causal-maps-aggregation-and-filtering.html#merging-together-variables-which-are-in-the-same-cluster"><i class="fa fa-check"></i><b>41.3</b> Merging together variables which are in the same cluster</a></li>
+<li class="chapter" data-level="41.4" data-path="simplifying-causal-maps-aggregation-and-filtering.html"><a href="simplifying-causal-maps-aggregation-and-filtering.html#merge-information-about-statements-into-the-arrows-which-are-based-on-them"><i class="fa fa-check"></i><b>41.4</b> Merge information about Statements into the arrows which are based on them</a></li>
+<li class="chapter" data-level="41.5" data-path="simplifying-causal-maps-aggregation-and-filtering.html"><a href="simplifying-causal-maps-aggregation-and-filtering.html#filter-sources"><i class="fa fa-check"></i><b>41.5</b> Filter sources</a></li>
+<li class="chapter" data-level="41.6" data-path="simplifying-causal-maps-aggregation-and-filtering.html"><a href="simplifying-causal-maps-aggregation-and-filtering.html#hard-coded-calculations"><i class="fa fa-check"></i><b>41.6</b> Hard-coded calculations</a></li>
+<li class="chapter" data-level="41.7" data-path="simplifying-causal-maps-aggregation-and-filtering.html"><a href="simplifying-causal-maps-aggregation-and-filtering.html#merge-arrows"><i class="fa fa-check"></i><b>41.7</b> Merge arrows</a></li>
+<li class="chapter" data-level="41.8" data-path="simplifying-causal-maps-aggregation-and-filtering.html"><a href="simplifying-causal-maps-aggregation-and-filtering.html#filter-out-arrows-below-a-minimum-frequency"><i class="fa fa-check"></i><b>41.8</b> Filter out arrows below a minimum frequency</a></li>
+<li class="chapter" data-level="41.9" data-path="simplifying-causal-maps-aggregation-and-filtering.html"><a href="simplifying-causal-maps-aggregation-and-filtering.html#add-arrow-attributes-to-variables"><i class="fa fa-check"></i><b>41.9</b> Add arrow attributes to variables</a></li>
+<li class="chapter" data-level="41.10" data-path="simplifying-causal-maps-aggregation-and-filtering.html"><a href="simplifying-causal-maps-aggregation-and-filtering.html#filter-out-variables-below-a-minimum-frequency"><i class="fa fa-check"></i><b>41.10</b> Filter out variables below a minimum frequency</a></li>
+</ul></li>
+<li class="chapter" data-level="42" data-path="aggregating-and-filtering-beliefs.html"><a href="aggregating-and-filtering-beliefs.html"><i class="fa fa-check"></i><b>42</b> Aggregating and filtering beliefs</a></li>
+<li class="chapter" data-level="43" data-path="aggregation-and-filtering-based-on-face-value.html"><a href="aggregation-and-filtering-based-on-face-value.html"><i class="fa fa-check"></i><b>43</b> Aggregation and filtering based on face value</a></li>
+<li class="chapter" data-level="44" data-path="aggregation-and-filtering-based-on-particular-research-questions.html"><a href="aggregation-and-filtering-based-on-particular-research-questions.html"><i class="fa fa-check"></i><b>44</b> Aggregation and filtering based on particular research questions</a></li>
+<li class="chapter" data-level="45" data-path="aggregation-and-filtering-based-on-metrics.html"><a href="aggregation-and-filtering-based-on-metrics.html"><i class="fa fa-check"></i><b>45</b> Aggregation and filtering based on metrics</a><ul>
+<li class="chapter" data-level="45.1" data-path="aggregation-and-filtering-based-on-metrics.html"><a href="aggregation-and-filtering-based-on-metrics.html#network-metrics"><i class="fa fa-check"></i><b>45.1</b> Network metrics</a></li>
+</ul></li>
+<li class="chapter" data-level="46" data-path="citation-intensity.html"><a href="citation-intensity.html"><i class="fa fa-check"></i><b>46</b> Citation intensity</a></li>
+<li class="chapter" data-level="47" data-path="conspicuous-absence.html"><a href="conspicuous-absence.html"><i class="fa fa-check"></i><b>47</b> Conspicuous absence</a></li>
+<li class="chapter" data-level="48" data-path="section-1.html"><a href="section-1.html"><i class="fa fa-check"></i><b>48</b> </a></li>
+<li class="chapter" data-level="49" data-path="homogenity-of-paths.html"><a href="homogenity-of-paths.html"><i class="fa fa-check"></i><b>49</b> Homogenity of paths</a><ul>
+<li class="chapter" data-level="49.1" data-path="homogenity-of-paths.html"><a href="homogenity-of-paths.html#non--solution-1"><i class="fa fa-check"></i><b>49.1</b> (non-) solution 1)</a></li>
+<li class="chapter" data-level="49.2" data-path="homogenity-of-paths.html"><a href="homogenity-of-paths.html#solution-2"><i class="fa fa-check"></i><b>49.2</b> Solution 2)</a></li>
+<li class="chapter" data-level="49.3" data-path="homogenity-of-paths.html"><a href="homogenity-of-paths.html#solution-3"><i class="fa fa-check"></i><b>49.3</b> Solution 3)</a></li>
+<li class="chapter" data-level="49.4" data-path="homogenity-of-paths.html"><a href="homogenity-of-paths.html#solution-4"><i class="fa fa-check"></i><b>49.4</b> Solution 4)</a></li>
+<li class="chapter" data-level="49.5" data-path="homogenity-of-paths.html"><a href="homogenity-of-paths.html#solution-5"><i class="fa fa-check"></i><b>49.5</b> Solution 5)</a></li>
+</ul></li>
+<li class="chapter" data-level="50" data-path="visualising.html"><a href="visualising.html"><i class="fa fa-check"></i><b>50</b> Visualising</a><ul>
+<li class="chapter" data-level="50.1" data-path="visualising.html"><a href="visualising.html#conditional-formatting"><i class="fa fa-check"></i><b>50.1</b> Conditional formatting</a></li>
+<li class="chapter" data-level="50.2" data-path="visualising.html"><a href="visualising.html#hard-coded-formatting"><i class="fa fa-check"></i><b>50.2</b> Hard-coded formatting</a></li>
+<li class="chapter" data-level="50.3" data-path="visualising.html"><a href="visualising.html#constructing-labels-and-tooltips"><i class="fa fa-check"></i><b>50.3</b> Constructing labels and tooltips</a></li>
+<li class="chapter" data-level="50.4" data-path="visualising.html"><a href="visualising.html#focus"><i class="fa fa-check"></i><b>50.4</b> Focus</a></li>
+</ul></li>
+<li class="chapter" data-level="51" data-path="coding-contours-and-interactions.html"><a href="coding-contours-and-interactions.html"><i class="fa fa-check"></i><b>51</b> Coding contours and interactions</a><ul>
+<li class="chapter" data-level="51.1" data-path="coding-contours-and-interactions.html"><a href="coding-contours-and-interactions.html#merging-information-about-functions"><i class="fa fa-check"></i><b>51.1</b> Merging information about functions</a></li>
+<li class="chapter" data-level="51.2" data-path="coding-contours-and-interactions.html"><a href="coding-contours-and-interactions.html#show-that-the-influence-of-one-variable-on-another-has-a-particular-contour."><i class="fa fa-check"></i><b>51.2</b> Show that the influence of one variable on another has a particular contour.</a></li>
+<li class="chapter" data-level="51.3" data-path="coding-contours-and-interactions.html"><a href="coding-contours-and-interactions.html#show-that-variable-x-is-part-of-the-definition-of-variable-y."><i class="fa fa-check"></i><b>51.3</b> Show that variable X is part of the definition of variable Y.</a></li>
+<li class="chapter" data-level="51.4" data-path="coding-contours-and-interactions.html"><a href="coding-contours-and-interactions.html#show-that-variables-x-and-y-are-linked-by-definition"><i class="fa fa-check"></i><b>51.4</b> Show that variables X and Y are linked by definition</a></li>
+<li class="chapter" data-level="51.5" data-path="coding-contours-and-interactions.html"><a href="coding-contours-and-interactions.html#show-that-a-set-of-influence-variables-influence-the-consequence-variable-collectively."><i class="fa fa-check"></i><b>51.5</b> Show that a set of influence variables influence the consequence variable <em>collectively</em>.</a></li>
+</ul></li>
+<li class="part"><span><b>III The why question</b></span></li>
+<li class="chapter" data-level="52" data-path="the-why-question-as-a-generic-method-in-social-research.html"><a href="the-why-question-as-a-generic-method-in-social-research.html"><i class="fa fa-check"></i><b>52</b> The “<em>why</em> question” as a generic method in social research</a><ul>
+<li class="chapter" data-level="52.1" data-path="the-why-question-as-a-generic-method-in-social-research.html"><a href="the-why-question-as-a-generic-method-in-social-research.html#steps-to-asking-the-why-question"><i class="fa fa-check"></i><b>52.1</b> Steps to asking “the why question”</a><ul>
+<li class="chapter" data-level="52.1.1" data-path="the-why-question-as-a-generic-method-in-social-research.html"><a href="the-why-question-as-a-generic-method-in-social-research.html#formulate"><i class="fa fa-check"></i><b>52.1.1</b> Formulate …</a></li>
+<li class="chapter" data-level="52.1.2" data-path="the-why-question-as-a-generic-method-in-social-research.html"><a href="the-why-question-as-a-generic-method-in-social-research.html#pose-the-question"><i class="fa fa-check"></i><b>52.1.2</b> Pose the question</a></li>
+<li class="chapter" data-level="52.1.3" data-path="the-why-question-as-a-generic-method-in-social-research.html"><a href="the-why-question-as-a-generic-method-in-social-research.html#get-the-answers-into-a-spreadsheet"><i class="fa fa-check"></i><b>52.1.3</b> Get the answers into a spreadsheet</a></li>
+<li class="chapter" data-level="52.1.4" data-path="the-why-question-as-a-generic-method-in-social-research.html"><a href="the-why-question-as-a-generic-method-in-social-research.html#start-analysing"><i class="fa fa-check"></i><b>52.1.4</b> Start analysing</a></li>
+</ul></li>
+<li class="chapter" data-level="52.2" data-path="the-why-question-as-a-generic-method-in-social-research.html"><a href="the-why-question-as-a-generic-method-in-social-research.html#when-would-you-not-want-to-use-this-approach"><i class="fa fa-check"></i><b>52.2</b> When would you <em>not</em> want to use this approach?</a></li>
+</ul></li>
+<li class="chapter" data-level="53" data-path="the-why-question-asking-about-changes.html"><a href="the-why-question-asking-about-changes.html"><i class="fa fa-check"></i><b>53</b> The “<em>why</em> question” – asking about changes</a><ul>
+<li class="chapter" data-level="53.1" data-path="the-why-question-asking-about-changes.html"><a href="the-why-question-asking-about-changes.html#changes"><i class="fa fa-check"></i><b>53.1</b> “Changes”</a></li>
+</ul></li>
+<li class="chapter" data-level="54" data-path="using-the-causal-map-app-already-partly-outdated.html"><a href="using-the-causal-map-app-already-partly-outdated.html"><i class="fa fa-check"></i><b>54</b> Using the causal map app – already partly outdated!</a><ul>
+<li class="chapter" data-level="54.1" data-path="using-the-causal-map-app-already-partly-outdated.html"><a href="using-the-causal-map-app-already-partly-outdated.html#about-the-tables"><i class="fa fa-check"></i><b>54.1</b> About the tables</a></li>
+<li class="chapter" data-level="54.2" data-path="using-the-causal-map-app-already-partly-outdated.html"><a href="using-the-causal-map-app-already-partly-outdated.html#left-hand-tabs-for-producing-and-coding-your-diagram"><i class="fa fa-check"></i><b>54.2</b> Left-hand tabs for producing and coding your diagram</a><ul>
+<li class="chapter" data-level="54.2.1" data-path="using-the-causal-map-app-already-partly-outdated.html"><a href="using-the-causal-map-app-already-partly-outdated.html#import"><i class="fa fa-check"></i><b>54.2.1</b> Import</a></li>
+<li class="chapter" data-level="54.2.2" data-path="using-the-causal-map-app-already-partly-outdated.html"><a href="using-the-causal-map-app-already-partly-outdated.html#code"><i class="fa fa-check"></i><b>54.2.2</b> Code</a></li>
+<li class="chapter" data-level="54.2.3" data-path="using-the-causal-map-app-already-partly-outdated.html"><a href="using-the-causal-map-app-already-partly-outdated.html#merge"><i class="fa fa-check"></i><b>54.2.3</b> Merge</a></li>
+<li class="chapter" data-level="54.2.4" data-path="using-the-causal-map-app-already-partly-outdated.html"><a href="using-the-causal-map-app-already-partly-outdated.html#display"><i class="fa fa-check"></i><b>54.2.4</b> Display</a></li>
+</ul></li>
+<li class="chapter" data-level="54.3" data-path="using-the-causal-map-app-already-partly-outdated.html"><a href="using-the-causal-map-app-already-partly-outdated.html#right-hand-tabs-for-outputs-viewing-diagram-etc"><i class="fa fa-check"></i><b>54.3</b> Right-hand tabs for outputs: viewing diagram etc</a><ul>
+<li class="chapter" data-level="54.3.1" data-path="using-the-causal-map-app-already-partly-outdated.html"><a href="using-the-causal-map-app-already-partly-outdated.html#diagram"><i class="fa fa-check"></i><b>54.3.1</b> Diagram</a></li>
+<li class="chapter" data-level="54.3.2" data-path="using-the-causal-map-app-already-partly-outdated.html"><a href="using-the-causal-map-app-already-partly-outdated.html#using-the-causal-map-app-for-real-time-collaborative-theory-construction"><i class="fa fa-check"></i><b>54.3.2</b> Using the causal map app for real-time, collaborative theory construction</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>IV Case studies</b></span></li>
+<li class="chapter" data-level="55" data-path="case-study-the-strawberry-line.html"><a href="case-study-the-strawberry-line.html"><i class="fa fa-check"></i><b>55</b> Case Study: the Strawberry Line</a><ul>
+<li class="chapter" data-level="55.0.1" data-path="case-study-the-strawberry-line.html"><a href="case-study-the-strawberry-line.html#theories-gathered-from-activists"><i class="fa fa-check"></i><b>55.0.1</b> Theories gathered from activists</a></li>
+<li class="chapter" data-level="55.0.2" data-path="case-study-the-strawberry-line.html"><a href="case-study-the-strawberry-line.html#stories-gathered-from-the-public"><i class="fa fa-check"></i><b>55.0.2</b> Stories gathered from the public</a></li>
+</ul></li>
+<li class="chapter" data-level="56" data-path="case-study-global-young-academy-tracing-the-paths-of-gyas-impact.html"><a href="case-study-global-young-academy-tracing-the-paths-of-gyas-impact.html"><i class="fa fa-check"></i><b>56</b> Case study: Global Young Academy. Tracing the paths of GYA’s impact</a><ul>
+<li class="chapter" data-level="56.1" data-path="case-study-global-young-academy-tracing-the-paths-of-gyas-impact.html"><a href="case-study-global-young-academy-tracing-the-paths-of-gyas-impact.html#more-details"><i class="fa fa-check"></i><b>56.1</b> More details</a><ul>
+<li class="chapter" data-level="56.1.1" data-path="case-study-global-young-academy-tracing-the-paths-of-gyas-impact.html"><a href="case-study-global-young-academy-tracing-the-paths-of-gyas-impact.html#aims"><i class="fa fa-check"></i><b>56.1.1</b> Aims</a></li>
+<li class="chapter" data-level="56.1.2" data-path="case-study-global-young-academy-tracing-the-paths-of-gyas-impact.html"><a href="case-study-global-young-academy-tracing-the-paths-of-gyas-impact.html#methods"><i class="fa fa-check"></i><b>56.1.2</b> Methods</a></li>
+<li class="chapter" data-level="56.1.3" data-path="case-study-global-young-academy-tracing-the-paths-of-gyas-impact.html"><a href="case-study-global-young-academy-tracing-the-paths-of-gyas-impact.html#findings"><i class="fa fa-check"></i><b>56.1.3</b> Findings</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Causal Mapping</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="lohi-variables-types-of-variable-and-contrasts" class="section level1">
+<h1><span class="header-section-number">Section 27</span> Lo/hi Variables, types of variable, and contrasts</h1>
+<p>Though there are different possibilities, my strong suggestion will be that we can make a lot of sense of causal maps if we think of the nodes/factors/vertexes/tags as <em>taking values between 0 and 1</em> (or maybe -1 and 1). I call variables of this kind “lo/hi” variables for the want of a better word.</p>
+<p>One of the many advantages of low/hi variables is that they do in fact have a natural interpretation. And they can be expressed roughly as percentages. It’s not hard to roughly understand “pupil enthusiasm is pretty high, above 75%”.
+So it might not be so terrible to optionally have <em>these</em> kinds of numbers on your maps, as long as you are clear that they are just indicative (and can’t necessarily be understood as percentages <em>of</em> anything, though if you think of “75%” as meaning “the 75th percentile of some associated but unspecified empirical distribution” – for example, the range of in some sense typical student enthusiasms – you won’t go far wrong.</p>
+<p>Another advantage is that both the current value of level of variables and in some sense the strength of arrows can both be expressed with these lo/hi numbers.</p>
+<p>We can already start to guess how this kind of soft arithmetic will work – for example, if E is already at 90% and C has a 100%, positive, influence on E, and then we set C to 90%, we are at least sure E isn’t going to decrease and we’d expect it increase a bit. Whereas if the influence of C on E is strongly negative, say -90%, then if we set C to be large rather than small, we’d probably expect E to drop.</p>
+<p>The <em>details</em> of how this arithmetic might work are up for grabs. But I will try to sketch out some solutions in the next sections.</p>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="for-each-variables.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="levels.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 3
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["Causal Mapping.epub"],
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

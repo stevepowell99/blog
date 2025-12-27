@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="9.1 Influence variable, consequence variable, package of variables | Causal Mapping" />
+<meta property="og:type" content="book" />
+
+
+
+
+
+<meta name="author" content="Steve Powell" />
+
+<meta name="date" content="2019-06-26" />
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+
+<meta name="description" content="9.1 Influence variable, consequence variable, package of variables | Causal Mapping">
+
+<title>9.1 Influence variable, consequence variable, package of variables | Causal Mapping</title>
+
+<script src="libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="libs/navigation-1.1/tabsets.js"></script>
+<script src="libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<script src="libs/d3-3.3.8/d3.min.js"></script>
+<script src="libs/dagre-0.4.0/dagre-d3.min.js"></script>
+<link href="libs/mermaid-0.3.0/dist/mermaid.css" rel="stylesheet" />
+<script src="libs/mermaid-0.3.0/dist/mermaid.slim.min.js"></script>
+<link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+<script src="libs/chromatography-0.1/chromatography.js"></script>
+<script src="libs/DiagrammeR-binding-1.0.1/DiagrammeR.js"></script>
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container-fluid main-container">
+
+
+<div class="row">
+<div class="col-sm-12">
+<div id="TOC">
+<ul>
+<li><a href="index.html#whats-in-this-book"><span class="toc-section-number">1</span> What’s in this book</a></li>
+<li class="has-sub"><a href="2-acknowledgements.html#acknowledgements"><span class="toc-section-number">2</span> Acknowledgements</a><ul>
+<li><a href="2-1-people.html#people"><span class="toc-section-number">2.1</span> People</a></li>
+<li><a href="2-2-software.html#software"><span class="toc-section-number">2.2</span> Software</a></li>
+</ul></li>
+<li class="part"><span><b>I Introduction</b></span></li>
+<li><a href="3-manifesto-piecing-together-fragments-of-causal-information.html#manifesto-piecing-together-fragments-of-causal-information"><span class="toc-section-number">3</span> Manifesto: piecing together fragments of causal information</a></li>
+<li class="has-sub"><a href="4-previous-work.html#previous-work"><span class="toc-section-number">4</span> Previous work</a><ul>
+<li><a href="4-1-from-theorymaker-to-causal-mapping-and-from-theories-of-change-to-causal-maps.html#from-theorymaker-to-causal-mapping-and-from-theories-of-change-to-causal-maps"><span class="toc-section-number">4.1</span> From “Theorymaker” to “Causal Mapping” and from “Theories of Change” to “Causal Maps”</a></li>
+<li><a href="4-2-articles.html#articles"><span class="toc-section-number">4.2</span> Articles</a></li>
+<li><a href="4-3-presentations.html#presentations"><span class="toc-section-number">4.3</span> Presentations</a></li>
+<li><a href="4-4-poster.html#poster"><span class="toc-section-number">4.4</span> Poster</a></li>
+<li><a href="4-5-longer-blog-posts.html#longer-blog-posts"><span class="toc-section-number">4.5</span> Longer blog posts</a></li>
+<li><a href="4-6-resources-and-apps.html#resources-and-apps"><span class="toc-section-number">4.6</span> Resources and apps</a></li>
+</ul></li>
+<li class="part"><span><b>II Soft arithmetic: rules for causal maps</b></span></li>
+<li class="has-sub"><a href="5-soft.html#soft"><span class="toc-section-number">5</span> We need a “soft arithmetic” for causal maps</a><ul>
+<li><a href="5-1-examplesOfMaps.html#examplesOfMaps"><span class="toc-section-number">5.1</span> Examples of different kinds of causal maps</a></li>
+<li><a href="5-2-its-ambitious.html#its-ambitious"><span class="toc-section-number">5.2</span> It’s ambitious</a></li>
+<li><a href="5-3-users-of-a-causal-map-expect-to-be-able-to-deduce-some-kind-of-comparative-information-from-it.html#users-of-a-causal-map-expect-to-be-able-to-deduce-some-kind-of-comparative-information-from-it"><span class="toc-section-number">5.3</span> Users of a causal map expect to be able to deduce some kind of comparative information from it</a></li>
+<li><a href="5-4-asking-and-answering-those-kinds-of-typical-questions-of-a-causal-map-boils-down-to-assigning-some-kinds-of-numbers-to-its-elements.html#asking-and-answering-those-kinds-of-typical-questions-of-a-causal-map-boils-down-to-assigning-some-kinds-of-numbers-to-its-elements"><span class="toc-section-number">5.4</span> Asking and answering those kinds of “typical questions” of a causal map boils down to assigning some kinds of numbers to its elements</a></li>
+<li><a href="5-5-two-simple-but-inadequate-strategies-to-encode-causal-information-without-using-any-kind-of-number.html#two-simple-but-inadequate-strategies-to-encode-causal-information-without-using-any-kind-of-number"><span class="toc-section-number">5.5</span> Two simple (but inadequate) strategies to encode causal information without using any kind of number</a></li>
+</ul></li>
+<li class="has-sub"><a href="6-meaning.html#meaning"><span class="toc-section-number">6</span> We need rules about how to encode causal information in a causal map (and decode it again)</a><ul>
+<li><a href="6-1-how-do-causal-claims-work-within-ordinary-language.html#how-do-causal-claims-work-within-ordinary-language"><span class="toc-section-number">6.1</span> How do causal claims work within ordinary language?</a></li>
+<li><a href="6-2-understanding-the-elements-of-a-causal-map-by-agreeing-how-to-make-deductions-with-them.html#understanding-the-elements-of-a-causal-map-by-agreeing-how-to-make-deductions-with-them"><span class="toc-section-number">6.2</span> Understanding the elements of a causal map by agreeing how to make deductions with them</a></li>
+</ul></li>
+<li><a href="7-soft-arithmetic-is-also-the-answer-to-understanding-causal-maps.html#soft-arithmetic-is-also-the-answer-to-understanding-causal-maps"><span class="toc-section-number">7</span> Soft arithmetic is also the answer to understanding causal maps</a></li>
+<li><a href="8-overview-of-issues-which-a-soft-arithmetic-for-causal-maps-needs-to-cover.html#overview-of-issues-which-a-soft-arithmetic-for-causal-maps-needs-to-cover"><span class="toc-section-number">8</span> Overview of issues which a “soft arithmetic for causal maps” needs to cover</a></li>
+<li class="has-sub"><a href="9-metalanguage-talking-about-causal-maps.html#metalanguage-talking-about-causal-maps"><span class="toc-section-number">9</span> Metalanguage: talking about causal maps</a><ul>
+<li><a href="9-1-influence-variable-consequence-variable-package-of-variables.html#influence-variable-consequence-variable-package-of-variables"><span class="toc-section-number">9.1</span> Influence variable, consequence variable, package of variables</a></li>
+<li><a href="9-2-the-cause-a-cause.html#the-cause-a-cause"><span class="toc-section-number">9.2</span> “The cause”, “a cause”</a></li>
+<li><a href="9-3-mechanism-theory-.html#mechanism-theory-."><span class="toc-section-number">9.3</span> Mechanism, theory ….</a></li>
+</ul></li>
+<li><a href="10-mini-map-rule.html#mini-map-rule"><span class="toc-section-number">10</span> The mini-map coding rule</a></li>
+<li><a href="11-mini-function.html#mini-function"><span class="toc-section-number">11</span> The mini-map coding rule – functional form</a></li>
+<li class="has-sub"><a href="12-the-extras-rule-adding-extra-information-in-particular-about-the-levels-or-values-of-the-variables.html#the-extras-rule-adding-extra-information-in-particular-about-the-levels-or-values-of-the-variables"><span class="toc-section-number">12</span> The extras rule: adding extra information, in particular about the levels or values of the variables</a><ul>
+<li><a href="12-1-interpretation.html#interpretation"><span class="toc-section-number">12.1</span> Interpretation</a></li>
+<li><a href="12-2-corollary-ordinary-reasoning.html#corollary-ordinary-reasoning"><span class="toc-section-number">12.2</span> Corollary: Ordinary reasoning</a></li>
+</ul></li>
+<li><a href="13-the-juxtaposition-rule.html#the-juxtaposition-rule"><span class="toc-section-number">13</span> The juxtaposition rule</a></li>
+<li class="has-sub"><a href="14-rules-for-joining-maps.html#rules-for-joining-maps"><span class="toc-section-number">14</span> Rules for joining maps</a><ul>
+<li><a href="14-1-the-chaining-rule.html#the-chaining-rule"><span class="toc-section-number">14.1</span> The chaining rule</a></li>
+<li><a href="14-2-the-shared-consequence-rule.html#the-shared-consequence-rule"><span class="toc-section-number">14.2</span> The shared consequence rule</a></li>
+<li><a href="14-3-the-shared-influence-rule.html#the-shared-influence-rule"><span class="toc-section-number">14.3</span> The shared influence rule</a></li>
+<li><a href="14-4-merge-same-arrow.html#merge-same-arrow"><span class="toc-section-number">14.4</span> The shared arrow rule</a></li>
+</ul></li>
+<li><a href="15-rules-for-joining-maps-what-counts-as-the-same-variable.html#rules-for-joining-maps-what-counts-as-the-same-variable"><span class="toc-section-number">15</span> Rules for joining maps: what counts as “the same” variable?</a></li>
+<li class="has-sub"><a href="16-the-chaining-rule-functional-form-zooming-out-black-box-rule.html#the-chaining-rule-functional-form-zooming-out-black-box-rule"><span class="toc-section-number">16</span> The chaining rule, functional form (zooming out / black-box rule)</a><ul>
+<li><a href="16-1-two-special-cases.html#two-special-cases"><span class="toc-section-number">16.1</span> Two special cases</a></li>
+<li class="has-sub"><a href="16-2-bare-influence.html#bare-influence"><span class="toc-section-number">16.2</span> Bare influence</a><ul>
+<li><a href="16-2-bare-influence.html#total-control"><span class="toc-section-number">16.2.1</span> Total control</a></li>
+</ul></li>
+<li><a href="16-3-technical-note.html#technical-note"><span class="toc-section-number">16.3</span> Technical note</a></li>
+</ul></li>
+<li class="has-sub"><a href="17-the-shared-consequence-rule-functional-version.html#the-shared-consequence-rule-functional-version"><span class="toc-section-number">17</span> The shared consequence rule, functional version</a><ul>
+<li><a href="17-1-complementary-combinations.html#complementary-combinations"><span class="toc-section-number">17.1</span> Complementary combinations</a></li>
+<li><a href="17-2-contradictory-combinations.html#contradictory-combinations"><span class="toc-section-number">17.2</span> Contradictory combinations</a></li>
+<li><a href="17-3-but-which-case-is-which.html#but-which-case-is-which"><span class="toc-section-number">17.3</span> But which case is which?</a></li>
+<li><a href="17-4-combinations-packages.html#combinations-packages"><span class="toc-section-number">17.4</span> Combinations / packages</a></li>
+</ul></li>
+<li><a href="18-shared-influence-function.html#shared-influence-function"><span class="toc-section-number">18</span> The shared influence rule, functional version</a></li>
+<li><a href="19-the-shared-arrow-rule-functional-form-.html#the-shared-arrow-rule-functional-form."><span class="toc-section-number">19</span> The shared arrow rule, functional form.</a></li>
+<li class="has-sub"><a href="20-the-rule-for-merging-arrows-weight-of-evidence-.html#the-rule-for-merging-arrows.-weight-of-evidence."><span class="toc-section-number">20</span> The rule for merging arrows. Weight of evidence.</a><ul>
+<li><a href="20-1-problems-with-evidence.html#problems-with-evidence"><span class="toc-section-number">20.1</span> Problems with evidence</a></li>
+</ul></li>
+<li><a href="21-the-chaining-rule-with-loops.html#the-chaining-rule-with-loops"><span class="toc-section-number">21</span> The chaining rule with loops</a></li>
+<li class="has-sub"><a href="22-the-rule-for-conceptual-links.html#the-rule-for-conceptual-links"><span class="toc-section-number">22</span> The rule for conceptual links</a><ul>
+<li><a href="22-1-variations.html#variations"><span class="toc-section-number">22.1</span> Variations</a></li>
+<li><a href="22-2-problems.html#problems"><span class="toc-section-number">22.2</span> Problems</a></li>
+</ul></li>
+<li><a href="23-combining-extra-information-like-the-values-or-levels-of-variables.html#combining-extra-information-like-the-values-or-levels-of-variables"><span class="toc-section-number">23</span> Combining “extra” information like the values or levels of variables</a></li>
+<li class="has-sub"><a href="24-context.html#context"><span class="toc-section-number">24</span> Context</a><ul>
+<li><a href="24-1-intersections.html#intersections"><span class="toc-section-number">24.1</span> Intersections</a></li>
+<li><a href="24-2-replacing-contexts-with-variables.html#replacing-contexts-with-variables"><span class="toc-section-number">24.2</span> Replacing contexts with variables</a></li>
+</ul></li>
+<li><a href="25-variables-versus-propositions-and-events.html#variables-versus-propositions-and-events"><span class="toc-section-number">25</span> Variables versus propositions and events</a></li>
+<li class="has-sub"><a href="26-the-elements-of-a-causal-map.html#the-elements-of-a-causal-map"><span class="toc-section-number">26</span> The elements of a causal map</a><ul>
+<li><a href="26-1-variables-types-of-variable-and-contrasts.html#variables-types-of-variable-and-contrasts"><span class="toc-section-number">26.1</span> Variables, types of variable, and contrasts</a></li>
+<li><a href="26-2-causal-thinking-is-essentially-contrastive-thinking.html#causal-thinking-is-essentially-contrastive-thinking"><span class="toc-section-number">26.2</span> Causal thinking is essentially contrastive thinking</a></li>
+</ul></li>
+<li><a href="27-lo-hi.html#lo-hi"><span class="toc-section-number">27</span> Lo/hi Variables, types of variable, and contrasts</a></li>
+<li><a href="28-for-each-variables.html#for-each-...-variables"><span class="toc-section-number">28</span> “For each ..….” variables</a></li>
+<li class="has-sub"><a href="29-coding-influences-individual-and-in-combination.html#coding-influences-individual-and-in-combination"><span class="toc-section-number">29</span> Coding influences – individual and in combination</a><ul>
+<li><a href="29-1-the-problem.html#the-problem"><span class="toc-section-number">29.1</span> The problem</a></li>
+<li><a href="29-2-breaking-down-the-problem.html#breaking-down-the-problem"><span class="toc-section-number">29.2</span> Breaking down the problem</a></li>
+<li class="has-sub"><a href="29-3-strength-importance.html#strength-importance"><span class="toc-section-number">29.3</span> Strength / importance</a><ul>
+<li><a href="29-3-strength-importance.html#including-the-idea-of-strength-in-our-functional-equation"><span class="toc-section-number">29.3.1</span> Including the idea of strength in our functional equation</a></li>
+<li><a href="29-3-strength-importance.html#direct-ways-of-eliciting-how-important-is-one-variables-contribution-to-another.-fiona"><span class="toc-section-number">29.3.2</span> Direct ways of eliciting how important is one variable’s contribution to another. (Fiona)</a></li>
+<li><a href="29-3-strength-importance.html#restriction-to-symmetrical-functions"><span class="toc-section-number">29.3.3</span> Restriction to symmetrical functions</a></li>
+<li><a href="29-3-strength-importance.html#some-mono-functions-functions-with-a-single-influence-variable"><span class="toc-section-number">29.3.4</span> Some “mono functions”: functions with a single influence variable</a></li>
+<li><a href="29-3-strength-importance.html#some-multi-functions-functions-with-a-more-than-one-influencing-variable"><span class="toc-section-number">29.3.5</span> Some “multi functions”: functions with a more than one influencing variable:</a></li>
+</ul></li>
+<li><a href="29-4-sensible-defaults.html#sensible-defaults"><span class="toc-section-number">29.4</span> Sensible defaults</a></li>
+<li><a href="29-5-coding-influences-in-the-app.html#coding-influences-in-the-app"><span class="toc-section-number">29.5</span> Coding influences in the app</a></li>
+</ul></li>
+<li class="has-sub"><a href="30-causal-inference.html#causal-inference"><span class="toc-section-number">30</span> Causal Inference</a><ul>
+<li class="has-sub"><a href="30-1-specifying-the-map.html#specifying-the-map"><span class="toc-section-number">30.1</span> Specifying the map</a><ul>
+<li><a href="30-1-specifying-the-map.html#exogenous-variables-and-the-grid"><span class="toc-section-number">30.1.1</span> Exogenous variables and the Grid</a></li>
+<li><a href="30-1-specifying-the-map.html#inference-in-action"><span class="toc-section-number">30.1.2</span> Inference in action</a></li>
+</ul></li>
+</ul></li>
+<li class="has-sub"><a href="31-bayesian-inference.html#bayesian-inference"><span class="toc-section-number">31</span> Bayesian inference</a><ul>
+<li><a href="31-1-specifying-the-strength-of-individual-influences.html#specifying-the-strength-of-individual-influences"><span class="toc-section-number">31.1</span> Specifying the strength of individual influences</a></li>
+<li><a href="31-2-specifying-the-residual.html#specifying-the-residual"><span class="toc-section-number">31.2</span> Specifying the residual</a></li>
+<li><a href="31-3-combinations-ways-in-which-the-consequence-variable-can-combine-its-influences.html#combinations-ways-in-which-the-consequence-variable-can-combine-its-influences"><span class="toc-section-number">31.3</span> Combinations: Ways in which the consequence variable can combine its influences</a></li>
+<li><a href="31-4-flipping.html#flipping"><span class="toc-section-number">31.4</span> Flipping</a></li>
+<li><a href="31-5-shortcuts.html#shortcuts"><span class="toc-section-number">31.5</span> Shortcuts</a></li>
+</ul></li>
+<li><a href="32-valence.html#valence"><span class="toc-section-number">32</span> Valence</a></li>
+<li><a href="33-valence-and-direction.html#valence-and-direction"><span class="toc-section-number">33</span> Valence and direction</a></li>
+<li><a href="34-effect-two-kinds.html#effect-two-kinds"><span class="toc-section-number">34</span> Effect: two kinds</a></li>
+<li><a href="35-interventions.html#interventions"><span class="toc-section-number">35</span> Interventions</a></li>
+<li><a href="36-contribution.html#contribution"><span class="toc-section-number">36</span> Contribution</a></li>
+<li><a href="37-the-quality-qualifier-rule-from-claim-to-fact.html#the-quality-qualifier-rule-from-claim-to-fact"><span class="toc-section-number">37</span> The Quality Qualifier Rule: from claim to fact</a></li>
+<li class="has-sub"><a href="38-information-about-the-source-of-our-causal-information.html#information-about-the-source-of-our-causal-information"><span class="toc-section-number">38</span> Information about the <em>source</em> of our causal information</a><ul>
+<li><a href="38-1-applying-the-quality-qualifier-rule-source-by-source.html#applying-the-quality-qualifier-rule-source-by-source"><span class="toc-section-number">38.1</span> Applying the Quality Qualifier Rule source-by-source</a></li>
+<li><a href="38-2-including-information-about-sources.html#including-information-about-sources"><span class="toc-section-number">38.2</span> Including information about sources</a></li>
+</ul></li>
+<li><a href="39-maps-of-maps.html#maps-of-maps"><span class="toc-section-number">39</span> Maps of maps</a></li>
+<li class="has-sub"><a href="40-simplifying-causal-maps-aggregation-and-filtering.html#simplifying-causal-maps-aggregation-and-filtering"><span class="toc-section-number">40</span> Simplifying causal maps: aggregation and filtering</a><ul>
+<li class="has-sub"><a href="40-1-why-simplify-a-causal-map.html#why-simplify-a-causal-map"><span class="toc-section-number">40.1</span> Why simplify a causal map?</a><ul>
+<li><a href="40-1-why-simplify-a-causal-map.html#table-of-statements"><span class="toc-section-number">40.1.1</span> Table of Statements</a></li>
+<li><a href="40-1-why-simplify-a-causal-map.html#table-of-variables"><span class="toc-section-number">40.1.2</span> Table of Variables</a></li>
+<li><a href="40-1-why-simplify-a-causal-map.html#table-of-arrows"><span class="toc-section-number">40.1.3</span> Table of Arrows</a></li>
+</ul></li>
+<li><a href="40-2-inference.html#inference"><span class="toc-section-number">40.2</span> Inference</a></li>
+<li><a href="40-3-merging-together-variables-which-are-in-the-same-cluster.html#merging-together-variables-which-are-in-the-same-cluster"><span class="toc-section-number">40.3</span> Merging together variables which are in the same cluster</a></li>
+<li><a href="40-4-merge-information-about-statements-into-the-arrows-which-are-based-on-them.html#merge-information-about-statements-into-the-arrows-which-are-based-on-them"><span class="toc-section-number">40.4</span> Merge information about Statements into the arrows which are based on them</a></li>
+<li><a href="40-5-filter-sources.html#filter-sources"><span class="toc-section-number">40.5</span> Filter sources</a></li>
+<li><a href="40-6-hard-coded-calculations.html#hard-coded-calculations"><span class="toc-section-number">40.6</span> Hard-coded calculations</a></li>
+<li><a href="40-7-merge-arrows.html#merge-arrows"><span class="toc-section-number">40.7</span> Merge arrows</a></li>
+<li><a href="40-8-filter-out-arrows-below-a-minimum-frequency.html#filter-out-arrows-below-a-minimum-frequency"><span class="toc-section-number">40.8</span> Filter out arrows below a minimum frequency</a></li>
+<li><a href="40-9-add-arrow-attributes-to-variables.html#add-arrow-attributes-to-variables"><span class="toc-section-number">40.9</span> Add arrow attributes to variables</a></li>
+<li><a href="40-10-filter-out-variables-below-a-minimum-frequency.html#filter-out-variables-below-a-minimum-frequency"><span class="toc-section-number">40.10</span> Filter out variables below a minimum frequency</a></li>
+</ul></li>
+<li><a href="41-aggregating-and-filtering-beliefs.html#aggregating-and-filtering-beliefs"><span class="toc-section-number">41</span> Aggregating and filtering beliefs</a></li>
+<li><a href="42-aggregation-and-filtering-based-on-face-value.html#aggregation-and-filtering-based-on-face-value"><span class="toc-section-number">42</span> Aggregation and filtering based on face value</a></li>
+<li><a href="43-aggregation-and-filtering-based-on-particular-research-questions.html#aggregation-and-filtering-based-on-particular-research-questions"><span class="toc-section-number">43</span> Aggregation and filtering based on particular research questions</a></li>
+<li class="has-sub"><a href="44-aggregation-and-filtering-based-on-metrics.html#aggregation-and-filtering-based-on-metrics"><span class="toc-section-number">44</span> Aggregation and filtering based on metrics</a><ul>
+<li><a href="44-1-network-metrics.html#network-metrics"><span class="toc-section-number">44.1</span> Network metrics</a></li>
+</ul></li>
+<li><a href="45-citation-intensity.html#citation-intensity"><span class="toc-section-number">45</span> Citation intensity</a></li>
+<li><a href="46-conspicuous-absence.html#conspicuous-absence"><span class="toc-section-number">46</span> Conspicuous absence</a></li>
+<li><a href="47-section.html#section"><span class="toc-section-number">47</span> </a></li>
+<li class="has-sub"><a href="48-homogenity-of-paths.html#homogenity-of-paths"><span class="toc-section-number">48</span> Homogenity of paths</a><ul>
+<li><a href="48-1-non-solution-1.html#non--solution-1"><span class="toc-section-number">48.1</span> (non-) solution 1)</a></li>
+<li><a href="48-2-solution-2.html#solution-2"><span class="toc-section-number">48.2</span> Solution 2)</a></li>
+<li><a href="48-3-solution-3.html#solution-3"><span class="toc-section-number">48.3</span> Solution 3)</a></li>
+<li><a href="48-4-solution-4.html#solution-4"><span class="toc-section-number">48.4</span> Solution 4)</a></li>
+<li><a href="48-5-solution-5.html#solution-5"><span class="toc-section-number">48.5</span> Solution 5)</a></li>
+</ul></li>
+<li class="has-sub"><a href="49-visualising.html#visualising"><span class="toc-section-number">49</span> Visualising</a><ul>
+<li><a href="49-1-conditional-formatting.html#conditional-formatting"><span class="toc-section-number">49.1</span> Conditional formatting</a></li>
+<li><a href="49-2-hard-coded-formatting.html#hard-coded-formatting"><span class="toc-section-number">49.2</span> Hard-coded formatting</a></li>
+<li><a href="49-3-constructing-labels-and-tooltips.html#constructing-labels-and-tooltips"><span class="toc-section-number">49.3</span> Constructing labels and tooltips</a></li>
+<li><a href="49-4-focus.html#focus"><span class="toc-section-number">49.4</span> Focus</a></li>
+</ul></li>
+<li class="has-sub"><a href="50-coding-contours-and-interactions.html#coding-contours-and-interactions"><span class="toc-section-number">50</span> Coding contours and interactions</a><ul>
+<li><a href="50-1-merging-information-about-functions.html#merging-information-about-functions"><span class="toc-section-number">50.1</span> Merging information about functions</a></li>
+<li><a href="50-2-show-that-the-influence-of-one-variable-on-another-has-a-particular-contour-.html#show-that-the-influence-of-one-variable-on-another-has-a-particular-contour."><span class="toc-section-number">50.2</span> Show that the influence of one variable on another has a particular contour.</a></li>
+<li><a href="50-3-show-that-variable-x-is-part-of-the-definition-of-variable-y-.html#show-that-variable-x-is-part-of-the-definition-of-variable-y."><span class="toc-section-number">50.3</span> Show that variable X is part of the definition of variable Y.</a></li>
+<li><a href="50-4-show-that-variables-x-and-y-are-linked-by-definition.html#show-that-variables-x-and-y-are-linked-by-definition"><span class="toc-section-number">50.4</span> Show that variables X and Y are linked by definition</a></li>
+<li><a href="50-5-show-that-a-set-of-influence-variables-influence-the-consequence-variable-collectively-.html#show-that-a-set-of-influence-variables-influence-the-consequence-variable-collectively."><span class="toc-section-number">50.5</span> Show that a set of influence variables influence the consequence variable <em>collectively</em>.</a></li>
+</ul></li>
+<li class="part"><span><b>III The why question</b></span></li>
+<li class="has-sub"><a href="51-the-why-question-as-a-generic-method-in-social-research.html#the-why-question-as-a-generic-method-in-social-research"><span class="toc-section-number">51</span> The “<em>why</em> question” as a generic method in social research</a><ul>
+<li class="has-sub"><a href="51-1-steps-to-asking-the-why-question.html#steps-to-asking-the-why-question"><span class="toc-section-number">51.1</span> Steps to asking “the why question”</a><ul>
+<li><a href="51-1-steps-to-asking-the-why-question.html#formulate"><span class="toc-section-number">51.1.1</span> Formulate …</a></li>
+<li><a href="51-1-steps-to-asking-the-why-question.html#pose-the-question"><span class="toc-section-number">51.1.2</span> Pose the question</a></li>
+<li><a href="51-1-steps-to-asking-the-why-question.html#get-the-answers-into-a-spreadsheet"><span class="toc-section-number">51.1.3</span> Get the answers into a spreadsheet</a></li>
+<li><a href="51-1-steps-to-asking-the-why-question.html#start-analysing"><span class="toc-section-number">51.1.4</span> Start analysing</a></li>
+</ul></li>
+<li><a href="51-2-when-would-you-not-want-to-use-this-approach.html#when-would-you-not-want-to-use-this-approach"><span class="toc-section-number">51.2</span> When would you <em>not</em> want to use this approach?</a></li>
+</ul></li>
+<li class="has-sub"><a href="52-the-why-question-asking-about-changes.html#the-why-question-asking-about-changes"><span class="toc-section-number">52</span> The “<em>why</em> question” – asking about changes</a><ul>
+<li><a href="52-1-changes.html#changes"><span class="toc-section-number">52.1</span> “Changes”</a></li>
+</ul></li>
+<li class="has-sub"><a href="53-using-the-causal-map-app-already-partly-outdated.html#using-the-causal-map-app-already-partly-outdated"><span class="toc-section-number">53</span> Using the causal map app – already partly outdated!</a><ul>
+<li><a href="53-1-about-the-tables.html#about-the-tables"><span class="toc-section-number">53.1</span> About the tables</a></li>
+<li class="has-sub"><a href="53-2-left-hand-tabs-for-producing-and-coding-your-diagram.html#left-hand-tabs-for-producing-and-coding-your-diagram"><span class="toc-section-number">53.2</span> Left-hand tabs for producing and coding your diagram</a><ul>
+<li><a href="53-2-left-hand-tabs-for-producing-and-coding-your-diagram.html#import"><span class="toc-section-number">53.2.1</span> Import</a></li>
+<li><a href="53-2-left-hand-tabs-for-producing-and-coding-your-diagram.html#code"><span class="toc-section-number">53.2.2</span> Code</a></li>
+<li><a href="53-2-left-hand-tabs-for-producing-and-coding-your-diagram.html#merge"><span class="toc-section-number">53.2.3</span> Merge</a></li>
+<li><a href="53-2-left-hand-tabs-for-producing-and-coding-your-diagram.html#display"><span class="toc-section-number">53.2.4</span> Display</a></li>
+</ul></li>
+<li class="has-sub"><a href="53-3-right-hand-tabs-for-outputs-viewing-diagram-etc.html#right-hand-tabs-for-outputs-viewing-diagram-etc"><span class="toc-section-number">53.3</span> Right-hand tabs for outputs: viewing diagram etc</a><ul>
+<li><a href="53-3-right-hand-tabs-for-outputs-viewing-diagram-etc.html#diagram"><span class="toc-section-number">53.3.1</span> Diagram</a></li>
+<li><a href="53-3-right-hand-tabs-for-outputs-viewing-diagram-etc.html#using-the-causal-map-app-for-real-time-collaborative-theory-construction"><span class="toc-section-number">53.3.2</span> Using the causal map app for real-time, collaborative theory construction</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>IV Case studies</b></span></li>
+<li class="has-sub"><a href="54-case-study-the-strawberry-line.html#case-study-the-strawberry-line"><span class="toc-section-number">54</span> Case Study: the Strawberry Line</a><ul>
+<li><a href="54-case-study-the-strawberry-line.html#theories-gathered-from-activists"><span class="toc-section-number">54.0.1</span> Theories gathered from activists</a></li>
+<li><a href="54-case-study-the-strawberry-line.html#stories-gathered-from-the-public"><span class="toc-section-number">54.0.2</span> Stories gathered from the public</a></li>
+</ul></li>
+<li class="has-sub"><a href="55-case-study-global-young-academy-tracing-the-paths-of-gyas-impact.html#case-study-global-young-academy.-tracing-the-paths-of-gyas-impact"><span class="toc-section-number">55</span> Case study: Global Young Academy. Tracing the paths of GYA’s impact</a><ul>
+<li class="has-sub"><a href="55-1-more-details.html#more-details"><span class="toc-section-number">55.1</span> More details</a><ul>
+<li><a href="55-1-more-details.html#aims"><span class="toc-section-number">55.1.1</span> Aims</a></li>
+<li><a href="55-1-more-details.html#methods"><span class="toc-section-number">55.1.2</span> Methods</a></li>
+<li><a href="55-1-more-details.html#findings"><span class="toc-section-number">55.1.3</span> Findings</a></li>
+</ul></li>
+</ul></li>
+<li><a href="references.html#references">References</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div id="influence-variable-consequence-variable-package-of-variables" class="section level2">
+<h2><span class="header-section-number">9.1</span> Influence variable, consequence variable, package of variables</h2>
+<p>In a map like this, we call the variables on the left the <em>influence variables</em> of E, and E is the <em>consequence variable</em> of B and C. We can also say that B is a <em>parent</em> of E and E is a <em>child</em> of B. And we can say that both E and F are <em>downstream</em> of B and C, and that they are <em>descendants</em> of B and C, and so on. We can also say that B, C etc are members of a causal <em>package</em>.</p>
+<div id="htmlwidget-3654f534b0cad538b0a2" style="width:480px;height:300px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3654f534b0cad538b0a2">{"x":{"diagram":"\ngraph LR\nB(B)-->E(E)\nC(C)-->E(E)\nE(E)-->F(F)\n\n"},"evals":[],"jsHooks":[]}</script>
+</div>
+<p style="text-align: center;">
+<a href="9-metalanguage-talking-about-causal-maps.html"><button class="btn btn-default">Previous</button></a>
+<a href="9-2-the-cause-a-cause.html"><button class="btn btn-default">Next</button></a>
+</p>
+</div>
+</div>
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+</body>
+</html>
