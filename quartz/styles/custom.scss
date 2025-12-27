@@ -1,3 +1,19 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+
+// Explorer (left sidebar) readability for long titles:
+// - make each link a full-width "row"
+// - add spacing + a subtle divider between items
+.explorer-content ul li > a {
+  display: block;
+  padding: 0.25rem 0;
+  line-height: 1.25rem;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  border-bottom: 1px solid var(--lightgray);
+}
+
+.explorer-content ul li:last-child > a {
+  border-bottom: none;
+}
