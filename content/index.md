@@ -29,7 +29,14 @@ As you might be able to guess from the above, I have studied philosophy, maths a
 
 ## Work
 
-### Projects
+### Web apps
+
+[Causal Map](https://app.causalmap.app) - for constructing causal maps from text.
+[Qualia](https://manage.QualiaInterviews.com) - an AI interviewer for evaluation and social research.
+[Theorymaker](https://theorymaker.netlify.app) - for constructing Theories of Change.
+
+
+### Evaluation
 
 I have over 25 years' experience in research, monitoring and evaluation, as well as communicating the results, in about 30 different countries (mainly SE Europe, S & SE Asia / Pacific, Sub-Saharan Africa) on a wide variety of topics from disaster response in Haiti and psychosocial programming after the 2004 tsunami to social capital in the former Soviet Union, biodiversity in W Africa, community resilience in East Africa and counting stray dogs in Sarajevo. 
 
@@ -47,6 +54,14 @@ A while ago I wrote a set of [slides](static/slides.html) on Theories of Change.
 I also provide a free web app for constructing graphical Theories of Change called [Theorymaker](https://theorymaker.netlify.app). There have been many versions, [here](https://theorymaker.netlify.app) is the latest one.
 
 ## Publications
+
+### Causal mapping
+
+Our [Garden](https://garden.causalmap.app) of causal mapping ideas.
+
+See the [bilbiography](https://garden.causalmap.app/bibliography).
+
+### Psychology
 
 My academic research has been mainly in the field of clinical psychology especially after war, covering Post-Traumatic Stress Disorder and [post-traumatic growth](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RVSHfkAAAAAJ&citation_for_view=RVSHfkAAAAAJ:u5HHmVD_uO8C).
 
