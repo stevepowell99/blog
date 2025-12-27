@@ -31,9 +31,9 @@ As you might be able to guess from the above, I have studied philosophy, maths a
 
 ### Web apps
 
-[Causal Map](https://app.causalmap.app) - for constructing causal maps from text.
-[Qualia](https://manage.QualiaInterviews.com) - an AI interviewer for evaluation and social research.
-[Theorymaker](https://theorymaker.netlify.app) - for constructing Theories of Change.
+- [Causal Map](https://app.causalmap.app) - for constructing causal maps from text.
+- [Qualia](https://manage.QualiaInterviews.com) - an AI interviewer for evaluation and social research.
+- [Theorymaker](https://theorymaker.netlify.app) - for constructing Theories of Change.
 
 
 ### Evaluation
