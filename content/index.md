@@ -38,11 +38,13 @@ As you might be able to guess from the above, I have studied philosophy, maths a
 
 ### Evaluation
 
-I have over 25 years' experience in research, monitoring and evaluation, as well as communicating the results, in about 30 different countries (mainly SE Europe, S & SE Asia / Pacific, Sub-Saharan Africa) on a wide variety of topics from disaster response in Haiti and psychosocial programming after the 2004 tsunami to social capital in the former Soviet Union, biodiversity in W Africa, community resilience in East Africa and counting stray dogs in Sarajevo. 
+I have been lucky enough to work in about 30 different countries (mainly SE Europe, S & SE Asia / Pacific, Sub-Saharan Africa) on a wide variety of topics from disaster response in Haiti and psychosocial programming after the 2004 tsunami to social capital in the former Soviet Union and counting stray dogs in Sarajevo. 
 
-I am strong in both quantitative (GIS, “big data”, online & mobile, SPSS; R) and qualitative (Outcome Mapping, text analysis) research and evaluation approaches. I try to make my evidence-gathering transparent and am convinced of the importance of reproducible research.
+I am strong in both quantitative (GIS, “big data”, online & mobile, SPSS; R[[tags/R]]) and qualitative (Outcome Mapping, text analysis) research and evaluation approaches. I try to make my evidence-gathering transparent and am convinced of the importance of [reproducible research](tags/ReproducibleResearch).
 
-As a freelancer, I mostly deal with monitoring, evaluation and research for international development and disaster recovery programmes. This has meant working with some great people, especially at the [IFRC](http://ifrc.org). So I set up M&E systems and also conduct evaluations and carry out research. Subject-wise I try to remain a generalist, because I love dipping into different themes as necessary, from environmental protection and beneficiary communication to volunteerism and PTSD.
+### Everyone Counts
+
+As a freelancer, I often work for international development and disaster recovery programmes. This has meant working with some great people, especially at the [IFRC](http://ifrc.org). I was honoured to be Lead Researcher and Statistican for several global ["Everyone counts"](https://data.ifrc.org/everyone-counts-report-and-analysis) reports based on the FDRS.
 
 
 ## Theories of Change in evaluation
