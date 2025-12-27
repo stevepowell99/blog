@@ -22,7 +22,7 @@ I admit I got a bit distracted by the coding side of it.
 It went like this:
 
 We wrote to a lot of the agencies funding small conservation grants but of course we didn't get much data from many of them. So I wrote long scripts to scrape all the websites and automated the whole report. Also, 
-data was gathered from aiddata.org, which gathers and refines the OECD data, using the aiddata API, so it was a fully [reproducible](reproducible) [Rmarkdown](http://rmarkdown.rstudio.com/) product really and looked quite nice, with about 150 charts. Until of course it had to get squeezed into Microsoft Word in the end. 
+data was gathered from aiddata.org, which gathers and refines the OECD data, using the aiddata API, so it was a fully [reproducible](/how-do-you-explain-reproducible-research-to-clients) [Rmarkdown](http://rmarkdown.rstudio.com/) product really and looked quite nice, with about 150 charts. Until of course it had to get squeezed into Microsoft Word in the end. 
 
 Is this "big data"? Not really.
 
