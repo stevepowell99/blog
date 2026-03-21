@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FRDS Global Flagship Report 2025 — IFRC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --red:    #EE334E;
+  --navy:   #011E41;
+  --white:  #FFFFFF;
+  --gray:   #F2F2F2;
+  --amber:  #F0A400;
+  --blue:   #0096D6;
+  --green:  #43A047;
+  --head:   'Montserrat', sans-serif;
+  --body:   'Open Sans', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: var(--body); color: var(--navy); background: #fff; }
+
+/* ── DEMO BADGE ───────────────────────────────────────── */
+.demo-badge {
+  position: fixed; top: 1rem; right: 1rem;
+  background: var(--amber); color: var(--navy);
+  font-family: var(--head); font-size: 0.7rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.1em;
+  padding: 0.4rem 0.9rem; border-radius: 2px; z-index: 999;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* ── HERO ─────────────────────────────────────────────── */
+.hero {
+  min-height: 100vh;
+  background: var(--red);
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: flex-start;
+  padding: 6rem 8% 4rem;
+  position: relative; overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 80% 50%, rgba(0,0,0,0.15) 0%, transparent 70%);
+}
+.hero-logo {
+  position: absolute; top: 2rem; left: 8%;
+  display: flex; align-items: center; gap: 1rem;
+  z-index: 1;
+}
+.hero-emblem { width: 52px; height: 52px; flex-shrink: 0; }
+.hero-logo-text {
+  font-family: var(--head); font-weight: 700; font-size: 0.75rem;
+  color: rgba(255,255,255,0.9); line-height: 1.4;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.hero-eyebrow {
+  font-family: var(--head); font-size: 0.8rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.2em;
+  color: rgba(255,255,255,0.65); margin-bottom: 1.5rem;
+  position: relative; z-index: 1;
+}
+.hero h1 {
+  font-family: var(--head); font-weight: 800;
+  font-size: clamp(2.4rem, 5.5vw, 5rem);
+  color: #fff; line-height: 1.08; max-width: 750px;
+  margin-bottom: 1.75rem; position: relative; z-index: 1;
+}
+.hero-sub {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  color: rgba(255,255,255,0.82); max-width: 520px;
+  line-height: 1.65; margin-bottom: 3.5rem;
+  position: relative; z-index: 1;
+}
+.scroll-hint {
+  display: flex; align-items: center; gap: 0.75rem;
+  color: rgba(255,255,255,0.6);
+  font-family: var(--head); font-size: 0.8rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.12em;
+  animation: nudge 2.2s ease-in-out infinite;
+  position: relative; z-index: 1;
+}
+@keyframes nudge {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(7px); }
+}
+
+/* ── DIVIDER ──────────────────────────────────────────── */
+.divider {
+  background: var(--navy); color: #fff;
+  padding: 5rem 8%; text-align: center;
+}
+.divider h2 {
+  font-family: var(--head); font-size: clamp(1.6rem, 3vw, 2.6rem);
+  font-weight: 700; margin-bottom: 1rem;
+}
+.divider p {
+  font-size: 1.05rem; color: rgba(255,255,255,0.7);
+  max-width: 600px; margin: 0 auto; line-height: 1.7;
+}
+
+/* ── SCROLLYTELLING ───────────────────────────────────── */
+.scrollytelling {
+  display: flex; align-items: flex-start;
+}
+
+.narrative {
+  width: 42%; padding: 0 5% 30vh 8%;
+}
+
+.sticky-panel {
+  width: 58%; position: sticky; top: 0;
+  height: 100vh; background: var(--navy);
+  overflow: hidden;
+}
+
+/* ── VISUALISATION PANELS ─────────────────────────────── */
+.viz {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: center;
+  padding: 3rem 2.5rem 2rem;
+  opacity: 0; transform: translateY(16px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+  pointer-events: none;
+}
+.viz.active {
+  opacity: 1; transform: translateY(0);
+  pointer-events: auto;
+}
+.viz-eyebrow {
+  font-family: var(--head); font-size: 0.72rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.18em;
+  color: rgba(255,255,255,0.42); margin-bottom: 0.4rem;
+  text-align: center;
+}
+.viz-stat {
+  font-family: var(--head); font-weight: 800;
+  font-size: clamp(2.8rem, 5vw, 4.2rem);
+  color: var(--red); line-height: 1; text-align: center;
+}
+.viz-stat-sub {
+  font-family: var(--head); font-size: 0.9rem;
+  color: rgba(255,255,255,0.55); text-align: center;
+  margin-bottom: 1.5rem; letter-spacing: 0.02em;
+}
+.viz svg { width: 100%; flex: 1; min-height: 0; overflow: visible; }
+
+/* ── NARRATIVE STEPS ──────────────────────────────────── */
+.step {
+  padding: 18vh 0;
+  opacity: 0.3; transition: opacity 0.4s ease;
+}
+.step.is-active { opacity: 1; }
+
+.step-num {
+  font-family: var(--head); font-size: 0.72rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.2em;
+  color: var(--red); margin-bottom: 0.9rem;
+}
+.step h2 {
+  font-family: var(--head); font-weight: 700;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  color: var(--navy); line-height: 1.2; margin-bottom: 1.25rem;
+}
+.step p {
+  font-size: 1rem; line-height: 1.8; color: #3a3a3a;
+  margin-bottom: 1rem;
+}
+.step p strong { color: var(--navy); font-weight: 600; }
+.callout {
+  background: var(--gray);
+  border-left: 4px solid var(--red);
+  padding: 0.9rem 1.2rem; margin-top: 1.5rem;
+  border-radius: 0 3px 3px 0;
+}
+.callout p { font-size: 0.93rem; color: #555; margin: 0; }
+
+/* ── CLOSING ──────────────────────────────────────────── */
+.closing {
+  background: var(--gray); padding: 8rem 8%; text-align: center;
+}
+.closing h2 {
+  font-family: var(--head); font-weight: 700;
+  font-size: clamp(1.7rem, 3.2vw, 2.6rem);
+  color: var(--navy); margin-bottom: 1.25rem;
+}
+.closing p {
+  font-size: 1.05rem; color: #555;
+  max-width: 580px; margin: 0 auto 2.5rem; line-height: 1.7;
+}
+.btn {
+  display: inline-block; background: var(--red); color: #fff;
+  font-family: var(--head); font-weight: 700; font-size: 0.88rem;
+  text-transform: uppercase; letter-spacing: 0.1em;
+  padding: 1rem 2.5rem; border-radius: 2px; text-decoration: none;
+  transition: background 0.2s;
+}
+.btn:hover { background: #d0293e; }
+
+/* ── FOOTER ───────────────────────────────────────────── */
+footer {
+  background: var(--navy); color: rgba(255,255,255,0.5);
+  padding: 1.75rem 8%;
+  display: flex; justify-content: space-between; align-items: center;
+  font-family: var(--head); font-size: 0.78rem; flex-wrap: wrap; gap: 0.5rem;
+}
+footer a { color: rgba(255,255,255,0.75); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<div class="demo-badge">Prototype · Dummy Data</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-logo">
+    <!-- Red Cross emblem -->
+    <svg class="hero-emblem" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+      <rect width="52" height="52" fill="white"/>
+      <rect x="19.5" y="7" width="13" height="38" fill="#EE334E"/>
+      <rect x="7" y="19.5" width="38" height="13" fill="#EE334E"/>
+    </svg>
+    <div class="hero-logo-text">
+      International Federation of<br>Red Cross and Red Crescent Societies
+    </div>
+  </div>
+
+  <div class="hero-eyebrow">FRDS Global Flagship Report &nbsp;·&nbsp; 2025</div>
+  <h1>The World's Largest<br>Humanitarian Network<br>in Data</h1>
+  <p class="hero-sub">
+    191 Red Cross Red Crescent National Societies. 17.5 million volunteers.
+    1.9 billion people reached. This is the story behind the numbers.
+  </p>
+  <div class="scroll-hint">
+    <span>Scroll to explore</span>
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+      <path d="M9 3v10M4.5 9l4.5 5 4.5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     SECTION INTRO
+════════════════════════════════════════════════════════ -->
+<div class="divider">
+  <h2>Measuring What Matters</h2>
+  <p>
+    FRDS — the Financial Reporting and Data System — captures the annual performance
+    data that shows how National Societies serve their communities and how that service
+    is changing over time.
+  </p>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     SCROLLYTELLING  (narrative left · sticky viz right)
+════════════════════════════════════════════════════════ -->
+<div class="scrollytelling">
+
+  <!-- LEFT: scrolling narrative -->
+  <div class="narrative">
+
+    <div class="step" data-viz="network">
+      <div class="step-num">01 · The Network</div>
+      <h2>A presence in every corner of the world</h2>
+      <p>
+        The Red Cross Red Crescent Movement is the world's largest humanitarian network.
+        <strong>191 National Societies</strong> operate in 191 countries and territories —
+        meaning there is almost no place on earth without a local Red Cross or Red Crescent.
+      </p>
+      <p>
+        FRDS connects all 191, aggregating annual data on their people, finances, and
+        programmes into a single comparable dataset for the first time in the Movement's history.
+      </p>
+      <div class="callout">
+        <p>
+          In 2024, <strong>176 National Societies</strong> submitted complete FRDS returns —
+          a record reporting rate of <strong>92%</strong>.
+        </p>
+      </div>
+    </div>
+
+    <div class="step" data-viz="volunteers">
+      <div class="step-num">02 · Volunteers</div>
+      <h2>17.5 million people giving their time</h2>
+      <p>
+        Volunteers are the Movement's defining strength. In 2024,
+        <strong>17.5 million volunteers</strong> gave their time and skills —
+        more than any other humanitarian organisation in the world.
+      </p>
+      <p>
+        The Asia Pacific region is home to the largest share, with National Societies
+        in India, Bangladesh, and the Philippines among the largest by volunteer numbers.
+      </p>
+      <div class="callout">
+        <p>
+          Overall volunteer numbers have grown <strong>+12%</strong> since 2020,
+          reversing the decline seen during the COVID-19 pandemic years.
+        </p>
+      </div>
+    </div>
+
+    <div class="step" data-viz="reach">
+      <div class="step-num">03 · People Reached</div>
+      <h2>1.9 billion people reached in a single year</h2>
+      <p>
+        Across all programmes, National Societies collectively reached
+        <strong>1.9 billion people</strong> in 2024. Disaster relief and emergency
+        health remain the largest programme areas by numbers served.
+      </p>
+      <p>
+        Health and livelihoods programmes are growing fastest, reflecting a strategic
+        shift towards longer-term resilience alongside emergency response.
+      </p>
+      <div class="callout">
+        <p>
+          MENA National Societies saw the sharpest increase — a <strong>+34% rise</strong>
+          in people reached — driven by responses in Gaza and Sudan.
+        </p>
+      </div>
+    </div>
+
+    <div class="step" data-viz="operations">
+      <div class="step-num">04 · Emergency Operations</div>
+      <h2>A rising tide of climate-driven crises</h2>
+      <p>
+        National Societies launched <strong>156 major emergency operations</strong> in 2024.
+        Climate-related events — floods, droughts, extreme heat — now account for
+        <strong>67% of all operations</strong>, up from 52% in 2020.
+      </p>
+      <p>
+        The average operation now lasts 8.3 months, compared to 5.1 months in 2019 —
+        a sign that crises are becoming more protracted and complex.
+      </p>
+      <div class="callout">
+        <p>
+          Operations linked to conflict and displacement remain at a structurally
+          elevated level, with no sign of declining across the five-year period.
+        </p>
+      </div>
+    </div>
+
+  </div><!-- /narrative -->
+
+  <!-- RIGHT: sticky visualisation panel -->
+  <div class="sticky-panel">
+
+    <!-- Viz 1: World map -->
+    <div class="viz active" id="viz-network">
+      <div class="viz-eyebrow">National Societies · 2024</div>
+      <div class="viz-stat">191</div>
+      <div class="viz-stat-sub">countries and territories</div>
+      <svg id="map-svg" viewBox="0 0 800 380"></svg>
+    </div>
+
+    <!-- Viz 2: Volunteer bar chart -->
+    <div class="viz" id="viz-volunteers">
+      <div class="viz-eyebrow">Volunteers by Region · 2024</div>
+      <div class="viz-stat">17.5M</div>
+      <div class="viz-stat-sub">total volunteers worldwide</div>
+      <svg id="bar-svg" viewBox="0 0 680 290"></svg>
+    </div>
+
+    <!-- Viz 3: People reached donut -->
+    <div class="viz" id="viz-reach">
+      <div class="viz-eyebrow">People Reached by Programme · 2024</div>
+      <div class="viz-stat">1.9B</div>
+      <div class="viz-stat-sub">people reached worldwide</div>
+      <svg id="donut-svg" viewBox="0 0 500 280"></svg>
+    </div>
+
+    <!-- Viz 4: Operations line chart -->
+    <div class="viz" id="viz-operations">
+      <div class="viz-eyebrow">Major Emergency Operations · 2020–2024</div>
+      <div class="viz-stat">156</div>
+      <div class="viz-stat-sub">operations in 2024</div>
+      <svg id="line-svg" viewBox="0 0 680 280"></svg>
+    </div>
+
+  </div><!-- /sticky-panel -->
+
+</div><!-- /scrollytelling -->
+
+<!-- ═══════════════════════════════════════════════════════
+     CLOSING
+════════════════════════════════════════════════════════ -->
+<section class="closing">
+  <h2>Explore the Full Report</h2>
+  <p>
+    The FRDS Global Flagship Report 2025 provides detailed data for every National Society,
+    every region, and every programme — with full trend analysis from 2015 to 2024.
+  </p>
+  <a href="#" class="btn">Access the Full Data</a>
+</section>
+
+<footer>
+  <span>© 2025 International Federation of Red Cross and Red Crescent Societies</span>
+  <a href="#">FRDS Data Portal</a>
+</footer>
+
+<!-- ═══════════════════════════════════════════════════════
+     SCRIPTS
+════════════════════════════════════════════════════════ -->
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+<script>
+
+// ── DATA ──────────────────────────────────────────────────────────────────────
+const volunteerData = [
+  { region: "Asia Pacific", vol: 6.8, color: "#EE334E" },
+  { region: "Americas",     vol: 4.1, color: "#F0A400" },
+  { region: "Africa",       vol: 3.2, color: "#0096D6" },
+  { region: "Europe",       vol: 2.1, color: "#43A047" },
+  { region: "MENA",         vol: 1.3, color: "#B85ED4" },
+];
+
+const reachData = [
+  { label: "Disaster Relief", value: 42, color: "#EE334E" },
+  { label: "Health",          value: 28, color: "#0096D6" },
+  { label: "Livelihoods",     value: 15, color: "#43A047" },
+  { label: "Migration",       value: 10, color: "#F0A400" },
+  { label: "Other",           value:  5, color: "#9E9E9E" },
+];
+
+const opsData = [
+  { year: 2020, total: 145, climate: 75  },
+  { year: 2021, total: 138, climate: 74  },
+  { year: 2022, total: 162, climate: 98  },
+  { year: 2023, total: 178, climate: 114 },
+  { year: 2024, total: 156, climate: 105 },
+];
+
+// ── SCROLLYTELLING ────────────────────────────────────────────────────────────
+const rendered = new Set();
+
+function showViz(name) {
+  document.querySelectorAll('.viz').forEach(v => v.classList.remove('active'));
+  const el = document.getElementById(`viz-${name}`);
+  if (!el) return;
+  el.classList.add('active');
+  if (!rendered.has(name)) {
+    rendered.add(name);
+    setTimeout(() => renderViz(name), 80);
+  }
+}
+
+function renderViz(name) {
+  if (name === 'network')    renderMap();
+  if (name === 'volunteers') renderBar();
+  if (name === 'reach')      renderDonut();
+  if (name === 'operations') renderLine();
+}
+
+const stepObserver = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      showViz(e.target.dataset.viz);
+      e.target.classList.add('is-active');
+    } else {
+      e.target.classList.remove('is-active');
+    }
+  });
+}, { threshold: 0.5 });
+
+document.querySelectorAll('.step').forEach(s => stepObserver.observe(s));
+
+window.addEventListener('load', () => {
+  showViz('network');
+  renderMap();
+});
+
+// ── VIZ 1: WORLD MAP ─────────────────────────────────────────────────────────
+async function renderMap() {
+  const svg = d3.select('#map-svg');
+  svg.selectAll('*').remove();
+  const W = 800, H = 380;
+
+  const proj = d3.geoNaturalEarth1().scale(128).translate([W / 2, H / 2 + 10]);
+  const path = d3.geoPath().projection(proj);
+
+  // Sphere background
+  svg.append('path')
+    .datum({ type: 'Sphere' })
+    .attr('d', path)
+    .attr('fill', 'rgba(255,255,255,0.04)');
+
+  // Graticule
+  svg.append('path')
+    .datum(d3.geoGraticule()())
+    .attr('d', path)
+    .attr('fill', 'none')
+    .attr('stroke', 'rgba(255,255,255,0.07)')
+    .attr('stroke-width', 0.4);
+
+  try {
+    const world = await d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json');
+    const features = topojson.feature(world, world.objects.countries).features;
+
+    svg.selectAll('.country')
+      .data(features)
+      .join('path')
+      .attr('d', path)
+      .attr('fill', 'rgba(255,255,255,0.1)')
+      .attr('stroke', 'rgba(255,255,255,0.22)')
+      .attr('stroke-width', 0.35);
+
+    // One red dot per country centroid (simulating 191 NS presence)
+    const dots = features
+      .map(f => proj(d3.geoCentroid(f)))
+      .filter(Boolean);
+
+    svg.selectAll('.ns-dot')
+      .data(dots)
+      .join('circle')
+      .attr('cx', d => d[0])
+      .attr('cy', d => d[1])
+      .attr('r', 3.2)
+      .attr('fill', '#EE334E')
+      .attr('opacity', 0)
+      .transition().duration(900).delay((_, i) => i * 6)
+      .attr('opacity', 0.82);
+
+  } catch (_) {
+    svg.append('text')
+      .attr('x', W / 2).attr('y', H / 2)
+      .attr('text-anchor', 'middle')
+      .attr('fill', 'rgba(255,255,255,0.35)')
+      .attr('font-family', 'Montserrat, sans-serif')
+      .attr('font-size', 13)
+      .text('Map loads with internet connection');
+  }
+}
+
+// ── VIZ 2: HORIZONTAL BAR CHART ──────────────────────────────────────────────
+function renderBar() {
+  const svg = d3.select('#bar-svg');
+  svg.selectAll('*').remove();
+
+  const m = { top: 10, right: 70, bottom: 15, left: 115 };
+  const W = 680 - m.left - m.right;
+  const H = 290 - m.top - m.bottom;
+  const g = svg.append('g').attr('transform', `translate(${m.left},${m.top})`);
+
+  const x = d3.scaleLinear().domain([0, 8]).range([0, W]);
+  const y = d3.scaleBand().domain(volunteerData.map(d => d.region)).range([0, H]).padding(0.32);
+
+  // Subtle grid
+  g.selectAll('.grid')
+    .data(x.ticks(4))
+    .join('line')
+    .attr('x1', d => x(d)).attr('x2', d => x(d))
+    .attr('y1', 0).attr('y2', H)
+    .attr('stroke', 'rgba(255,255,255,0.08)')
+    .attr('stroke-width', 1);
+
+  // Bars
+  g.selectAll('.bar')
+    .data(volunteerData)
+    .join('rect')
+    .attr('x', 0)
+    .attr('y', d => y(d.region))
+    .attr('height', y.bandwidth())
+    .attr('fill', d => d.color)
+    .attr('rx', 2)
+    .attr('width', 0)
+    .transition().duration(750).delay((_, i) => i * 110)
+    .attr('width', d => x(d.vol));
+
+  // Region labels
+  g.selectAll('.lbl-region')
+    .data(volunteerData)
+    .join('text')
+    .attr('x', -10)
+    .attr('y', d => y(d.region) + y.bandwidth() / 2)
+    .attr('dy', '0.35em')
+    .attr('text-anchor', 'end')
+    .attr('fill', 'rgba(255,255,255,0.78)')
+    .attr('font-family', 'Montserrat, sans-serif')
+    .attr('font-size', 12).attr('font-weight', 600)
+    .text(d => d.region);
+
+  // Value labels
+  g.selectAll('.lbl-val')
+    .data(volunteerData)
+    .join('text')
+    .attr('x', d => x(d.vol) + 8)
+    .attr('y', d => y(d.region) + y.bandwidth() / 2)
+    .attr('dy', '0.35em')
+    .attr('fill', 'rgba(255,255,255,0.6)')
+    .attr('font-family', 'Montserrat, sans-serif')
+    .attr('font-size', 12)
+    .attr('opacity', 0)
+    .text(d => `${d.vol}M`)
+    .transition().delay((_, i) => 750 + i * 110)
+    .attr('opacity', 1);
+}
+
+// ── VIZ 3: DONUT CHART ────────────────────────────────────────────────────────
+function renderDonut() {
+  const svg = d3.select('#donut-svg');
+  svg.selectAll('*').remove();
+
+  const W = 500, H = 280;
+  const R = Math.min(W * 0.36, H * 0.82) / 2;
+  const cx = W * 0.38, cy = H / 2;
+
+  const arc  = d3.arc().innerRadius(R * 0.52).outerRadius(R);
+  const arcH = d3.arc().innerRadius(R * 0.52).outerRadius(R * 1.06);
+  const pie  = d3.pie().value(d => d.value).sort(null);
+
+  const g = svg.append('g').attr('transform', `translate(${cx},${cy})`);
+
+  g.selectAll('.arc')
+    .data(pie(reachData))
+    .join('path')
+    .attr('fill', d => d.data.color)
+    .attr('stroke', '#011E41')
+    .attr('stroke-width', 2.5)
+    .attr('opacity', 0)
+    .attr('d', arc)
+    .on('mouseenter', function(_, d) {
+      d3.select(this).attr('d', arcH);
+    })
+    .on('mouseleave', function(_, d) {
+      d3.select(this).attr('d', arc);
+    })
+    .transition().duration(550).delay((_, i) => i * 90)
+    .attr('opacity', 1);
+
+  // Centre label
+  g.append('text').attr('text-anchor', 'middle').attr('dy', '-0.3em')
+    .attr('fill', 'rgba(255,255,255,0.45)')
+    .attr('font-family', 'Montserrat, sans-serif').attr('font-size', 11)
+    .text('people reached');
+
+  g.append('text').attr('text-anchor', 'middle').attr('dy', '1em')
+    .attr('fill', '#EE334E')
+    .attr('font-family', 'Montserrat, sans-serif')
+    .attr('font-weight', 800).attr('font-size', 30)
+    .text('1.9B');
+
+  // Legend
+  const leg = svg.append('g').attr('transform', `translate(${cx + R + 22}, ${cy - reachData.length * 14})`);
+  reachData.forEach((d, i) => {
+    const row = leg.append('g').attr('transform', `translate(0,${i * 26})`);
+    row.append('rect').attr('width', 11).attr('height', 11).attr('rx', 2).attr('fill', d.color);
+    row.append('text').attr('x', 17).attr('y', 9.5)
+      .attr('fill', 'rgba(255,255,255,0.72)')
+      .attr('font-family', 'Open Sans, sans-serif').attr('font-size', 11)
+      .text(`${d.label}  ${d.value}%`);
+  });
+}
+
+// ── VIZ 4: LINE CHART ────────────────────────────────────────────────────────
+function renderLine() {
+  const svg = d3.select('#line-svg');
+  svg.selectAll('*').remove();
+
+  const m = { top: 25, right: 30, bottom: 40, left: 48 };
+  const W = 680 - m.left - m.right;
+  const H = 280 - m.top - m.bottom;
+  const g = svg.append('g').attr('transform', `translate(${m.left},${m.top})`);
+
+  const x = d3.scalePoint().domain(opsData.map(d => d.year)).range([0, W]).padding(0.25);
+  const y = d3.scaleLinear().domain([0, 210]).range([H, 0]);
+
+  // Horizontal grid
+  g.selectAll('.grid')
+    .data(y.ticks(4))
+    .join('line')
+    .attr('x1', 0).attr('x2', W)
+    .attr('y1', d => y(d)).attr('y2', d => y(d))
+    .attr('stroke', 'rgba(255,255,255,0.09)')
+    .attr('stroke-width', 1);
+
+  // Climate area
+  const areaFn = d3.area().x(d => x(d.year)).y0(H).y1(d => y(d.climate)).curve(d3.curveMonotoneX);
+  g.append('path').datum(opsData)
+    .attr('d', areaFn)
+    .attr('fill', 'rgba(238,51,78,0.18)')
+    .attr('opacity', 0)
+    .transition().duration(700)
+    .attr('opacity', 1);
+
+  function animateLine(sel, delay) {
+    const len = sel.node().getTotalLength();
+    sel.attr('stroke-dasharray', len)
+       .attr('stroke-dashoffset', len)
+       .transition().duration(1100).delay(delay)
+       .attr('stroke-dashoffset', 0);
+  }
+
+  // Total line
+  const lineTotal = d3.line().x(d => x(d.year)).y(d => y(d.total)).curve(d3.curveMonotoneX);
+  animateLine(
+    g.append('path').datum(opsData).attr('d', lineTotal)
+      .attr('fill', 'none').attr('stroke', 'white').attr('stroke-width', 2.5),
+    0
+  );
+
+  // Climate line
+  const lineClim = d3.line().x(d => x(d.year)).y(d => y(d.climate)).curve(d3.curveMonotoneX);
+  animateLine(
+    g.append('path').datum(opsData).attr('d', lineClim)
+      .attr('fill', 'none').attr('stroke', '#EE334E').attr('stroke-width', 2.5),
+    350
+  );
+
+  // Dots
+  [[opsData, 'total', 'white', 1200], [opsData, 'climate', '#EE334E', 1500]].forEach(([data, key, col, delay]) => {
+    g.selectAll(`.dot-${key}`).data(data).join('circle')
+      .attr('cx', d => x(d.year)).attr('cy', d => y(d[key]))
+      .attr('r', 5).attr('fill', col)
+      .attr('opacity', 0)
+      .transition().delay((_, i) => delay + i * 40)
+      .attr('opacity', 1);
+  });
+
+  // X-axis labels
+  g.selectAll('.x-lbl').data(opsData).join('text')
+    .attr('x', d => x(d.year)).attr('y', H + 26)
+    .attr('text-anchor', 'middle')
+    .attr('fill', 'rgba(255,255,255,0.55)')
+    .attr('font-family', 'Montserrat, sans-serif').attr('font-size', 12)
+    .text(d => d.year);
+
+  // Y-axis labels
+  g.selectAll('.y-lbl').data(y.ticks(4)).join('text')
+    .attr('x', -10).attr('y', d => y(d) + 4)
+    .attr('text-anchor', 'end')
+    .attr('fill', 'rgba(255,255,255,0.38)')
+    .attr('font-family', 'Montserrat, sans-serif').attr('font-size', 11)
+    .text(d => d);
+
+  // Legend
+  const leg = g.append('g').attr('transform', `translate(${W - 170},5)`);
+  [['white', 'All operations'], ['#EE334E', 'Climate-related']].forEach(([col, lbl], i) => {
+    const row = leg.append('g').attr('transform', `translate(0,${i * 22})`);
+    row.append('line').attr('x2', 18).attr('y1', 7).attr('y2', 7)
+      .attr('stroke', col).attr('stroke-width', 2.5);
+    row.append('text').attr('x', 26).attr('y', 11)
+      .attr('fill', 'rgba(255,255,255,0.72)')
+      .attr('font-family', 'Montserrat, sans-serif').attr('font-size', 11)
+      .text(lbl);
+  });
+}
+
+</script>
+</body>
+</html>

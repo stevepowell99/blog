@@ -58,7 +58,7 @@ As a freelancer, I often work for international development and disaster recover
 - [[theorymaker-again|Theorymaker lives again]]
 - [[theorymaker|Shutdown of the original Theorymaker]]
 
-### Causal mapping
+### Older work on causal mapping
 
 - [[CMhelp|Causal Mapping (older guide)]]
 - [[guide2|Causal Map Guide (Version 2)]]

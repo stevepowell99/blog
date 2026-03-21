@@ -1,0 +1,64 @@
+/*
+ * IFRC brand theme for Quarto / closeread
+ * Primary source: brand.ifrc.org
+ */
+
+// ── Variables ────────────────────────────────────────────
+$ifrc-red:   #EE334E;
+$ifrc-navy:  #011E41;
+$ifrc-white: #FFFFFF;
+$ifrc-gray:  #F2F2F2;
+$ifrc-amber: #F0A400;
+$ifrc-blue:  #0096D6;
+
+/*-- scss:defaults --*/
+
+$font-family-sans-serif: 'Open Sans', system-ui, sans-serif;
+$headings-font-family:   'Montserrat', system-ui, sans-serif;
+$headings-font-weight:   700;
+$link-color:             $ifrc-red;
+$body-color:             $ifrc-navy;
+$body-bg:                $ifrc-white;
+
+/*-- scss:rules --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap');
+
+// Hero title block
+.hero-title {
+  background: $ifrc-red;
+  color: white !important;
+  padding: 5rem 8%;
+  margin: 0;
+
+  p { color: rgba(255,255,255,0.78); font-size: 1.1rem; line-height: 1.7; }
+}
+
+// Narrative text in scrollytelling
+.cr-narrative p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.cr-narrative strong {
+  color: $ifrc-navy;
+  font-weight: 600;
+}
+
+// Section backgrounds
+.cr-section {
+  background: $ifrc-white;
+}
+
+// Quarto document headers
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+  color: $ifrc-navy;
+}
+
+// Horizontal rules as section dividers
+hr {
+  border-color: rgba($ifrc-navy, 0.12);
+  margin: 3rem 0;
+}

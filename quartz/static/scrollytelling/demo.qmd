@@ -1,0 +1,209 @@
+---
+title: "FRDS Global Flagship Report 2025"
+subtitle: "Red Cross Red Crescent National Society Indicators"
+author: "International Federation of Red Cross and Red Crescent Societies"
+date: "2025"
+format:
+  closeread-html:
+    # Closeread extension: quarto add quarto-ext/closeread
+    cr-style:
+      narrative-col-width: "minmax(260px, 480px)"
+      sticky-col-width: "1fr"
+      narrative-background-color: "#ffffff"
+      section-background-color: "#011E41"
+    embed-resources: true
+    toc: false
+    theme:
+      - cosmo
+      - ifrc-theme.scss
+execute:
+  echo: false
+  warning: false
+---
+
+```{r setup}
+#| include: false
+library(tidyverse)
+library(ggplot2)
+
+# Dummy FRDS data
+volunteers <- tibble(
+  region    = c("Asia Pacific", "Americas", "Africa", "Europe", "MENA"),
+  millions  = c(6.8, 4.1, 3.2, 2.1, 1.3),
+  color     = c("#EE334E", "#F0A400", "#0096D6", "#43A047", "#B85ED4")
+)
+
+reach <- tibble(
+  programme = c("Disaster Relief", "Health", "Livelihoods", "Migration", "Other"),
+  share     = c(42, 28, 15, 10, 5),
+  color     = c("#EE334E", "#0096D6", "#43A047", "#F0A400", "#9E9E9E")
+)
+
+operations <- tibble(
+  year    = 2020:2024,
+  total   = c(145, 138, 162, 178, 156),
+  climate = c(75, 74, 98, 114, 105)
+)
+
+# IFRC theme for ggplot
+theme_ifrc <- function() {
+  theme_minimal(base_family = "Open Sans") +
+  theme(
+    plot.background    = element_rect(fill = "#011E41", colour = NA),
+    panel.background   = element_rect(fill = "#011E41", colour = NA),
+    panel.grid.major   = element_line(colour = "rgba(255,255,255,0.08)"),
+    panel.grid.minor   = element_blank(),
+    axis.text          = element_text(colour = "rgba(255,255,255,0.55)", size = 11),
+    axis.title         = element_blank(),
+    plot.title         = element_text(colour = "white",  family = "Montserrat",
+                                      face = "bold", size = 14),
+    plot.subtitle      = element_text(colour = "rgba(255,255,255,0.6)", size = 11),
+    legend.background  = element_rect(fill = "#011E41", colour = NA),
+    legend.text        = element_text(colour = "rgba(255,255,255,0.7)", size = 10),
+    legend.title       = element_blank()
+  )
+}
+```
+
+<!-- ═══════════════════════════════════════════════════
+     Closeread scrollytelling sections
+     Each :::{.cr-section} creates a two-column layout:
+       • Sticky element (#cr-id) anchors to the right
+       • Narrative text scrolls on the left
+       • @cr-id in text triggers focus transitions
+════════════════════════════════════════════════════ -->
+
+## The World's Largest Humanitarian Network {.hero-title}
+
+*FRDS — the Financial Reporting and Data System — captures annual performance data
+from all 191 Red Cross Red Crescent National Societies.*
+
+---
+
+:::{.cr-section}
+
+The IFRC's FRDS tracks data from every corner of the globe. @cr-map
+
+191 National Societies operate in 191 countries and territories — meaning almost no
+place on earth lacks a local Red Cross or Red Crescent presence.
+
+In 2024, **176 National Societies** submitted complete FRDS returns, a record
+reporting rate of 92%. @cr-map
+
+:::{#cr-map}
+```{r}
+#| fig-width: 8
+#| fig-height: 4.5
+# In production: use {rnaturalearth} + ggplot2 geom_sf
+# Placeholder: world map with country counts
+world_map <- rnaturalearth::ne_countries(scale = "medium", returnclass = "sf")
+
+ggplot(world_map) +
+  geom_sf(fill = "rgba(255,255,255,0.1)", colour = "rgba(255,255,255,0.22)",
+          linewidth = 0.2) +
+  coord_sf(crs = "+proj=natearth") +
+  labs(title = "191 National Societies", subtitle = "countries and territories · 2024") +
+  theme_ifrc() +
+  theme(axis.text = element_blank(), panel.grid = element_blank())
+```
+:::
+
+:::
+
+---
+
+:::{.cr-section}
+
+At the heart of the network are volunteers. @cr-bar
+
+In 2024, over **17.5 million volunteers** gave their time and skills — more than
+any other humanitarian organisation in the world.
+
+The Asia Pacific region contributes the largest share. Volunteer numbers have grown
+**+12%** since 2020, reversing pandemic-era declines. @cr-bar
+
+:::{#cr-bar}
+```{r}
+#| fig-width: 7
+#| fig-height: 4
+ggplot(volunteers, aes(x = millions, y = fct_reorder(region, millions), fill = color)) +
+  geom_col(width = 0.65, show.legend = FALSE) +
+  geom_text(aes(label = paste0(millions, "M")), hjust = -0.2,
+            colour = "rgba(255,255,255,0.65)", family = "Montserrat",
+            fontface = "bold", size = 3.8) +
+  scale_fill_identity() +
+  scale_x_continuous(expand = expansion(mult = c(0, 0.15))) +
+  labs(title = "Volunteers by Region · 2024") +
+  theme_ifrc()
+```
+:::
+
+:::
+
+---
+
+:::{.cr-section}
+
+Across all programmes, National Societies reached **1.9 billion people** in 2024.
+@cr-donut
+
+Disaster relief and emergency health remain the largest programme areas by numbers
+served, but health and livelihoods are growing fastest. @cr-donut
+
+MENA National Societies saw a **+34% rise** in people reached, driven by responses
+in Gaza and Sudan. @cr-donut
+
+:::{#cr-donut}
+```{r}
+#| fig-width: 6
+#| fig-height: 4.5
+ggplot(reach, aes(x = 2, y = share, fill = color)) +
+  geom_col(width = 1, colour = "#011E41", linewidth = 0.8, show.legend = FALSE) +
+  geom_text(aes(label = paste0(programme, "\n", share, "%")),
+            position = position_stack(vjust = 0.5),
+            colour = "white", family = "Open Sans", size = 3.2, lineheight = 1.2) +
+  scale_fill_identity() +
+  coord_polar(theta = "y", start = 0) +
+  xlim(0.5, 2.5) +
+  labs(title = "People Reached by Programme · 2024") +
+  theme_ifrc() +
+  theme(axis.text = element_blank(), panel.grid = element_blank())
+```
+:::
+
+:::
+
+---
+
+:::{.cr-section}
+
+National Societies launched **156 major emergency operations** in 2024. @cr-line
+
+Climate-related events now account for **67% of all operations**, up from 52% in 2020.
+The average operation now lasts 8.3 months — up from 5.1 months in 2019. @cr-line
+
+:::{#cr-line}
+```{r}
+#| fig-width: 7
+#| fig-height: 4
+operations_long <- operations |>
+  pivot_longer(c(total, climate), names_to = "type", values_to = "n") |>
+  mutate(type = recode(type, total = "All operations", climate = "Climate-related"))
+
+ggplot(operations_long, aes(x = year, y = n, colour = type)) +
+  geom_area(data = filter(operations_long, type == "Climate-related"),
+            aes(fill = type), alpha = 0.18, show.legend = FALSE) +
+  geom_line(linewidth = 2, show.legend = TRUE) +
+  geom_point(size = 4) +
+  scale_colour_manual(values = c("All operations" = "white",
+                                 "Climate-related" = "#EE334E")) +
+  scale_fill_manual(values = c("Climate-related" = "#EE334E")) +
+  scale_x_continuous(breaks = 2020:2024) +
+  scale_y_continuous(limits = c(0, 210)) +
+  labs(title = "Major Emergency Operations · 2020–2024") +
+  theme_ifrc() +
+  theme(legend.position = "bottom")
+```
+:::
+
+:::
