@@ -9,3 +9,7 @@ tsconfig.tsbuildinfo
 private/
 .replit
 replit.nix
+
+# Windows/Drive folder metadata
+desktop.ini
+**/desktop.ini
