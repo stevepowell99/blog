@@ -1,6 +1,7 @@
 type Section = {
   heading: HTMLElement
-  table: HTMLTableElement
+  // the table, or the .table-container wrapping it, whichever we hide
+  block: HTMLElement
   rows: HTMLTableRowElement[]
   rowText: string[]
   rowSource: string[]
@@ -12,13 +13,16 @@ type Section = {
 // bucket (talks tables have no source column, so they only show under "All").
 function collectSections(root: HTMLElement): Section[] {
   const sections: Section[] = []
+  const tableOf = (el: Element): HTMLTableElement | null =>
+    el.tagName === "TABLE" ? (el as HTMLTableElement) : el.querySelector("table")
+
   for (const heading of Array.from(root.querySelectorAll("h2")) as HTMLElement[]) {
     let el = heading.nextElementSibling
-    while (el && el.tagName !== "H2" && el.tagName !== "TABLE") {
+    while (el && el.tagName !== "H2" && !tableOf(el)) {
       el = el.nextElementSibling
     }
-    if (!el || el.tagName !== "TABLE") continue
-    const table = el as HTMLTableElement
+    if (!el || el.tagName === "H2") continue
+    const table = tableOf(el)!
     const rows = Array.from(table.tBodies[0]?.rows ?? [])
     const headers = Array.from(table.tHead?.rows[0]?.cells ?? []).map((c) =>
       (c.textContent ?? "").trim().toLowerCase(),
@@ -26,7 +30,7 @@ function collectSections(root: HTMLElement): Section[] {
     const sourceCol = headers.indexOf("source")
     sections.push({
       heading,
-      table,
+      block: el as HTMLElement,
       rows,
       rowText: rows.map((r) => (r.textContent ?? "").toLowerCase()),
       rowSource: rows.map((r) =>
@@ -82,7 +86,7 @@ document.addEventListener("nav", () => {
       })
 
       s.heading.hidden = visibleHere === 0
-      s.table.hidden = visibleHere === 0
+      s.block.hidden = visibleHere === 0
       if (s.countable) shown += visibleHere
     }
 

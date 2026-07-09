@@ -88,6 +88,7 @@ const fetchContentCache: Map<FullSlug, Element[]> = new Map()
 const contextWindowWords = 30
 const numSearchResults = 8
 const numTagResults = 5
+const highlightParam = "highlight"
 
 const tokenizeTerm = (term: string) => {
   const tokens = term.split(/\s+/).filter((t) => t.trim() !== "")
@@ -146,44 +147,46 @@ function highlight(searchTerm: string, text: string, trim?: boolean) {
   }`
 }
 
+const createHighlightSpan = (text: string) => {
+  const span = document.createElement("span")
+  span.className = "highlight"
+  span.textContent = text
+  return span
+}
+
+const highlightTextNodes = (node: Node, term: string) => {
+  if (node.nodeType === Node.TEXT_NODE) {
+    const nodeText = node.nodeValue ?? ""
+    const regex = new RegExp(term.toLowerCase(), "gi")
+    const matches = nodeText.match(regex)
+    if (!matches || matches.length === 0) return
+    const spanContainer = document.createElement("span")
+    let lastIndex = 0
+    for (const match of matches) {
+      const matchIndex = nodeText.indexOf(match, lastIndex)
+      spanContainer.appendChild(document.createTextNode(nodeText.slice(lastIndex, matchIndex)))
+      spanContainer.appendChild(createHighlightSpan(match))
+      lastIndex = matchIndex + match.length
+    }
+    spanContainer.appendChild(document.createTextNode(nodeText.slice(lastIndex)))
+    node.parentNode?.replaceChild(spanContainer, node)
+  } else if (node.nodeType === Node.ELEMENT_NODE) {
+    if ((node as HTMLElement).classList.contains("highlight")) return
+    Array.from(node.childNodes).forEach((child) => highlightTextNodes(child, term))
+  }
+}
+
+// wraps every match in the subtree in a .highlight span, in place
+function highlightWithin(root: Node, searchTerm: string) {
+  for (const term of tokenizeTerm(searchTerm)) {
+    highlightTextNodes(root, term)
+  }
+}
+
 function highlightHTML(searchTerm: string, el: HTMLElement) {
   const p = new DOMParser()
-  const tokenizedTerms = tokenizeTerm(searchTerm)
   const html = p.parseFromString(el.innerHTML, "text/html")
-
-  const createHighlightSpan = (text: string) => {
-    const span = document.createElement("span")
-    span.className = "highlight"
-    span.textContent = text
-    return span
-  }
-
-  const highlightTextNodes = (node: Node, term: string) => {
-    if (node.nodeType === Node.TEXT_NODE) {
-      const nodeText = node.nodeValue ?? ""
-      const regex = new RegExp(term.toLowerCase(), "gi")
-      const matches = nodeText.match(regex)
-      if (!matches || matches.length === 0) return
-      const spanContainer = document.createElement("span")
-      let lastIndex = 0
-      for (const match of matches) {
-        const matchIndex = nodeText.indexOf(match, lastIndex)
-        spanContainer.appendChild(document.createTextNode(nodeText.slice(lastIndex, matchIndex)))
-        spanContainer.appendChild(createHighlightSpan(match))
-        lastIndex = matchIndex + match.length
-      }
-      spanContainer.appendChild(document.createTextNode(nodeText.slice(lastIndex)))
-      node.parentNode?.replaceChild(spanContainer, node)
-    } else if (node.nodeType === Node.ELEMENT_NODE) {
-      if ((node as HTMLElement).classList.contains("highlight")) return
-      Array.from(node.childNodes).forEach((child) => highlightTextNodes(child, term))
-    }
-  }
-
-  for (const term of tokenizedTerms) {
-    highlightTextNodes(html.body, term)
-  }
-
+  highlightWithin(html.body, searchTerm)
   return html.body
 }
 
@@ -404,7 +407,12 @@ async function setupSearch(searchElement: Element, currentSlug: FullSlug, data: 
     const itemTile = document.createElement("a")
     itemTile.classList.add("result-card")
     itemTile.id = slug
-    itemTile.href = resolveUrl(slug).toString()
+    const url = resolveUrl(slug)
+    // carry the term across so the destination page can highlight it too
+    if (searchType === "basic" && currentSearchTerm.trim() !== "") {
+      url.searchParams.set(highlightParam, currentSearchTerm)
+    }
+    itemTile.href = url.toString()
     itemTile.innerHTML = `
       <h3 class="card-title">${title}</h3>
       ${htmlTags}
@@ -597,8 +605,88 @@ async function fillDocument(data: ContentIndex) {
   indexPopulated = true
 }
 
+// Highlights the search term on the page you land on, and lets you step
+// through the matches. Driven by the ?highlight= param that search results add.
+function setupPageHighlight() {
+  const term = new URL(window.location.href).searchParams.get(highlightParam)
+  if (!term?.trim()) return
+  const article = document.querySelector("article")
+  if (!article) return
+
+  highlightWithin(article, term)
+  const matches = [...article.getElementsByClassName("highlight")] as HTMLElement[]
+
+  const clearParam = () => {
+    const url = new URL(window.location.href)
+    url.searchParams.delete(highlightParam)
+    history.replaceState({}, "", url)
+  }
+
+  if (matches.length === 0) {
+    clearParam()
+    return
+  }
+
+  let active = -1
+  const bar = document.createElement("div")
+  bar.className = "highlight-nav"
+  const count = document.createElement("span")
+  count.className = "highlight-nav-count"
+
+  const step = (delta: number) => {
+    const n = matches.length
+    active = ((active + delta) % n + n) % n
+    matches.forEach((el, i) => el.classList.toggle("highlight-active", i === active))
+    matches[active].scrollIntoView({ block: "center", behavior: "smooth" })
+    count.textContent = `${active + 1} / ${n}`
+  }
+
+  const dismiss = () => {
+    matches.forEach((el) => el.classList.remove("highlight", "highlight-active"))
+    bar.remove()
+    clearParam()
+    document.removeEventListener("keydown", onKeydown)
+  }
+
+  function onKeydown(e: KeyboardEvent) {
+    // the search modal owns these keys while it is open
+    if (document.querySelector(".search-container.active")) return
+    if (e.key === "Escape") {
+      dismiss()
+    } else if (e.altKey && (e.key === "ArrowDown" || e.key === "ArrowUp")) {
+      e.preventDefault()
+      step(e.key === "ArrowDown" ? 1 : -1)
+    }
+  }
+
+  const button = (label: string, title: string, onClick: () => void) => {
+    const b = document.createElement("button")
+    b.type = "button"
+    b.textContent = label
+    b.title = title
+    b.addEventListener("click", onClick)
+    return b
+  }
+
+  bar.append(
+    button("↑", "Previous match (Alt+Up)", () => step(-1)),
+    count,
+    button("↓", "Next match (Alt+Down)", () => step(1)),
+    button("✕", "Clear highlights (Escape)", dismiss),
+  )
+  document.body.appendChild(bar)
+  document.addEventListener("keydown", onKeydown)
+  window.addCleanup(() => {
+    bar.remove()
+    document.removeEventListener("keydown", onKeydown)
+  })
+
+  step(1) // start on the first match
+}
+
 document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
   const currentSlug = e.detail.url
+  setupPageHighlight()
   const data = await fetchData
   const searchElement = document.getElementsByClassName("search")
   for (const element of searchElement) {
