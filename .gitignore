@@ -13,3 +13,4 @@ replit.nix
 # Windows/Drive folder metadata
 desktop.ini
 **/desktop.ini
+scripts/__pycache__/
