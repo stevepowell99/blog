@@ -607,7 +607,6 @@ def render(all_projects, talks):
     for p in all_projects:
         by_sector[primary_sector(p)].append(p)
 
-    all_themes = sorted({t for p in all_projects for t in (p.sectors + p.methods)})
     n_projects = len(all_projects)
     n_clients = len({p.client for p in all_projects})
 
@@ -619,9 +618,6 @@ def render(all_projects, talks):
     lines.append("description: >-")
     lines.append("  A browsable list of evaluation and research projects across proMENTE, Steve")
     lines.append("  Powell's independent consultancy and Causal Map Ltd.")
-    lines.append("tags:")
-    for t in all_themes:
-        lines.append(f"  - {t}")
     lines.append("---")
     lines.append("")
     lines.append(

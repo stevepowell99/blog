@@ -5,19 +5,6 @@ date: 2026-07-09
 description: >-
   A browsable list of evaluation and research projects across proMENTE, Steve
   Powell's independent consultancy and Causal Map Ltd.
-tags:
-  - AI and LLM
-  - Conservation and environment
-  - Education
-  - Health and psychosocial
-  - Humanitarian and Red Cross
-  - Peacebuilding and governance
-  - Research and academia
-  - Social and community development
-  - causal mapping
-  - evaluation
-  - survey and statistics
-  - training and facilitation
 ---
 
 <!-- GENERATED FILE. Do not edit by hand. Rebuild with: python scripts/build_project_list.py
