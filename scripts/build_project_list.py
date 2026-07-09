@@ -633,13 +633,34 @@ def render(all_projects, talks):
         "Over about 30 years I have worked on evaluation and applied social research in "
         "some 35 countries, first with proMENTE social research in Sarajevo, then in my own "
         "independent consultancy, and since 2019 through Causal Map Ltd. This page lists that "
-        "work so it can be browsed by theme and searched by client, country or topic. Use the "
-        "search box (press the key at the top of the page, or Ctrl+K) to find any client or keyword."
+        "work. Filter it below by theme or organisation, or type to search across client, "
+        "project, country, year and method."
     )
     lines.append("")
     lines.append(
         "Work before 2019, and the IFRC Everyone Counts reports, was carried out by Steve "
         "personally. Projects marked Causal Map Ltd are company contracts from 2019 onward."
+    )
+    lines.append("")
+    # Filter bar. Behaviour and styling come from quartz/components/ProjectFilter.tsx,
+    # which wires this up on every page load and SPA navigation.
+    lines.append(
+        '<div id="project-filter">\n'
+        '  <input id="project-search" type="search" autocomplete="off"\n'
+        '    placeholder="Search client, project, country, year or method"'
+        ' aria-label="Search projects">\n'
+        '  <select id="project-theme" aria-label="Filter by theme">\n'
+        '    <option value="">All themes</option>\n'
+        "  </select>\n"
+        '  <select id="project-source" aria-label="Filter by organisation">\n'
+        '    <option value="">All organisations</option>\n'
+        f'    <option value="{BUCKET_CM}">{BUCKET_CM}</option>\n'
+        f'    <option value="{BUCKET_INDEP}">{BUCKET_INDEP}</option>\n'
+        f'    <option value="{BUCKET_PROMENTE}">{BUCKET_PROMENTE}</option>\n'
+        "  </select>\n"
+        '  <button id="project-reset" type="button" hidden>Clear</button>\n'
+        f'  <p id="project-count">{n_projects} projects</p>\n'
+        "</div>"
     )
     lines.append("")
 

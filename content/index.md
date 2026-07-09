@@ -8,6 +8,7 @@ I am an independent researcher and program evaluator; right now I am co-founder 
 
 ## Links
 
+- [[projects|Projects and clients]] - every evaluation and research project since 2001, filterable by theme and organisation
 - [PhD](https://repository.mdx.ac.uk/item/8381w)
 - [PDFs of reports and publications](https://bit.ly/sp99-publications)
 - [LinkedIn](https://www.linkedin.com/in/stevepowell99/detail/recent-activity/posts/) (I write frequently on evaluation issues) 
@@ -38,7 +39,7 @@ As you might be able to guess from the above, I have studied philosophy, maths a
 
 ### Evaluation
 
-I have been lucky enough to work in about 30 different countries (mainly SE Europe, S & SE Asia / Pacific, Sub-Saharan Africa) on a wide variety of topics from disaster response in Haiti and psychosocial programming after the 2004 tsunami to social capital in the former Soviet Union and counting stray dogs in Sarajevo. 
+I have been lucky enough to work in about 30 different countries (mainly SE Europe, S & SE Asia / Pacific, Sub-Saharan Africa) on a wide variety of topics from disaster response in Haiti and psychosocial programming after the 2004 tsunami to social capital in the former Soviet Union and counting stray dogs in Sarajevo. The full list is on the [[projects|projects and clients]] page.
 
 ### Everyone Counts
 

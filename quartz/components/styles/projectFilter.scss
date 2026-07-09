@@ -1,0 +1,50 @@
+#project-filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+  padding: 0.8rem;
+  border: 1px solid var(--lightgray);
+  border-radius: 5px;
+  background: var(--light);
+
+  & input[type="search"] {
+    flex: 1 1 16rem;
+  }
+
+  & input[type="search"],
+  & select {
+    padding: 0.4rem 0.5rem;
+    font-family: inherit;
+    font-size: 0.9rem;
+    color: var(--darkgray);
+    background: var(--light);
+    border: 1px solid var(--lightgray);
+    border-radius: 4px;
+  }
+
+  & input[type="search"]:focus,
+  & select:focus {
+    outline: none;
+    border-color: var(--secondary);
+  }
+
+  & #project-reset {
+    padding: 0.4rem 0.7rem;
+    font-family: inherit;
+    font-size: 0.9rem;
+    color: var(--secondary);
+    background: none;
+    border: 1px solid var(--lightgray);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  & #project-count {
+    flex: 1 0 100%;
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--gray);
+  }
+}

@@ -11,9 +11,25 @@ description: >-
      Source of truth (JobCat repo, project_lists/): steve_powell_projects.csv, causal_map_projects.csv, promenteprojectsSteve.xlsx.
      To change a project, edit the source CSV/xlsx in JobCat and re-run the script; do not edit this page. -->
 
-Over about 30 years I have worked on evaluation and applied social research in some 35 countries, first with proMENTE social research in Sarajevo, then in my own independent consultancy, and since 2019 through Causal Map Ltd. This page lists that work so it can be browsed by theme and searched by client, country or topic. Use the search box (press the key at the top of the page, or Ctrl+K) to find any client or keyword.
+Over about 30 years I have worked on evaluation and applied social research in some 35 countries, first with proMENTE social research in Sarajevo, then in my own independent consultancy, and since 2019 through Causal Map Ltd. This page lists that work. Filter it below by theme or organisation, or type to search across client, project, country, year and method.
 
 Work before 2019, and the IFRC Everyone Counts reports, was carried out by Steve personally. Projects marked Causal Map Ltd are company contracts from 2019 onward.
+
+<div id="project-filter">
+  <input id="project-search" type="search" autocomplete="off"
+    placeholder="Search client, project, country, year or method" aria-label="Search projects">
+  <select id="project-theme" aria-label="Filter by theme">
+    <option value="">All themes</option>
+  </select>
+  <select id="project-source" aria-label="Filter by organisation">
+    <option value="">All organisations</option>
+    <option value="Causal Map Ltd">Causal Map Ltd</option>
+    <option value="Independent consultancy">Independent consultancy</option>
+    <option value="proMENTE">proMENTE</option>
+  </select>
+  <button id="project-reset" type="button" hidden>Clear</button>
+  <p id="project-count">194 projects</p>
+</div>
 
 ## Humanitarian and Red Cross
 
