@@ -1,4 +1,5 @@
 import { QuartzComponent, QuartzComponentConstructor } from "./types"
+// @ts-ignore
 import script from "./scripts/projectfilter.inline"
 import style from "./styles/projectFilter.scss"
 

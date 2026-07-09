@@ -228,6 +228,9 @@ async function setupSearch(searchElement: Element, currentSlug: FullSlug, data: 
     if (preview) {
       removeAllChildren(preview)
     }
+    previewHighlights = []
+    activeHighlight = -1
+    previewCounter = undefined
     searchLayout.classList.remove("display-results")
     searchType = "basic" // reset search type after closing
     searchButton.focus()
@@ -238,6 +241,52 @@ async function setupSearch(searchElement: Element, currentSlug: FullSlug, data: 
     if (sidebar) sidebar.style.zIndex = "1"
     container.classList.add("active")
     searchBar.focus()
+  }
+
+  // stepping through the matches highlighted in the preview pane
+  let previewHighlights: HTMLElement[] = []
+  let activeHighlight = -1
+  let previewCounter: HTMLElement | undefined = undefined
+
+  function focusHighlight(idx: number) {
+    const n = previewHighlights.length
+    if (n === 0) return
+    activeHighlight = ((idx % n) + n) % n
+    previewHighlights.forEach((el, i) =>
+      el.classList.toggle("highlight-active", i === activeHighlight),
+    )
+    previewHighlights[activeHighlight].scrollIntoView({ block: "center" })
+    if (previewCounter) previewCounter.textContent = `${activeHighlight + 1} / ${n}`
+  }
+
+  function buildPreviewNav(): HTMLElement | undefined {
+    if (previewHighlights.length < 2) {
+      previewCounter = undefined
+      return undefined
+    }
+    const nav = document.createElement("div")
+    nav.className = "preview-nav"
+
+    previewCounter = document.createElement("span")
+    previewCounter.className = "preview-nav-count"
+
+    const button = (label: string, title: string, step: number) => {
+      const b = document.createElement("button")
+      b.type = "button"
+      b.textContent = label
+      b.title = title
+      // keep focus on the search bar so the result shortcuts keep working
+      b.addEventListener("mousedown", (ev) => ev.preventDefault())
+      b.addEventListener("click", () => focusHighlight(activeHighlight + step))
+      return b
+    }
+
+    nav.append(
+      button("↑", "Previous match (Alt+Up)", -1),
+      previewCounter,
+      button("↓", "Next match (Alt+Down)", 1),
+    )
+    return nav
   }
 
   let currentHover: HTMLInputElement | null = null
@@ -255,6 +304,18 @@ async function setupSearch(searchElement: Element, currentSlug: FullSlug, data: 
 
       // add "#" prefix for tag search
       searchBar.value = "#"
+      return
+    }
+
+    // step through matches within the previewed page, leaving the plain arrows
+    // to move between results
+    if (
+      container.classList.contains("active") &&
+      e.altKey &&
+      (e.key === "ArrowDown" || e.key === "ArrowUp")
+    ) {
+      e.preventDefault()
+      focusHighlight(activeHighlight + (e.key === "ArrowDown" ? 1 : -1))
       return
     }
 
@@ -426,13 +487,19 @@ async function setupSearch(searchElement: Element, currentSlug: FullSlug, data: 
     previewInner = document.createElement("div")
     previewInner.classList.add("preview-inner")
     previewInner.append(...innerDiv)
-    preview.replaceChildren(previewInner)
 
-    // scroll to longest
-    const highlights = [...preview.getElementsByClassName("highlight")].sort(
-      (a, b) => b.innerHTML.length - a.innerHTML.length,
-    )
-    highlights[0]?.scrollIntoView({ block: "start" })
+    // matches in document order, so stepping through them reads down the page
+    previewHighlights = [...previewInner.getElementsByClassName("highlight")] as HTMLElement[]
+    activeHighlight = -1
+    const nav = buildPreviewNav()
+    preview.replaceChildren(...(nav ? [nav, previewInner] : [previewInner]))
+
+    // start on the longest match, as the best guess at the relevant one
+    let longest = 0
+    previewHighlights.forEach((el, i) => {
+      if (el.innerHTML.length > previewHighlights[longest].innerHTML.length) longest = i
+    })
+    focusHighlight(longest)
   }
 
   async function onType(e: HTMLElementEventMap["input"]) {
