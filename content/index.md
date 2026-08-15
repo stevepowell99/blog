@@ -15,7 +15,12 @@ I am an independent researcher and programme evaluator, and co-founder and Direc
 
 ## Elsewhere
 
-**[LinkedIn](https://www.linkedin.com/in/stevepowell99/detail/recent-activity/posts/) is where I write most.** Short pieces on evaluation, causal mapping and what AI is and is not good for, several times a month. There is also the [Causal Map company page](https://www.linkedin.com/company/causalmap/).
+**[LinkedIn](https://www.linkedin.com/in/stevepowell99/detail/recent-activity/posts/) is where I write most.** I run two weekly newsletters there:
+
+- [Causal mapping, evaluation, AI](https://www.linkedin.com/newsletters/causal-mapping-evaluation-ai-7201488452201185280/), the methods one.
+- [Causal Map Highlights](https://www.linkedin.com/newsletters/causal-map-highlights-7424893889058361345/), useful, fun and sometimes amazing stories built from narrative data with the Causal Map app.
+
+There is also the [Causal Map company page](https://www.linkedin.com/company/causalmap/).
 
 - [Causal Map Garden](https://garden.causalmap.app), where we write up the method as we go. Start with the [summaries of our papers and chapters](https://garden.causalmap.app/articles-intro).
 - [PDFs of reports and publications](https://bit.ly/sp99-publications)

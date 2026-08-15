@@ -26,4 +26,6 @@ All of this and more is in the [Causal Map Garden](https://garden.causalmap.app)
 - [Causal Map](https://app.causalmap.app), the app for building causal maps from interview transcripts and documents.
 - [The Guide to Causal Map](https://guide.causalmap.app), the current documentation.
 
+I also write a weekly LinkedIn newsletter, [Causal mapping, evaluation, AI](https://www.linkedin.com/newsletters/causal-mapping-evaluation-ai-7201488452201185280/), and a second one, [Causal Map Highlights](https://www.linkedin.com/newsletters/causal-map-highlights-7424893889058361345/), for stories built from narrative data with the app.
+
 Older pieces about causal mapping, kept because people still link to them:

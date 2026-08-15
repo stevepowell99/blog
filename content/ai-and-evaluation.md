@@ -18,3 +18,5 @@ This is the part I care about most. I argue it out at length in the [AI in quali
 - [Just add rigour: three do's and don'ts](https://garden.causalmap.app/add-rigour). Break a vague task into small ones somebody else could check.
 - [Trust the algorithm, not the AI](https://garden.causalmap.app/trust-algorithm).
 - [Put down that thesaurus](https://garden.causalmap.app/thesaurus), an open call to qualitative researchers who object to AI on grounds that would also rule out a thesaurus.
+
+Most weeks I take one of these arguments further in my LinkedIn newsletter, [Causal mapping, evaluation, AI](https://www.linkedin.com/newsletters/causal-mapping-evaluation-ai-7201488452201185280/).
