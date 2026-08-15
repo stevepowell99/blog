@@ -20,6 +20,14 @@ Quartz 4 static site, hosted on Netlify.
 - `quartz.config.ts` — main Quartz config (plugins, theme, baseUrl)
 - No `netlify.toml` — Netlify build settings configured via dashboard
 
+## Structure
+
+Posts live in focus-area folders, each with an `index.md` whose title is what the sidebar shows: `causal-mapping/`, `theories-of-change/`, `methods/`, `puzzles/`, `attic/`. Root pages are `index.md` (About me), `projects.md` (generated, see its header comment) and `ai-and-evaluation.md`.
+
+Sidebar order is set by the `sortFn` in `quartz.layout.ts`; add a new folder to that array or it sorts to the bottom. The sortFn is stringified and re-evaluated in the browser, so it must not reference anything outside its own body.
+
+When moving a post, add its old slug to `aliases` in the frontmatter so the old URL still redirects.
+
 ## Notes
 
-- `baseUrl` in `quartz.config.ts` should be `pogol.net` (currently still set to the Quartz default `quartz.jzhao.xyz`)
+- `baseUrl` in `quartz.config.ts` is `pogol.net`
