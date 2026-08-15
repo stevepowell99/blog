@@ -1,5 +1,5 @@
 ---
-title: An evaluation puzzle - Talent show
+title: Talent show
 tags:
   - puzzles
   - evaluation

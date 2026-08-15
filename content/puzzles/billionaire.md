@@ -1,5 +1,5 @@
 ---
-title: An evaluation puzzle - Billionaire
+title: Billionaire
 tags:
   - puzzles
   - evaluation

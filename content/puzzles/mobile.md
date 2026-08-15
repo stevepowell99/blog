@@ -1,5 +1,5 @@
 ---
-title: An evaluation puzzle - Mobile first
+title: Mobile first
 tags:
   - puzzles
   - evaluation

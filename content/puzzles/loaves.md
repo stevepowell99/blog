@@ -1,5 +1,5 @@
 ---
-title: An evaluation puzzle - Loaves and fishes
+title: Loaves and fishes
 tags:
   - puzzles
   - evaluation

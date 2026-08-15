@@ -1,5 +1,5 @@
 ---
-title: An evaluation puzzle - Freak weather
+title: Freak weather
 tags:
   - puzzles
   - evaluation

@@ -1,5 +1,5 @@
 ---
-title: An evaluation puzzle - Many hands
+title: Many hands
 tags:
   - puzzles
   - evaluation
