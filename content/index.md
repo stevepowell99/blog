@@ -15,11 +15,12 @@ I am an independent researcher and programme evaluator, and co-founder and Direc
 
 ## Elsewhere
 
+**[LinkedIn](https://www.linkedin.com/in/stevepowell99/detail/recent-activity/posts/) is where I write most.** Short pieces on evaluation, causal mapping and what AI is and is not good for, several times a month. There is also the [Causal Map company page](https://www.linkedin.com/company/causalmap/).
+
+- [Causal Map Garden](https://garden.causalmap.app), where we write up the method as we go. Start with the [summaries of our papers and chapters](https://garden.causalmap.app/articles-intro).
 - [PDFs of reports and publications](https://bit.ly/sp99-publications)
 - [Google Scholar](http://scholar.google.com/citations?user=RVSHfkAAAAAJ&hl=en) and [ResearchGate](https://www.researchgate.net/profile/Steve_Powell2?ev=hdr_xprf)
 - [PhD](https://repository.mdx.ac.uk/item/8381w)
-- [LinkedIn](https://www.linkedin.com/in/stevepowell99/detail/recent-activity/posts/), where I post on evaluation more often than I do here
-- [Causal Map Garden](https://garden.causalmap.app), where we write up the method
 
 ## Bio
 
