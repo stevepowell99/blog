@@ -4,6 +4,8 @@ date: 2005-05-03
 tags:
   - english
   - TEFL
+aliases:
+  - "tenses-in-colour"
 ---
 
 Decades ago I spent a lot of time working on how to present the

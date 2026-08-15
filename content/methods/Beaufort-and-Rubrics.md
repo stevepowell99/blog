@@ -5,9 +5,9 @@ tags:
   - evaluation
   - research
   - outcome-mapping
+aliases:
+  - "Beaufort-and-Rubrics"
 ---
-
-# Beaufort and Rubrics
 
 A quick post about the Beaufort scale for wind speed, see below, as paradigm of a rubric. 
 

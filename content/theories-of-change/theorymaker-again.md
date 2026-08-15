@@ -2,6 +2,8 @@
 title: Theorymaker lives again - create a Theory of Change quickly for free
 date: 2025-12-22
 tags: theorymaker
+aliases:
+  - "theorymaker-again"
 ---
 
 Since about 2012 (I think) I've been providing an app called Theorymaker as a simple text-based way to construct theories of change for evaluators. It's always been free. It was used by hundreds of people over the years. Unfortunately about a year ago I decided I didn't have time to maintain it and shut it down. However, now with genAI-supported coding there is really no excuse, so Theorymaker lives again at theorymaker.netlify.app. 

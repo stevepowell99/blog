@@ -1,6 +1,8 @@
 ---
 title: Version 2 of Causal Map Guide
 date: 2024-01-01
+aliases:
+  - "guide2"
 ---
 
 

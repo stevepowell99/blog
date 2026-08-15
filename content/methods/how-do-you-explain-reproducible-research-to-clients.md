@@ -4,6 +4,8 @@ date: 2018-03-01
 tags:
   - reproducibleResearch
   - research
+aliases:
+  - "how-do-you-explain-reproducible-research-to-clients"
 ---
 
 Most of the statistics work I do now is reproducible research - this   

@@ -1,11 +1,13 @@
 ---
-title: Students in predominantly ethnic minority classes want segregated education very much. The others don't.
+title: Who wants segregated education?
 date: 2010-10-07
 tags:
   - Bosnia-Herzegovina
   - education
   - ggplot
   - research
+aliases:
+  - "students-in-predominantly-ethnic-minority-classes-want-segregated-education-very-much-the-others-dont"
 ---
 
 ![](http://stevepowell.blot.im/Public/charleston.png)

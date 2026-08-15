@@ -4,6 +4,8 @@ date: 2019-11-01
 tags:
   - R
   - reproducibleResearch
+aliases:
+  - "reprostarter"
 ---
 
 This accompanies my draft short article for the UKES Bulletin: *[A reproducible workflow for evaluation reports](http://www.pogol.net/reproducible-workflow)*.

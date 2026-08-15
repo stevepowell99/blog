@@ -1,6 +1,8 @@
 ---
 title: Moved to Clevedon, UK!
 date: 2017-09-04
+aliases:
+  - "moved"
 ---
 
 This is just to say that I've moved with my family to Clevedon, UK - leaving Sarajevo after very nearly 20 years, ... leaving a whole heap of dear friends and family behind, but meeting up with new and old friends and family over here in rainy Blighty. I'm still involved with [proMENTE](http://proMENTE.org) but obviously in a more remote capacity. I'm only using my personal email address steve AT pogol.net from now on. 
