@@ -17,3 +17,30 @@
 .explorer-content ul li:last-child > a {
   border-bottom: none;
 }
+
+// Top-level entries are sections, whether they are folders or single pages, so
+// style them alike. The chevron is the only difference: it marks the ones with
+// children. Left padding lines the childless ones up with the folder titles.
+.explorer-content > ul.explorer-ul > li > a {
+  color: var(--secondary);
+  font-family: var(--headerFont);
+  font-size: 0.95rem;
+  font-weight: 600;
+  opacity: 1;
+  padding-left: 17px;
+  border-bottom: none;
+}
+
+.explorer-content > ul.explorer-ul > li > a:hover {
+  color: var(--tertiary);
+}
+
+// Tighten the parent rows, which were spaced wider than the pages under them
+.folder-container {
+  padding: 0.25rem 0;
+
+  & div > a,
+  & div > button > span {
+    line-height: 1.1rem;
+  }
+}
