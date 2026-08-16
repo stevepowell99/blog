@@ -8,7 +8,7 @@ I am an independent researcher and programme evaluator, and co-founder and Direc
 ## What I work on
 
 - [[causal-mapping/index|Causal mapping]]: coding what people say about what causes what, and building maps you can search and quote from. This is the main thing.
-- [[ai-and-evaluation|AI for evaluation and social research]]: the [Causal Map](https://app.causalmap.app) app, and [Qualia](https://manage.QualiaInterviews.com), an AI interviewer.
+- [[ai-and-evaluation|AI for evaluation and social research]]: the [Causal Map](https://app.causalmap.app) app, and [QualiaInterviews](https://qualiainterviews.com), an AI interviewer.
 - [[theories-of-change/index|Theories of change]], including the free [Theorymaker](https://theorymaker.netlify.app) app.
 - [[methods/index|Methods and reproducible research]]: reproducible reporting in R, rubrics, survey analysis.
 - [[projects|Projects and clients]]: every evaluation and research project since 2001, filterable by theme and organisation.
