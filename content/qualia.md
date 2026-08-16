@@ -27,7 +27,9 @@ DuocUC, a higher education institution in Chile, hired us to look at the gender 
 
 At a European Evaluation Society webinar in February 2025 we made the demonstration the data. Over 90 participants spent a few minutes being interviewed about the problems facing the USA and the reasons behind them, at a mean of 13 messages each. We coded what they said into a map afterwards. It was a demo, plenty of people started and stopped, so treat the map as an example of the output rather than as social science. [What came out of it](https://garden.causalmap.app/qualia-usa).
 
-The University of Bath used it in 2024 to gather [feedback on the learning experiences of doctoral students](https://causalmap.notion.site/dprp-qualia-cm). We demonstrated it again at a UK Evaluation Society webinar in December 2025.
+Elsewhere, in no particular order. The British Academy used Qualia in 2026 for the participant survey of its International Writing Workshops tracker, asking researchers how their careers had moved on since the workshop. [VIB](https://vib.be), the Flemish life sciences institute, ran a pilot with its PhD researchers and now wants to write the findings up as a paper. MK Institut in Germany collected 171 interviews. The University of Bath gathered [feedback on the learning experiences of doctoral students](https://causalmap.notion.site/dprp-qualia-cm) in 2024. Bath Social Development Research uses it on the SGAIN project. There are subscriptions at LMU Munich and at the Agency for Clinical Innovation in Australia. We also demonstrated it at a UK Evaluation Society webinar in December 2025.
+
+My [[projects|projects page]] lists this work alongside everything else. For the causal mapping side there is a [wider collection of case studies](https://garden.causalmap.app/case-studies) in the Garden.
 
 ## Two questions people ask
 
