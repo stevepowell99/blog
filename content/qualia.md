@@ -9,7 +9,7 @@ The case for it is narrow and practical. A survey with closed questions is often
 
 ## What it does
 
-Respondents open a link and talk or type. The interviewer works from your guide rather than from its own idea of the topic, so it probes what you wanted probed and leaves the rest alone. What comes back is a transcript per respondent, ready to code.
+Respondents open a link and talk or type. The interviewer follows your guide, probing where you asked it to probe. What comes back is a transcript per respondent, ready to code.
 
 Researchers who already have an account sign in at [manage.qualiainterviews.com](https://manage.qualiainterviews.com).
 
