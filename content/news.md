@@ -14,9 +14,9 @@ What I have been working on lately. I update this page about every four months, 
 - *Non-mosquitoes do not cause non-mosquito bites*, an individual paper with Fiona Remnant, in the strand on responsiveness.
 - *Interrogating evaluation: a live experiment and conversation, with a little help from AI*, with [Silva Ferretti](https://silvaferretti.wordpress.com/), in the strand on new methods.
 
-**Causal Map as a chat.** We are opening up an optional way to use the app: you talk to MapCat, our assistant inside Causal Map, and it drives everything for you. Load the sources, set up the coding, filter the map, ask for what you want to see. The buttons and panels stay where they are for anyone who prefers them, and every step MapCat takes is one you could have taken yourself and can still undo.
+**Causal Map as a chat.** We are opening up an optional way to use the app. You tell MapCat, our assistant inside Causal Map, what you want in words. It loads the sources, sets up the coding, filters the map. The buttons and panels are all still there if you would rather click.
 
-**Causal Map for Zotero.** Since June there is a [Zotero plugin](https://github.com/stevepowell99/causalmap-zotero): right-click a PDF in your library and get a causal map of what that paper says causes what. It is free up to a monthly page allowance, and it is meant for the literature review case rather than for coding fieldwork.
+**Causal Map for Zotero.** Since June there is a [Zotero plugin](https://github.com/stevepowell99/causalmap-zotero): right-click a PDF in your library and get a causal map of what that paper says causes what. It is free up to a monthly page allowance. It is meant for the literature review case rather than for coding fieldwork.
 
 **A third Qualia app.** [[qualia|QualiaInterviews]] interviews one respondent at a time. We have been building a group version, where many people answer into one growing network of questions and the AI adds follow-ups and statements that draw several answers together. Early on it looks for the range of opinion, later for where people agree and where they still do not. It is in testing rather than open to the public.
 
