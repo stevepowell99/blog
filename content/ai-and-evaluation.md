@@ -7,7 +7,7 @@ Since 2023 most of my development work has been about getting AI to do parts of 
 
 [Causal Map](https://app.causalmap.app) uses AI to propose causal links from interview text. The evaluator keeps the coding frame, edits the links, and every link on the map stays attached to the sentence it came from. We tested how well an untrained model does this against expert human coders: [AI-assisted causal mapping](https://garden.causalmap.app/summary-validation).
 
-[QualiaInterviews](https://qualiainterviews.com) is an AI interviewer. You write the interview guide. It then interviews each respondent, following up where a human interviewer would, and gives you the transcripts. It is for the cases where a survey is too thin and fifty face-to-face interviews are too expensive. There is [background on what it does](https://garden.causalmap.app/qualia) and a piece on [the potential of AI interviewing](https://garden.causalmap.app/qualia-potential). Researchers who already have an account sign in at [manage.qualiainterviews.com](https://manage.qualiainterviews.com).
+[[qualia|QualiaInterviews]] is an AI interviewer. You write the interview guide. It then interviews each respondent, following up where a human interviewer would, and gives you the transcripts. It is for the cases where a survey is too thin and fifty face-to-face interviews are too expensive.
 
 The two fit together as one pipeline, from AI interview to coded causal map: *A workflow for collecting and understanding stories at scale*, in *Evaluation* 31(3), 394 to 411 (2025), [summarised here](https://garden.causalmap.app/summary-eval2025).
 

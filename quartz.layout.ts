@@ -12,6 +12,7 @@ const sectionExplorerOptions = {
       "projects",
       "causal-mapping",
       "ai-and-evaluation",
+      "qualia",
       "theories-of-change",
       "methods",
       "puzzles",
