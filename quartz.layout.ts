@@ -9,6 +9,7 @@ const sectionExplorerOptions = {
   title: "Sections",
   sortFn: (a: FileTrieNode, b: FileTrieNode) => {
     const order = [
+      "news",
       "projects",
       "causal-mapping",
       "ai-and-evaluation",

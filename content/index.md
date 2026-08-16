@@ -5,6 +5,8 @@ date: 2026-08-15
 
 I am an independent researcher and programme evaluator, and co-founder and Director of [Causal Map Ltd](https://causalmap.app) in Bath.
 
+[[news|What I am working on at the moment]], updated every few months.
+
 ## What I work on
 
 - [[causal-mapping/index|Causal mapping]]: coding what people say about what causes what, and building maps you can search and quote from. This is the main thing.
