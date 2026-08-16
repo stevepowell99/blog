@@ -20,7 +20,6 @@ Researchers who already have an account sign in at [manage.qualiainterviews.com]
 - **MK Institut / Mission und Kirche**, Germany, 2025. 171 interviews.
 - **DuocUC**, Chile. Gender gaps facing women in STEM careers, interviewed in Spanish. The longer version is below.
 - **University of Bath**, 2024. [Feedback on the learning experiences of doctoral students](https://causalmap.notion.site/dprp-qualia-cm).
-- **Abt Global**, 2025.
 - **Tree Aid**, on the BC3 project in 2025.
 - **People Speak Up**, 2024, on the Creative Home Delivery Service.
 - **MENASP**, 2023.
