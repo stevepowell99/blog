@@ -20,12 +20,12 @@ Researchers who already have an account sign in at [manage.qualiainterviews.com]
 - **MK Institut / Mission und Kirche**, Germany, 2025. 171 interviews.
 - **DuocUC**, Chile. Gender gaps facing women in STEM careers, interviewed in Spanish. The longer version is below.
 - **University of Bath**, 2024. [Feedback on the learning experiences of doctoral students](https://causalmap.notion.site/dprp-qualia-cm).
-- **Bath Social Development Research**, on the SGAIN project since 2025.
 - **Abt Global**, 2025.
 - **Tree Aid**, on the BC3 project in 2025.
 - **People Speak Up**, 2024, on the Creative Home Delivery Service.
 - **MENASP**, 2023.
-- **The Agency for Clinical Innovation** in Australia, and **LMU Munich**.
+- **The Agency for Clinical Innovation** in Australia, 2024 and 2025.
+- **LMU Munich**, which runs its own interviews on a subscription rather than working with us on a project.
 - **The European Evaluation Society** in February 2025 and the **UK Evaluation Society** in December 2025, both as live demonstrations, the first of which turned into the case study below.
 
 My [[projects|projects page]] lists this work alongside everything else I have worked on.
