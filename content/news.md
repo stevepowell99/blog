@@ -3,7 +3,7 @@ title: News
 date: 2026-08-16
 ---
 
-What I have been working on lately. I update this page about every four months, so treat anything here as a snapshot rather than a running commentary. For the week-by-week version, see my [LinkedIn newsletter](https://www.linkedin.com/newsletters/causal-mapping-evaluation-ai-7201488452201185280/).
+What I have been working on lately. I update this page about every four months. For the week-by-week version, see my [LinkedIn newsletter](https://www.linkedin.com/newsletters/causal-mapping-evaluation-ai-7201488452201185280/).
 
 ## August 2026
 
