@@ -18,7 +18,8 @@ Quartz 4 static site, hosted on Netlify.
 ## Config
 
 - `quartz.config.ts` — main Quartz config (plugins, theme, baseUrl)
-- No `netlify.toml` — Netlify build settings configured via dashboard
+- `netlify.toml` holds the build settings and wins over anything set in the dashboard: `npx quartz build`, publish `public`, `NODE_VERSION = "22"`. Change the build in this file. (This bullet used to claim there was no `netlify.toml`. It was wrong from the commit that added both.)
+- Netlify project is `pogol-blog`, serving the apex `pogol.net`. DNS for that domain lives at domaindiscount24, the registrar.
 
 ## Structure
 
