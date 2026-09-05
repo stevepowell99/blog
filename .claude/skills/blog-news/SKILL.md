@@ -5,6 +5,8 @@ description: Refresh the News page on pogol.net with what Steve has been working
 
 # Refresh the blog News page
 
+**House style.** Prose this skill writes for a human reader is a deliverable. Apply the Writing Rules in `C:\Users\Zoom\.claude\CLAUDE.md` before saving or sending. Those rules do nothing unless the prompt asks for them (measured 5 September 2026), which makes this line the switch. Detail in memory `reference_testing_hub_rules`.
+
 `content/news.md` carries one dated section every four months, newest first. This skill writes the next one. Nothing here is automatic: a session runs it, Steve approves the text, and the push publishes it.
 
 ## 1. Find the window
