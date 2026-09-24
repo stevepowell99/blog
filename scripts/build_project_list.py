@@ -14,12 +14,17 @@ The source directory defaults to the JobCat project_lists folder but can be
 overridden with --source-dir (or the JOBCAT_PROJECT_LISTS env var) so the script
 is not hard-tied to one machine.
 
-Output: content/projects.md (published; draft:false). It is a public page at
-pogol.net/projects.
+Outputs:
+  - content/projects.md (published; draft:false). It is a public page at
+    pogol.net/projects.
+  - with --clients-out, JobCat's profiles/clients.md: one row per client, split
+    into Causal Map Ltd, independent consultancy and proMENTE, which is where
+    every bid takes its client list from. JobCat's run_weekly.ps1 rebuilds it.
 
 Usage:
   python scripts/build_project_list.py
   python scripts/build_project_list.py --source-dir "D:/path/to/project_lists"
+  python scripts/build_project_list.py --no-page --clients-out "<JobCat>/profiles/clients.md"
 """
 
 from __future__ import annotations
@@ -404,8 +409,6 @@ def load_steve(path):
     with open(path, encoding="utf-8") as f:
         for row in csv.DictReader(f):
             typ = row.get("type", "")
-            if typ == "CausalMap_recent_contract":
-                continue  # handled with the CM bucket
             client_raw = row.get("client", "")
             if is_noise_client(client_raw):
                 continue
@@ -448,7 +451,6 @@ def load_promente_xlsx(path):
 
 def load_cm(path):
     out = []
-    seen_clients = set()
     talks = []
     talk_clients = {
         "ees", "aea 2024 (indianapolis): introduct", "causal pathways initiative",
@@ -479,34 +481,9 @@ def load_cm(path):
             client = canon_client(client_raw)
             if not client:
                 continue
-            seen_clients.add(client.lower())
             out.append(Project(client, work, years, BUCKET_CM, sectors, methods,
                                extract_url(desc, title, row.get("urls", ""))))
-    return out, seen_clients, talks
-
-
-def load_cm_recent(path, cm_seen):
-    """recent-contract client list from steve CSV: add only clients that have
-    no titled Causal Map project already."""
-    out = []
-    added = set()
-    with open(path, encoding="utf-8") as f:
-        for row in csv.DictReader(f):
-            if row.get("type") != "CausalMap_recent_contract":
-                continue
-            client_raw = row.get("client", "")
-            client = canon_client(client_raw)
-            if not client:
-                continue
-            k = client.lower()
-            if k in cm_seen or k in added:
-                continue
-            added.add(k)
-            sectors, methods = assign_themes(client)
-            if "causal mapping" not in methods:
-                methods.append("causal mapping")
-            out.append(Project(client, "Causal mapping", "2020", BUCKET_CM, sectors, methods, ""))
-    return out
+    return out, talks
 
 
 def dedupe(projects):
@@ -698,10 +675,56 @@ def render(all_projects, talks):
     return "\n".join(lines) + "\n", n_projects, n_clients, by_sector
 
 
+def render_clients(promente, indep, cm):
+    """JobCat's profiles/clients.md: one row per client within each bucket, newest first."""
+    sections = [
+        (cm, "Causal Map Ltd, 2019 on",
+         "Company contracts, training and pro bono work. A bid may say \"we\" or \"Causal Map Ltd\" for these."),
+        (indep, "Steve Powell, independent consultancy",
+         "Steve's own contracts, the IFRC Everyone Counts reports included. Attribute these to Steve, "
+         "never to \"we\" or Causal Map Ltd."),
+        (promente, "Steve Powell with proMENTE, before 2019",
+         "Attribute these to Steve, never to \"we\" or Causal Map Ltd."),
+    ]
+    lines = [
+        "<!-- GENERATED FILE. Do not edit by hand. Rebuild with: python "
+        "C:\\dev\\blog-pogol\\scripts\\build_project_list.py --no-page --clients-out profiles/clients.md\n"
+        "     (run_weekly.ps1 does this every Monday). Source: project_lists/. To change a client, "
+        "edit the source list and rebuild. -->",
+        "",
+        "# Clients",
+        "",
+        "Every organisation here has a contract, training or pro bono record in `project_lists/`. "
+        "This file is the only source for a Selected clients section and for any claim to have "
+        "worked for an organisation. A folder under `projects/` is a bid, won or lost, and is never "
+        "evidence of work: a bid we win appears here once its row is added to "
+        "`causal_map_projects.csv`. Talks and conference sessions are left out.",
+        "",
+    ]
+    for projects, heading, note in sections:
+        by_client = defaultdict(list)
+        for p in projects:
+            by_client[p.client].append(p)
+        rows = []
+        for client, ps in by_client.items():
+            yrs = sorted({int(y) for p in ps for y in re.findall(r"\d{4}", p.years or "")})
+            span = (f"{yrs[0]}-{yrs[-1]}" if yrs[0] != yrs[-1] else str(yrs[0])) if yrs else ""
+            latest = min(ps, key=sort_year_desc)
+            rows.append((yrs[-1] if yrs else 0, client, span, len(ps), latest.work))
+        rows.sort(key=lambda r: (-r[0], r[1].lower()))
+        lines += [f"## {heading}", "", note, "",
+                  "| Client | Years | Projects | Most recent work |", "| --- | --- | --- | --- |"]
+        lines += [f"| {esc(c)} | {span} | {n} | {esc(w)} |" for _, c, span, n, w in rows]
+        lines.append("")
+    return "\n".join(lines)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--source-dir", default=DEFAULT_SOURCE_DIR)
     ap.add_argument("--out", default=str(OUT_PATH))
+    ap.add_argument("--no-page", action="store_true", help="Do not write the public page.")
+    ap.add_argument("--clients-out", help="Also write JobCat's profiles/clients.md here.")
     args = ap.parse_args()
 
     src = Path(args.source_dir)
@@ -714,8 +737,7 @@ def main():
 
     promente_a, indep = load_steve(steve_csv)
     promente_b = load_promente_xlsx(xlsx)
-    cm, cm_seen, talks = load_cm(cm_csv)
-    cm += load_cm_recent(steve_csv, cm_seen)
+    cm, talks = load_cm(cm_csv)
 
     promente = fuzzy_dedupe(dedupe(promente_a + promente_b))
     indep = fuzzy_dedupe(dedupe(indep))
@@ -724,6 +746,12 @@ def main():
     all_projects = promente + indep + cm
     text, n_projects, n_clients, by_sector = render(all_projects, talks)
 
+    if args.clients_out:
+        clients_out = Path(args.clients_out)
+        clients_out.write_text(render_clients(promente, indep, cm), encoding="utf-8")
+        print(f"Wrote {clients_out}", file=sys.stderr)
+    if args.no_page:
+        return
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(text, encoding="utf-8")
