@@ -321,7 +321,7 @@ def clean_work(title: str, client_raw: str, location: str) -> str:
 
 # --- Theme assignment -----------------------------------------------------
 SECTOR_THEMES = [
-    ("Humanitarian and Red Cross", [
+    ("Red Cross / Red Crescent", [
         "red cross", "red crescent", "ifrc", "icrc", "american red cross",
         "disaster", "tsunami", "earthquake", "ebola", "cholera", "haiti",
         "resilience", "early warning", "everyone counts", "humanitarian",

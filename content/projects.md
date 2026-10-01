@@ -31,7 +31,7 @@ Work before 2019, and the IFRC Everyone Counts reports, was carried out by Steve
   <p id="project-count">194 projects</p>
 </div>
 
-## Humanitarian and Red Cross
+## Red Cross / Red Crescent
 
 | Client | Work | Years | Source |
 | --- | --- | --- | --- |
