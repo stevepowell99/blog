@@ -36,15 +36,12 @@ Work before 2019, and the IFRC Everyone Counts reports, was carried out by Steve
 | Client | Work | Years | Source |
 | --- | --- | --- | --- |
 | International Federation of Red Cross and Red Crescent Societies | Lead analyst - Everyone Counts Report 2026 (current engagement) | 2026 | Independent consultancy |
-| DEZIM / Austrian Regions | KLAR! Climate Change Adaptation AI Pilot <br><small>causal mapping</small> | 2024 | Causal Map Ltd |
 | International Committee of the Red Cross | Causal mapping <br><small>causal mapping</small> | 2023 | Causal Map Ltd |
 | International Federation of Red Cross and Red Crescent Societies | [Meta-analysis of the 2015 Earthquake Response](http://adore.ifrc.org/Download.aspx?FileId=313302) | 2019-2020 | Independent consultancy |
 | Norwegian Red Cross | Consultancy: quality & usability of result data | 2019 | Independent consultancy |
 | International Federation of Red Cross and Red Crescent Societies | [Lead writer & statistician - Everyone Counts 2019](https://media.ifrc.org/ifrc/document/everyone-counts-2018/) <br><small>survey and statistics</small> | 2018-2019 | Independent consultancy |
 | International Federation of Red Cross and Red Crescent Societies | [Consultant. Ebola synthesis reference document](https://www.researchgate.net/publication/321490161_Ebola_synthesis_reference_document) | 2017 | Independent consultancy |
-| Action Against Hunger, Nepal | Psychosocial evaluation post-earthquake <br><small>evaluation</small> | 2016 | Independent consultancy |
 | International Federation of Red Cross and Red Crescent Societies | [Lead Researcher, Community Early Warning 2](https://www.researchgate.net/publication/315488604_Early_Warning_Early_Action_The_First_and_Last_Mile) | 2016 | Independent consultancy |
-| United Nations Children's Fund | [Evaluation - global response to W. Africa Ebola outbreak](https://www.researchgate.net/publication/317012684_Evaluation_of_UNICEF%27s_response_to_the_Ebola_outbreak_in_West_Africa_2014-2015) <br><small>evaluation</small> | 2016 | Independent consultancy |
 | International Federation of Red Cross and Red Crescent Societies | [Consultant. Framework: Community Resilience in E Africa](https://www.researchgate.net/publication/325130435_IFRC_East_Africa_Framework_for_Community_Resilience?_iepl%5BviewId%5D=342H642MgcG1XWKu12asR9tk&_iepl%5Bcontexts%5D%5B0%5D=publicationCreationEOT&_iepl%5BtargetEntityId%5D=PB%3A325130435&_iepl%5BinteractionType%5D=publicationTitle) | 2013-2014 | Independent consultancy |
 | International Federation of Red Cross and Red Crescent Societies | Switzerland. Facilitator. Global Health Team workshop, Geneva <br><small>training and facilitation</small> | 2013 | Independent consultancy |
 | International Federation of Red Cross and Red Crescent Societies | KAP survey on cholera in Sierra Leone using SMS <br><small>survey and statistics</small> | 2013 | Independent consultancy |
@@ -56,6 +53,16 @@ Work before 2019, and the IFRC Everyone Counts reports, was carried out by Steve
 | American Red Cross | [Thailand. Statistical Meta-evaluation of psychosocial surveys](https://www.researchgate.net/publication/262689794_Sectoral_assessment_of_American_Red_Cross_psychosocial_support_in_four_countries_after_the_East_Asian_Tsunami?_sg=6AafCJviHsbynuhQ-5a86DcTNZkPfEiH7mJUcku7qMwmJjQIdQsId1T7EQZkWeOBZzbt6D76siGxwyl_gdLi7PWMJyJs-_gbhirFuybh.JIp_6lButYyZFHMHeeCOGSz0UXiM11no2swGB-wtmxM9PKcYV2M9sTmwJQon__jI3Lp3PgvUv4KcRhkinNsyxg) <br><small>evaluation, survey and statistics</small> | 2010 | Independent consultancy |
 | American Red Cross | [ARC, S & SE Asia. Meta-evaluation, psychosocial programming](http://doi.org/10.13140/RG.2.2.26292.96640) <br><small>evaluation</small> | 2010 | Independent consultancy |
 | American Red Cross | [Indonesia. Evaluation, psychosocial programming, tsunami](https://www.researchgate.net/publication/262689713_End_of_Project_evaluation_Psychosocial_Support_Project_ARC_Tsunami_Response_Program_-_Indonesia?_sg=6AafCJviHsbynuhQ-5a86DcTNZkPfEiH7mJUcku7qMwmJjQIdQsId1T7EQZkWeOBZzbt6D76siGxwyl_gdLi7PWMJyJs-_gbhirFuybh.JIp_6lButYyZFHMHeeCOGSz0UXiM11no2swGB-wtmxM9PKcYV2M9sTmwJQon__jI3Lp3PgvUv4KcRhkinNsyxg) <br><small>evaluation</small> | 2010 | Independent consultancy |
+| International Committee of the Red Cross | Evaluation of programme for people with missing family members <br><small>evaluation</small> | 2002 | proMENTE |
+| International Committee for the Red Cross (ICRC) | People with missing family members | 2002 | proMENTE |
+
+## Humanitarian
+
+| Client | Work | Years | Source |
+| --- | --- | --- | --- |
+| DEZIM / Austrian Regions | KLAR! Climate Change Adaptation AI Pilot <br><small>causal mapping</small> | 2024 | Causal Map Ltd |
+| Action Against Hunger, Nepal | Psychosocial evaluation post-earthquake <br><small>evaluation</small> | 2016 | Independent consultancy |
+| United Nations Children's Fund | [Evaluation - global response to W. Africa Ebola outbreak](https://www.researchgate.net/publication/317012684_Evaluation_of_UNICEF%27s_response_to_the_Ebola_outbreak_in_West_Africa_2014-2015) <br><small>evaluation</small> | 2016 | Independent consultancy |
 | Catholic Relief Services | Monitoring system for national anti-trafficking programme | 2009 | proMENTE |
 | Catholic Relief Services | Developing monitoring system within the project Sustainable Interventions to Combat Human Trafficking in Bosnia and Herzegovina SUSTAIN | 2009 | proMENTE |
 | Catholic Relief Services | External evaluation of project: Multicultural Cooperation in Education - a Road to Europe <br><small>evaluation</small> | 2008 | proMENTE |
@@ -66,8 +73,6 @@ Work before 2019, and the IFRC Everyone Counts reports, was carried out by Steve
 | Handicap International | Mine Risk Education survey analysis <br><small>survey and statistics</small> | 2004 | proMENTE |
 | Handicap International | Mine Risk Education Within the Education Sector In Bosnia and Herzegovina | 2004 | proMENTE |
 | University of Munich (LMU) | PTSD prevention: emergency services | 2004-2006 | Independent consultancy |
-| International Committee of the Red Cross | Evaluation of programme for people with missing family members <br><small>evaluation</small> | 2002 | proMENTE |
-| International Committee for the Red Cross (ICRC) | People with missing family members | 2002 | proMENTE |
 
 ## Peacebuilding and governance
 

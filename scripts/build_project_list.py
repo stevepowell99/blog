@@ -323,10 +323,13 @@ def clean_work(title: str, client_raw: str, location: str) -> str:
 SECTOR_THEMES = [
     ("Red Cross / Red Crescent", [
         "red cross", "red crescent", "ifrc", "icrc", "american red cross",
+        "everyone counts", "fdrs",
+    ]),
+    ("Humanitarian", [
         "disaster", "tsunami", "earthquake", "ebola", "cholera", "haiti",
-        "resilience", "early warning", "everyone counts", "humanitarian",
+        "resilience", "early warning", "humanitarian",
         "mine risk", "collective centers", "collective centre", "relief",
-        "emergency", "fdrs", "covid",
+        "emergency", "covid",
     ]),
     ("Peacebuilding and governance", [
         "peace", "reconcil", "governance", "democracy", "democratic",
