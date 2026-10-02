@@ -4,29 +4,39 @@ date: 2026-08-15
 ---
 
 <div class="landing-cards">
-  <a class="landing-card" href="https://causalmap.app">
-    <span class="landing-card-title">Causal Map</span>
-    <span class="landing-card-url">causalmap.app</span>
+  <a class="landing-card" href="https://causalmap.app" style="--accent: #ff8fb8">
+    <span class="landing-card-head">
+      <img class="landing-card-icon" src="/static/landing/causalmap.png" alt="">
+      <span><span class="landing-card-title">Causal Map</span><span class="landing-card-url">causalmap.app</span></span>
+    </span>
     <span class="landing-card-text">The company I co-founded: software and consultancy for coding what people say about what causes what.</span>
   </a>
-  <a class="landing-card" href="https://app.causalmap.app">
-    <span class="landing-card-title">Causal Map app</span>
-    <span class="landing-card-url">app.causalmap.app</span>
+  <a class="landing-card" href="https://app.causalmap.app" style="--accent: #6cc4c8">
+    <span class="landing-card-head">
+      <img class="landing-card-icon" src="/static/landing/app.png" alt="">
+      <span><span class="landing-card-title">Causal Map app</span><span class="landing-card-url">app.causalmap.app</span></span>
+    </span>
     <span class="landing-card-text">The web app. AI proposes causal links from interview text. Every link on the map stays attached to the sentence it came from.</span>
   </a>
-  <a class="landing-card" href="https://garden.causalmap.app">
-    <span class="landing-card-title">Causal Map Garden</span>
-    <span class="landing-card-url">garden.causalmap.app</span>
+  <a class="landing-card" href="https://garden.causalmap.app" style="--accent: #f9c63a">
+    <span class="landing-card-head">
+      <img class="landing-card-icon" src="/static/landing/garden.svg" alt="">
+      <span><span class="landing-card-title">Causal Map Garden</span><span class="landing-card-url">garden.causalmap.app</span></span>
+    </span>
     <span class="landing-card-text">Where we write up the method as we go, with summaries of our papers and chapters.</span>
   </a>
-  <a class="landing-card" href="https://qualiainterviews.com">
-    <span class="landing-card-title">QualiaInterviews</span>
-    <span class="landing-card-url">qualiainterviews.com</span>
+  <a class="landing-card" href="https://qualiainterviews.com" style="--accent: #5dbef0">
+    <span class="landing-card-head">
+      <img class="landing-card-icon" src="/static/landing/qualia.svg" alt="">
+      <span><span class="landing-card-title">QualiaInterviews</span><span class="landing-card-url">qualiainterviews.com</span></span>
+    </span>
     <span class="landing-card-text">An AI interviewer. You write the guide; it interviews each respondent, follows up where a human would and hands you the transcripts.</span>
   </a>
-  <a class="landing-card" href="https://www.linkedin.com/in/stevepowell99/">
-    <span class="landing-card-title">LinkedIn</span>
-    <span class="landing-card-url">linkedin.com/in/stevepowell99</span>
+  <a class="landing-card" href="https://www.linkedin.com/in/stevepowell99/" style="--accent: #0a66c2">
+    <span class="landing-card-head">
+      <img class="landing-card-icon" src="/static/landing/linkedin.svg" alt="">
+      <span><span class="landing-card-title">LinkedIn</span><span class="landing-card-url">linkedin.com/in/stevepowell99</span></span>
+    </span>
     <span class="landing-card-text">Where I write most, including two weekly newsletters on causal mapping, evaluation and AI.</span>
   </a>
 </div>

@@ -47,24 +47,57 @@
   }
 }
 
+// Each card sets --accent inline to its site's own colour, taken from the favicon
 a.landing-card {
+  --accent: var(--secondary);
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: 0.35rem;
-  padding: 1.25rem 1.25rem 1.1rem;
-  border: 1px solid var(--lightgray);
-  border-radius: 8px;
-  background: var(--light);
+  gap: 0.6rem;
+  padding: 1.1rem 1.25rem 1.1rem 1.4rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, var(--lightgray));
+  border-left: 5px solid var(--accent);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--accent) 7%, var(--light));
   color: var(--darkgray);
   text-decoration: none;
   font-weight: normal;
   transition:
-    border-color 0.15s ease,
-    transform 0.15s ease;
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+
+  // Arrow that slides in on hover
+  &::after {
+    content: "↗";
+    position: absolute;
+    top: 0.9rem;
+    right: 1rem;
+    font-size: 1.1rem;
+    color: var(--accent);
+    opacity: 0;
+    transform: translate(-4px, 4px);
+    transition:
+      opacity 0.2s ease,
+      transform 0.2s ease;
+  }
 
   &:hover {
-    border-color: var(--secondary);
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 0 -1px color-mix(in srgb, var(--accent) 45%, transparent);
+
+    &::after {
+      opacity: 1;
+      transform: none;
+    }
+
+    .landing-card-icon {
+      transform: rotate(-8deg) scale(1.08);
+    }
+  }
+
+  // The hover arrow does this job; Quartz's own external-link icon would sit on a line of its own
+  & .external-icon {
+    display: none;
   }
 
   // An odd card out at the end takes the full row rather than leaving a gap
@@ -73,15 +106,39 @@ a.landing-card {
   }
 }
 
+.landing-card-head {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  & > span {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.landing-card-icon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 4px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 50%, transparent);
+  transition: transform 0.25s ease;
+}
+
 .landing-card-title {
   font-family: var(--headerFont);
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   font-weight: 700;
-  color: var(--secondary);
+  line-height: 1.2;
+  color: var(--dark);
 }
 
 .landing-card-url {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: var(--gray);
 }
 
