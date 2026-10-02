@@ -11,6 +11,7 @@ const sectionExplorerOptions = {
     const order = [
       "news",
       "projects",
+      "publications",
       "causal-mapping",
       "ai-and-evaluation",
       "qualia",
@@ -41,7 +42,7 @@ export const sharedPageComponents: SharedLayout = {
       "Causal Map": "https://causalmap.app",
       Garden: "https://garden.causalmap.app",
       LinkedIn: "https://www.linkedin.com/in/stevepowell99/",
-      "Google Scholar": "http://scholar.google.com/citations?user=RVSHfkAAAAAJ&hl=en",
+      "Google Scholar": "https://scholar.google.com/citations?user=XInmbOkAAAAJ&hl=en",
       GitHub: "https://github.com/stevepowell99",
     },
   }),

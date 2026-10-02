@@ -23,7 +23,7 @@ Quartz 4 static site, hosted on Netlify.
 
 ## Structure
 
-Posts live in focus-area folders, each with an `index.md` whose title is what the sidebar shows: `causal-mapping/`, `theories-of-change/`, `methods/`, `puzzles/`, `attic/`. Root pages are `index.md` (About me), `projects.md` (generated, see its header comment) and `ai-and-evaluation.md`.
+Posts live in focus-area folders, each with an `index.md` whose title is what the sidebar shows: `causal-mapping/`, `theories-of-change/`, `methods/`, `puzzles/`, `attic/`. Root pages are `index.md` (About me), `projects.md` and `publications.md` (both generated, see their header comments) and `ai-and-evaluation.md`.
 
 Sidebar order is set by the `sortFn` in `quartz.layout.ts`; add a new folder to that array or it sorts to the bottom. The sortFn is stringified and re-evaluated in the browser, so it must not reference anything outside its own body.
 
