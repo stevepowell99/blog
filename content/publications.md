@@ -49,12 +49,20 @@ See also my [Google Scholar profile](https://scholar.google.com/citations?user=X
 
 ## Books, edited volumes, reports and thesis
 
+- Britt, H., **Powell, S.**, & Caldas Cabral, G. (2025). [Strengthening Outcome Harvesting with AI-assisted causal mapping](https://5a867cea-2d96-4383-acf1-7bc3d406cdeb.usrfiles.com/ugd/5a867c_ad000813c80747baa85c7bd5ffaf0442.pdf). Causal Pathways Initiative.
 - **Powell, S.**, & Causal Map Ltd. (2021). [Guide to Causal Mapping](https://guide.causalmap.app/).
+- **Powell, S.** (2020). [Federation-wide Meta evaluation of Nepal Earthquake Response](https://www.ifrc.org/media/13554). IFRC.
+- **Powell, S.** (2018). [GYA Impact Assessment](https://globalyoungacademy.net/wp-content/uploads/2019/04/GYA-Impact-Analysis-2018_Final.pdf). Global Young Academy.
+- **Powell, S.** (2016). Early warning, early action: the first and last mile.
+- Mesbah, L., & **Powell, S.** (2016). Analysis of small and large conservation grants in Central and West Africa. IUCN.
+- **Powell, S.** (2016). [Terminal Evaluation of the 2nd Long- Term Strategy on Engagement and Involvement of Young People in Environmental Issues ( Tunza Strategy )](http://wedocs.unep.org/handle/20.500.11822/7384). UNEP.
 - **Powell, S.**, & Repac, I. (2013). [Dataset and description from project: Involvement of parents in the life of schools in South-East Europe](http://doi.org/p7z). Figshare.
 - **Powell, S.** (2013). Vorbereitung für Katastrophen: Workshop zur Resilienzforschung an der LMU München (mit Beitrag von Steve Powell). Deutschlandfunk.
 - **Powell, S.** (2013). Fiji (Pacific Islands): Evaluation of the Response Fund Supported Activities of the UNICEF Pacific HIV & AIDS Programme. UNICEF; http://www.unicef.org/evaldatabase/index_73504.html.
+- **Powell, S.** (2013). Measuring resilience?.
 - **Powell, S.** (2012). Haiti Evaluation Framework. IFRC.
 - **Powell, S.** (2012). [The psychosocial consequences of the 1992-5 war in Bosnia & Herzegovina](http://eprints.mdx.ac.uk/8402/). School of Health and Social Sciences, Middlesex University (PhD Thesis).
+- **Powell, S.** (2012). [Does maintaining supply of water and sanitation in IDP sites after the relief phase encourage people to stay in the sites? Does cutting them encourage people to leave?](http://socialdatablog.com/idp-water-supply/). Social Data Blog.
 - **Powell, S.** (2011). Planning, Monitoring and Evaluation (PME) tools for Political Party Development. NDI, Washington.
 - **Powell, S.** (2011). [Roma parents' views on participation in education in B&H](http://socialdatablog.com/roma-parents-views-on-participation-in-education-in-bh/).
 - Kovacs-Cerovic, T., Vizek-Vidović, V., & **Powell, S.** (2010). [School Governance and Social Inclusion: Involvement of Parents. South East Europe Cross Country Survey of Parents' Views](http://promente.org/ESP2-reg-report.pdf). CEPS.
@@ -64,6 +72,9 @@ See also my [Google Scholar profile](https://scholar.google.com/citations?user=X
 - **Powell, S.** (2010). [National Survey of Parents in Albania, Bosnia and Herzegovina, Bulgaria, Croatia, Kosovo, Macedonia, Moldova, Montenegro, Romania and Serbia. Basic statistical results including data from survey of Principals](http://promente.org/ESP2-reg-report.pdf).
 - **Powell, S.** (2010). [Methodology: National Face - to - Face Surveys of Representative Samples of Parents of Elementary School Children in 10 South East European Countries](http://promente.org/ESP2-reg-method.pdf). OSI-ESP.
 - **Powell, S.** (2010). [National Survey of Parents in Bosnia and Herzegovina: basic statistical results including data from survey of Principals](http://promente.org/ESP2-bih-stats.pdf). proMENTE.
+- **Powell, S.** (2010). Sectoral evaluation: Final Tsunami Response Program: psychosocial projects.
+- **Powell, S.** (2010). Understanding volunteerism for development in South-Eastern Europe and the Commonwealth of Independent States. UNV/UNDP.
+- **Powell, S.** (2010). Sectoral assessment of American Red Cross psychosocial support in four countries after the East Asian Tsunami. ARC.
 - Kadić, A., **Powell, S.**, & Lepić, S. (2009). Qualitative research on students and employers needs and interests in the school-work transition. gopa.
 - Pop, D., & **Powell, S.** (2009). School Governance and Social Inclusion - Involvement of Parents.
 - Pop, D., **Powell, S.**, Miljević, G., & Crighton, J. (2009). [Cross-national survey of school principals](http://promente.org/ESP1-reg-full.pdf). OSI-ESP.
@@ -73,39 +84,25 @@ See also my [Google Scholar profile](https://scholar.google.com/citations?user=X
 - Golubeva, M., **Powell, S.**, Kazimzade, E., & Nedelcu, A. (2009). [Divided Education, Divided Citizens? A comparative study of civil enculturation in separate schools](http://promente.org/NEPC-DEDC-reg-report.pdf). NEPC.
 - **Powell, S.**, & Bratović, E. (2008). [Stakeholder Participation in Schools: Literature Review](http://promente.org/ESP1-reg-lit.pdf). Open Society Institute.
 - **Powell, S.** (2008). [ESP school principals research: BiH](http://promente.org/ESP1-bih-report.pdf). proMENTE.
+- **Powell, S.**, Čelebičić, I., Bratović, E., & Šišić, A. (2008). Outcome mapping evaluation of six civil society projects in Bosnia and Herzegovina. Sida.
 - Husremović, D., **Powell, S.**, Šišić, A., & Dolić, A. (2007). [Education in Bosnia and Herzegovina: what are we teaching our children?](http://promente.org/OSF0-report-brief-e.pdf).
 - Husremović, D., **Powell, S.**, Šišić, A., & Dolić, A. (2007). [Obrazovanje u Bosni i Hercegovini: Čemu učimo djecu? Analiza sadržaja udžbenika nacionalne grupe predmeta](http://promente.org/OSF0-report-b.pdf). Fond otvoreno društvo Bosna i Hercegovina.
 - **Powell, S.**, & Bratović, E. (2006). [We can. We volunteer. Pro-social values/behaviour and employability amongst young people in SEE and the impact of volunteer work camps](http://promente.org/p/?q=seeyn5). SEEYN: South-East European Youth Network.
 - **Powell, S.** (2006). [Prevention of Trafficking in Persons in BiH](http://promente.org/CRS2-report-e.pdf). CRS B&H, proMENTE.
 - **Powell, S.** (2006). Roma-Gadje Dialogue Through Service Initiative: M&E processes. client.
+- **Powell, S.** (2006). The impact of long-term youth voluntary service in Europe: A review of published and unpublished research studies. AVSO/proMENTE.
 - **Powell, S.**, & Čelebičić, I. (2005). Mapiranje aktivnosti i usluga NVO-a na polju borbe protiv trgovine ljudima u BiH. CRS BiH.
 - **Powell, S.**, & Frederiksen, T. (2005). "Come back with a smile". SEEYN external evaluation report. SEEYN2.
 - **Powell, S.** (2005). [Prevention of Trafficking in Persons in BiH: Mapping report](http://promente.org/CRS2-mapping-b.pdf). CRS B&H, proMENTE.
+- Bruer, D., Gavranidou, M., **Powell, S.**, Čehić, E., & Butollo, W. (2003). Rückkehrkinder in Bosnien: Probleme, Bewältigungsstrategien, Auffälligkeiten.
+- **Powell, S.**, Rosner, R., & Butollo, W. (1998). Flight paths.
+- **Powell, S.**, Rosner, R., Krüssmann, M., & Butollo, W. (1998). Checklist of war-related experiences (CWE).
 - Bratović, E., & **Powell, S.** (n.d.). Evaluation of the project "Choosing peace together". CRS.
 - Čelebičić, I., Kadić, A., & **Powell, S.** (n.d.). Evaluation of the "Youth Bank" programme.
 - Čelebičić, I., & **Powell, S.** (n.d.). Project needs analysis in Zenica and Zavidovići. proMENTE.
 - **Powell, S.**, & Bratović, E. (n.d.). “We could never have done this on our own”. Evaluation of the International Commission of Missing Persons. ICMP.
 - **Powell, S.**, & Čelebičić, I. (n.d.). From School to Work: Supporting Youth on the Way to Employment and Income. Report to gtz. gtz B&H.
 - **Powell, S.** (n.d.). East Africa Logframe Template for Community Resilience. IFRC.
-
-## Reports and other outputs
-
-- Britt, H., **Powell, S.**, & Caldas Cabral, G. (2025). [Strengthening Outcome Harvesting with AI-assisted causal mapping](https://5a867cea-2d96-4383-acf1-7bc3d406cdeb.usrfiles.com/ugd/5a867c_ad000813c80747baa85c7bd5ffaf0442.pdf). Causal Pathways Initiative.
-- **Powell, S.** (2020). [Federation-wide Meta evaluation of Nepal Earthquake Response](https://www.ifrc.org/media/13554). IFRC.
-- **Powell, S.** (2018). [GYA Impact Assessment](https://globalyoungacademy.net/wp-content/uploads/2019/04/GYA-Impact-Analysis-2018_Final.pdf). Global Young Academy.
-- **Powell, S.** (2016). Early warning, early action: the first and last mile.
-- Mesbah, L., & **Powell, S.** (2016). Analysis of small and large conservation grants in Central and West Africa. IUCN.
-- **Powell, S.** (2016). [Terminal Evaluation of the 2nd Long- Term Strategy on Engagement and Involvement of Young People in Environmental Issues ( Tunza Strategy )](http://wedocs.unep.org/handle/20.500.11822/7384). UNEP.
-- **Powell, S.** (2013). Measuring resilience?.
-- **Powell, S.** (2012). [Does maintaining supply of water and sanitation in IDP sites after the relief phase encourage people to stay in the sites? Does cutting them encourage people to leave?](http://socialdatablog.com/idp-water-supply/). Social Data Blog.
-- **Powell, S.** (2010). Sectoral evaluation: Final Tsunami Response Program: psychosocial projects.
-- **Powell, S.** (2010). Understanding volunteerism for development in South-Eastern Europe and the Commonwealth of Independent States. UNV/UNDP.
-- **Powell, S.** (2010). Sectoral assessment of American Red Cross psychosocial support in four countries after the East Asian Tsunami. ARC.
-- **Powell, S.**, Čelebičić, I., Bratović, E., & Šišić, A. (2008). Outcome mapping evaluation of six civil society projects in Bosnia and Herzegovina. Sida.
-- **Powell, S.** (2006). The impact of long-term youth voluntary service in Europe: A review of published and unpublished research studies. AVSO/proMENTE.
-- Bruer, D., Gavranidou, M., **Powell, S.**, Čehić, E., & Butollo, W. (2003). Rückkehrkinder in Bosnien: Probleme, Bewältigungsstrategien, Auffälligkeiten.
-- **Powell, S.**, Rosner, R., & Butollo, W. (1998). Flight paths.
-- **Powell, S.**, Rosner, R., Krüssmann, M., & Butollo, W. (1998). Checklist of war-related experiences (CWE).
 
 ## Conference papers and presentations
 
