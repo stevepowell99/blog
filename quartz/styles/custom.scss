@@ -58,7 +58,7 @@ a.landing-card {
   border: 1px solid color-mix(in srgb, var(--accent) 35%, var(--lightgray));
   border-left: 5px solid var(--accent);
   border-radius: 10px;
-  background: color-mix(in srgb, var(--accent) 7%, var(--light));
+  background: var(--light);
   color: var(--darkgray);
   text-decoration: none;
   font-weight: normal;
