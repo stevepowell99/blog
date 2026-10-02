@@ -106,6 +106,8 @@ See also my [Google Scholar profile](https://scholar.google.com/citations?user=X
 
 ## Conference papers and presentations
 
+- **Powell, S.** (2025). Panel: AI technology for M&E. 6th Biannual Conference of the Western Balkans Evaluation Network.
+- **Powell, S.** (2025). Making sense of thousands of stories with causal mapping. 6th Biannual Conference of the Western Balkans Evaluation Network.
 - **Powell, S.**, Remnant, F., & Buchanan, J. (2022). I feel good here. Causal mapping the determinants of wellbeing in West Wales. UK Evaluation Society.
 - **Powell, S.** (2013). [Measuring community resilience in areas with chronic slow-onset disasters: What programmes need to know](http://www.psy.lmu.de/psycris/workshops/resilienz/index.html). Ludwig-Maximilians-Universität München.
 - Jurko, L., Bratović, E., Domazet, M., Lepić, S., **Powell, S.**, & Kirss, L. (2012). ESD-Relevant Content in Transitional Countries’ Compulsory Education: a Comparative Perspective.
