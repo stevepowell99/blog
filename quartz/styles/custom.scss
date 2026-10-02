@@ -66,6 +66,11 @@ a.landing-card {
     border-color: var(--secondary);
     transform: translateY(-2px);
   }
+
+  // An odd card out at the end takes the full row rather than leaving a gap
+  &:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
 }
 
 .landing-card-title {

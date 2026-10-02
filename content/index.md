@@ -14,6 +14,11 @@ date: 2026-08-15
     <span class="landing-card-url">app.causalmap.app</span>
     <span class="landing-card-text">The web app. AI proposes causal links from interview text. Every link on the map stays attached to the sentence it came from.</span>
   </a>
+  <a class="landing-card" href="https://garden.causalmap.app">
+    <span class="landing-card-title">Causal Map Garden</span>
+    <span class="landing-card-url">garden.causalmap.app</span>
+    <span class="landing-card-text">Where we write up the method as we go, with summaries of our papers and chapters.</span>
+  </a>
   <a class="landing-card" href="https://qualiainterviews.com">
     <span class="landing-card-title">QualiaInterviews</span>
     <span class="landing-card-url">qualiainterviews.com</span>
