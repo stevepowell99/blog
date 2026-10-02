@@ -106,9 +106,43 @@ See also my [Google Scholar profile](https://scholar.google.com/citations?user=X
 
 ## Conference papers and presentations
 
+- **Powell, S.** (2026). Lonely in London: A qualitative analysis written entirely by an AI which iteratively edited its own instructions. AIAgents4Qual 2026.
+- **Powell, S.**, & Rassmann, K. (2026). From interviews to action: Outcome Harvesting with AI interviewers. UK Evaluation Society Conference 2026.
+- **Powell, S.** (2026). Roundtable: Human-in-the-loop evaluations: Myth-busting and setting realistic expectations on how AI can be used in evaluations. UK Evaluation Society Conference 2026.
+- Ferretti, S., & **Powell, S.** (2026). Interrogating evaluation: A live experiment and conversation, with a little help from AI. European Evaluation Society 2026 Conference.
+- **Powell, S.**, & Remnant, F. (2026). Non-mosquitoes do not cause non-mosquito bites. European Evaluation Society 2026 Conference.
+- **Powell, S.** (2025). Panel: Stories as data. UK Evaluation Society Conference 2025.
+- Copestake, J., & **Powell, S.** (2025). Linking evaluation and futures thinking through causal mapping of narrative data. UK Evaluation Society Conference 2025.
+- Copestake, J., **Powell, S.**, & Caldas Cabral, G. (2025). Development studies, cognitive causal mapping and futures thinking: A methodological gambit. Development Studies Association Conference 2025, University of Bath.
+- **Powell, S.** (2025). Rigorous workflows in AI-assisted qualitative research. Qualitative Research Symposium 2025, University of Bath.
+- **Powell, S.**, & Caldas Cabral, G. (2025). Exploring AI-driven qualitative interviewing: A QualiaInterviews demo. Qualitative Research Symposium 2025, University of Bath.
 - **Powell, S.** (2025). Panel: AI technology for M&E. 6th Biannual Conference of the Western Balkans Evaluation Network.
 - **Powell, S.** (2025). Making sense of thousands of stories with causal mapping. 6th Biannual Conference of the Western Balkans Evaluation Network.
+- **Powell, S.**, & Britt, H. (2024). Causal mapping for OH analysis. European Evaluation Society 15th Biennial Conference.
+- **Powell, S.**, & Rassmann, K. (2024). Automated interviewing with Qualia. European Evaluation Society 15th Biennial Conference.
+- **Powell, S.**, Remnant, F., & Caldas Cabral, G. (2024). Causal mapping with simple tools. European Evaluation Society 15th Biennial Conference.
+- Buchanan, J., & **Powell, S.** (2024). An exploratory study on the utility of Causal Map to identify community assets that impact on wellbeing. WISERD Annual Conference 2024, University of South Wales.
+- **Powell, S.**, Caldas Cabral, G., & Phillips, C. (2024). Using AI to extract, visualise and synthesise causal stories within MSC interviews about social care in Wales. Most Significant Change Online Conference 2024.
+- **Powell, S.** (2024). Causal mapping for evaluators. Causal Pathways Virtual Symposium 2024.
+- **Powell, S.** (2023). What influences what? Using AI to turn stakeholders' stories into causal maps, rapidly and at scale. European Evaluation Society 2023 online event: Evaluation for a Just Transition.
+- **Powell, S.** (2023). Automated causal interviews with StorySurvey: Do they work? Do we want them?. UK Evaluation Society Conference 2023.
+- **Powell, S.** (2023). Causal Map. Causal Pathways Symposium 2023.
+- **Powell, S.** (2023). Capturing changes in causal stories over time. COMPTEXT 2023, University of Strathclyde.
+- **Powell, S.** (2023). A simple web app for eliciting composite causal maps from multiple respondents. COMPTEXT 2023, University of Strathclyde.
+- **Powell, S.**, & Remnant, F. (2022). Causal mapping for evaluators. American Evaluation Association, Evaluation 2022.
+- **Powell, S.**, & Remnant, F. (2022). Practical causal mapping for evaluators with the Causal Map app. American Evaluation Association, Evaluation 2022.
+- **Powell, S.**, & Remnant, F. (2022). Making sense of causal information: A new web app. European Evaluation Society 14th Biennial Conference.
+- **Powell, S.**, Remnant, F., & Copestake, J. (2022). Causal mapping for evaluators. European Evaluation Society 14th Biennial Conference.
+- **Powell, S.**, & Remnant, F. (2022). Causal QCA: How not to throw away the causal peanuts when doing QCA. UK Evaluation Society Annual Conference 2022.
+- **Powell, S.**, Copestake, J., & Remnant, F. (2022). Causal qualitative data analysis (QDA) with the Causal Map app: A practical introduction. Qualitative Research Symposium 2022, University of Bath.
 - **Powell, S.**, Remnant, F., & Buchanan, J. (2022). I feel good here. Causal mapping the determinants of wellbeing in West Wales. UK Evaluation Society.
+- **Powell, S.**, Remnant, F., & Copestake, J. (2021). Causal mapping for evaluators: Approaches, tools, controversies. UK Evaluation Society Annual Conference 2021.
+- **Powell, S.** (2019). Theorymaker: Making theory of change diagrams by typing. UK Evaluation Society Annual Conference 2019.
+- **Powell, S.** (2018). Counting what counts: Value in theories of change. European Evaluation Society 13th Biennial Conference.
+- **Powell, S.** (2018). Panel: Visualising theories of change. European Evaluation Society 13th Biennial Conference.
+- **Powell, S.** (2018). Theorymaker: A grab-bag of graphical tricks and symbols for constructing theories of change. UK Evaluation Society Annual Conference 2018.
+- **Powell, S.** (2018). Judea Pearl's causal diagrams: A way to unify different paradigms of programme theory?. UK Evaluation Society Annual Conference 2018.
+- **Powell, S.** (2017). Evalian: a graphical language for evaluation. American Evaluation Association, Evaluation 2017.
 - **Powell, S.** (2013). [Measuring community resilience in areas with chronic slow-onset disasters: What programmes need to know](http://www.psy.lmu.de/psycris/workshops/resilienz/index.html). Ludwig-Maximilians-Universität München.
 - Jurko, L., Bratović, E., Domazet, M., Lepić, S., **Powell, S.**, & Kirss, L. (2012). ESD-Relevant Content in Transitional Countries’ Compulsory Education: a Comparative Perspective.
 - **Powell, S.** (2010). Volunteerism in SEE and CIS: its contribution to development. UNV Bratislava.
