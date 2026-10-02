@@ -35,6 +35,56 @@
   color: var(--tertiary);
 }
 
+// Landing-page link cards at the top of the home page (content/index.md)
+.landing-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+a.landing-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1.25rem 1.25rem 1.1rem;
+  border: 1px solid var(--lightgray);
+  border-radius: 8px;
+  background: var(--light);
+  color: var(--darkgray);
+  text-decoration: none;
+  font-weight: normal;
+  transition:
+    border-color 0.15s ease,
+    transform 0.15s ease;
+
+  &:hover {
+    border-color: var(--secondary);
+    transform: translateY(-2px);
+  }
+}
+
+.landing-card-title {
+  font-family: var(--headerFont);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--secondary);
+}
+
+.landing-card-url {
+  font-size: 0.85rem;
+  color: var(--gray);
+}
+
+.landing-card-text {
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
 // Tighten the parent rows, which were spaced wider than the pages under them
 .folder-container {
   padding: 0.25rem 0;

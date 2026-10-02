@@ -3,6 +3,29 @@ title: About me
 date: 2026-08-15
 ---
 
+<div class="landing-cards">
+  <a class="landing-card" href="https://causalmap.app">
+    <span class="landing-card-title">Causal Map</span>
+    <span class="landing-card-url">causalmap.app</span>
+    <span class="landing-card-text">The company I co-founded: software and consultancy for coding what people say about what causes what.</span>
+  </a>
+  <a class="landing-card" href="https://app.causalmap.app">
+    <span class="landing-card-title">Causal Map app</span>
+    <span class="landing-card-url">app.causalmap.app</span>
+    <span class="landing-card-text">The web app. AI proposes causal links from interview text. Every link on the map stays attached to the sentence it came from.</span>
+  </a>
+  <a class="landing-card" href="https://qualiainterviews.com">
+    <span class="landing-card-title">QualiaInterviews</span>
+    <span class="landing-card-url">qualiainterviews.com</span>
+    <span class="landing-card-text">An AI interviewer. You write the guide; it interviews each respondent, follows up where a human would and hands you the transcripts.</span>
+  </a>
+  <a class="landing-card" href="https://www.linkedin.com/in/stevepowell99/">
+    <span class="landing-card-title">LinkedIn</span>
+    <span class="landing-card-url">linkedin.com/in/stevepowell99</span>
+    <span class="landing-card-text">Where I write most, including two weekly newsletters on causal mapping, evaluation and AI.</span>
+  </a>
+</div>
+
 I am an independent researcher and programme evaluator, and co-founder and Director of [Causal Map Ltd](https://causalmap.app) in Bath.
 
 [[news|What I am working on at the moment]], updated every few months.
