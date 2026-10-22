@@ -32,6 +32,20 @@ date: 2026-08-15
     </span>
     <span class="landing-card-text">An AI interviewer. You write the guide; it interviews each respondent, follows up where a human would and hands you the transcripts.</span>
   </a>
+  <a class="landing-card" href="https://rubicon.causalmap.app" style="--accent: #8c1912">
+    <span class="landing-card-head">
+      <img class="landing-card-icon" src="/static/landing/rubicon.svg" alt="">
+      <span><span class="landing-card-title">Rubicon</span><span class="landing-card-url">rubicon.causalmap.app</span></span>
+    </span>
+    <span class="landing-card-text">A free, open-source plugin for Claude that helps evaluators answer their questions from their documents. Every number in the result leads back to a quotation.</span>
+  </a>
+  <a class="landing-card" href="https://theorymaker.netlify.app" style="--accent: #198754">
+    <span class="landing-card-head">
+      <img class="landing-card-icon" src="/static/landing/theorymaker.svg" alt="">
+      <span><span class="landing-card-title">Theorymaker</span><span class="landing-card-url">theorymaker.netlify.app</span></span>
+    </span>
+    <span class="landing-card-text">A free app for drawing theories of change. Type a short text script and it draws the diagram.</span>
+  </a>
   <a class="landing-card" href="/publications" style="--accent: #0b7a5e">
     <span class="landing-card-head">
       <img class="landing-card-icon" src="/static/landing/publications.svg" alt="">
