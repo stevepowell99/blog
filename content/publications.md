@@ -1,6 +1,6 @@
 ---
 title: Publications
-date: 2026-10-02
+date: 2026-10-23
 description: Journal articles, book chapters, reports and conference papers by Steve Powell.
 ---
 
@@ -12,6 +12,7 @@ See also my [Google Scholar profile](https://scholar.google.com/citations?user=X
 
 ## Journal articles
 
+- Caldas Cabral, G., & **Powell, S.** (2026). [Listening at scale: AI-assisted causal mapping for inclusive evaluation](https://doi.org/10.4322/rbaval.202600222026). *Revista Brasileira de Avaliação*, 15(2 spe), e153426.
 - Friese, S., Nguyen-Trung, K., **Powell, S.**, & Morgan, D. L. (2026). [Beyond Binary Positions: Making Space for Critical and Reflexive GenAI Integration in Qualitative Research](https://doi.org/10.1177/10778004261429393). *Qualitative Inquiry*.
 - **Powell, S.**, Caldas Cabral, G., & Mishan, H. (2025). [A workflow for collecting and understanding stories at scale, supported by artificial intelligence](https://doi.org/10.1177/13563890251328640). *Evaluation*, 31(3), 394-411.
 - **Powell, S.**, & Caldas Cabral, G. (2025). [AI-assisted causal mapping: a validation study](https://doi.org/10.1080/13645579.2025.2591157). *International Journal of Social Research Methodology*, 1-20.
@@ -49,6 +50,7 @@ See also my [Google Scholar profile](https://scholar.google.com/citations?user=X
 
 ## Books, edited volumes, reports and thesis
 
+- Cabral, G., Copestake, J., & **Powell, S.** (2025). [Using AI to facilitate feedback on the learning experiences of doctoral students](https://garden.causalmap.app/dprp). Causal Map Garden.
 - Britt, H., **Powell, S.**, & Caldas Cabral, G. (2025). [Strengthening Outcome Harvesting with AI-assisted causal mapping](https://5a867cea-2d96-4383-acf1-7bc3d406cdeb.usrfiles.com/ugd/5a867c_ad000813c80747baa85c7bd5ffaf0442.pdf). Causal Pathways Initiative.
 - **Powell, S.**, & Causal Map Ltd. (2021). [Guide to Causal Mapping](https://guide.causalmap.app/).
 - **Powell, S.** (2020). [Federation-wide Meta evaluation of Nepal Earthquake Response](https://www.ifrc.org/media/13554). IFRC.
@@ -62,7 +64,7 @@ See also my [Google Scholar profile](https://scholar.google.com/citations?user=X
 - **Powell, S.** (2013). Measuring resilience?.
 - **Powell, S.** (2012). Haiti Evaluation Framework. IFRC.
 - **Powell, S.** (2012). [The psychosocial consequences of the 1992-5 war in Bosnia & Herzegovina](http://eprints.mdx.ac.uk/8402/). School of Health and Social Sciences, Middlesex University (PhD Thesis).
-- **Powell, S.** (2012). [Does maintaining supply of water and sanitation in IDP sites after the relief phase encourage people to stay in the sites? Does cutting them encourage people to leave?](http://socialdatablog.com/idp-water-supply/). Social Data Blog.
+- **Powell, S.** (2012). [Does maintaining supply of water and sanitation in IDP sites after the relief phase encourage people to stay in the sites? Does cutting them encourage people to leave?](https://doi.org/10.13140/RG.2.1.2779.2721). Social Data Blog.
 - **Powell, S.** (2011). Planning, Monitoring and Evaluation (PME) tools for Political Party Development. NDI, Washington.
 - **Powell, S.** (2011). [Roma parents' views on participation in education in B&H](http://socialdatablog.com/roma-parents-views-on-participation-in-education-in-bh/).
 - Kovacs-Cerovic, T., Vizek-Vidović, V., & **Powell, S.** (2010). [School Governance and Social Inclusion: Involvement of Parents. South East Europe Cross Country Survey of Parents' Views](http://promente.org/ESP2-reg-report.pdf). CEPS.
@@ -118,30 +120,30 @@ See also my [Google Scholar profile](https://scholar.google.com/citations?user=X
 - **Powell, S.**, & Caldas Cabral, G. (2025). Exploring AI-driven qualitative interviewing: A QualiaInterviews demo. Qualitative Research Symposium 2025, University of Bath.
 - **Powell, S.** (2025). Panel: AI technology for M&E. 6th Biannual Conference of the Western Balkans Evaluation Network.
 - **Powell, S.** (2025). Making sense of thousands of stories with causal mapping. 6th Biannual Conference of the Western Balkans Evaluation Network.
-- **Powell, S.**, & Britt, H. (2024). Causal mapping for OH analysis. European Evaluation Society 15th Biennial Conference.
-- **Powell, S.**, & Rassmann, K. (2024). Automated interviewing with Qualia. European Evaluation Society 15th Biennial Conference.
-- **Powell, S.**, Remnant, F., & Caldas Cabral, G. (2024). Causal mapping with simple tools. European Evaluation Society 15th Biennial Conference.
-- Buchanan, J., & **Powell, S.** (2024). An exploratory study on the utility of Causal Map to identify community assets that impact on wellbeing. WISERD Annual Conference 2024, University of South Wales.
-- **Powell, S.**, Caldas Cabral, G., & Phillips, C. (2024). Using AI to extract, visualise and synthesise causal stories within MSC interviews about social care in Wales. Most Significant Change Online Conference 2024.
 - **Powell, S.** (2024). Causal mapping for evaluators. Causal Pathways Virtual Symposium 2024.
-- **Powell, S.** (2023). What influences what? Using AI to turn stakeholders' stories into causal maps, rapidly and at scale. European Evaluation Society 2023 online event: Evaluation for a Just Transition.
-- **Powell, S.** (2023). Automated causal interviews with StorySurvey: Do they work? Do we want them?. UK Evaluation Society Conference 2023.
-- **Powell, S.** (2023). Causal Map. Causal Pathways Symposium 2023.
-- **Powell, S.** (2023). Capturing changes in causal stories over time. COMPTEXT 2023, University of Strathclyde.
+- **Powell, S.**, Caldas Cabral, G., & Phillips, C. (2024). Using AI to extract, visualise and synthesise causal stories within MSC interviews about social care in Wales. Most Significant Change Online Conference 2024.
+- Buchanan, J., & **Powell, S.** (2024). An exploratory study on the utility of Causal Map to identify community assets that impact on wellbeing. WISERD Annual Conference 2024, University of South Wales.
+- **Powell, S.**, Remnant, F., & Caldas Cabral, G. (2024). Causal mapping with simple tools. European Evaluation Society 15th Biennial Conference.
+- **Powell, S.**, & Rassmann, K. (2024). Automated interviewing with Qualia. European Evaluation Society 15th Biennial Conference.
+- **Powell, S.**, & Britt, H. (2024). Causal mapping for OH analysis. European Evaluation Society 15th Biennial Conference.
 - **Powell, S.** (2023). A simple web app for eliciting composite causal maps from multiple respondents. COMPTEXT 2023, University of Strathclyde.
-- **Powell, S.**, & Remnant, F. (2022). Causal mapping for evaluators. American Evaluation Association, Evaluation 2022.
-- **Powell, S.**, & Remnant, F. (2022). Practical causal mapping for evaluators with the Causal Map app. American Evaluation Association, Evaluation 2022.
-- **Powell, S.**, & Remnant, F. (2022). Making sense of causal information: A new web app. European Evaluation Society 14th Biennial Conference.
-- **Powell, S.**, Remnant, F., & Copestake, J. (2022). Causal mapping for evaluators. European Evaluation Society 14th Biennial Conference.
-- **Powell, S.**, & Remnant, F. (2022). Causal QCA: How not to throw away the causal peanuts when doing QCA. UK Evaluation Society Annual Conference 2022.
+- **Powell, S.** (2023). Capturing changes in causal stories over time. COMPTEXT 2023, University of Strathclyde.
+- **Powell, S.** (2023). Automated causal interviews with StorySurvey: Do they work? Do we want them?. UK Evaluation Society Conference 2023.
+- **Powell, S.** (2023). What influences what? Using AI to turn stakeholders' stories into causal maps, rapidly and at scale. European Evaluation Society 2023 online event: Evaluation for a Just Transition.
+- **Powell, S.** (2023). Causal Map. Causal Pathways Symposium 2023.
 - **Powell, S.**, Copestake, J., & Remnant, F. (2022). Causal qualitative data analysis (QDA) with the Causal Map app: A practical introduction. Qualitative Research Symposium 2022, University of Bath.
+- **Powell, S.**, & Remnant, F. (2022). Causal QCA: How not to throw away the causal peanuts when doing QCA. UK Evaluation Society Annual Conference 2022.
+- **Powell, S.**, Remnant, F., & Copestake, J. (2022). Causal mapping for evaluators. European Evaluation Society 14th Biennial Conference.
+- **Powell, S.**, & Remnant, F. (2022). Making sense of causal information: A new web app. European Evaluation Society 14th Biennial Conference.
+- **Powell, S.**, & Remnant, F. (2022). Practical causal mapping for evaluators with the Causal Map app. American Evaluation Association, Evaluation 2022.
+- **Powell, S.**, & Remnant, F. (2022). Causal mapping for evaluators. American Evaluation Association, Evaluation 2022.
 - **Powell, S.**, Remnant, F., & Buchanan, J. (2022). I feel good here. Causal mapping the determinants of wellbeing in West Wales. UK Evaluation Society.
 - **Powell, S.**, Remnant, F., & Copestake, J. (2021). Causal mapping for evaluators: Approaches, tools, controversies. UK Evaluation Society Annual Conference 2021.
 - **Powell, S.** (2019). Theorymaker: Making theory of change diagrams by typing. UK Evaluation Society Annual Conference 2019.
-- **Powell, S.** (2018). Counting what counts: Value in theories of change. European Evaluation Society 13th Biennial Conference.
-- **Powell, S.** (2018). Panel: Visualising theories of change. European Evaluation Society 13th Biennial Conference.
-- **Powell, S.** (2018). Theorymaker: A grab-bag of graphical tricks and symbols for constructing theories of change. UK Evaluation Society Annual Conference 2018.
 - **Powell, S.** (2018). Judea Pearl's causal diagrams: A way to unify different paradigms of programme theory?. UK Evaluation Society Annual Conference 2018.
+- **Powell, S.** (2018). Theorymaker: A grab-bag of graphical tricks and symbols for constructing theories of change. UK Evaluation Society Annual Conference 2018.
+- **Powell, S.** (2018). Panel: Visualising theories of change. European Evaluation Society 13th Biennial Conference.
+- **Powell, S.** (2018). Counting what counts: Value in theories of change. European Evaluation Society 13th Biennial Conference.
 - **Powell, S.** (2017). Evalian: a graphical language for evaluation. American Evaluation Association, Evaluation 2017.
 - **Powell, S.** (2013). [Measuring community resilience in areas with chronic slow-onset disasters: What programmes need to know](http://www.psy.lmu.de/psycris/workshops/resilienz/index.html). Ludwig-Maximilians-Universität München.
 - Jurko, L., Bratović, E., Domazet, M., Lepić, S., **Powell, S.**, & Kirss, L. (2012). ESD-Relevant Content in Transitional Countries’ Compulsory Education: a Comparative Perspective.
