@@ -1,10 +1,10 @@
 ---
 title: Publications
-date: 2026-10-23
+date: 2026-11-04
 description: Journal articles, book chapters, reports and conference papers by Steve Powell.
 ---
 
-<!-- GENERATED FILE. Do not edit by hand. Source: Zotero My Publications, via JobCat's tools/build_publications_md.py --site-out. Fix the Zotero record and rerun. -->
+<!-- GENERATED FILE. Do not edit by hand. Source: Zotero My Publications, via JobCat's tools/build_publications_md.py --write. Fix the Zotero record and rerun. -->
 
 Papers, chapters, reports and talks, from the clinical psychology research of the Sarajevo years, through the proMENTE research reports, to recent work on causal mapping and AI. Where a copy is online, the title links to it.
 
@@ -39,7 +39,7 @@ See also my [Google Scholar profile](https://scholar.google.com/citations?user=X
 
 ## Book chapters
 
-- Rassmann, K., **Powell, S.**, Caldas-Cabral, G., & Müllegger, B. (in press). The role of AI-driven interviewers in evaluating and promoting democratic processes. In Weiberg, M., & Kleist, J. O. (Eds.), *Evaluieren mit Künstlicher Intelligenz. Wie KI zur Wirkung und Förderung der Demokratie beitragen kann*. transcript Verlag.
+- Rassmann, K., **Powell, S.**, Caldas Cabral, G., & Müllegger, B. (2026). [The role of AI-driven interviewers in evaluating and promoting democratic processes](https://doi.org/10.14361/9783839465424). In Kleist, J. O., Weiberg, M., & Müller, S. (Eds.), *Demokratie im Zeitalter Künstlicher Intelligenz: Praxis und Ethik KI-gestützter Evaluation* (pp. 177-203). transcript Verlag.
 - Ferretti, S., & **Powell, S.** (2026). [Using AI for interviewing in a challenging context](https://doi.org/10.4324/9781003799139-12). In Bruce, K., Gandhi, V., & Bohni Nielsen, S. (Eds.), *From Algorithms to Evidence: Using GenAI in Evaluation Practice* (pp. 120-128). Routledge.
 - Remnant, F., Copestake, J., **Powell, S.**, & Channon, M. (2025). [Qualitative Causal Mapping in Evaluations](https://doi.org/10.1007/978-3-031-87869-5_12). In Kaehne, A., & Feather, J. (Eds.), *Handbook of Health Services Evaluation: Theories, Methods and Innovative Practices* (pp. 207-227). Springer Nature Switzerland.
 - **Powell, S.**, Larquemin, A., Copestake, J., Remnant, F., & Avard, R. (2023). [Does our theory match your theory? Theories of change and causal maps in Ghana](https://doi.org/10.4337/9781803927718.00025). In Simeone, L., Drabble, D., Morelli, N., & de Götzen, A. (Eds.), *Strategic Thinking, Design and the Theory of Change. A Framework for Designing Impactful and Transformational Social Interventions* (pp. 232-250). Edward Elgar.
