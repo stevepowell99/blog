@@ -1,6 +1,6 @@
 ---
 title: Publications
-date: 2026-11-04
+date: 2026-11-12
 description: Journal articles, book chapters, reports and conference papers by Steve Powell.
 ---
 
@@ -108,11 +108,11 @@ See also my [Google Scholar profile](https://scholar.google.com/citations?user=X
 
 ## Conference papers and presentations
 
+- Ferretti, S., & **Powell, S.** (2026). Interrogating evaluation: A live experiment and conversation, with a little help from AI. European Evaluation Society 2026 Conference.
+- **Powell, S.**, & Remnant, F. (2026). Non-mosquitoes do not cause non-mosquito bites. European Evaluation Society 2026 Conference.
 - **Powell, S.** (2026). Lonely in London: A qualitative analysis written entirely by an AI which iteratively edited its own instructions. AIAgents4Qual 2026.
 - **Powell, S.**, & Rassmann, K. (2026). From interviews to action: Outcome Harvesting with AI interviewers. UK Evaluation Society Conference 2026.
 - **Powell, S.** (2026). Roundtable: Human-in-the-loop evaluations: Myth-busting and setting realistic expectations on how AI can be used in evaluations. UK Evaluation Society Conference 2026.
-- Ferretti, S., & **Powell, S.** (2026). Interrogating evaluation: A live experiment and conversation, with a little help from AI. European Evaluation Society 2026 Conference.
-- **Powell, S.**, & Remnant, F. (2026). Non-mosquitoes do not cause non-mosquito bites. European Evaluation Society 2026 Conference.
 - **Powell, S.** (2025). Panel: Stories as data. UK Evaluation Society Conference 2025.
 - Copestake, J., & **Powell, S.** (2025). Linking evaluation and futures thinking through causal mapping of narrative data. UK Evaluation Society Conference 2025.
 - Copestake, J., **Powell, S.**, & Caldas Cabral, G. (2025). Development studies, cognitive causal mapping and futures thinking: A methodological gambit. Development Studies Association Conference 2025, University of Bath.
