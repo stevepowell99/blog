@@ -1,6 +1,6 @@
 ---
 title: Publications
-date: 2026-11-12
+date: 2026-11-16
 description: Journal articles, book chapters, reports and conference papers by Steve Powell.
 ---
 
@@ -52,8 +52,11 @@ See also my [Google Scholar profile](https://scholar.google.com/citations?user=X
 
 - Cabral, G., Copestake, J., & **Powell, S.** (2025). [Using AI to facilitate feedback on the learning experiences of doctoral students](https://garden.causalmap.app/dprp). Causal Map Garden.
 - Britt, H., **Powell, S.**, & Caldas Cabral, G. (2025). [Strengthening Outcome Harvesting with AI-assisted causal mapping](https://5a867cea-2d96-4383-acf1-7bc3d406cdeb.usrfiles.com/ugd/5a867c_ad000813c80747baa85c7bd5ffaf0442.pdf). Causal Pathways Initiative.
+- **Powell, S.** (2024). [Everyone Counts: Special edition mid-term review of Strategy 2030](https://www.ifrc.org/sites/default/files/2024-10/Everyone%20Counts_Special%20Edition%20Mid-Term%20Review%20of%20Strategy%202030_English.pdf). International Federation of Red Cross and Red Crescent Societies.
+- **Powell, S.** (2023). [Everyone Counts COVID-19: Nobody is safe until everybody is safe](https://www.ifrc.org/sites/default/files/2023-01/2023_everyone-counts-report-covid_EN.pdf). International Federation of Red Cross and Red Crescent Societies.
 - **Powell, S.**, & Causal Map Ltd. (2021). [Guide to Causal Mapping](https://guide.causalmap.app/).
 - **Powell, S.** (2020). [Federation-wide Meta evaluation of Nepal Earthquake Response](https://www.ifrc.org/media/13554). IFRC.
+- **Powell, S.** (2019). [Everyone Counts: May 2019 issue](https://alnap.org/help-library/resources/everyone-counts-may-2019-issue/). International Federation of Red Cross and Red Crescent Societies.
 - **Powell, S.** (2018). [GYA Impact Assessment](https://globalyoungacademy.net/wp-content/uploads/2019/04/GYA-Impact-Analysis-2018_Final.pdf). Global Young Academy.
 - **Powell, S.** (2016). Early warning, early action: the first and last mile.
 - Mesbah, L., & **Powell, S.** (2016). Analysis of small and large conservation grants in Central and West Africa. IUCN.
