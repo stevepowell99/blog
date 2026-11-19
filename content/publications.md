@@ -35,7 +35,6 @@ See also my [Google Scholar profile](https://scholar.google.com/citations?user=X
 - Rosner, R., **Powell, S.**, & Butollo, W. (2003). [Posttraumatic stress disorder three years after the siege of Sarajevo](https://doi.org/10.1002/jclp.10116). *Journal of Clinical Psychology*, 59(1), 41-55.
 - **Powell, S.** (2003). Review of Biro, M., & Butollo, W. (Eds.), Klinička psihologija. *Psihologija*, 36(1), 117-118.
 - Rosner, R., & **Powell, S.** (2002). Why do people in Bosnia-Herzegovina go into treatment? The role of Posttraumatic Stress Disorder in psychotherapy service utilization. *European Psychotherapy*, 3(1), 117–129.
-- Duraković-Belko, E., & **Powell, S.** (2000). [Sarajevo 2000: Psihosocijalne posljedice rata](http://psih.org/2000b.pdf).
 
 ## Book chapters
 
@@ -100,7 +99,8 @@ See also my [Google Scholar profile](https://scholar.google.com/citations?user=X
 - **Powell, S.**, & Frederiksen, T. (2005). "Come back with a smile". SEEYN external evaluation report. SEEYN2.
 - **Powell, S.** (2005). [Prevention of Trafficking in Persons in BiH: Mapping report](http://promente.org/CRS2-mapping-b.pdf). CRS B&H, proMENTE.
 - Bruer, D., Gavranidou, M., **Powell, S.**, Čehić, E., & Butollo, W. (2003). Rückkehrkinder in Bosnien: Probleme, Bewältigungsstrategien, Auffälligkeiten.
-- **Powell, S.**, Rosner, R., & Butollo, W. (1998). Flight paths.
+- Duraković-Belko, E., & **Powell, S.** (2000). [Sarajevo 2000: Psihosocijalne posljedice rata. Rezultati empirijskih istraživanja provedenih na području bivše Jugoslavije](https://www.researchgate.net/publication/418088921).
+- **Powell, S.**, Rosner, R., & Butollo, W. (1999). [Flight Paths: Returnees from outside former Yugoslavia, internally displaced persons and "stayers" in Sarajevo and Banja Luka, 1999](https://doi.org/10.13140/RG.2.2.31895.53921). Ludwig-Maximilians-Universität München.
 - **Powell, S.**, Rosner, R., Krüssmann, M., & Butollo, W. (1998). Checklist of war-related experiences (CWE).
 - **Powell, S.** (n.d.). [East Africa Logframe Template for Community Resilience](https://www.researchgate.net/publication/325130435). IFRC.
 - Bratović, E., & **Powell, S.** (n.d.). Evaluation of the project "Choosing peace together". CRS.
