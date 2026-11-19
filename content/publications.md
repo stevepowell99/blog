@@ -66,7 +66,6 @@ See also my [Google Scholar profile](https://scholar.google.com/citations?user=X
 - **Powell, S.** (2013). Fiji (Pacific Islands): Evaluation of the Response Fund Supported Activities of the UNICEF Pacific HIV & AIDS Programme. UNICEF.
 - **Powell, S.** (2013). [Vorbereitung für Katastrophen: Workshop zur Resilienzforschung an der LMU München (mit Beitrag von Steve Powell)](https://www.researchgate.net/publication/262689856). Deutschlandfunk.
 - **Powell, S.**, & Repac, I. (2013). [Dataset and description from project: Involvement of parents in the life of schools in South-East Europe](http://doi.org/p7z). Figshare.
-- **Powell, S.** (2013). Measuring resilience?.
 - Bratović, E., **Powell, S.**, & Hopma, A. (2012). [Estimating the number of stray dogs in the urban areas of Sarajevo and related survey of public opinion on stray dogs](https://www.researchgate.net/publication/262689981). proMENTE social research.
 - **Powell, S.** (2012). [IFRC Haiti learning strategy and learning agenda](https://doi.org/10.13140/RG.2.2.21259.80162). IFRC.
 - **Powell, S.** (2012). [The psychosocial consequences of the 1992-5 war in Bosnia & Herzegovina](https://www.researchgate.net/publication/262690028). School of Health and Social Sciences, Middlesex University (PhD Thesis).
