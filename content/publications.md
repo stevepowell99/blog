@@ -90,10 +90,10 @@ See also my [Google Scholar profile](https://scholar.google.com/citations?user=X
 - **Powell, S.**, Čelebičić, I., Bratović, E., & Šišić, A. (2008). [Outcome mapping evaluation of six civil society projects in Bosnia and Herzegovina](https://www.researchgate.net/publication/262689782). Sida.
 - **Powell, S.**, & Bratović, E. (2008). [Stakeholder Participation in Schools: Literature Review](http://promente.org/ESP1-reg-lit.pdf). Open Society Institute.
 - **Powell, S.** (2008). [ESP school principals research: BiH](http://promente.org/ESP1-bih-report.pdf). proMENTE.
+- **Powell, S.**, Bratović, E., & Dolić, A. (2007). [We can. We volunteer. Pro-social values/behaviour and employability amongst young people in SEE and the impact of volunteer work camps](https://www.researchgate.net/publication/262690037). SEEYN: South-East European Youth Network.
+- **Powell, S.**, & Bratović, E. (2007). [The impact of long-term youth voluntary service in Europe: A review of published and unpublished research studies](https://doi.org/10.13140/RG.2.2.33415.97446). AVSO.
 - Husremović, D., **Powell, S.**, Šišić, A., & Dolić, A. (2007). [Education in Bosnia and Herzegovina: what are we teaching our children?](http://promente.org/OSF0-report-brief-e.pdf).
 - Husremović, D., **Powell, S.**, Šišić, A., & Dolić, A. (2007). [Obrazovanje u Bosni i Hercegovini: Čemu učimo djecu? Analiza sadržaja udžbenika nacionalne grupe predmeta](http://promente.org/OSF0-report-b.pdf). Fond otvoreno društvo Bosna i Hercegovina.
-- **Powell, S.** (2006). [The impact of long-term youth voluntary service in Europe: A review of published and unpublished research studies](https://www.researchgate.net/publication/262689874). AVSO/proMENTE.
-- **Powell, S.**, & Bratović, E. (2006). [We can. We volunteer. Pro-social values/behaviour and employability amongst young people in SEE and the impact of volunteer work camps](https://www.researchgate.net/publication/262690037). SEEYN: South-East European Youth Network.
 - **Powell, S.** (2006). [Prevention of Trafficking in Persons in BiH](http://promente.org/CRS2-report-e.pdf). CRS B&H, proMENTE.
 - **Powell, S.** (2006). Roma-Gadje Dialogue Through Service Initiative: M&E processes. client.
 - **Powell, S.**, & Čelebičić, I. (2005). Mapiranje aktivnosti i usluga NVO-a na polju borbe protiv trgovine ljudima u BiH. CRS BiH.
