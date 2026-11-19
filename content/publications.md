@@ -1,6 +1,6 @@
 ---
 title: Publications
-date: 2026-11-16
+date: 2026-11-19
 description: Journal articles, book chapters, reports and conference papers by Steve Powell.
 ---
 
@@ -18,19 +18,19 @@ See also my [Google Scholar profile](https://scholar.google.com/citations?user=X
 - **Powell, S.**, & Caldas Cabral, G. (2025). [AI-assisted causal mapping: a validation study](https://doi.org/10.1080/13645579.2025.2591157). *International Journal of Social Research Methodology*, 1-20.
 - **Powell, S.**, Caldas Cabral, G., & Mishan, H. (2024). [An M&E time machine: Using AI to measure changes in a system across a time period on features which only emerge during it](https://doi.org/10.6084/m9.figshare.33518512) [Preprint]. Figshare.
 - **Powell, S.**, Copestake, J., & Remnant, F. (2024). [Causal mapping for evaluators](https://doi.org/10.1177/13563890231196601). *Evaluation*, 30(1), 100-119.
+- **Powell, S.** (2019). [A reproducible workflow for evaluation reports](https://www.researchgate.net/publication/333202503). *The Evaluator*, (Spring).
 - **Powell, S.** (2019). [Supplement to Theories of Change: Making Value Explicit](https://doi.org/10.56645/jmde.v15i32.561). *Journal of MultiDisciplinary Evaluation*, 15(32), 53–54.
 - Comtesse, H., **Powell, S.**, Soldo, A., Hagl, M., & Rosner, R. (2019). [Long-term psychological distress of Bosnian war survivors: an 11-year follow-up of former displaced persons, returnees, and stayers](https://doi.org/10.1186/s12888-018-1996-0). *BMC Psychiatry*, 19(1).
 - **Powell, S.** (2019). [Theories of Change: Making Value Explicit](https://doi.org/10.56645/jmde.v15i32.563). *Journal of MultiDisciplinary Evaluation*, 15(32), 37-52.
-- **Powell, S.** (2019). A reproducible workflow for evaluation reports. *The Evaluator*, (Spring).
 - **Powell, S.** (2018). [The Book of Why: The New Science of Cause and Effect](https://doi.org/10.56645/jmde.v14i31.507). *Journal of MultiDisciplinary Evaluation*, 14(31), 47–54.
 - **Powell, S.** (2017). [Visualizing Theories of Change - how not to confuse causes and definitions](https://www.elval.org/en/vizualizaciji-teorije-promjene-kako-razlikovati-uzroke-i-definicije/). *Eval - Online Journal of the Bosnia & Herzegovina Evaluation Society*, 1(1).
 - Hagl, M., **Powell, S.**, Rosner, R., & Butollo, W. (2015). [Dialogical Exposure with Traumatically Bereaved Bosnian Women: Findings from a Controlled Trial: Dialogical Exposure for Traumatic Loss](https://doi.org/10.1002/cpp.1921). *Clinical Psychology & Psychotherapy*, 22(6), 604-618.
-- Bosancianu, C. M., **Powell, S.**, & Bratović, E. (2013). Social Capital and Pro-Social Behavior Online and Offline. *International Journal of Internet Science*, 8(1).
+- Bosancianu, C. M., **Powell, S.**, & Bratović, E. (2013). [Social Capital and Pro-Social Behavior Online and Offline](https://www.researchgate.net/publication/262689602). *International Journal of Internet Science*, 8(1).
 - **Powell, S.**, Butollo, W., & Hagl, M. (2010). Missing or killed: The differential effect on mental health in women in Bosnia and Herzegovina of the confirmed or unconfirmed loss of their husbands. *European Psychologist*, 15(3), 185-192.
 - **Powell, S.** (2009). [Volunteerism. Helping one another through the transition](https://web.archive.org/web/20230228143405/https://issuu.com/undp_in_europe_cis/docs/development_and_transition_14). *Development & Transition*, (14), 24–26.
 - Rosner, R., & **Powell, S.** (2007). Überschätzt die ICD-10 die PTBS-Prävalenz? Auswirkungen unterschiedlicher Diagnosekriterien auf Schätzungen der Rate der Posttraumatischen Belastungsstörung. *Trauma und Gewalt*, 1(1), 46-57.
 - **Powell, S.**, & Rosner, R. (2005). The Bosnian version of the international self-report measure of posttraumatic stress disorder, the Posttraumatic Stress Diagnostic Scale, is reliable and valid in a variety of different adult samples affected by war. *BMC Psychiatry*, 5(11).
-- **Powell, S.**, & Durakovic-Belko, E. (2004). Sarajevo 2000: the psychosocial consequences of war, Results of empirical research from the territory of former Yugoslavia. *Journal of Human Sciences*, 1(1).
+- **Powell, S.**, & Durakovic-Belko, E. (2004). [Sarajevo 2000: the psychosocial consequences of war, Results of empirical research from the territory of former Yugoslavia](https://www.researchgate.net/publication/220039529). *Journal of Human Sciences*, 1(1).
 - **Powell, S.**, Rosner, R., Butollo, W., Tedeschi, R. G., & Calhoun, L. G. (2003). [Posttraumatic growth after war: A study with former refugees and displaced people in Sarajevo](https://doi.org/10.1002/jclp.10117). *Journal of Clinical Psychology*, 59(1), 71-83.
 - Rosner, R., **Powell, S.**, & Butollo, W. (2003). [Posttraumatic stress disorder three years after the siege of Sarajevo](https://doi.org/10.1002/jclp.10116). *Journal of Clinical Psychology*, 59(1), 41-55.
 - **Powell, S.** (2003). Review of Biro, M., & Butollo, W. (Eds.), Klinička psihologija. *Psihologija*, 36(1), 117-118.
@@ -43,7 +43,7 @@ See also my [Google Scholar profile](https://scholar.google.com/citations?user=X
 - Ferretti, S., & **Powell, S.** (2026). [Using AI for interviewing in a challenging context](https://doi.org/10.4324/9781003799139-12). In Bruce, K., Gandhi, V., & Bohni Nielsen, S. (Eds.), *From Algorithms to Evidence: Using GenAI in Evaluation Practice* (pp. 120-128). Routledge.
 - Remnant, F., Copestake, J., **Powell, S.**, & Channon, M. (2025). [Qualitative Causal Mapping in Evaluations](https://doi.org/10.1007/978-3-031-87869-5_12). In Kaehne, A., & Feather, J. (Eds.), *Handbook of Health Services Evaluation: Theories, Methods and Innovative Practices* (pp. 207-227). Springer Nature Switzerland.
 - **Powell, S.**, Larquemin, A., Copestake, J., Remnant, F., & Avard, R. (2023). [Does our theory match your theory? Theories of change and causal maps in Ghana](https://doi.org/10.4337/9781803927718.00025). In Simeone, L., Drabble, D., Morelli, N., & de Götzen, A. (Eds.), *Strategic Thinking, Design and the Theory of Change. A Framework for Designing Impactful and Transformational Social Interventions* (pp. 232-250). Edward Elgar.
-- **Powell, S.** (2012). [Postwar Developments](http://socialdatablog.com/wp-content/uploads/2012/07/butollo_festschrift_powell.pdf). In Maragkos, M. (Eds.), *Begegnung, Dialog und Integration. Festschrift zur Emeritierung von Prof. Dr. Willi Butollo*. dgvt-Verlag.
+- **Powell, S.** (2012). [Postwar Developments](https://www.researchgate.net/publication/262689708). In Maragkos, M. (Eds.), *Begegnung, Dialog und Integration. Festschrift zur Emeritierung von Prof. Dr. Willi Butollo*. dgvt-Verlag.
 - Golubeva, M., **Powell, S.**, & Nedelcu, A. (2011). [Separate schooling of minorities in Eastern and South Eastern Europe: Is there a way to overcome the negative effects of segregation?](http://www.maklu.be/MakluEnGarant/BookDetails.aspx?ID=9789044126945). In Bakker, J., Denessen, E., Peters, D., & Walraven, G. (Eds.), *International perspectives on countering school segregation*. Garant Publishers.
 - **Powell, S.**, Molander, J., & Čelebičić, I. (2011). [Assessment of Outcome Mapping as a tool for evaluating and monitoring support to civil society organisations](https://doi.org/10.4337/9781035305742.00020). In Sedlacko, M., & Martinuzzi, A. (Eds.), *Governance by Evaluation for Sustainable Development: Institutional Capacities and Learning* (pp. 215-232). Edward Elgar.
 - Rosner, R., & **Powell, S.** (2006). Posttraumatic growth after war. In Calhoun, L. G., & Tedeschi, R. G. (Eds.), *Handbook of Posttraumatic Growth: Research and Practice* (pp. 197-213). Lawrence Erlbaum.
@@ -58,56 +58,56 @@ See also my [Google Scholar profile](https://scholar.google.com/citations?user=X
 - **Powell, S.** (2020). [Federation-wide Meta evaluation of Nepal Earthquake Response](https://www.ifrc.org/media/13554). IFRC.
 - **Powell, S.** (2019). [Everyone Counts: May 2019 issue](https://alnap.org/help-library/resources/everyone-counts-may-2019-issue/). International Federation of Red Cross and Red Crescent Societies.
 - **Powell, S.** (2018). [GYA Impact Assessment](https://globalyoungacademy.net/wp-content/uploads/2019/04/GYA-Impact-Analysis-2018_Final.pdf). Global Young Academy.
-- **Powell, S.** (2016). Early warning, early action: the first and last mile.
+- **Powell, S.** (2016). [Early warning, early action: the first and last mile](https://www.researchgate.net/publication/315488604).
 - Mesbah, L., & **Powell, S.** (2016). Analysis of small and large conservation grants in Central and West Africa. IUCN.
 - **Powell, S.** (2016). [Terminal Evaluation of the 2nd Long- Term Strategy on Engagement and Involvement of Young People in Environmental Issues ( Tunza Strategy )](http://wedocs.unep.org/handle/20.500.11822/7384). UNEP.
+- **Powell, S.** (2013). [Vorbereitung für Katastrophen: Workshop zur Resilienzforschung an der LMU München (mit Beitrag von Steve Powell)](https://www.researchgate.net/publication/262689856). Deutschlandfunk.
 - **Powell, S.**, & Repac, I. (2013). [Dataset and description from project: Involvement of parents in the life of schools in South-East Europe](http://doi.org/p7z). Figshare.
-- **Powell, S.** (2013). Vorbereitung für Katastrophen: Workshop zur Resilienzforschung an der LMU München (mit Beitrag von Steve Powell). Deutschlandfunk.
 - **Powell, S.** (2013). Fiji (Pacific Islands): Evaluation of the Response Fund Supported Activities of the UNICEF Pacific HIV & AIDS Programme. UNICEF; http://www.unicef.org/evaldatabase/index_73504.html.
 - **Powell, S.** (2013). Measuring resilience?.
-- **Powell, S.** (2012). Haiti Evaluation Framework. IFRC.
-- **Powell, S.** (2012). [The psychosocial consequences of the 1992-5 war in Bosnia & Herzegovina](http://eprints.mdx.ac.uk/8402/). School of Health and Social Sciences, Middlesex University (PhD Thesis).
+- **Powell, S.** (2012). [The psychosocial consequences of the 1992-5 war in Bosnia & Herzegovina](https://www.researchgate.net/publication/262690028). School of Health and Social Sciences, Middlesex University (PhD Thesis).
+- **Powell, S.** (2012). [Haiti Evaluation Framework](https://www.researchgate.net/publication/313478129). IFRC.
 - **Powell, S.** (2012). [Does maintaining supply of water and sanitation in IDP sites after the relief phase encourage people to stay in the sites? Does cutting them encourage people to leave?](https://doi.org/10.13140/RG.2.1.2779.2721). Social Data Blog.
-- **Powell, S.** (2011). Planning, Monitoring and Evaluation (PME) tools for Political Party Development. NDI, Washington.
+- **Powell, S.** (2011). [Planning, Monitoring and Evaluation (PME) tools for Political Party Development](https://www.researchgate.net/publication/262689791). NDI, Washington.
 - **Powell, S.** (2011). [Roma parents' views on participation in education in B&H](http://socialdatablog.com/roma-parents-views-on-participation-in-education-in-bh/).
+- **Powell, S.** (2010). [Understanding volunteerism for development in South-Eastern Europe and the Commonwealth of Independent States](https://www.researchgate.net/publication/262689972). UNV/UNDP.
+- **Powell, S.** (2010). [Analysis of the combined survey datasets from the American Red Cross Tsunami Recovery Program Psycho-Social Project (adult community respondents)](https://www.researchgate.net/publication/262690031). ARC.
 - Kovacs-Cerovic, T., Vizek-Vidović, V., & **Powell, S.** (2010). [School Governance and Social Inclusion: Involvement of Parents. South East Europe Cross Country Survey of Parents' Views](http://promente.org/ESP2-reg-report.pdf). CEPS.
 - **Powell, S.** (2010). End of Project evaluation. Psychosocial Support Project: ARC Tsunami Response Program - Indonesia. ARC.
 - **Powell, S.**, & Bratović, E. (2010). Technical assistance to the South East Europe children's rights ombudspersons' network. Save the Children Norway.
-- **Powell, S.** (2010). Analysis of the combined survey datasets from the American Red Cross Tsunami Recovery Program Psycho-Social Project (adult community respondents). ARC.
 - **Powell, S.** (2010). [National Survey of Parents in Albania, Bosnia and Herzegovina, Bulgaria, Croatia, Kosovo, Macedonia, Moldova, Montenegro, Romania and Serbia. Basic statistical results including data from survey of Principals](http://promente.org/ESP2-reg-report.pdf).
 - **Powell, S.** (2010). [Methodology: National Face - to - Face Surveys of Representative Samples of Parents of Elementary School Children in 10 South East European Countries](http://promente.org/ESP2-reg-method.pdf). OSI-ESP.
 - **Powell, S.** (2010). [National Survey of Parents in Bosnia and Herzegovina: basic statistical results including data from survey of Principals](http://promente.org/ESP2-bih-stats.pdf). proMENTE.
 - **Powell, S.** (2010). Sectoral evaluation: Final Tsunami Response Program: psychosocial projects.
-- **Powell, S.** (2010). Understanding volunteerism for development in South-Eastern Europe and the Commonwealth of Independent States. UNV/UNDP.
 - **Powell, S.** (2010). Sectoral assessment of American Red Cross psychosocial support in four countries after the East Asian Tsunami. ARC.
-- Kadić, A., **Powell, S.**, & Lepić, S. (2009). Qualitative research on students and employers needs and interests in the school-work transition. gopa.
+- Kadić, A., **Powell, S.**, & Lepić, S. (2009). [Qualitative research on students and employers needs and interests in the school-work transition](https://www.researchgate.net/publication/262689975). gopa.
 - Pop, D., & **Powell, S.** (2009). School Governance and Social Inclusion - Involvement of Parents.
 - Pop, D., **Powell, S.**, Miljević, G., & Crighton, J. (2009). [Cross-national survey of school principals](http://promente.org/ESP1-reg-full.pdf). OSI-ESP.
 - **Powell, S.**, Bratović, E., & Kadić, A. (2009). [Podijeljeno Obrazovanje, Podijeljeni građani](http://promente.org/NEPC-DEDC-bih-report-b.pdf).
 - **Powell, S.** (2009). [Survey Research on stakeholder satisfaction with the Handbook on Human Resources](http://promente.org/FCO-followup-e.pdf).
 - Čelebičić, I., Bratović, E., Kadić, A., & **Powell, S.** (2009). [Roditelji - partneri škole. Stavovi direktora škola o učešću roditelja u školskim aktivnostima](http://promente.org/ESP1-bih-brosura.pdf). proMENTE.
 - Golubeva, M., **Powell, S.**, Kazimzade, E., & Nedelcu, A. (2009). [Divided Education, Divided Citizens? A comparative study of civil enculturation in separate schools](http://promente.org/NEPC-DEDC-reg-report.pdf). NEPC.
+- **Powell, S.**, Čelebičić, I., Bratović, E., & Šišić, A. (2008). [Outcome mapping evaluation of six civil society projects in Bosnia and Herzegovina](https://www.researchgate.net/publication/262689782). Sida.
 - **Powell, S.**, & Bratović, E. (2008). [Stakeholder Participation in Schools: Literature Review](http://promente.org/ESP1-reg-lit.pdf). Open Society Institute.
 - **Powell, S.** (2008). [ESP school principals research: BiH](http://promente.org/ESP1-bih-report.pdf). proMENTE.
-- **Powell, S.**, Čelebičić, I., Bratović, E., & Šišić, A. (2008). Outcome mapping evaluation of six civil society projects in Bosnia and Herzegovina. Sida.
 - Husremović, D., **Powell, S.**, Šišić, A., & Dolić, A. (2007). [Education in Bosnia and Herzegovina: what are we teaching our children?](http://promente.org/OSF0-report-brief-e.pdf).
 - Husremović, D., **Powell, S.**, Šišić, A., & Dolić, A. (2007). [Obrazovanje u Bosni i Hercegovini: Čemu učimo djecu? Analiza sadržaja udžbenika nacionalne grupe predmeta](http://promente.org/OSF0-report-b.pdf). Fond otvoreno društvo Bosna i Hercegovina.
-- **Powell, S.**, & Bratović, E. (2006). [We can. We volunteer. Pro-social values/behaviour and employability amongst young people in SEE and the impact of volunteer work camps](http://promente.org/p/?q=seeyn5). SEEYN: South-East European Youth Network.
+- **Powell, S.** (2006). [The impact of long-term youth voluntary service in Europe: A review of published and unpublished research studies](https://www.researchgate.net/publication/262689874). AVSO/proMENTE.
+- **Powell, S.**, & Bratović, E. (2006). [We can. We volunteer. Pro-social values/behaviour and employability amongst young people in SEE and the impact of volunteer work camps](https://www.researchgate.net/publication/262690037). SEEYN: South-East European Youth Network.
 - **Powell, S.** (2006). [Prevention of Trafficking in Persons in BiH](http://promente.org/CRS2-report-e.pdf). CRS B&H, proMENTE.
 - **Powell, S.** (2006). Roma-Gadje Dialogue Through Service Initiative: M&E processes. client.
-- **Powell, S.** (2006). The impact of long-term youth voluntary service in Europe: A review of published and unpublished research studies. AVSO/proMENTE.
 - **Powell, S.**, & Čelebičić, I. (2005). Mapiranje aktivnosti i usluga NVO-a na polju borbe protiv trgovine ljudima u BiH. CRS BiH.
 - **Powell, S.**, & Frederiksen, T. (2005). "Come back with a smile". SEEYN external evaluation report. SEEYN2.
 - **Powell, S.** (2005). [Prevention of Trafficking in Persons in BiH: Mapping report](http://promente.org/CRS2-mapping-b.pdf). CRS B&H, proMENTE.
 - Bruer, D., Gavranidou, M., **Powell, S.**, Čehić, E., & Butollo, W. (2003). Rückkehrkinder in Bosnien: Probleme, Bewältigungsstrategien, Auffälligkeiten.
 - **Powell, S.**, Rosner, R., & Butollo, W. (1998). Flight paths.
 - **Powell, S.**, Rosner, R., Krüssmann, M., & Butollo, W. (1998). Checklist of war-related experiences (CWE).
+- **Powell, S.** (n.d.). [East Africa Logframe Template for Community Resilience](https://www.researchgate.net/publication/325130435). IFRC.
 - Bratović, E., & **Powell, S.** (n.d.). Evaluation of the project "Choosing peace together". CRS.
 - Čelebičić, I., Kadić, A., & **Powell, S.** (n.d.). Evaluation of the "Youth Bank" programme.
 - Čelebičić, I., & **Powell, S.** (n.d.). Project needs analysis in Zenica and Zavidovići. proMENTE.
 - **Powell, S.**, & Bratović, E. (n.d.). “We could never have done this on our own”. Evaluation of the International Commission of Missing Persons. ICMP.
 - **Powell, S.**, & Čelebičić, I. (n.d.). From School to Work: Supporting Youth on the Way to Employment and Income. Report to gtz. gtz B&H.
-- **Powell, S.** (n.d.). East Africa Logframe Template for Community Resilience. IFRC.
 
 ## Conference papers and presentations
 
