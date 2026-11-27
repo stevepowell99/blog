@@ -1,6 +1,6 @@
 ---
 title: Publications
-date: 2026-11-19
+date: 2026-11-27
 description: Journal articles, book chapters, reports and conference papers by Steve Powell.
 ---
 
@@ -66,8 +66,8 @@ See also my [Google Scholar profile](https://scholar.google.com/citations?user=X
 - **Powell, S.** (2013). Fiji (Pacific Islands): Evaluation of the Response Fund Supported Activities of the UNICEF Pacific HIV & AIDS Programme. UNICEF.
 - **Powell, S.** (2013). [Vorbereitung für Katastrophen: Workshop zur Resilienzforschung an der LMU München (mit Beitrag von Steve Powell)](https://www.researchgate.net/publication/262689856). Deutschlandfunk.
 - **Powell, S.**, & Repac, I. (2013). [Dataset and description from project: Involvement of parents in the life of schools in South-East Europe](http://doi.org/p7z). Figshare.
-- Bratović, E., **Powell, S.**, & Hopma, A. (2012). [Estimating the number of stray dogs in the urban areas of Sarajevo and related survey of public opinion on stray dogs](https://www.researchgate.net/publication/262689981). proMENTE social research.
 - **Powell, S.** (2012). [IFRC Haiti learning strategy and learning agenda](https://doi.org/10.13140/RG.2.2.21259.80162). IFRC.
+- Bratović, E., **Powell, S.**, & Hopma, A. (2012). [Estimating the number of stray dogs in the urban areas of Sarajevo and related survey of public opinion on stray dogs](https://www.researchgate.net/publication/262689981). proMENTE social research.
 - **Powell, S.** (2012). [The psychosocial consequences of the 1992-5 war in Bosnia & Herzegovina](https://www.researchgate.net/publication/262690028). School of Health and Social Sciences, Middlesex University (PhD Thesis).
 - **Powell, S.** (2012). [Haiti Evaluation Framework](https://www.researchgate.net/publication/313478129). IFRC.
 - **Powell, S.** (2012). [Does maintaining supply of water and sanitation in IDP sites after the relief phase encourage people to stay in the sites? Does cutting them encourage people to leave?](https://doi.org/10.13140/RG.2.1.2779.2721). Social Data Blog.
@@ -111,6 +111,8 @@ See also my [Google Scholar profile](https://scholar.google.com/citations?user=X
 
 ## Conference papers and presentations
 
+- **Powell, S.** (2027). [Reflexive, but nobody home: An AI agent analyses 48 interviews on its own](https://www.bath.ac.uk/events/qrs-2027-making-meaning-interpreting-the-qualitative-world/). Qualitative Research Symposium 2027, University of Bath.
+- **Powell, S.**, James, M., & Copestake, J. (2027). [Keep the “because”: When qualitative projects should code causal claims not themes](https://www.bath.ac.uk/events/qrs-2027-making-meaning-interpreting-the-qualitative-world/). Qualitative Research Symposium 2027, University of Bath.
 - Ferretti, S., & **Powell, S.** (2026). Interrogating evaluation: A live experiment and conversation, with a little help from AI. European Evaluation Society 2026 Conference.
 - **Powell, S.**, & Remnant, F. (2026). Non-mosquitoes do not cause non-mosquito bites. European Evaluation Society 2026 Conference.
 - **Powell, S.** (2026). Lonely in London: A qualitative analysis written entirely by an AI which iteratively edited its own instructions. AIAgents4Qual 2026.
